@@ -12,6 +12,12 @@ namespace FormsAndObjects
         private String _firstName;
         private String _lastName;
         private DateTime _orderDate;
+        private String _specialtyPizzaName;
+        private int _pizzaSize;
+
+        
+
+        
         #endregion
 
         #region PROPERTIES
@@ -33,6 +39,17 @@ namespace FormsAndObjects
             set { _orderDate = value; }
         }
         #endregion
-        
+
+        public String specialtyPizzaName
+        {
+            get { return _specialtyPizzaName; }
+            set { _specialtyPizzaName = value; }
+        }
+
+        public int pizzaSize
+        {
+            get { return _pizzaSize; }
+            set { _pizzaSize = value; }
+        }
     }
 }
