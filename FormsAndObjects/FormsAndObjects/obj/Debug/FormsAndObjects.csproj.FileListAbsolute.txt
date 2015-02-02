@@ -1,0 +1,9 @@
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\bin\Debug\FormsAndObjects.exe.config
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\obj\Debug\FormsAndObjects.csprojResolveAssemblyReference.cache
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\obj\Debug\FormsAndObjects.Form1.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\obj\Debug\FormsAndObjects.Properties.Resources.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\obj\Debug\FormsAndObjects.csproj.GenerateResource.Cache
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\bin\Debug\FormsAndObjects.exe
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\bin\Debug\FormsAndObjects.pdb
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\obj\Debug\FormsAndObjects.exe
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\FormsAndObjects\FormsAndObjects\obj\Debug\FormsAndObjects.pdb
