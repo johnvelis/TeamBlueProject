@@ -8,6 +8,7 @@ namespace BazingaPizzaria.Model
 {
     class Customer
     {
+        #region Fields
         private int _customerID;
         private String _userName;
         private String _password;
@@ -15,13 +16,13 @@ namespace BazingaPizzaria.Model
         private String _firstName;
         private String _address;
         private String _city;
-        private String _state;
+        private String _stateProvince;
         private String _zip;
+        private String _email;
+        #endregion
 
 
-
-
-
+        #region Properties
         public int CustomerID
         {
             get { return _customerID; }
@@ -64,16 +65,30 @@ namespace BazingaPizzaria.Model
             set { _city = value; }
         }
 
-        public String State
+        public String StateProvince
         {
-            get { return _state; }
-            set { _state = value; }
+            get { return _stateProvince; }
+            set { _stateProvince = value; }
         }
         public String Zip
         {
             get { return _zip; }
             set { _zip = value; }
         }
-        
+
+        public String Email
+        {
+            get { return _email; }
+            set { _email = value; }
+        }
+        #endregion
+
+
+        #region Constructors
+        public Customer()
+        {
+
+        }
+        #endregion
     }
 }

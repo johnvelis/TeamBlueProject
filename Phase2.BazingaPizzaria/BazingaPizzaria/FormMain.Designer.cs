@@ -116,6 +116,7 @@
             this.btn_RS_zaOfMonth = new System.Windows.Forms.Button();
             this.tabPageCheckOut = new System.Windows.Forms.TabPage();
             this.btn_JV_CompleteMyOrder = new System.Windows.Forms.Button();
+            this.btnCancelOrder = new System.Windows.Forms.Button();
             this.lbl_JV_OrderItemPrice = new System.Windows.Forms.Label();
             this.lbl_JV_OrderItemName = new System.Windows.Forms.Label();
             this.lbl_JV_OrderQuantity = new System.Windows.Forms.Label();
@@ -151,21 +152,32 @@
             this.lbl_JV_BillingInfo = new System.Windows.Forms.Label();
             this.lbl_JV_PayForYourOrder = new System.Windows.Forms.Label();
             this.lbl_JV_CurrentPizzaOrder = new System.Windows.Forms.Label();
+            this.tabPageCompleteOrder = new System.Windows.Forms.TabPage();
+            this.lbl_JV_CCExpConfirm = new System.Windows.Forms.Label();
+            this.lbl_JV_CCNumberShort = new System.Windows.Forms.Label();
+            this.lbl_JV_BillingZipConfirm = new System.Windows.Forms.Label();
+            this.lbl_JV_BillingStateProvinceConfirm = new System.Windows.Forms.Label();
+            this.lbl_JV_BillingCityConfirm = new System.Windows.Forms.Label();
+            this.lbl_JV_BillingAddressConfirm = new System.Windows.Forms.Label();
+            this.lbl_JV_BillingNameConfirm = new System.Windows.Forms.Label();
+            this.lbl_JV_ConfirmBillingInformation = new System.Windows.Forms.Label();
+            this.tabPageThankYou = new System.Windows.Forms.TabPage();
             this.tabPageControlsTemplate = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Sample = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblControlsTemplate = new System.Windows.Forms.Label();
-            this.btnCancelOrder = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCheckOut = new System.Windows.Forms.Button();
             this.btnSpecialty = new System.Windows.Forms.Button();
             this.btnSize = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbl_JV_BillingEmailConfirm = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -202,6 +214,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_RS_bbq)).BeginInit();
             this.grp_RS_SpecialtyZas.SuspendLayout();
             this.tabPageCheckOut.SuspendLayout();
+            this.tabPageCompleteOrder.SuspendLayout();
             this.tabPageControlsTemplate.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -214,6 +227,8 @@
             this.tabControlOrderSequence.Controls.Add(this.tabPageSizeCrust);
             this.tabControlOrderSequence.Controls.Add(this.tabPageSpecialtyPizzas);
             this.tabControlOrderSequence.Controls.Add(this.tabPageCheckOut);
+            this.tabControlOrderSequence.Controls.Add(this.tabPageCompleteOrder);
+            this.tabControlOrderSequence.Controls.Add(this.tabPageThankYou);
             this.tabControlOrderSequence.Controls.Add(this.tabPageControlsTemplate);
             this.tabControlOrderSequence.Location = new System.Drawing.Point(40, 260);
             this.tabControlOrderSequence.Name = "tabControlOrderSequence";
@@ -322,7 +337,7 @@
             this.tab_TG_CarryOut.Location = new System.Drawing.Point(4, 25);
             this.tab_TG_CarryOut.Name = "tab_TG_CarryOut";
             this.tab_TG_CarryOut.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 439);
+            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 436);
             this.tab_TG_CarryOut.TabIndex = 1;
             this.tab_TG_CarryOut.Text = "Carry Out";
             this.tab_TG_CarryOut.UseVisualStyleBackColor = true;
@@ -391,7 +406,7 @@
             this.tab_TG_ReturnCust.Location = new System.Drawing.Point(4, 25);
             this.tab_TG_ReturnCust.Name = "tab_TG_ReturnCust";
             this.tab_TG_ReturnCust.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_ReturnCust.Size = new System.Drawing.Size(592, 439);
+            this.tab_TG_ReturnCust.Size = new System.Drawing.Size(592, 436);
             this.tab_TG_ReturnCust.TabIndex = 2;
             this.tab_TG_ReturnCust.Text = "Return Cust";
             this.tab_TG_ReturnCust.UseVisualStyleBackColor = true;
@@ -1357,6 +1372,23 @@
             this.btn_JV_CompleteMyOrder.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
             this.btn_JV_CompleteMyOrder.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
             // 
+            // btnCancelOrder
+            // 
+            this.btnCancelOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelOrder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btnCancelOrder.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelOrder.ForeColor = System.Drawing.Color.White;
+            this.btnCancelOrder.Location = new System.Drawing.Point(583, 409);
+            this.btnCancelOrder.Name = "btnCancelOrder";
+            this.btnCancelOrder.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            this.btnCancelOrder.Size = new System.Drawing.Size(261, 64);
+            this.btnCancelOrder.TabIndex = 4;
+            this.btnCancelOrder.Text = "Cancel My Order";
+            this.btnCancelOrder.UseVisualStyleBackColor = false;
+            this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
+            this.btnCancelOrder.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
+            this.btnCancelOrder.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            // 
             // lbl_JV_OrderItemPrice
             // 
             this.lbl_JV_OrderItemPrice.AutoSize = true;
@@ -1782,6 +1814,124 @@
             this.lbl_JV_CurrentPizzaOrder.TabIndex = 38;
             this.lbl_JV_CurrentPizzaOrder.Text = "Current Pizza Order";
             // 
+            // tabPageCompleteOrder
+            // 
+            this.tabPageCompleteOrder.Controls.Add(this.label25);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingEmailConfirm);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_CCExpConfirm);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_CCNumberShort);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingZipConfirm);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingStateProvinceConfirm);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingCityConfirm);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingAddressConfirm);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingNameConfirm);
+            this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_ConfirmBillingInformation);
+            this.tabPageCompleteOrder.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCompleteOrder.Name = "tabPageCompleteOrder";
+            this.tabPageCompleteOrder.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageCompleteOrder.TabIndex = 5;
+            this.tabPageCompleteOrder.Text = "Complete Order";
+            this.tabPageCompleteOrder.UseVisualStyleBackColor = true;
+            this.tabPageCompleteOrder.Enter += new System.EventHandler(this.tabPageCompleteOrder_Enter);
+            // 
+            // lbl_JV_CCExpConfirm
+            // 
+            this.lbl_JV_CCExpConfirm.AutoSize = true;
+            this.lbl_JV_CCExpConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_CCExpConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_CCExpConfirm.Location = new System.Drawing.Point(603, 332);
+            this.lbl_JV_CCExpConfirm.Name = "lbl_JV_CCExpConfirm";
+            this.lbl_JV_CCExpConfirm.Size = new System.Drawing.Size(136, 37);
+            this.lbl_JV_CCExpConfirm.TabIndex = 66;
+            this.lbl_JV_CCExpConfirm.Text = "Expiration";
+            // 
+            // lbl_JV_CCNumberShort
+            // 
+            this.lbl_JV_CCNumberShort.AutoSize = true;
+            this.lbl_JV_CCNumberShort.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_CCNumberShort.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_CCNumberShort.Location = new System.Drawing.Point(603, 296);
+            this.lbl_JV_CCNumberShort.Name = "lbl_JV_CCNumberShort";
+            this.lbl_JV_CCNumberShort.Size = new System.Drawing.Size(256, 37);
+            this.lbl_JV_CCNumberShort.TabIndex = 65;
+            this.lbl_JV_CCNumberShort.Text = "Credit Card Number";
+            // 
+            // lbl_JV_BillingZipConfirm
+            // 
+            this.lbl_JV_BillingZipConfirm.AutoSize = true;
+            this.lbl_JV_BillingZipConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BillingZipConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_BillingZipConfirm.Location = new System.Drawing.Point(1030, 184);
+            this.lbl_JV_BillingZipConfirm.Name = "lbl_JV_BillingZipConfirm";
+            this.lbl_JV_BillingZipConfirm.Size = new System.Drawing.Size(55, 37);
+            this.lbl_JV_BillingZipConfirm.TabIndex = 63;
+            this.lbl_JV_BillingZipConfirm.Text = "Zip";
+            // 
+            // lbl_JV_BillingStateProvinceConfirm
+            // 
+            this.lbl_JV_BillingStateProvinceConfirm.AutoSize = true;
+            this.lbl_JV_BillingStateProvinceConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BillingStateProvinceConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_BillingStateProvinceConfirm.Location = new System.Drawing.Point(604, 180);
+            this.lbl_JV_BillingStateProvinceConfirm.Name = "lbl_JV_BillingStateProvinceConfirm";
+            this.lbl_JV_BillingStateProvinceConfirm.Size = new System.Drawing.Size(188, 37);
+            this.lbl_JV_BillingStateProvinceConfirm.TabIndex = 62;
+            this.lbl_JV_BillingStateProvinceConfirm.Text = "State/Province";
+            // 
+            // lbl_JV_BillingCityConfirm
+            // 
+            this.lbl_JV_BillingCityConfirm.AutoSize = true;
+            this.lbl_JV_BillingCityConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BillingCityConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_BillingCityConfirm.Location = new System.Drawing.Point(603, 140);
+            this.lbl_JV_BillingCityConfirm.Name = "lbl_JV_BillingCityConfirm";
+            this.lbl_JV_BillingCityConfirm.Size = new System.Drawing.Size(63, 37);
+            this.lbl_JV_BillingCityConfirm.TabIndex = 61;
+            this.lbl_JV_BillingCityConfirm.Text = "City";
+            // 
+            // lbl_JV_BillingAddressConfirm
+            // 
+            this.lbl_JV_BillingAddressConfirm.AutoSize = true;
+            this.lbl_JV_BillingAddressConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BillingAddressConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_BillingAddressConfirm.Location = new System.Drawing.Point(603, 100);
+            this.lbl_JV_BillingAddressConfirm.Name = "lbl_JV_BillingAddressConfirm";
+            this.lbl_JV_BillingAddressConfirm.Size = new System.Drawing.Size(111, 37);
+            this.lbl_JV_BillingAddressConfirm.TabIndex = 60;
+            this.lbl_JV_BillingAddressConfirm.Text = "Address";
+            // 
+            // lbl_JV_BillingNameConfirm
+            // 
+            this.lbl_JV_BillingNameConfirm.AutoSize = true;
+            this.lbl_JV_BillingNameConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_JV_BillingNameConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BillingNameConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_BillingNameConfirm.Location = new System.Drawing.Point(603, 60);
+            this.lbl_JV_BillingNameConfirm.Name = "lbl_JV_BillingNameConfirm";
+            this.lbl_JV_BillingNameConfirm.Size = new System.Drawing.Size(189, 37);
+            this.lbl_JV_BillingNameConfirm.TabIndex = 59;
+            this.lbl_JV_BillingNameConfirm.Text = "Name on Card";
+            // 
+            // lbl_JV_ConfirmBillingInformation
+            // 
+            this.lbl_JV_ConfirmBillingInformation.AutoSize = true;
+            this.lbl_JV_ConfirmBillingInformation.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_ConfirmBillingInformation.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_ConfirmBillingInformation.Location = new System.Drawing.Point(603, 24);
+            this.lbl_JV_ConfirmBillingInformation.Name = "lbl_JV_ConfirmBillingInformation";
+            this.lbl_JV_ConfirmBillingInformation.Size = new System.Drawing.Size(372, 37);
+            this.lbl_JV_ConfirmBillingInformation.TabIndex = 58;
+            this.lbl_JV_ConfirmBillingInformation.Text = "Confirm Billing Information";
+            // 
+            // tabPageThankYou
+            // 
+            this.tabPageThankYou.Location = new System.Drawing.Point(4, 25);
+            this.tabPageThankYou.Name = "tabPageThankYou";
+            this.tabPageThankYou.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageThankYou.TabIndex = 6;
+            this.tabPageThankYou.Text = "Thank You";
+            this.tabPageThankYou.UseVisualStyleBackColor = true;
+            // 
             // tabPageControlsTemplate
             // 
             this.tabPageControlsTemplate.BackColor = System.Drawing.Color.White;
@@ -1851,23 +2001,6 @@
             this.lblControlsTemplate.Size = new System.Drawing.Size(123, 17);
             this.lblControlsTemplate.TabIndex = 0;
             this.lblControlsTemplate.Text = "Controls Template";
-            // 
-            // btnCancelOrder
-            // 
-            this.btnCancelOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancelOrder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
-            this.btnCancelOrder.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelOrder.ForeColor = System.Drawing.Color.White;
-            this.btnCancelOrder.Location = new System.Drawing.Point(583, 409);
-            this.btnCancelOrder.Name = "btnCancelOrder";
-            this.btnCancelOrder.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
-            this.btnCancelOrder.Size = new System.Drawing.Size(261, 64);
-            this.btnCancelOrder.TabIndex = 4;
-            this.btnCancelOrder.Text = "Cancel My Order";
-            this.btnCancelOrder.UseVisualStyleBackColor = false;
-            this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
-            this.btnCancelOrder.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btnCancelOrder.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
             // 
             // panel2
             // 
@@ -1969,6 +2102,17 @@
             this.panel1.Size = new System.Drawing.Size(1222, 143);
             this.panel1.TabIndex = 16;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Verdana", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
+            this.label24.Location = new System.Drawing.Point(124, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(1170, 145);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Bazinga Pizzeria";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -1980,16 +2124,27 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
-            // label24
+            // lbl_JV_BillingEmailConfirm
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Verdana", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.label24.Location = new System.Drawing.Point(124, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(1170, 145);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Bazinga Pizzeria";
+            this.lbl_JV_BillingEmailConfirm.AutoSize = true;
+            this.lbl_JV_BillingEmailConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BillingEmailConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_BillingEmailConfirm.Location = new System.Drawing.Point(603, 217);
+            this.lbl_JV_BillingEmailConfirm.Name = "lbl_JV_BillingEmailConfirm";
+            this.lbl_JV_BillingEmailConfirm.Size = new System.Drawing.Size(82, 37);
+            this.lbl_JV_BillingEmailConfirm.TabIndex = 67;
+            this.lbl_JV_BillingEmailConfirm.Text = "Email";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(603, 262);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(372, 37);
+            this.label25.TabIndex = 68;
+            this.label25.Text = "Confirm Billing Information";
             // 
             // FormMain
             // 
@@ -2053,6 +2208,8 @@
             this.grp_RS_SpecialtyZas.ResumeLayout(false);
             this.tabPageCheckOut.ResumeLayout(false);
             this.tabPageCheckOut.PerformLayout();
+            this.tabPageCompleteOrder.ResumeLayout(false);
+            this.tabPageCompleteOrder.PerformLayout();
             this.tabPageControlsTemplate.ResumeLayout(false);
             this.tabPageControlsTemplate.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -2203,6 +2360,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TabPage tabPageCompleteOrder;
+        private System.Windows.Forms.Label lbl_JV_CCExpConfirm;
+        private System.Windows.Forms.Label lbl_JV_CCNumberShort;
+        private System.Windows.Forms.Label lbl_JV_BillingZipConfirm;
+        private System.Windows.Forms.Label lbl_JV_BillingStateProvinceConfirm;
+        private System.Windows.Forms.Label lbl_JV_BillingCityConfirm;
+        private System.Windows.Forms.Label lbl_JV_BillingAddressConfirm;
+        private System.Windows.Forms.Label lbl_JV_BillingNameConfirm;
+        private System.Windows.Forms.Label lbl_JV_ConfirmBillingInformation;
+        private System.Windows.Forms.TabPage tabPageThankYou;
+        private System.Windows.Forms.Label lbl_JV_BillingEmailConfirm;
+        private System.Windows.Forms.Label label25;
     }
 }
 

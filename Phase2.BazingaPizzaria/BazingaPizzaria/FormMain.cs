@@ -18,15 +18,18 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BazingaPizzaria.Model;
 
 namespace BazingaPizzaria
 {
     public partial class FormMain : Form
     {
+
+
         //
-        // Create a private instance of the Order that can be accesses by the forms controls.
+        // generate an instance of a customer class and populate with data to test forms
         //
-        private Order formCustomerOrder = new Order();
+        Customer currentCustomer = PopulateTestData.GenerateTestCustomerData();
 
         //
         // Team Blue's custom colors
@@ -49,30 +52,21 @@ namespace BazingaPizzaria
         {
             InitializeComponent();
 
-        }
+            //
+            // uncomment the line below to hide the tabs on the main form
+            //
+            //this.tabControlOrderSequence.ItemSize = new Size(0, 1);
 
-        //
-        // Constructor that will take the order as an argument
-        //
-        public FormMain(Order customerOrder)
-        {
-            InitializeComponent();
-
-            this.tabControlOrderSequence.ItemSize = new Size(0, 1);
             this.tabControlOrderSequence.SizeMode = TabSizeMode.Fixed;
             this.tabControlOrderSequence.Appearance = TabAppearance.FlatButtons;
 
-            this.tabControl2.ItemSize = new Size(0, 1);
-            this.tabControl2.SizeMode = TabSizeMode.Fixed;
-            this.tabControl2.Appearance = TabAppearance.FlatButtons;
-            
         }
+
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txt_TG_NameDineIn;
         }
-
 
         //Navigation button visual response and cancel order button
         #region navigationButtons
@@ -755,6 +749,22 @@ namespace BazingaPizzaria
         #endregion
 
         //
+        // tabPageCompleteOrder - Velis
+        //
+        #region tabPageCompleteOrder Code (Velis)
+        private void tabPageCompleteOrder_Enter(object sender, EventArgs e)
+        {
+            lbl_JV_BillingNameConfirm.Text = currentCustomer.FirstName + " " + currentCustomer.LastName;
+            lbl_JV_BillingAddressConfirm.Text = currentCustomer.Address;
+            lbl_JV_BillingCityConfirm.Text = currentCustomer.City;
+            lbl_JV_BillingStateProvinceConfirm.Text = currentCustomer.StateProvince;
+            lbl_JV_BillingZipConfirm.Text = currentCustomer.Zip;
+            lbl_JV_BillingCityConfirm.Text = currentCustomer.City;
+
+        }
+        #endregion
+
+        //
         // tabPageSpecialtyZas - Roxy
         //
         #region tabPageSpecialtyZas Code (Roxy)
@@ -828,6 +838,7 @@ namespace BazingaPizzaria
         }
 
         #endregion
+
 
 
     }
