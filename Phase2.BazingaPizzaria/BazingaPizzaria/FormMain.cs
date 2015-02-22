@@ -24,7 +24,7 @@ namespace BazingaPizzaria
 {
     public partial class FormMain : Form
     {
-
+        //Comment to test GitHub RS
 
         //
         // generate an instance of a customer class and populate with data to test forms
