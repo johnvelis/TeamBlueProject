@@ -1,0 +1,115 @@
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueTabClass\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+E:\CIT195 Forms\Project Phase 1\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+E:\CIT195 Forms\Project Phase 1\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+E:\CIT195 Forms\Project Phase 1\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+E:\CIT195 Forms\Project Phase 1\BuildAZa_P1_03_RS (1)\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+E:\CIT195 Forms\Project Phase 1\BuildAZa_P1_03_RS (1)\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+E:\CIT195 Forms\Project Phase 1\BuildAZa_P1_03_RS (1)\BuildAZa_P1_02_SL\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_RS_SL_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\Roxy\Desktop\BuildAZa_RS_SL_JV_SizeTab\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\velisj\Desktop\CIT195\_Temp Team Project\BuildAZa_P1_04\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormCompletedOrder.resources
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormCompletedOrder.resources
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\Roxy\Desktop\BuildAZa_P1_05\BuildAZa_P1_05\BuildAZa_RS_SL_JV_SizeTab\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormCompletedOrder.resources
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\wolve_000\Desktop\TeamBlue\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormCompletedOrder.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa_P1_08_TG\BuildAZa_P1_07\BuildAZa\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormCompletedOrder.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\BuildAZa\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizza\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizza\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizza\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\bin\Debug\BuildAZa.exe.config
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.exe
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.pdb
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\bin\Debug\BuildAZa.exe
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\bin\Debug\BuildAZa.pdb
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.csprojResolveAssemblyReference.cache
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.FormCompletedOrder.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.FormMain.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.FormConfirmCancel.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.Properties.Resources.resources
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BuildAZa\obj\Debug\BuildAZa.csproj.GenerateResource.Cache
