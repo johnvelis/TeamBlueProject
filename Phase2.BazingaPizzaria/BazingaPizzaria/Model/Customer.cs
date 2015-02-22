@@ -19,6 +19,11 @@ namespace BazingaPizzaria.Model
         private String _stateProvince;
         private String _zip;
         private String _email;
+        private String _ccName;
+        private String _ccNumber;
+        private int _ccExpMonth;
+        private int _ccExpYear;
+        private int _ccCVVCode;
         #endregion
 
 
@@ -80,6 +85,36 @@ namespace BazingaPizzaria.Model
         {
             get { return _email; }
             set { _email = value; }
+        }
+
+        public String CCName
+        {
+            get { return _ccName; }
+            set { _ccName = value; }
+        }
+
+        public String CCNumber
+        {
+            get { return _ccNumber; }
+            set { _ccNumber = value; }
+        }
+
+        public int CCExpMonth
+        {
+            get { return _ccExpMonth; }
+            set { _ccExpMonth = value; }
+        }
+
+        public int CCExpYear
+        {
+            get { return _ccExpYear; }
+            set { _ccExpYear = value; }
+        }
+
+        public int CCCVVCode
+        {
+            get { return _ccCVVCode; }
+            set { _ccCVVCode = value; }
         }
         #endregion
 

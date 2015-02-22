@@ -130,10 +130,8 @@
             this.listBox_JV_OrderItemName = new System.Windows.Forms.ListBox();
             this.listBox_JV_OrderItemQuantity = new System.Windows.Forms.ListBox();
             this.lbl_JV_CCExpYear = new System.Windows.Forms.Label();
-            this.lbl_JV_CCExpDate = new System.Windows.Forms.Label();
             this.lbl_JV_CCExpMonth = new System.Windows.Forms.Label();
             this.comboBox_JV_CCExpYear = new System.Windows.Forms.ComboBox();
-            this.comboBox_JV_CCExpDate = new System.Windows.Forms.ComboBox();
             this.comboBox_JV_CCExpMonth = new System.Windows.Forms.ComboBox();
             this.textBox_JV_CCNumber = new System.Windows.Forms.TextBox();
             this.textBox_JV_CCZip = new System.Windows.Forms.TextBox();
@@ -153,6 +151,8 @@
             this.lbl_JV_PayForYourOrder = new System.Windows.Forms.Label();
             this.lbl_JV_CurrentPizzaOrder = new System.Windows.Forms.Label();
             this.tabPageCompleteOrder = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lbl_JV_BillingEmailConfirm = new System.Windows.Forms.Label();
             this.lbl_JV_CCExpConfirm = new System.Windows.Forms.Label();
             this.lbl_JV_CCNumberShort = new System.Windows.Forms.Label();
             this.lbl_JV_BillingZipConfirm = new System.Windows.Forms.Label();
@@ -176,8 +176,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lbl_JV_BillingEmailConfirm = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.textBox_JV_CCCVVCode = new System.Windows.Forms.TextBox();
+            this.lbl_JV_CCCVVCode = new System.Windows.Forms.Label();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -1313,6 +1313,8 @@
             // tabPageCheckOut
             // 
             this.tabPageCheckOut.BackColor = System.Drawing.Color.White;
+            this.tabPageCheckOut.Controls.Add(this.lbl_JV_CCCVVCode);
+            this.tabPageCheckOut.Controls.Add(this.textBox_JV_CCCVVCode);
             this.tabPageCheckOut.Controls.Add(this.btn_JV_CompleteMyOrder);
             this.tabPageCheckOut.Controls.Add(this.btnCancelOrder);
             this.tabPageCheckOut.Controls.Add(this.lbl_JV_OrderItemPrice);
@@ -1328,10 +1330,8 @@
             this.tabPageCheckOut.Controls.Add(this.listBox_JV_OrderItemName);
             this.tabPageCheckOut.Controls.Add(this.listBox_JV_OrderItemQuantity);
             this.tabPageCheckOut.Controls.Add(this.lbl_JV_CCExpYear);
-            this.tabPageCheckOut.Controls.Add(this.lbl_JV_CCExpDate);
             this.tabPageCheckOut.Controls.Add(this.lbl_JV_CCExpMonth);
             this.tabPageCheckOut.Controls.Add(this.comboBox_JV_CCExpYear);
-            this.tabPageCheckOut.Controls.Add(this.comboBox_JV_CCExpDate);
             this.tabPageCheckOut.Controls.Add(this.comboBox_JV_CCExpMonth);
             this.tabPageCheckOut.Controls.Add(this.textBox_JV_CCNumber);
             this.tabPageCheckOut.Controls.Add(this.textBox_JV_CCZip);
@@ -1518,23 +1518,11 @@
             this.lbl_JV_CCExpYear.BackColor = System.Drawing.Color.Transparent;
             this.lbl_JV_CCExpYear.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCExpYear.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCExpYear.Location = new System.Drawing.Point(1042, 369);
+            this.lbl_JV_CCExpYear.Location = new System.Drawing.Point(961, 369);
             this.lbl_JV_CCExpYear.Name = "lbl_JV_CCExpYear";
             this.lbl_JV_CCExpYear.Size = new System.Drawing.Size(67, 37);
             this.lbl_JV_CCExpYear.TabIndex = 60;
             this.lbl_JV_CCExpYear.Text = "Year";
-            // 
-            // lbl_JV_CCExpDate
-            // 
-            this.lbl_JV_CCExpDate.AutoSize = true;
-            this.lbl_JV_CCExpDate.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_JV_CCExpDate.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_JV_CCExpDate.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCExpDate.Location = new System.Drawing.Point(970, 369);
-            this.lbl_JV_CCExpDate.Name = "lbl_JV_CCExpDate";
-            this.lbl_JV_CCExpDate.Size = new System.Drawing.Size(73, 37);
-            this.lbl_JV_CCExpDate.TabIndex = 59;
-            this.lbl_JV_CCExpDate.Text = "Date";
             // 
             // lbl_JV_CCExpMonth
             // 
@@ -1571,53 +1559,10 @@
             "2028",
             "2029",
             "2030"});
-            this.comboBox_JV_CCExpYear.Location = new System.Drawing.Point(1052, 336);
+            this.comboBox_JV_CCExpYear.Location = new System.Drawing.Point(971, 336);
             this.comboBox_JV_CCExpYear.Name = "comboBox_JV_CCExpYear";
             this.comboBox_JV_CCExpYear.Size = new System.Drawing.Size(80, 33);
             this.comboBox_JV_CCExpYear.TabIndex = 57;
-            // 
-            // comboBox_JV_CCExpDate
-            // 
-            this.comboBox_JV_CCExpDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_JV_CCExpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_JV_CCExpDate.ForeColor = System.Drawing.Color.Black;
-            this.comboBox_JV_CCExpDate.FormattingEnabled = true;
-            this.comboBox_JV_CCExpDate.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox_JV_CCExpDate.Location = new System.Drawing.Point(977, 336);
-            this.comboBox_JV_CCExpDate.Name = "comboBox_JV_CCExpDate";
-            this.comboBox_JV_CCExpDate.Size = new System.Drawing.Size(51, 33);
-            this.comboBox_JV_CCExpDate.TabIndex = 56;
             // 
             // comboBox_JV_CCExpMonth
             // 
@@ -1648,15 +1593,15 @@
             this.textBox_JV_CCNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCNumber.Location = new System.Drawing.Point(832, 296);
             this.textBox_JV_CCNumber.Name = "textBox_JV_CCNumber";
-            this.textBox_JV_CCNumber.Size = new System.Drawing.Size(300, 30);
+            this.textBox_JV_CCNumber.Size = new System.Drawing.Size(205, 30);
             this.textBox_JV_CCNumber.TabIndex = 54;
             // 
             // textBox_JV_CCZip
             // 
             this.textBox_JV_CCZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_JV_CCZip.Location = new System.Drawing.Point(1056, 219);
+            this.textBox_JV_CCZip.Location = new System.Drawing.Point(1081, 219);
             this.textBox_JV_CCZip.Name = "textBox_JV_CCZip";
-            this.textBox_JV_CCZip.Size = new System.Drawing.Size(76, 30);
+            this.textBox_JV_CCZip.Size = new System.Drawing.Size(86, 30);
             this.textBox_JV_CCZip.TabIndex = 53;
             this.textBox_JV_CCZip.Leave += new System.EventHandler(this.textBox_JV_CCZipValidation_Leave);
             // 
@@ -1673,7 +1618,7 @@
             this.textBox_JV_CCCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCCity.Location = new System.Drawing.Point(832, 179);
             this.textBox_JV_CCCity.Name = "textBox_JV_CCCity";
-            this.textBox_JV_CCCity.Size = new System.Drawing.Size(300, 30);
+            this.textBox_JV_CCCity.Size = new System.Drawing.Size(335, 30);
             this.textBox_JV_CCCity.TabIndex = 51;
             // 
             // textBox_JV_CCAddress
@@ -1681,7 +1626,7 @@
             this.textBox_JV_CCAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCAddress.Location = new System.Drawing.Point(832, 140);
             this.textBox_JV_CCAddress.Name = "textBox_JV_CCAddress";
-            this.textBox_JV_CCAddress.Size = new System.Drawing.Size(300, 30);
+            this.textBox_JV_CCAddress.Size = new System.Drawing.Size(335, 30);
             this.textBox_JV_CCAddress.TabIndex = 50;
             // 
             // textBox_JV_CCName
@@ -1689,7 +1634,7 @@
             this.textBox_JV_CCName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCName.Location = new System.Drawing.Point(832, 97);
             this.textBox_JV_CCName.Name = "textBox_JV_CCName";
-            this.textBox_JV_CCName.Size = new System.Drawing.Size(300, 30);
+            this.textBox_JV_CCName.Size = new System.Drawing.Size(335, 30);
             this.textBox_JV_CCName.TabIndex = 49;
             // 
             // lbl_JV_CCExpiration
@@ -1730,7 +1675,7 @@
             this.lbl_JV_CCZip.AutoSize = true;
             this.lbl_JV_CCZip.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCZip.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCZip.Location = new System.Drawing.Point(1007, 214);
+            this.lbl_JV_CCZip.Location = new System.Drawing.Point(1028, 214);
             this.lbl_JV_CCZip.Name = "lbl_JV_CCZip";
             this.lbl_JV_CCZip.Size = new System.Drawing.Size(55, 37);
             this.lbl_JV_CCZip.TabIndex = 45;
@@ -1816,6 +1761,7 @@
             // 
             // tabPageCompleteOrder
             // 
+            this.tabPageCompleteOrder.BackColor = System.Drawing.Color.White;
             this.tabPageCompleteOrder.Controls.Add(this.label25);
             this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingEmailConfirm);
             this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_CCExpConfirm);
@@ -1831,15 +1777,36 @@
             this.tabPageCompleteOrder.Size = new System.Drawing.Size(1192, 471);
             this.tabPageCompleteOrder.TabIndex = 5;
             this.tabPageCompleteOrder.Text = "Complete Order";
-            this.tabPageCompleteOrder.UseVisualStyleBackColor = true;
             this.tabPageCompleteOrder.Enter += new System.EventHandler(this.tabPageCompleteOrder_Enter);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(603, 262);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(436, 37);
+            this.label25.TabIndex = 68;
+            this.label25.Text = "Confirm Credit Card Information";
+            // 
+            // lbl_JV_BillingEmailConfirm
+            // 
+            this.lbl_JV_BillingEmailConfirm.AutoSize = true;
+            this.lbl_JV_BillingEmailConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BillingEmailConfirm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_BillingEmailConfirm.Location = new System.Drawing.Point(631, 217);
+            this.lbl_JV_BillingEmailConfirm.Name = "lbl_JV_BillingEmailConfirm";
+            this.lbl_JV_BillingEmailConfirm.Size = new System.Drawing.Size(82, 37);
+            this.lbl_JV_BillingEmailConfirm.TabIndex = 67;
+            this.lbl_JV_BillingEmailConfirm.Text = "Email";
             // 
             // lbl_JV_CCExpConfirm
             // 
             this.lbl_JV_CCExpConfirm.AutoSize = true;
             this.lbl_JV_CCExpConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCExpConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCExpConfirm.Location = new System.Drawing.Point(603, 332);
+            this.lbl_JV_CCExpConfirm.Location = new System.Drawing.Point(893, 299);
             this.lbl_JV_CCExpConfirm.Name = "lbl_JV_CCExpConfirm";
             this.lbl_JV_CCExpConfirm.Size = new System.Drawing.Size(136, 37);
             this.lbl_JV_CCExpConfirm.TabIndex = 66;
@@ -1850,7 +1817,7 @@
             this.lbl_JV_CCNumberShort.AutoSize = true;
             this.lbl_JV_CCNumberShort.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCNumberShort.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCNumberShort.Location = new System.Drawing.Point(603, 296);
+            this.lbl_JV_CCNumberShort.Location = new System.Drawing.Point(631, 296);
             this.lbl_JV_CCNumberShort.Name = "lbl_JV_CCNumberShort";
             this.lbl_JV_CCNumberShort.Size = new System.Drawing.Size(256, 37);
             this.lbl_JV_CCNumberShort.TabIndex = 65;
@@ -1861,7 +1828,7 @@
             this.lbl_JV_BillingZipConfirm.AutoSize = true;
             this.lbl_JV_BillingZipConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BillingZipConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_BillingZipConfirm.Location = new System.Drawing.Point(1030, 184);
+            this.lbl_JV_BillingZipConfirm.Location = new System.Drawing.Point(1058, 184);
             this.lbl_JV_BillingZipConfirm.Name = "lbl_JV_BillingZipConfirm";
             this.lbl_JV_BillingZipConfirm.Size = new System.Drawing.Size(55, 37);
             this.lbl_JV_BillingZipConfirm.TabIndex = 63;
@@ -1872,7 +1839,7 @@
             this.lbl_JV_BillingStateProvinceConfirm.AutoSize = true;
             this.lbl_JV_BillingStateProvinceConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BillingStateProvinceConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_BillingStateProvinceConfirm.Location = new System.Drawing.Point(604, 180);
+            this.lbl_JV_BillingStateProvinceConfirm.Location = new System.Drawing.Point(632, 180);
             this.lbl_JV_BillingStateProvinceConfirm.Name = "lbl_JV_BillingStateProvinceConfirm";
             this.lbl_JV_BillingStateProvinceConfirm.Size = new System.Drawing.Size(188, 37);
             this.lbl_JV_BillingStateProvinceConfirm.TabIndex = 62;
@@ -1883,7 +1850,7 @@
             this.lbl_JV_BillingCityConfirm.AutoSize = true;
             this.lbl_JV_BillingCityConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BillingCityConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_BillingCityConfirm.Location = new System.Drawing.Point(603, 140);
+            this.lbl_JV_BillingCityConfirm.Location = new System.Drawing.Point(631, 140);
             this.lbl_JV_BillingCityConfirm.Name = "lbl_JV_BillingCityConfirm";
             this.lbl_JV_BillingCityConfirm.Size = new System.Drawing.Size(63, 37);
             this.lbl_JV_BillingCityConfirm.TabIndex = 61;
@@ -1894,7 +1861,7 @@
             this.lbl_JV_BillingAddressConfirm.AutoSize = true;
             this.lbl_JV_BillingAddressConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BillingAddressConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_BillingAddressConfirm.Location = new System.Drawing.Point(603, 100);
+            this.lbl_JV_BillingAddressConfirm.Location = new System.Drawing.Point(631, 100);
             this.lbl_JV_BillingAddressConfirm.Name = "lbl_JV_BillingAddressConfirm";
             this.lbl_JV_BillingAddressConfirm.Size = new System.Drawing.Size(111, 37);
             this.lbl_JV_BillingAddressConfirm.TabIndex = 60;
@@ -1906,7 +1873,7 @@
             this.lbl_JV_BillingNameConfirm.BackColor = System.Drawing.Color.Transparent;
             this.lbl_JV_BillingNameConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BillingNameConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_BillingNameConfirm.Location = new System.Drawing.Point(603, 60);
+            this.lbl_JV_BillingNameConfirm.Location = new System.Drawing.Point(631, 60);
             this.lbl_JV_BillingNameConfirm.Name = "lbl_JV_BillingNameConfirm";
             this.lbl_JV_BillingNameConfirm.Size = new System.Drawing.Size(189, 37);
             this.lbl_JV_BillingNameConfirm.TabIndex = 59;
@@ -1925,12 +1892,12 @@
             // 
             // tabPageThankYou
             // 
+            this.tabPageThankYou.BackColor = System.Drawing.Color.White;
             this.tabPageThankYou.Location = new System.Drawing.Point(4, 25);
             this.tabPageThankYou.Name = "tabPageThankYou";
             this.tabPageThankYou.Size = new System.Drawing.Size(1192, 471);
             this.tabPageThankYou.TabIndex = 6;
             this.tabPageThankYou.Text = "Thank You";
-            this.tabPageThankYou.UseVisualStyleBackColor = true;
             // 
             // tabPageControlsTemplate
             // 
@@ -2124,27 +2091,25 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
-            // lbl_JV_BillingEmailConfirm
+            // textBox_JV_CCCVVCode
             // 
-            this.lbl_JV_BillingEmailConfirm.AutoSize = true;
-            this.lbl_JV_BillingEmailConfirm.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_JV_BillingEmailConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_BillingEmailConfirm.Location = new System.Drawing.Point(603, 217);
-            this.lbl_JV_BillingEmailConfirm.Name = "lbl_JV_BillingEmailConfirm";
-            this.lbl_JV_BillingEmailConfirm.Size = new System.Drawing.Size(82, 37);
-            this.lbl_JV_BillingEmailConfirm.TabIndex = 67;
-            this.lbl_JV_BillingEmailConfirm.Text = "Email";
+            this.textBox_JV_CCCVVCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_JV_CCCVVCode.Location = new System.Drawing.Point(1109, 292);
+            this.textBox_JV_CCCVVCode.Name = "textBox_JV_CCCVVCode";
+            this.textBox_JV_CCCVVCode.Size = new System.Drawing.Size(58, 30);
+            this.textBox_JV_CCCVVCode.TabIndex = 74;
             // 
-            // label25
+            // lbl_JV_CCCVVCode
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(603, 262);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(372, 37);
-            this.label25.TabIndex = 68;
-            this.label25.Text = "Confirm Billing Information";
+            this.lbl_JV_CCCVVCode.AutoSize = true;
+            this.lbl_JV_CCCVVCode.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_JV_CCCVVCode.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_CCCVVCode.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_CCCVVCode.Location = new System.Drawing.Point(1036, 289);
+            this.lbl_JV_CCCVVCode.Name = "lbl_JV_CCCVVCode";
+            this.lbl_JV_CCCVVCode.Size = new System.Drawing.Size(68, 37);
+            this.lbl_JV_CCCVVCode.TabIndex = 75;
+            this.lbl_JV_CCCVVCode.Text = "CVV";
             // 
             // FormMain
             // 
@@ -2251,10 +2216,8 @@
         private System.Windows.Forms.Button btn_SL_sizeMed;
         private System.Windows.Forms.Button btn_SL_sizeSmall;
         private System.Windows.Forms.Label lbl_JV_CCExpYear;
-        private System.Windows.Forms.Label lbl_JV_CCExpDate;
         private System.Windows.Forms.Label lbl_JV_CCExpMonth;
         private System.Windows.Forms.ComboBox comboBox_JV_CCExpYear;
-        private System.Windows.Forms.ComboBox comboBox_JV_CCExpDate;
         private System.Windows.Forms.ComboBox comboBox_JV_CCExpMonth;
         private System.Windows.Forms.TextBox textBox_JV_CCNumber;
         private System.Windows.Forms.TextBox textBox_JV_CCZip;
@@ -2372,6 +2335,8 @@
         private System.Windows.Forms.TabPage tabPageThankYou;
         private System.Windows.Forms.Label lbl_JV_BillingEmailConfirm;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lbl_JV_CCCVVCode;
+        private System.Windows.Forms.TextBox textBox_JV_CCCVVCode;
     }
 }
 

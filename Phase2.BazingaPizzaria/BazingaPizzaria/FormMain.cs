@@ -704,17 +704,17 @@ namespace BazingaPizzaria
                 textBox_JV_CCNumber.BackColor = colFormValidationError;
                 textBox_JV_CCNumber.Focus();
             }
+            else if (textBox_JV_CCCVVCode.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter the credit card CVV code.");
+                textBox_JV_CCCVVCode.BackColor = colFormValidationError;
+                textBox_JV_CCCVVCode.Focus();
+            }
             else if (comboBox_JV_CCExpMonth.SelectedItem == null)
             {
                 MessageBox.Show("Please enter the credit card expiration month.");
                 comboBox_JV_CCExpMonth.Focus();
                 lbl_JV_CCExpMonth.ForeColor = colFormValidationErrorLabel;
-            }
-            else if (comboBox_JV_CCExpDate.SelectedItem == null)
-            {
-                MessageBox.Show("Please enter the credit card expiration month.");
-                comboBox_JV_CCExpDate.Focus();
-                lbl_JV_CCExpDate.ForeColor = colFormValidationErrorLabel;
             }
             else if (comboBox_JV_CCExpYear.SelectedItem == null)
             {
@@ -725,7 +725,7 @@ namespace BazingaPizzaria
             else
             {
                 FormCompletedOrder frmCompletedOrder = new FormCompletedOrder(this);
-                frmCompletedOrder.ShowDialog();
+                tabControlOrderSequence.SelectedTab = tabPageCompleteOrder;
             }
         }
 
@@ -741,8 +741,8 @@ namespace BazingaPizzaria
             textBox_JV_CCZip.BackColor = colFormBackColor;
             textBox_JV_CCNumber.BackColor = colFormBackColor;
             lbl_JV_CCExpMonth.ForeColor = colFormNormalText;
-            lbl_JV_CCExpDate.ForeColor = colFormNormalText;
             lbl_JV_CCExpYear.ForeColor = colFormNormalText;
+            textBox_JV_CCCVVCode.ForeColor = colFormNormalText;
         }
         #endregion
 
@@ -759,7 +759,12 @@ namespace BazingaPizzaria
             lbl_JV_BillingCityConfirm.Text = currentCustomer.City;
             lbl_JV_BillingStateProvinceConfirm.Text = currentCustomer.StateProvince;
             lbl_JV_BillingZipConfirm.Text = currentCustomer.Zip;
-            lbl_JV_BillingCityConfirm.Text = currentCustomer.City;
+            lbl_JV_BillingEmailConfirm.Text = currentCustomer.Email;
+            lbl_JV_CCNumberShort.Text = "**** " + currentCustomer.CCNumber.Substring(11, 4);
+            lbl_JV_CCExpConfirm.Text =
+                currentCustomer.CCExpMonth.ToString() +
+                "/" +
+                currentCustomer.CCExpYear.ToString();
 
         }
         #endregion
