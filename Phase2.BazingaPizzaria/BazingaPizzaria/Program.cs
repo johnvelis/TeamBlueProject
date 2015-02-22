@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BazingaPizzaria.Model;
 
 
 namespace BazingaPizzaria
@@ -21,14 +22,9 @@ namespace BazingaPizzaria
 
         static void Main()
         {
-            Order CustomerOrder = new Order();
-            CustomerOrder.firstName = "John";
-            CustomerOrder.lastName = "Velis";
-            CustomerOrder.orderDate = DateTime.Today;
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain(CustomerOrder));
+            Application.Run(new FormMain());
         }
     }
 }

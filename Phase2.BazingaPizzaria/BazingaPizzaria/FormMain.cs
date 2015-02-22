@@ -478,7 +478,7 @@ namespace BazingaPizzaria
 
             if (txt_TG_NameCarryOut.Text.Length <= 0)
             {
-                MessageBox.Show("Please fill the required field!");
+                MessageBox.Show("Please fill the required _userName!");
                 txt_TG_NameCarryOut.BackColor = colFormValidationError;
                 txt_TG_NameCarryOut.Focus();
             }

@@ -62,7 +62,9 @@
     <Compile Include="FormConfirmCancel.Designer.cs">
       <DependentUpon>FormConfirmCancel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Order.cs" />
+    <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\PizzaItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCompletedOrder.resx">
@@ -79,6 +81,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -18,3 +18,4 @@ C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195
 C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormConfirmCancel.resources
 C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.Properties.Resources.resources
 C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csproj.GenerateResource.Cache
+C:\Users\velisj\Google Drive\NMC\Courses\CIT195\Team Blue Project Folder (CIT195)\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csprojResolveAssemblyReference.cache
