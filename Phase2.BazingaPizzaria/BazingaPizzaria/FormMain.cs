@@ -29,7 +29,7 @@ namespace BazingaPizzaria
         //
         // generate an instance of a customer class and populate with data to test forms
         //
-        Customer currentCustomer = PopulateTestData.GenerateTestCustomerData();
+        Customer currentCustomer = GenerateTestData.GenerateTestCustomerData();
 
         //
         // Team Blue's custom colors

@@ -65,7 +65,6 @@
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\PizzaItem.cs" />
-    <Compile Include="Model\PopulateTestData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCompletedOrder.resx">
