@@ -53,9 +53,9 @@ namespace BazingaPizzaria
             InitializeComponent();
 
             //
-            // uncomment the line below to hide the tabs on the main form
+            // comment/uncomment the line below to show/hide the tabs on the main form
             //
-            //this.tabControlOrderSequence.ItemSize = new Size(0, 1);
+            this.tabControlOrderSequence.ItemSize = new Size(0, 1);
 
             this.tabControlOrderSequence.SizeMode = TabSizeMode.Fixed;
             this.tabControlOrderSequence.Appearance = TabAppearance.FlatButtons;
