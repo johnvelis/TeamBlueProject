@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace BazingaPizzaria.Model
 {
-    class PopulateTestData
+    class GenerateTestData
     {
         internal static Customer GenerateTestCustomerData()
         {

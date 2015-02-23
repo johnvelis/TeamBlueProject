@@ -63,6 +63,7 @@
       <DependentUpon>FormConfirmCancel.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\GenerateTestData.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\PizzaItem.cs" />
     <Compile Include="Program.cs" />
