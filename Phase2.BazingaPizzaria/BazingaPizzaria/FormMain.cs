@@ -33,6 +33,9 @@ namespace BazingaPizzaria
         //
         Customer currentCustomer = GenerateTestData.GenerateTestCustomerData();
 
+
+        FormErrorMessage frmErrorMess = new FormErrorMessage();
+
         //
         // Team Blue's custom colors
         //
@@ -63,7 +66,6 @@ namespace BazingaPizzaria
             this.tabControlOrderSequence.Appearance = TabAppearance.FlatButtons;
 
         }
-
 
         private void FormMain_Load(object sender, EventArgs e)
         {
@@ -417,46 +419,41 @@ namespace BazingaPizzaria
         #region Dine In, Carry Out, Return Cust
         private void btn_TG_DineIn_Click(object sender, EventArgs e)
         {
+            ClearFields();
             tabControl2.SelectTab(tab_TG_DineIn);
             txt_TG_NameDineIn.BackColor = colFormBackColor;
             txt_TG_NameDineIn.Focus();
-            txt_TG_NameCarryOut.Clear();
-            txt_TG_PhoneNum.Clear();
-            txt_TG_Email.Clear();
-            txt_TG_Password.Clear();
             TG_standardButtonSelector(btn_TG_DineIn);
         }
 
         private void btn_TG_CarryOut_Click(object sender, EventArgs e)
         {
+            ClearFields();
             tabControl2.SelectTab(tab_TG_CarryOut);
             txt_TG_NameCarryOut.BackColor = colFormBackColor;
             txt_TG_PhoneNum.BackColor = colFormBackColor;
             txt_TG_NameCarryOut.Focus();
-            txt_TG_NameDineIn.Clear();
-            txt_TG_Email.Clear();
-            txt_TG_Password.Clear();
             TG_standardButtonSelector(btn_TG_CarryOut);
         }
 
         private void btn_TG_ReturnCust_Click(object sender, EventArgs e)
         {
+            ClearFields();
             tabControl2.SelectTab(tab_TG_ReturnCust);
             txt_TG_Email.BackColor = colFormBackColor;
             txt_TG_Password.BackColor = colFormBackColor;
             txt_TG_Email.Focus();
-            txt_TG_NameDineIn.Clear();
-            txt_TG_NameCarryOut.Clear();
-            txt_TG_PhoneNum.Clear();
             TG_standardButtonSelector(btn_TG_ReturnCust);
         }
         #endregion
 
+        #region Next Buttons
         private void btn_TG_NextDineIn_Click(object sender, EventArgs e)
         {
             if (txt_TG_NameDineIn.Text.Length <= 0)
             {
-                MessageBox.Show("Please enter your name!");
+                frmErrorMess.LabelText = "Please enter your Name!";
+                frmErrorMess.ShowDialog();
                 txt_TG_NameDineIn.BackColor = colFormValidationError;
                 txt_TG_NameDineIn.Focus();
             }
@@ -476,13 +473,15 @@ namespace BazingaPizzaria
 
             if (txt_TG_NameCarryOut.Text.Length <= 0)
             {
-                MessageBox.Show("Please fill the required _userName!");
+                frmErrorMess.LabelText = "Please enter your Name!";
+                frmErrorMess.ShowDialog();
                 txt_TG_NameCarryOut.BackColor = colFormValidationError;
                 txt_TG_NameCarryOut.Focus();
             }
             else if (txt_TG_PhoneNum.Text.Length <= 0)
             {
-                MessageBox.Show("Please enter your Phone number!");
+                frmErrorMess.LabelText = "Please enter your phone number!";
+                frmErrorMess.ShowDialog();
                 txt_TG_PhoneNum.BackColor = colFormValidationError;
                 txt_TG_PhoneNum.Focus();
             }
@@ -503,13 +502,15 @@ namespace BazingaPizzaria
 
             if (!emailRegex.IsMatch(txt_TG_Email.Text) || (txt_TG_Email.Text.Length <= 0))
             {
-                MessageBox.Show("Please enter a valid Email!");
+                frmErrorMess.LabelText = "Please enter a valid email address!";
+                frmErrorMess.ShowDialog();
                 txt_TG_Email.BackColor = colFormValidationError;
                 txt_TG_Email.Focus();
             }
             else if (txt_TG_Password.Text.Length <= 0)
             {
-                MessageBox.Show("Please enter your password!");
+                frmErrorMess.LabelText = "Please enter your password!";
+                frmErrorMess.ShowDialog();
                 txt_TG_Password.BackColor = colFormValidationError;
                 txt_TG_Password.Focus();
             }
@@ -522,7 +523,9 @@ namespace BazingaPizzaria
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
         }
+        #endregion
 
+        #region Methods
         private void TG_standardButtonSelector(Button button)
         {
             //reset all buttons in group to standard color
@@ -533,6 +536,16 @@ namespace BazingaPizzaria
             //set the selected button back color to show it is selected
             button.BackColor = colDarkBlue;
         }
+
+        public void ClearFields()
+        {
+            txt_TG_NameDineIn.Clear();
+            txt_TG_NameCarryOut.Clear();
+            txt_TG_PhoneNum.Clear();
+            txt_TG_Email.Clear();
+            txt_TG_Password.Clear();
+        }
+        #endregion
 
         #endregion
 
