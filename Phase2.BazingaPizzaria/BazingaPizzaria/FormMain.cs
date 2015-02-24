@@ -26,6 +26,8 @@ namespace BazingaPizzaria
     {
         //Roxy's GitHub test
 
+        //Taman's GitHub Test 
+
         //
         // generate an instance of a customer class and populate with data to test forms
         //
@@ -412,6 +414,7 @@ namespace BazingaPizzaria
         //
         #region tabStart Code (Täman)
 
+        #region Dine In, Carry Out, Return Cust
         private void btn_TG_DineIn_Click(object sender, EventArgs e)
         {
             tabControl2.SelectTab(tab_TG_DineIn);
@@ -447,6 +450,7 @@ namespace BazingaPizzaria
             txt_TG_PhoneNum.Clear();
             TG_standardButtonSelector(btn_TG_ReturnCust);
         }
+        #endregion
 
         private void btn_TG_NextDineIn_Click(object sender, EventArgs e)
         {
