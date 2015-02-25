@@ -50,6 +50,8 @@
     <Compile Include="FormCompletedOrder.Designer.cs">
       <DependentUpon>FormCompletedOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormErrorMessage.cs" />
+    <Compile Include="FormErrorMessage.Designer.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +74,7 @@
     <EmbeddedResource Include="FormCompletedOrder.resx">
       <DependentUpon>FormCompletedOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormErrorMessage.resx" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
