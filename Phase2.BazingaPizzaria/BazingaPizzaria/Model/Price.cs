@@ -8,7 +8,7 @@ namespace BazingaPizzaria.Model
 {
     class Price
     {
-            {
+            
         #region Fields
         private Double _beverageSm;
         private Double _beverageMd;
