@@ -38,7 +38,7 @@ namespace BazingaPizzaria.Model
         {
             _beverageSm = 1.19;
             _beverageMd = 1.69;
-            _beverageLg = 2.09;
+            _beverageLg = 2.19;
         }
         #endregion
     }
