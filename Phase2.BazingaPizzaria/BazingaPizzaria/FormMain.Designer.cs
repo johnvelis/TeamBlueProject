@@ -115,6 +115,8 @@
             this.btn_RS_cheese = new System.Windows.Forms.Button();
             this.btn_RS_zaOfMonth = new System.Windows.Forms.Button();
             this.tabPageCheckOut = new System.Windows.Forms.TabPage();
+            this.lbl_JV_CCCVVCode = new System.Windows.Forms.Label();
+            this.textBox_JV_CCCVVCode = new System.Windows.Forms.TextBox();
             this.btn_JV_CompleteMyOrder = new System.Windows.Forms.Button();
             this.btnCancelOrder = new System.Windows.Forms.Button();
             this.lbl_JV_OrderItemPrice = new System.Windows.Forms.Label();
@@ -176,8 +178,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox_JV_CCCVVCode = new System.Windows.Forms.TextBox();
-            this.lbl_JV_CCCVVCode = new System.Windows.Forms.Label();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -245,10 +245,10 @@
             this.tabPageStart.Controls.Add(this.tabControl2);
             this.tabPageStart.Controls.Add(this.btn_TG_CarryOut);
             this.tabPageStart.Controls.Add(this.btn_TG_DineIn);
-            this.tabPageStart.Location = new System.Drawing.Point(4, 25);
+            this.tabPageStart.Location = new System.Drawing.Point(4, 22);
             this.tabPageStart.Name = "tabPageStart";
             this.tabPageStart.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageStart.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageStart.Size = new System.Drawing.Size(1192, 474);
             this.tabPageStart.TabIndex = 0;
             this.tabPageStart.Text = "Start";
             // 
@@ -276,7 +276,7 @@
             this.tabControl2.Location = new System.Drawing.Point(589, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(600, 465);
+            this.tabControl2.Size = new System.Drawing.Size(600, 468);
             this.tabControl2.TabIndex = 7;
             this.tabControl2.Tag = "";
             // 
@@ -285,10 +285,10 @@
             this.tab_TG_DineIn.Controls.Add(this.label19);
             this.tab_TG_DineIn.Controls.Add(this.txt_TG_NameDineIn);
             this.tab_TG_DineIn.Controls.Add(this.btn_TG_NextDineIn);
-            this.tab_TG_DineIn.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_DineIn.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_DineIn.Name = "tab_TG_DineIn";
             this.tab_TG_DineIn.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_DineIn.Size = new System.Drawing.Size(592, 436);
+            this.tab_TG_DineIn.Size = new System.Drawing.Size(592, 442);
             this.tab_TG_DineIn.TabIndex = 0;
             this.tab_TG_DineIn.Text = "Dine In";
             this.tab_TG_DineIn.UseVisualStyleBackColor = true;
@@ -299,7 +299,7 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(125, 95);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(232, 25);
+            this.label19.Size = new System.Drawing.Size(188, 20);
             this.label19.TabIndex = 2;
             this.label19.Text = "Please Enter Your Name:";
             // 
@@ -334,10 +334,10 @@
             this.tab_TG_CarryOut.Controls.Add(this.label21);
             this.tab_TG_CarryOut.Controls.Add(this.txt_TG_NameCarryOut);
             this.tab_TG_CarryOut.Controls.Add(this.btn_TG_NextCarryOut);
-            this.tab_TG_CarryOut.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_CarryOut.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_CarryOut.Name = "tab_TG_CarryOut";
             this.tab_TG_CarryOut.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 436);
+            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 439);
             this.tab_TG_CarryOut.TabIndex = 1;
             this.tab_TG_CarryOut.Text = "Carry Out";
             this.tab_TG_CarryOut.UseVisualStyleBackColor = true;
@@ -358,7 +358,7 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(125, 177);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(265, 25);
+            this.label20.Size = new System.Drawing.Size(214, 20);
             this.label20.TabIndex = 5;
             this.label20.Text = "Please Enter Phone Number:";
             // 
@@ -368,7 +368,7 @@
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(125, 95);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(232, 25);
+            this.label21.Size = new System.Drawing.Size(188, 20);
             this.label21.TabIndex = 4;
             this.label21.Text = "Please Enter Your Name:";
             // 
@@ -403,10 +403,10 @@
             this.tab_TG_ReturnCust.Controls.Add(this.label22);
             this.tab_TG_ReturnCust.Controls.Add(this.label23);
             this.tab_TG_ReturnCust.Controls.Add(this.txt_TG_Email);
-            this.tab_TG_ReturnCust.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_ReturnCust.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_ReturnCust.Name = "tab_TG_ReturnCust";
             this.tab_TG_ReturnCust.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_ReturnCust.Size = new System.Drawing.Size(592, 436);
+            this.tab_TG_ReturnCust.Size = new System.Drawing.Size(592, 439);
             this.tab_TG_ReturnCust.TabIndex = 2;
             this.tab_TG_ReturnCust.Text = "Return Cust";
             this.tab_TG_ReturnCust.UseVisualStyleBackColor = true;
@@ -442,7 +442,7 @@
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(125, 177);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(266, 25);
+            this.label22.Size = new System.Drawing.Size(215, 20);
             this.label22.TabIndex = 9;
             this.label22.Text = "Please Enter Your Password:";
             // 
@@ -452,7 +452,7 @@
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(125, 95);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(228, 25);
+            this.label23.Size = new System.Drawing.Size(185, 20);
             this.label23.TabIndex = 8;
             this.label23.Text = "Please Enter Your Email:";
             // 
@@ -507,10 +507,10 @@
             this.tabPageSizeCrust.Controls.Add(this.lblSizeCrust);
             this.tabPageSizeCrust.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageSizeCrust.ForeColor = System.Drawing.Color.White;
-            this.tabPageSizeCrust.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSizeCrust.Location = new System.Drawing.Point(4, 22);
             this.tabPageSizeCrust.Name = "tabPageSizeCrust";
             this.tabPageSizeCrust.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSizeCrust.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageSizeCrust.Size = new System.Drawing.Size(1192, 474);
             this.tabPageSizeCrust.TabIndex = 1;
             this.tabPageSizeCrust.Text = "Size Crust";
             // 
@@ -684,7 +684,7 @@
             this.lblSizeCrust.AutoSize = true;
             this.lblSizeCrust.Location = new System.Drawing.Point(1097, 16);
             this.lblSizeCrust.Name = "lblSizeCrust";
-            this.lblSizeCrust.Size = new System.Drawing.Size(139, 37);
+            this.lblSizeCrust.Size = new System.Drawing.Size(110, 30);
             this.lblSizeCrust.TabIndex = 0;
             this.lblSizeCrust.Text = "Size & Crust";
             // 
@@ -703,9 +703,9 @@
             this.tabPageSpecialtyPizzas.Controls.Add(this.pnl_RS_supreme);
             this.tabPageSpecialtyPizzas.Controls.Add(this.pnl_RS_bbq);
             this.tabPageSpecialtyPizzas.Controls.Add(this.grp_RS_SpecialtyZas);
-            this.tabPageSpecialtyPizzas.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSpecialtyPizzas.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpecialtyPizzas.Name = "tabPageSpecialtyPizzas";
-            this.tabPageSpecialtyPizzas.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageSpecialtyPizzas.Size = new System.Drawing.Size(1192, 474);
             this.tabPageSpecialtyPizzas.TabIndex = 2;
             this.tabPageSpecialtyPizzas.Text = "Speicalty Pizzas";
             // 
@@ -786,7 +786,7 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(72, 21);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(415, 74);
+            this.label18.Size = new System.Drawing.Size(320, 60);
             this.label18.TabIndex = 72;
             this.label18.Text = "Select one of our Specialty Zas \r\non the left for more details!";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -829,7 +829,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(8, 4);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(229, 37);
+            this.label10.Size = new System.Drawing.Size(177, 30);
             this.label10.TabIndex = 72;
             this.label10.Text = "Mounds of Meat";
             // 
@@ -839,7 +839,7 @@
             this.label11.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(9, 34);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(556, 50);
+            this.label11.Size = new System.Drawing.Size(435, 40);
             this.label11.TabIndex = 4;
             this.label11.Text = "Classic marinara sauce, pepperoni, Italian sausage, slow-roasted \r\nham, hardwood " +
     "smoked bacon, seasoned pork and beef.\r\n";
@@ -882,7 +882,7 @@
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(8, 4);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(257, 37);
+            this.label16.Size = new System.Drawing.Size(195, 30);
             this.label16.TabIndex = 72;
             this.label16.Text = "Grand Traverse Za!";
             // 
@@ -892,7 +892,7 @@
             this.label17.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(9, 34);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(532, 75);
+            this.label17.Size = new System.Drawing.Size(417, 60);
             this.label17.TabIndex = 4;
             this.label17.Text = "What is sure to be a Traverse City classic.  Creamy sauce, fetta \r\nand blue chees" +
     "e crumbles, spinich, and of course, dried \r\nTraverse City cherries.  Topped with" +
@@ -936,7 +936,7 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(8, 4);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(227, 37);
+            this.label14.Size = new System.Drawing.Size(171, 30);
             this.label14.TabIndex = 72;
             this.label14.Text = "Ultimate Cheese";
             // 
@@ -946,7 +946,7 @@
             this.label15.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(9, 34);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(575, 75);
+            this.label15.Size = new System.Drawing.Size(451, 60);
             this.label15.TabIndex = 4;
             this.label15.Text = "Creamy garlic Parmesan sauce topped with 50% more cheese than \r\nour standard reci" +
     "pes—flavored up with toasted Parmesan on the \r\ncrust edge.\r\n";
@@ -989,7 +989,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(8, 4);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(290, 37);
+            this.label12.Size = new System.Drawing.Size(222, 30);
             this.label12.TabIndex = 72;
             this.label12.Text = "Piled High Pepperoni";
             // 
@@ -999,7 +999,7 @@
             this.label13.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(9, 34);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(577, 25);
+            this.label13.Size = new System.Drawing.Size(451, 20);
             this.label13.TabIndex = 4;
             this.label13.Text = "Classic marinara sauce piled high with cheese and extra pepperoni.\r\n";
             // 
@@ -1041,7 +1041,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(8, 4);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(183, 37);
+            this.label8.Size = new System.Drawing.Size(140, 30);
             this.label8.TabIndex = 72;
             this.label8.Text = "Veggie Patch";
             // 
@@ -1051,7 +1051,7 @@
             this.label9.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(9, 34);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(560, 50);
+            this.label9.Size = new System.Drawing.Size(433, 40);
             this.label9.TabIndex = 4;
             this.label9.Text = "Classic marinara sauce, fresh mushrooms, fresh red onions, fresh \r\ngreen bell pep" +
     "pers, Roma tomatoes and black olives.\r\n";
@@ -1094,7 +1094,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(8, 4);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 37);
+            this.label6.Size = new System.Drawing.Size(163, 30);
             this.label6.TabIndex = 72;
             this.label6.Text = "Super Supreme";
             // 
@@ -1104,7 +1104,7 @@
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(9, 34);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(532, 50);
+            this.label7.Size = new System.Drawing.Size(416, 40);
             this.label7.TabIndex = 4;
             this.label7.Text = "Classic marinara sauce, pepperoni, seasoned pork, beef, fresh \r\nmushrooms, fresh " +
     "green bell peppers and fresh red onions.\r\n";
@@ -1147,7 +1147,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(8, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(196, 37);
+            this.label5.Size = new System.Drawing.Size(150, 30);
             this.label5.TabIndex = 72;
             this.label5.Text = "Backyard BBQ";
             // 
@@ -1157,7 +1157,7 @@
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(9, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(570, 75);
+            this.label4.Size = new System.Drawing.Size(449, 60);
             this.label4.TabIndex = 4;
             this.label4.Text = "Barbeque sauce, hardwood smoked bacon, slow-roasted ham and \r\nseasoned pork—flavo" +
     "red up with toasted cheddar on the crust \r\nedge and a barbeque sauce drizzle.\r\n";
@@ -1351,11 +1351,31 @@
             this.tabPageCheckOut.Controls.Add(this.lbl_JV_PayForYourOrder);
             this.tabPageCheckOut.Controls.Add(this.lbl_JV_CurrentPizzaOrder);
             this.tabPageCheckOut.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.tabPageCheckOut.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCheckOut.Location = new System.Drawing.Point(4, 22);
             this.tabPageCheckOut.Name = "tabPageCheckOut";
-            this.tabPageCheckOut.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageCheckOut.Size = new System.Drawing.Size(1192, 474);
             this.tabPageCheckOut.TabIndex = 3;
             this.tabPageCheckOut.Text = "Check Out";
+            // 
+            // lbl_JV_CCCVVCode
+            // 
+            this.lbl_JV_CCCVVCode.AutoSize = true;
+            this.lbl_JV_CCCVVCode.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_JV_CCCVVCode.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_CCCVVCode.ForeColor = System.Drawing.Color.Black;
+            this.lbl_JV_CCCVVCode.Location = new System.Drawing.Point(1043, 292);
+            this.lbl_JV_CCCVVCode.Name = "lbl_JV_CCCVVCode";
+            this.lbl_JV_CCCVVCode.Size = new System.Drawing.Size(52, 30);
+            this.lbl_JV_CCCVVCode.TabIndex = 75;
+            this.lbl_JV_CCCVVCode.Text = "CVV";
+            // 
+            // textBox_JV_CCCVVCode
+            // 
+            this.textBox_JV_CCCVVCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_JV_CCCVVCode.Location = new System.Drawing.Point(1101, 295);
+            this.textBox_JV_CCCVVCode.Name = "textBox_JV_CCCVVCode";
+            this.textBox_JV_CCCVVCode.Size = new System.Drawing.Size(58, 26);
+            this.textBox_JV_CCCVVCode.TabIndex = 74;
             // 
             // btn_JV_CompleteMyOrder
             // 
@@ -1396,7 +1416,7 @@
             this.lbl_JV_OrderItemPrice.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_OrderItemPrice.Location = new System.Drawing.Point(427, 52);
             this.lbl_JV_OrderItemPrice.Name = "lbl_JV_OrderItemPrice";
-            this.lbl_JV_OrderItemPrice.Size = new System.Drawing.Size(81, 37);
+            this.lbl_JV_OrderItemPrice.Size = new System.Drawing.Size(61, 30);
             this.lbl_JV_OrderItemPrice.TabIndex = 72;
             this.lbl_JV_OrderItemPrice.Text = "Price";
             // 
@@ -1407,7 +1427,7 @@
             this.lbl_JV_OrderItemName.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_OrderItemName.Location = new System.Drawing.Point(187, 52);
             this.lbl_JV_OrderItemName.Name = "lbl_JV_OrderItemName";
-            this.lbl_JV_OrderItemName.Size = new System.Drawing.Size(77, 37);
+            this.lbl_JV_OrderItemName.Size = new System.Drawing.Size(58, 30);
             this.lbl_JV_OrderItemName.TabIndex = 71;
             this.lbl_JV_OrderItemName.Text = "Item";
             // 
@@ -1418,7 +1438,7 @@
             this.lbl_JV_OrderQuantity.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_OrderQuantity.Location = new System.Drawing.Point(21, 52);
             this.lbl_JV_OrderQuantity.Name = "lbl_JV_OrderQuantity";
-            this.lbl_JV_OrderQuantity.Size = new System.Drawing.Size(63, 37);
+            this.lbl_JV_OrderQuantity.Size = new System.Drawing.Size(48, 30);
             this.lbl_JV_OrderQuantity.TabIndex = 70;
             this.lbl_JV_OrderQuantity.Text = "Qty";
             // 
@@ -1427,7 +1447,7 @@
             this.textBox_JV_OrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_OrderTotal.Location = new System.Drawing.Point(405, 353);
             this.textBox_JV_OrderTotal.Name = "textBox_JV_OrderTotal";
-            this.textBox_JV_OrderTotal.Size = new System.Drawing.Size(117, 30);
+            this.textBox_JV_OrderTotal.Size = new System.Drawing.Size(117, 26);
             this.textBox_JV_OrderTotal.TabIndex = 69;
             this.textBox_JV_OrderTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1436,7 +1456,7 @@
             this.textBox_JV_OrderTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_OrderTax.Location = new System.Drawing.Point(405, 312);
             this.textBox_JV_OrderTax.Name = "textBox_JV_OrderTax";
-            this.textBox_JV_OrderTax.Size = new System.Drawing.Size(117, 30);
+            this.textBox_JV_OrderTax.Size = new System.Drawing.Size(117, 26);
             this.textBox_JV_OrderTax.TabIndex = 68;
             this.textBox_JV_OrderTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1445,7 +1465,7 @@
             this.textBox_JV_OrderSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_OrderSubtotal.Location = new System.Drawing.Point(405, 271);
             this.textBox_JV_OrderSubtotal.Name = "textBox_JV_OrderSubtotal";
-            this.textBox_JV_OrderSubtotal.Size = new System.Drawing.Size(117, 30);
+            this.textBox_JV_OrderSubtotal.Size = new System.Drawing.Size(117, 26);
             this.textBox_JV_OrderSubtotal.TabIndex = 67;
             this.textBox_JV_OrderSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1454,9 +1474,9 @@
             this.lbl_JV_OrderTotal.AutoSize = true;
             this.lbl_JV_OrderTotal.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_OrderTotal.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_OrderTotal.Location = new System.Drawing.Point(282, 346);
+            this.lbl_JV_OrderTotal.Location = new System.Drawing.Point(278, 348);
             this.lbl_JV_OrderTotal.Name = "lbl_JV_OrderTotal";
-            this.lbl_JV_OrderTotal.Size = new System.Drawing.Size(81, 37);
+            this.lbl_JV_OrderTotal.Size = new System.Drawing.Size(61, 30);
             this.lbl_JV_OrderTotal.TabIndex = 66;
             this.lbl_JV_OrderTotal.Text = "Total";
             // 
@@ -1465,9 +1485,9 @@
             this.lbl_JV_OrderTax.AutoSize = true;
             this.lbl_JV_OrderTax.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_OrderTax.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_OrderTax.Location = new System.Drawing.Point(282, 305);
+            this.lbl_JV_OrderTax.Location = new System.Drawing.Point(278, 307);
             this.lbl_JV_OrderTax.Name = "lbl_JV_OrderTax";
-            this.lbl_JV_OrderTax.Size = new System.Drawing.Size(60, 37);
+            this.lbl_JV_OrderTax.Size = new System.Drawing.Size(46, 30);
             this.lbl_JV_OrderTax.TabIndex = 65;
             this.lbl_JV_OrderTax.Text = "Tax";
             // 
@@ -1476,9 +1496,9 @@
             this.lbl_JV_OrderSubtotal.AutoSize = true;
             this.lbl_JV_OrderSubtotal.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_OrderSubtotal.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_OrderSubtotal.Location = new System.Drawing.Point(282, 264);
+            this.lbl_JV_OrderSubtotal.Location = new System.Drawing.Point(278, 266);
             this.lbl_JV_OrderSubtotal.Name = "lbl_JV_OrderSubtotal";
-            this.lbl_JV_OrderSubtotal.Size = new System.Drawing.Size(127, 37);
+            this.lbl_JV_OrderSubtotal.Size = new System.Drawing.Size(97, 30);
             this.lbl_JV_OrderSubtotal.TabIndex = 64;
             this.lbl_JV_OrderSubtotal.Text = "Subtotal";
             // 
@@ -1486,30 +1506,30 @@
             // 
             this.listBox_JV_OrderItemPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_JV_OrderItemPrice.FormattingEnabled = true;
-            this.listBox_JV_OrderItemPrice.ItemHeight = 25;
+            this.listBox_JV_OrderItemPrice.ItemHeight = 20;
             this.listBox_JV_OrderItemPrice.Location = new System.Drawing.Point(405, 93);
             this.listBox_JV_OrderItemPrice.Name = "listBox_JV_OrderItemPrice";
-            this.listBox_JV_OrderItemPrice.Size = new System.Drawing.Size(117, 129);
+            this.listBox_JV_OrderItemPrice.Size = new System.Drawing.Size(117, 124);
             this.listBox_JV_OrderItemPrice.TabIndex = 63;
             // 
             // listBox_JV_OrderItemName
             // 
             this.listBox_JV_OrderItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_JV_OrderItemName.FormattingEnabled = true;
-            this.listBox_JV_OrderItemName.ItemHeight = 25;
+            this.listBox_JV_OrderItemName.ItemHeight = 20;
             this.listBox_JV_OrderItemName.Location = new System.Drawing.Point(74, 93);
             this.listBox_JV_OrderItemName.Name = "listBox_JV_OrderItemName";
-            this.listBox_JV_OrderItemName.Size = new System.Drawing.Size(325, 129);
+            this.listBox_JV_OrderItemName.Size = new System.Drawing.Size(325, 124);
             this.listBox_JV_OrderItemName.TabIndex = 62;
             // 
             // listBox_JV_OrderItemQuantity
             // 
             this.listBox_JV_OrderItemQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_JV_OrderItemQuantity.FormattingEnabled = true;
-            this.listBox_JV_OrderItemQuantity.ItemHeight = 25;
+            this.listBox_JV_OrderItemQuantity.ItemHeight = 20;
             this.listBox_JV_OrderItemQuantity.Location = new System.Drawing.Point(26, 92);
             this.listBox_JV_OrderItemQuantity.Name = "listBox_JV_OrderItemQuantity";
-            this.listBox_JV_OrderItemQuantity.Size = new System.Drawing.Size(42, 129);
+            this.listBox_JV_OrderItemQuantity.Size = new System.Drawing.Size(42, 124);
             this.listBox_JV_OrderItemQuantity.TabIndex = 61;
             // 
             // lbl_JV_CCExpYear
@@ -1518,9 +1538,9 @@
             this.lbl_JV_CCExpYear.BackColor = System.Drawing.Color.Transparent;
             this.lbl_JV_CCExpYear.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCExpYear.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCExpYear.Location = new System.Drawing.Point(961, 369);
+            this.lbl_JV_CCExpYear.Location = new System.Drawing.Point(966, 369);
             this.lbl_JV_CCExpYear.Name = "lbl_JV_CCExpYear";
-            this.lbl_JV_CCExpYear.Size = new System.Drawing.Size(67, 37);
+            this.lbl_JV_CCExpYear.Size = new System.Drawing.Size(52, 30);
             this.lbl_JV_CCExpYear.TabIndex = 60;
             this.lbl_JV_CCExpYear.Text = "Year";
             // 
@@ -1530,9 +1550,9 @@
             this.lbl_JV_CCExpMonth.BackColor = System.Drawing.Color.Transparent;
             this.lbl_JV_CCExpMonth.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCExpMonth.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCExpMonth.Location = new System.Drawing.Point(825, 369);
+            this.lbl_JV_CCExpMonth.Location = new System.Drawing.Point(827, 369);
             this.lbl_JV_CCExpMonth.Name = "lbl_JV_CCExpMonth";
-            this.lbl_JV_CCExpMonth.Size = new System.Drawing.Size(96, 37);
+            this.lbl_JV_CCExpMonth.Size = new System.Drawing.Size(75, 30);
             this.lbl_JV_CCExpMonth.TabIndex = 58;
             this.lbl_JV_CCExpMonth.Text = "Month";
             // 
@@ -1561,7 +1581,7 @@
             "2030"});
             this.comboBox_JV_CCExpYear.Location = new System.Drawing.Point(971, 336);
             this.comboBox_JV_CCExpYear.Name = "comboBox_JV_CCExpYear";
-            this.comboBox_JV_CCExpYear.Size = new System.Drawing.Size(80, 33);
+            this.comboBox_JV_CCExpYear.Size = new System.Drawing.Size(80, 28);
             this.comboBox_JV_CCExpYear.TabIndex = 57;
             // 
             // comboBox_JV_CCExpMonth
@@ -1585,7 +1605,7 @@
             "(12) Dec"});
             this.comboBox_JV_CCExpMonth.Location = new System.Drawing.Point(832, 336);
             this.comboBox_JV_CCExpMonth.Name = "comboBox_JV_CCExpMonth";
-            this.comboBox_JV_CCExpMonth.Size = new System.Drawing.Size(121, 33);
+            this.comboBox_JV_CCExpMonth.Size = new System.Drawing.Size(121, 28);
             this.comboBox_JV_CCExpMonth.TabIndex = 55;
             // 
             // textBox_JV_CCNumber
@@ -1593,7 +1613,7 @@
             this.textBox_JV_CCNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCNumber.Location = new System.Drawing.Point(832, 296);
             this.textBox_JV_CCNumber.Name = "textBox_JV_CCNumber";
-            this.textBox_JV_CCNumber.Size = new System.Drawing.Size(205, 30);
+            this.textBox_JV_CCNumber.Size = new System.Drawing.Size(205, 26);
             this.textBox_JV_CCNumber.TabIndex = 54;
             // 
             // textBox_JV_CCZip
@@ -1601,7 +1621,7 @@
             this.textBox_JV_CCZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCZip.Location = new System.Drawing.Point(1081, 219);
             this.textBox_JV_CCZip.Name = "textBox_JV_CCZip";
-            this.textBox_JV_CCZip.Size = new System.Drawing.Size(86, 30);
+            this.textBox_JV_CCZip.Size = new System.Drawing.Size(86, 26);
             this.textBox_JV_CCZip.TabIndex = 53;
             this.textBox_JV_CCZip.Leave += new System.EventHandler(this.textBox_JV_CCZipValidation_Leave);
             // 
@@ -1610,7 +1630,7 @@
             this.textBox_JV_CCState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCState.Location = new System.Drawing.Point(832, 219);
             this.textBox_JV_CCState.Name = "textBox_JV_CCState";
-            this.textBox_JV_CCState.Size = new System.Drawing.Size(169, 30);
+            this.textBox_JV_CCState.Size = new System.Drawing.Size(169, 26);
             this.textBox_JV_CCState.TabIndex = 52;
             // 
             // textBox_JV_CCCity
@@ -1618,7 +1638,7 @@
             this.textBox_JV_CCCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCCity.Location = new System.Drawing.Point(832, 179);
             this.textBox_JV_CCCity.Name = "textBox_JV_CCCity";
-            this.textBox_JV_CCCity.Size = new System.Drawing.Size(335, 30);
+            this.textBox_JV_CCCity.Size = new System.Drawing.Size(335, 26);
             this.textBox_JV_CCCity.TabIndex = 51;
             // 
             // textBox_JV_CCAddress
@@ -1626,7 +1646,7 @@
             this.textBox_JV_CCAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCAddress.Location = new System.Drawing.Point(832, 140);
             this.textBox_JV_CCAddress.Name = "textBox_JV_CCAddress";
-            this.textBox_JV_CCAddress.Size = new System.Drawing.Size(335, 30);
+            this.textBox_JV_CCAddress.Size = new System.Drawing.Size(335, 26);
             this.textBox_JV_CCAddress.TabIndex = 50;
             // 
             // textBox_JV_CCName
@@ -1634,7 +1654,7 @@
             this.textBox_JV_CCName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCName.Location = new System.Drawing.Point(832, 97);
             this.textBox_JV_CCName.Name = "textBox_JV_CCName";
-            this.textBox_JV_CCName.Size = new System.Drawing.Size(335, 30);
+            this.textBox_JV_CCName.Size = new System.Drawing.Size(335, 26);
             this.textBox_JV_CCName.TabIndex = 49;
             // 
             // lbl_JV_CCExpiration
@@ -1642,9 +1662,9 @@
             this.lbl_JV_CCExpiration.AutoSize = true;
             this.lbl_JV_CCExpiration.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCExpiration.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCExpiration.Location = new System.Drawing.Point(580, 321);
+            this.lbl_JV_CCExpiration.Location = new System.Drawing.Point(578, 336);
             this.lbl_JV_CCExpiration.Name = "lbl_JV_CCExpiration";
-            this.lbl_JV_CCExpiration.Size = new System.Drawing.Size(136, 37);
+            this.lbl_JV_CCExpiration.Size = new System.Drawing.Size(105, 30);
             this.lbl_JV_CCExpiration.TabIndex = 48;
             this.lbl_JV_CCExpiration.Text = "Expiration";
             // 
@@ -1653,9 +1673,9 @@
             this.lbl_JV_CCNumber.AutoSize = true;
             this.lbl_JV_CCNumber.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCNumber.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCNumber.Location = new System.Drawing.Point(580, 285);
+            this.lbl_JV_CCNumber.Location = new System.Drawing.Point(578, 290);
             this.lbl_JV_CCNumber.Name = "lbl_JV_CCNumber";
-            this.lbl_JV_CCNumber.Size = new System.Drawing.Size(256, 37);
+            this.lbl_JV_CCNumber.Size = new System.Drawing.Size(199, 30);
             this.lbl_JV_CCNumber.TabIndex = 47;
             this.lbl_JV_CCNumber.Text = "Credit Card Number";
             // 
@@ -1664,9 +1684,9 @@
             this.lbl_JV_CCInfo.AutoSize = true;
             this.lbl_JV_CCInfo.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCInfo.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCInfo.Location = new System.Drawing.Point(580, 252);
+            this.lbl_JV_CCInfo.Location = new System.Drawing.Point(578, 260);
             this.lbl_JV_CCInfo.Name = "lbl_JV_CCInfo";
-            this.lbl_JV_CCInfo.Size = new System.Drawing.Size(325, 37);
+            this.lbl_JV_CCInfo.Size = new System.Drawing.Size(248, 30);
             this.lbl_JV_CCInfo.TabIndex = 46;
             this.lbl_JV_CCInfo.Text = "Credit Card Information";
             // 
@@ -1675,9 +1695,9 @@
             this.lbl_JV_CCZip.AutoSize = true;
             this.lbl_JV_CCZip.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCZip.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCZip.Location = new System.Drawing.Point(1028, 214);
+            this.lbl_JV_CCZip.Location = new System.Drawing.Point(1021, 214);
             this.lbl_JV_CCZip.Name = "lbl_JV_CCZip";
-            this.lbl_JV_CCZip.Size = new System.Drawing.Size(55, 37);
+            this.lbl_JV_CCZip.Size = new System.Drawing.Size(42, 30);
             this.lbl_JV_CCZip.TabIndex = 45;
             this.lbl_JV_CCZip.Text = "Zip";
             // 
@@ -1686,9 +1706,9 @@
             this.lbl_JV_CCStateProvince.AutoSize = true;
             this.lbl_JV_CCStateProvince.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCStateProvince.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCStateProvince.Location = new System.Drawing.Point(581, 210);
+            this.lbl_JV_CCStateProvince.Location = new System.Drawing.Point(578, 214);
             this.lbl_JV_CCStateProvince.Name = "lbl_JV_CCStateProvince";
-            this.lbl_JV_CCStateProvince.Size = new System.Drawing.Size(188, 37);
+            this.lbl_JV_CCStateProvince.Size = new System.Drawing.Size(146, 30);
             this.lbl_JV_CCStateProvince.TabIndex = 44;
             this.lbl_JV_CCStateProvince.Text = "State/Province";
             // 
@@ -1697,9 +1717,9 @@
             this.lbl_JV_CCCity.AutoSize = true;
             this.lbl_JV_CCCity.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCCity.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCCity.Location = new System.Drawing.Point(580, 170);
+            this.lbl_JV_CCCity.Location = new System.Drawing.Point(578, 175);
             this.lbl_JV_CCCity.Name = "lbl_JV_CCCity";
-            this.lbl_JV_CCCity.Size = new System.Drawing.Size(63, 37);
+            this.lbl_JV_CCCity.Size = new System.Drawing.Size(48, 30);
             this.lbl_JV_CCCity.TabIndex = 43;
             this.lbl_JV_CCCity.Text = "City";
             // 
@@ -1708,9 +1728,9 @@
             this.lbl_JV_CCAddress.AutoSize = true;
             this.lbl_JV_CCAddress.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCAddress.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCAddress.Location = new System.Drawing.Point(580, 130);
+            this.lbl_JV_CCAddress.Location = new System.Drawing.Point(578, 135);
             this.lbl_JV_CCAddress.Name = "lbl_JV_CCAddress";
-            this.lbl_JV_CCAddress.Size = new System.Drawing.Size(111, 37);
+            this.lbl_JV_CCAddress.Size = new System.Drawing.Size(87, 30);
             this.lbl_JV_CCAddress.TabIndex = 42;
             this.lbl_JV_CCAddress.Text = "Address";
             // 
@@ -1720,9 +1740,9 @@
             this.lbl_JV_CCName.BackColor = System.Drawing.Color.Transparent;
             this.lbl_JV_CCName.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_CCName.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCName.Location = new System.Drawing.Point(580, 90);
+            this.lbl_JV_CCName.Location = new System.Drawing.Point(578, 92);
             this.lbl_JV_CCName.Name = "lbl_JV_CCName";
-            this.lbl_JV_CCName.Size = new System.Drawing.Size(189, 37);
+            this.lbl_JV_CCName.Size = new System.Drawing.Size(148, 30);
             this.lbl_JV_CCName.TabIndex = 41;
             this.lbl_JV_CCName.Text = "Name on Card";
             // 
@@ -1731,9 +1751,9 @@
             this.lbl_JV_BillingInfo.AutoSize = true;
             this.lbl_JV_BillingInfo.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BillingInfo.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_BillingInfo.Location = new System.Drawing.Point(580, 54);
+            this.lbl_JV_BillingInfo.Location = new System.Drawing.Point(578, 52);
             this.lbl_JV_BillingInfo.Name = "lbl_JV_BillingInfo";
-            this.lbl_JV_BillingInfo.Size = new System.Drawing.Size(261, 37);
+            this.lbl_JV_BillingInfo.Size = new System.Drawing.Size(201, 30);
             this.lbl_JV_BillingInfo.TabIndex = 40;
             this.lbl_JV_BillingInfo.Text = "Billing Information";
             // 
@@ -1744,7 +1764,7 @@
             this.lbl_JV_PayForYourOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.lbl_JV_PayForYourOrder.Location = new System.Drawing.Point(705, 7);
             this.lbl_JV_PayForYourOrder.Name = "lbl_JV_PayForYourOrder";
-            this.lbl_JV_PayForYourOrder.Size = new System.Drawing.Size(318, 46);
+            this.lbl_JV_PayForYourOrder.Size = new System.Drawing.Size(254, 37);
             this.lbl_JV_PayForYourOrder.TabIndex = 39;
             this.lbl_JV_PayForYourOrder.Text = "Pay for Your Order";
             // 
@@ -1755,7 +1775,7 @@
             this.lbl_JV_CurrentPizzaOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.lbl_JV_CurrentPizzaOrder.Location = new System.Drawing.Point(92, 7);
             this.lbl_JV_CurrentPizzaOrder.Name = "lbl_JV_CurrentPizzaOrder";
-            this.lbl_JV_CurrentPizzaOrder.Size = new System.Drawing.Size(334, 46);
+            this.lbl_JV_CurrentPizzaOrder.Size = new System.Drawing.Size(268, 37);
             this.lbl_JV_CurrentPizzaOrder.TabIndex = 38;
             this.lbl_JV_CurrentPizzaOrder.Text = "Current Pizza Order";
             // 
@@ -1772,9 +1792,9 @@
             this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingAddressConfirm);
             this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_BillingNameConfirm);
             this.tabPageCompleteOrder.Controls.Add(this.lbl_JV_ConfirmBillingInformation);
-            this.tabPageCompleteOrder.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCompleteOrder.Location = new System.Drawing.Point(4, 22);
             this.tabPageCompleteOrder.Name = "tabPageCompleteOrder";
-            this.tabPageCompleteOrder.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageCompleteOrder.Size = new System.Drawing.Size(1192, 474);
             this.tabPageCompleteOrder.TabIndex = 5;
             this.tabPageCompleteOrder.Text = "Complete Order";
             this.tabPageCompleteOrder.Enter += new System.EventHandler(this.tabPageCompleteOrder_Enter);
@@ -1786,7 +1806,7 @@
             this.label25.ForeColor = System.Drawing.Color.Black;
             this.label25.Location = new System.Drawing.Point(603, 262);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(436, 37);
+            this.label25.Size = new System.Drawing.Size(334, 30);
             this.label25.TabIndex = 68;
             this.label25.Text = "Confirm Credit Card Information";
             // 
@@ -1797,7 +1817,7 @@
             this.lbl_JV_BillingEmailConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingEmailConfirm.Location = new System.Drawing.Point(631, 217);
             this.lbl_JV_BillingEmailConfirm.Name = "lbl_JV_BillingEmailConfirm";
-            this.lbl_JV_BillingEmailConfirm.Size = new System.Drawing.Size(82, 37);
+            this.lbl_JV_BillingEmailConfirm.Size = new System.Drawing.Size(63, 30);
             this.lbl_JV_BillingEmailConfirm.TabIndex = 67;
             this.lbl_JV_BillingEmailConfirm.Text = "Email";
             // 
@@ -1808,7 +1828,7 @@
             this.lbl_JV_CCExpConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCExpConfirm.Location = new System.Drawing.Point(893, 299);
             this.lbl_JV_CCExpConfirm.Name = "lbl_JV_CCExpConfirm";
-            this.lbl_JV_CCExpConfirm.Size = new System.Drawing.Size(136, 37);
+            this.lbl_JV_CCExpConfirm.Size = new System.Drawing.Size(105, 30);
             this.lbl_JV_CCExpConfirm.TabIndex = 66;
             this.lbl_JV_CCExpConfirm.Text = "Expiration";
             // 
@@ -1819,7 +1839,7 @@
             this.lbl_JV_CCNumberShort.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCNumberShort.Location = new System.Drawing.Point(631, 296);
             this.lbl_JV_CCNumberShort.Name = "lbl_JV_CCNumberShort";
-            this.lbl_JV_CCNumberShort.Size = new System.Drawing.Size(256, 37);
+            this.lbl_JV_CCNumberShort.Size = new System.Drawing.Size(199, 30);
             this.lbl_JV_CCNumberShort.TabIndex = 65;
             this.lbl_JV_CCNumberShort.Text = "Credit Card Number";
             // 
@@ -1830,7 +1850,7 @@
             this.lbl_JV_BillingZipConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingZipConfirm.Location = new System.Drawing.Point(1058, 184);
             this.lbl_JV_BillingZipConfirm.Name = "lbl_JV_BillingZipConfirm";
-            this.lbl_JV_BillingZipConfirm.Size = new System.Drawing.Size(55, 37);
+            this.lbl_JV_BillingZipConfirm.Size = new System.Drawing.Size(42, 30);
             this.lbl_JV_BillingZipConfirm.TabIndex = 63;
             this.lbl_JV_BillingZipConfirm.Text = "Zip";
             // 
@@ -1841,7 +1861,7 @@
             this.lbl_JV_BillingStateProvinceConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingStateProvinceConfirm.Location = new System.Drawing.Point(632, 180);
             this.lbl_JV_BillingStateProvinceConfirm.Name = "lbl_JV_BillingStateProvinceConfirm";
-            this.lbl_JV_BillingStateProvinceConfirm.Size = new System.Drawing.Size(188, 37);
+            this.lbl_JV_BillingStateProvinceConfirm.Size = new System.Drawing.Size(146, 30);
             this.lbl_JV_BillingStateProvinceConfirm.TabIndex = 62;
             this.lbl_JV_BillingStateProvinceConfirm.Text = "State/Province";
             // 
@@ -1852,7 +1872,7 @@
             this.lbl_JV_BillingCityConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingCityConfirm.Location = new System.Drawing.Point(631, 140);
             this.lbl_JV_BillingCityConfirm.Name = "lbl_JV_BillingCityConfirm";
-            this.lbl_JV_BillingCityConfirm.Size = new System.Drawing.Size(63, 37);
+            this.lbl_JV_BillingCityConfirm.Size = new System.Drawing.Size(48, 30);
             this.lbl_JV_BillingCityConfirm.TabIndex = 61;
             this.lbl_JV_BillingCityConfirm.Text = "City";
             // 
@@ -1863,7 +1883,7 @@
             this.lbl_JV_BillingAddressConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingAddressConfirm.Location = new System.Drawing.Point(631, 100);
             this.lbl_JV_BillingAddressConfirm.Name = "lbl_JV_BillingAddressConfirm";
-            this.lbl_JV_BillingAddressConfirm.Size = new System.Drawing.Size(111, 37);
+            this.lbl_JV_BillingAddressConfirm.Size = new System.Drawing.Size(87, 30);
             this.lbl_JV_BillingAddressConfirm.TabIndex = 60;
             this.lbl_JV_BillingAddressConfirm.Text = "Address";
             // 
@@ -1875,7 +1895,7 @@
             this.lbl_JV_BillingNameConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingNameConfirm.Location = new System.Drawing.Point(631, 60);
             this.lbl_JV_BillingNameConfirm.Name = "lbl_JV_BillingNameConfirm";
-            this.lbl_JV_BillingNameConfirm.Size = new System.Drawing.Size(189, 37);
+            this.lbl_JV_BillingNameConfirm.Size = new System.Drawing.Size(148, 30);
             this.lbl_JV_BillingNameConfirm.TabIndex = 59;
             this.lbl_JV_BillingNameConfirm.Text = "Name on Card";
             // 
@@ -1886,16 +1906,16 @@
             this.lbl_JV_ConfirmBillingInformation.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_ConfirmBillingInformation.Location = new System.Drawing.Point(603, 24);
             this.lbl_JV_ConfirmBillingInformation.Name = "lbl_JV_ConfirmBillingInformation";
-            this.lbl_JV_ConfirmBillingInformation.Size = new System.Drawing.Size(372, 37);
+            this.lbl_JV_ConfirmBillingInformation.Size = new System.Drawing.Size(287, 30);
             this.lbl_JV_ConfirmBillingInformation.TabIndex = 58;
             this.lbl_JV_ConfirmBillingInformation.Text = "Confirm Billing Information";
             // 
             // tabPageThankYou
             // 
             this.tabPageThankYou.BackColor = System.Drawing.Color.White;
-            this.tabPageThankYou.Location = new System.Drawing.Point(4, 25);
+            this.tabPageThankYou.Location = new System.Drawing.Point(4, 22);
             this.tabPageThankYou.Name = "tabPageThankYou";
-            this.tabPageThankYou.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageThankYou.Size = new System.Drawing.Size(1192, 474);
             this.tabPageThankYou.TabIndex = 6;
             this.tabPageThankYou.Text = "Thank You";
             // 
@@ -1907,10 +1927,10 @@
             this.tabPageControlsTemplate.Controls.Add(this.btn_Sample);
             this.tabPageControlsTemplate.Controls.Add(this.label1);
             this.tabPageControlsTemplate.Controls.Add(this.lblControlsTemplate);
-            this.tabPageControlsTemplate.Location = new System.Drawing.Point(4, 25);
+            this.tabPageControlsTemplate.Location = new System.Drawing.Point(4, 22);
             this.tabPageControlsTemplate.Name = "tabPageControlsTemplate";
             this.tabPageControlsTemplate.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.tabPageControlsTemplate.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageControlsTemplate.Size = new System.Drawing.Size(1192, 474);
             this.tabPageControlsTemplate.TabIndex = 4;
             this.tabPageControlsTemplate.Text = "Controls Template";
             // 
@@ -1920,7 +1940,7 @@
             this.label3.Font = new System.Drawing.Font("Verdana", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(174, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(358, 57);
+            this.label3.Size = new System.Drawing.Size(284, 45);
             this.label3.TabIndex = 4;
             this.label3.Text = "HeadingFont";
             // 
@@ -1930,7 +1950,7 @@
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(177, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 37);
+            this.label2.Size = new System.Drawing.Size(162, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "GeneralTextFont";
             // 
@@ -1956,7 +1976,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.label1.Location = new System.Drawing.Point(175, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 46);
+            this.label1.Size = new System.Drawing.Size(232, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "SubHeadingFont";
             // 
@@ -1965,7 +1985,7 @@
             this.lblControlsTemplate.AutoSize = true;
             this.lblControlsTemplate.Location = new System.Drawing.Point(1050, 20);
             this.lblControlsTemplate.Name = "lblControlsTemplate";
-            this.lblControlsTemplate.Size = new System.Drawing.Size(123, 17);
+            this.lblControlsTemplate.Size = new System.Drawing.Size(92, 13);
             this.lblControlsTemplate.TabIndex = 0;
             this.lblControlsTemplate.Text = "Controls Template";
             // 
@@ -2066,7 +2086,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(44, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1222, 143);
+            this.panel1.Size = new System.Drawing.Size(1196, 143);
             this.panel1.TabIndex = 16;
             // 
             // label24
@@ -2074,9 +2094,9 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Verdana", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.label24.Location = new System.Drawing.Point(124, 0);
+            this.label24.Location = new System.Drawing.Point(128, 6);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(1170, 145);
+            this.label24.Size = new System.Drawing.Size(935, 116);
             this.label24.TabIndex = 0;
             this.label24.Text = "Bazinga Pizzeria";
             // 
@@ -2090,26 +2110,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
-            // 
-            // textBox_JV_CCCVVCode
-            // 
-            this.textBox_JV_CCCVVCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_JV_CCCVVCode.Location = new System.Drawing.Point(1109, 292);
-            this.textBox_JV_CCCVVCode.Name = "textBox_JV_CCCVVCode";
-            this.textBox_JV_CCCVVCode.Size = new System.Drawing.Size(58, 30);
-            this.textBox_JV_CCCVVCode.TabIndex = 74;
-            // 
-            // lbl_JV_CCCVVCode
-            // 
-            this.lbl_JV_CCCVVCode.AutoSize = true;
-            this.lbl_JV_CCCVVCode.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_JV_CCCVVCode.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_JV_CCCVVCode.ForeColor = System.Drawing.Color.Black;
-            this.lbl_JV_CCCVVCode.Location = new System.Drawing.Point(1036, 289);
-            this.lbl_JV_CCCVVCode.Name = "lbl_JV_CCCVVCode";
-            this.lbl_JV_CCCVVCode.Size = new System.Drawing.Size(68, 37);
-            this.lbl_JV_CCCVVCode.TabIndex = 75;
-            this.lbl_JV_CCCVVCode.Text = "CVV";
             // 
             // FormMain
             // 

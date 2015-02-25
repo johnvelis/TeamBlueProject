@@ -56,18 +56,16 @@ namespace BazingaPizzaria
         public FormMain()
         {
             InitializeComponent();
-
             //
             // comment/uncomment the line below to show/hide the tabs on the main form
             //
             this.tabControlOrderSequence.ItemSize = new Size(0, 1);
             this.tabControlOrderSequence.SizeMode = TabSizeMode.Fixed;
             this.tabControlOrderSequence.Appearance = TabAppearance.FlatButtons;
-
+            //
             this.tabControl2.ItemSize = new Size(0, 1);
             this.tabControl2.SizeMode = TabSizeMode.Fixed;
             this.tabControl2.Appearance = TabAppearance.FlatButtons;
-
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -676,7 +674,8 @@ namespace BazingaPizzaria
             Match match = Regex.Match(textBox_JV_CCZip.Text, validationZipCodeRegEx);
             if (!match.Success)
             {
-                MessageBox.Show("Please enter a 5 digit zip code.");
+                frmErrorMess.LabelText = "Please enter a 5 digit zip code.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCZip.Focus();
             }
         }
@@ -690,55 +689,64 @@ namespace BazingaPizzaria
 
             if (textBox_JV_CCName.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the name on the credit card");
+                frmErrorMess.LabelText = "Please enter the name on credit card.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCName.BackColor = colFormValidationError;
                 textBox_JV_CCName.Focus();
             }
             else if (textBox_JV_CCAddress.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing address for the credit card");
+                frmErrorMess.LabelText = "Please enter the billing address.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCAddress.BackColor = colFormValidationError;
                 textBox_JV_CCAddress.Focus();
             }
             else if (textBox_JV_CCCity.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing city for the credit card");
+                frmErrorMess.LabelText = "Please enter the billing city.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCCity.BackColor = colFormValidationError;
                 textBox_JV_CCCity.Focus();
             }
             else if (textBox_JV_CCState.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing state for the credit card");
+                frmErrorMess.LabelText = "Please enter the billing state.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCState.BackColor = colFormValidationError;
                 textBox_JV_CCState.Focus();
             }
             else if (textBox_JV_CCZip.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing zip code for the credit card");
+                frmErrorMess.LabelText = "Please enter the zip code.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCZip.BackColor = colFormValidationError;
                 textBox_JV_CCZip.Focus();
             }
             else if (textBox_JV_CCNumber.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the credit card number.");
+                frmErrorMess.LabelText = "Please enter the credit card number.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCNumber.BackColor = colFormValidationError;
                 textBox_JV_CCNumber.Focus();
             }
             else if (textBox_JV_CCCVVCode.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the credit card CVV code.");
+                frmErrorMess.LabelText = "Please enter the CVV code.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCCVVCode.BackColor = colFormValidationError;
                 textBox_JV_CCCVVCode.Focus();
             }
             else if (comboBox_JV_CCExpMonth.SelectedItem == null)
             {
-                MessageBox.Show("Please enter the credit card expiration month.");
+                frmErrorMess.LabelText = "Please enter the expiration month.";
+                frmErrorMess.ShowDialog();
                 comboBox_JV_CCExpMonth.Focus();
                 lbl_JV_CCExpMonth.ForeColor = colFormValidationErrorLabel;
             }
             else if (comboBox_JV_CCExpYear.SelectedItem == null)
             {
-                MessageBox.Show("Please enter the credit card expiration month.");
+                frmErrorMess.LabelText = "Please enter the expiration year.";
+                frmErrorMess.ShowDialog();
                 comboBox_JV_CCExpYear.Focus();
                 lbl_JV_CCExpYear.ForeColor = colFormValidationErrorLabel;
             }
@@ -859,7 +867,8 @@ namespace BazingaPizzaria
         private void btn_RS_addToOrder_Click(object sender, EventArgs e)
         {
             //code to add the pizza to the order
-            MessageBox.Show("You have added a Za to your order!");
+            frmErrorMess.LabelText = "You have added a Za to your order!";
+            frmErrorMess.ShowDialog();
         }
 
         #endregion
