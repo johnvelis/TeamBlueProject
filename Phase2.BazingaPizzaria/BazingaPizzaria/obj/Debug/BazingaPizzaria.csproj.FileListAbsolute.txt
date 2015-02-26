@@ -33,3 +33,4 @@ C:\Users\wolve_000\Documents\GitHub\TeamBlueProject\Phase2.BazingaPizzaria\Bazin
 C:\Users\wolve_000\Documents\GitHub\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormConfirmCancel.resources
 C:\Users\wolve_000\Documents\GitHub\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.Properties.Resources.resources
 C:\Users\wolve_000\Documents\GitHub\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csproj.GenerateResource.Cache
+C:\Users\wolve_000\Documents\GitHub\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormErrorMessage.resources

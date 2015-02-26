@@ -30,6 +30,7 @@ namespace BazingaPizzaria
         // generate an instance of a customer class and populate with data to test forms
         //
         Customer currentCustomer = GenerateTestData.GenerateTestCustomerData();
+        FormErrorMessage frmErrorMess = new FormErrorMessage();
 
         //
         // Team Blue's custom colors
@@ -60,6 +61,10 @@ namespace BazingaPizzaria
             this.tabControlOrderSequence.SizeMode = TabSizeMode.Fixed;
             this.tabControlOrderSequence.Appearance = TabAppearance.FlatButtons;
 
+            // this hides the tabs for the Start menu
+            this.tabControl2.ItemSize = new Size(0, 1);
+            this.tabControl2.SizeMode = TabSizeMode.Fixed;
+            this.tabControl2.Appearance = TabAppearance.FlatButtons;
         }
 
 
@@ -412,47 +417,49 @@ namespace BazingaPizzaria
         //
         #region tabStart Code (Täman)
 
+        #region Dine In, Carry Out, Return
+
         private void btn_TG_DineIn_Click(object sender, EventArgs e)
         {
+            ClearFields();
             tabControl2.SelectTab(tab_TG_DineIn);
             txt_TG_NameDineIn.BackColor = colFormBackColor;
             txt_TG_NameDineIn.Focus();
-            txt_TG_NameCarryOut.Clear();
-            txt_TG_PhoneNum.Clear();
-            txt_TG_Email.Clear();
-            txt_TG_Password.Clear();
             TG_standardButtonSelector(btn_TG_DineIn);
         }
 
         private void btn_TG_CarryOut_Click(object sender, EventArgs e)
         {
+            ClearFields();
             tabControl2.SelectTab(tab_TG_CarryOut);
             txt_TG_NameCarryOut.BackColor = colFormBackColor;
             txt_TG_PhoneNum.BackColor = colFormBackColor;
             txt_TG_NameCarryOut.Focus();
-            txt_TG_NameDineIn.Clear();
-            txt_TG_Email.Clear();
-            txt_TG_Password.Clear();
             TG_standardButtonSelector(btn_TG_CarryOut);
         }
 
         private void btn_TG_ReturnCust_Click(object sender, EventArgs e)
         {
+            ClearFields();
+
             tabControl2.SelectTab(tab_TG_ReturnCust);
             txt_TG_Email.BackColor = colFormBackColor;
             txt_TG_Password.BackColor = colFormBackColor;
             txt_TG_Email.Focus();
-            txt_TG_NameDineIn.Clear();
-            txt_TG_NameCarryOut.Clear();
-            txt_TG_PhoneNum.Clear();
             TG_standardButtonSelector(btn_TG_ReturnCust);
         }
 
+        #endregion
+
+        #region Next Buttons
+
         private void btn_TG_NextDineIn_Click(object sender, EventArgs e)
         {
-            if (txt_TG_NameDineIn.Text.Length <= 0)
+            if (txt_TG_NameDineIn.Text == String.Empty)
             {
-                MessageBox.Show("Please enter your name!");
+                frmErrorMess.LabelText = "Please enter your Name!";
+                frmErrorMess.ShowDialog();
+
                 txt_TG_NameDineIn.BackColor = colFormValidationError;
                 txt_TG_NameDineIn.Focus();
             }
@@ -462,6 +469,7 @@ namespace BazingaPizzaria
                 btnSize.ForeColor = colRed;
                 btnSpecialty.ForeColor = Color.Black;
                 btnCheckOut.ForeColor = Color.Black;
+
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
         }
@@ -470,15 +478,19 @@ namespace BazingaPizzaria
         {
             // Regex phoneNum = new Regex(@"^(\d{3})[ -]?(\d{3})[ -]?(\d{4}) x(\d*)");
 
-            if (txt_TG_NameCarryOut.Text.Length <= 0)
+            if (txt_TG_NameCarryOut.Text == String.Empty)
             {
-                MessageBox.Show("Please fill the required _userName!");
+                frmErrorMess.LabelText = "Please enter your Name!";
+                frmErrorMess.ShowDialog();
+
                 txt_TG_NameCarryOut.BackColor = colFormValidationError;
                 txt_TG_NameCarryOut.Focus();
             }
-            else if (txt_TG_PhoneNum.Text.Length <= 0)
+            else if (txt_TG_PhoneNum.Text == String.Empty)
             {
-                MessageBox.Show("Please enter your Phone number!");
+                frmErrorMess.LabelText = "Please enter your phone number!";
+                frmErrorMess.ShowDialog();
+
                 txt_TG_PhoneNum.BackColor = colFormValidationError;
                 txt_TG_PhoneNum.Focus();
             }
@@ -488,6 +500,7 @@ namespace BazingaPizzaria
                 btnSize.ForeColor = colRed;
                 btnSpecialty.ForeColor = Color.Black;
                 btnCheckOut.ForeColor = Color.Black;
+
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
 
@@ -497,15 +510,19 @@ namespace BazingaPizzaria
         {
             Regex emailRegex = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
 
-            if (!emailRegex.IsMatch(txt_TG_Email.Text) || (txt_TG_Email.Text.Length <= 0))
+            if (!emailRegex.IsMatch(txt_TG_Email.Text) || (txt_TG_Email.Text == String.Empty))
             {
-                MessageBox.Show("Please enter a valid Email!");
+                frmErrorMess.LabelText = "Please enter a valid Email address!";
+                frmErrorMess.ShowDialog();
+
                 txt_TG_Email.BackColor = colFormValidationError;
                 txt_TG_Email.Focus();
             }
-            else if (txt_TG_Password.Text.Length <= 0)
+            else if (txt_TG_Password.Text == String.Empty)
             {
-                MessageBox.Show("Please enter your password!");
+                frmErrorMess.LabelText = "Please enter your password!";
+                frmErrorMess.ShowDialog();
+
                 txt_TG_Password.BackColor = colFormValidationError;
                 txt_TG_Password.Focus();
             }
@@ -515,10 +532,14 @@ namespace BazingaPizzaria
                 btnSize.ForeColor = colRed;
                 btnSpecialty.ForeColor = Color.Black;
                 btnCheckOut.ForeColor = Color.Black;
+
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
         }
 
+        #endregion
+
+        #region TG standardButtons
         private void TG_standardButtonSelector(Button button)
         {
             //reset all buttons in group to standard color
@@ -529,6 +550,23 @@ namespace BazingaPizzaria
             //set the selected button back color to show it is selected
             button.BackColor = colDarkBlue;
         }
+
+        #endregion
+
+        #region Methods
+        //
+        // This method clears all fields on StartTab
+        //
+        public void ClearFields()
+        {
+            txt_TG_NameDineIn.Clear();
+            txt_TG_NameCarryOut.Clear();
+            txt_TG_PhoneNum.Clear();
+            txt_TG_Email.Clear();
+            txt_TG_Password.Clear();
+        }
+
+        #endregion
 
         #endregion
 
@@ -656,7 +694,8 @@ namespace BazingaPizzaria
             Match match = Regex.Match(textBox_JV_CCZip.Text, validationZipCodeRegEx);
             if (!match.Success)
             {
-                MessageBox.Show("Please enter a 5 digit zip code.");
+                frmErrorMess.LabelText = "Please enter a 5 digit zip code.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCZip.Focus();
             }
         }
@@ -670,31 +709,36 @@ namespace BazingaPizzaria
 
             if (textBox_JV_CCName.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the name on the credit card");
+                frmErrorMess.LabelText = "Please enter the name on the credit card.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCName.BackColor = colFormValidationError;
                 textBox_JV_CCName.Focus();
             }
             else if (textBox_JV_CCAddress.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing address for the credit card");
+                frmErrorMess.LabelText = "Please enter the billing address for the credit card.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCAddress.BackColor = colFormValidationError;
                 textBox_JV_CCAddress.Focus();
             }
             else if (textBox_JV_CCCity.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing city for the credit card");
+                frmErrorMess.LabelText = "Please enter the billing city for the credit card.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCCity.BackColor = colFormValidationError;
                 textBox_JV_CCCity.Focus();
             }
             else if (textBox_JV_CCState.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing state for the credit card");
+                frmErrorMess.LabelText = "Please enter the billing state for the credit card.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCState.BackColor = colFormValidationError;
                 textBox_JV_CCState.Focus();
             }
             else if (textBox_JV_CCZip.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the billing zip code for the credit card");
+                frmErrorMess.LabelText = "Please enter the billing zip code for the credit card.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCZip.BackColor = colFormValidationError;
                 textBox_JV_CCZip.Focus();
             }
@@ -706,19 +750,22 @@ namespace BazingaPizzaria
             }
             else if (textBox_JV_CCCVVCode.Text == String.Empty)
             {
-                MessageBox.Show("Please enter the credit card CVV code.");
+                frmErrorMess.LabelText = "Please enter the credit card number.";
+                frmErrorMess.ShowDialog();
                 textBox_JV_CCCVVCode.BackColor = colFormValidationError;
                 textBox_JV_CCCVVCode.Focus();
             }
             else if (comboBox_JV_CCExpMonth.SelectedItem == null)
             {
-                MessageBox.Show("Please enter the credit card expiration month.");
+                frmErrorMess.LabelText = "Please enter your credit card expiration Month.";
+                frmErrorMess.ShowDialog();
                 comboBox_JV_CCExpMonth.Focus();
                 lbl_JV_CCExpMonth.ForeColor = colFormValidationErrorLabel;
             }
             else if (comboBox_JV_CCExpYear.SelectedItem == null)
             {
-                MessageBox.Show("Please enter the credit card expiration month.");
+                frmErrorMess.LabelText = "Please enter the credit card expiration Year.";
+                frmErrorMess.ShowDialog();
                 comboBox_JV_CCExpYear.Focus();
                 lbl_JV_CCExpYear.ForeColor = colFormValidationErrorLabel;
             }
@@ -839,7 +886,8 @@ namespace BazingaPizzaria
         private void btn_RS_addToOrder_Click(object sender, EventArgs e)
         {
             //code to add the pizza to the order
-            MessageBox.Show("You have added a Za to your order!");
+            frmErrorMess.LabelText = "You have added a Za to your order!";
+            frmErrorMess.ShowDialog();
         }
 
         #endregion

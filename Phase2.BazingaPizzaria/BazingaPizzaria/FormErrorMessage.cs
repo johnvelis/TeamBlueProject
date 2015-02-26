@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BuildAZa
+namespace BazingaPizzaria
 {
     public partial class FormErrorMessage : Form
     {
