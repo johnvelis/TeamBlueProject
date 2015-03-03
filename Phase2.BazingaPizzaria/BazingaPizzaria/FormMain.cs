@@ -228,187 +228,21 @@ namespace BazingaPizzaria
         }
         #endregion
 
-        //Add standard buttons here for visual response
+        //Standard MouseOver effects that can be added to any button within FormMain
         #region standardButtons
-        //
-        // The folowing two event handlers (StandardButtonEnter and StandardButtonLeave) are to 
-        // provide visual response for mouseover of the standard buttons
-        //
-        // The string that is used for the text for individual cases is equal to the Text property
-        // of the button it is effecting
-
-        private void StandardButtonEnter(object sender, EventArgs e)
+        
+         //The folowing two event handlers (standardButtonEnter and standardButtonLeave) are to 
+         //provide visual response for mouseover of the standard buttons
+        private void standardButtonEnter(object sender, EventArgs e)
         {
-            string senderString = sender.ToString().Replace("System.Windows.Forms.Button, Text: ", "");
-
-            switch (senderString)
-            {
-                case "Cancel Order":
-                    btnCancelOrder.ForeColor = colMedLightBlue;
-                    break;
-                case "&Za of the Month":
-                    btn_RS_zaOfMonth.ForeColor = colMedLightBlue;
-                    break;
-                case "&Ultimate Cheese":
-                    btn_RS_cheese.ForeColor = colMedLightBlue;
-                    break;
-                case "&Piled High Pepperoni":
-                    btn_RS_pepperoni.ForeColor = colMedLightBlue;
-                    break;
-                case "&Mounds of Meat":
-                    btn_RS_meat.ForeColor = colMedLightBlue;
-                    break;
-                case "&Veggie Patch":
-                    btn_RS_veggie.ForeColor = colMedLightBlue;
-                    break;
-                case "&Super Supreme":
-                    btn_RS_supreme.ForeColor = colMedLightBlue;
-                    break;
-                case "&Backyard BBQ":
-                    btn_RS_bbq.ForeColor = colMedLightBlue;
-                    break;
-                case "&Add this pizza to my order!":
-                    btn_RS_addToOrder.ForeColor = colMedLightBlue;
-                    break;
-                case "A&dd Another Za!":
-                    btn_RS_anotherZa.ForeColor = colMedLightBlue;
-                    break;
-                case "&Check Out":
-                    btn_RS_checkOut.ForeColor = colMedLightBlue;
-                    break;
-                case "Small 8 in $3.99":
-                    btn_SL_sizeSmall.ForeColor = colMedLightBlue;
-                    break;
-                case "Med 12 in $7.99":
-                    btn_SL_sizeMed.ForeColor = colMedLightBlue;
-                    break;
-                case "Lg 14 in $10.97":
-                    btn_SL_sizeLarge.ForeColor = colMedLightBlue;
-                    break;
-                case "XLG 16 in $10.97":
-                    btn_SL_sizeXLG.ForeColor = colMedLightBlue;
-                    break;
-                case "Hand-Tossed":
-                    btn_SL_crustHandTossed.ForeColor = colMedLightBlue;
-                    break;
-                case "Crispy-Thin":
-                    btn_SL_crustChrispyThin.ForeColor = colMedLightBlue;
-                    break;
-                case "Thick":
-                    btn_SL_crustThick.ForeColor = colMedLightBlue;
-                    break;
-                case "Gluten-Free":
-                    btn_SL_crustGlutenFree.ForeColor = colMedLightBlue;
-                    break;
-                case "Complete My Order":
-                    btn_JV_CompleteMyOrder.ForeColor = colMedLightBlue;
-                    break;
-                case "Choose Your Za":
-                    btn_SL_ChooseZa.ForeColor = colMedLightBlue;
-                    break;
-                case "Dine In":
-                    btn_TG_DineIn.ForeColor = colMedLightBlue;
-                    break;
-                case "Carry Out":
-                    btn_TG_CarryOut.ForeColor = colMedLightBlue;
-                    break;
-                case "Returning Customer?":
-                    btn_TG_ReturnCust.ForeColor = colMedLightBlue;
-                    break;
-                case "&Next":
-                    btn_TG_NextCarryOut.ForeColor = colMedLightBlue;
-                    btn_TG_NextDineIn.ForeColor = colMedLightBlue;
-                    btn_TG_NextReturnCust.ForeColor = colMedLightBlue;
-                    break;
-
-            }
-
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonEnterEffect(this, currentButton);
         }
 
-        private void StandardButtonLeave(object sender, EventArgs e)
+        private void standardButtonLeave(object sender, EventArgs e)
         {
-            string senderString = sender.ToString().Replace("System.Windows.Forms.Button, Text: ", "");
-
-            switch (senderString)
-            {
-                case "Cancel Order":
-                    btnCancelOrder.ForeColor = colFormBackColor;
-                    break;
-                case "&Za of the Month":
-                    btn_RS_zaOfMonth.ForeColor = colFormBackColor;
-                    break;
-                case "&Ultimate Cheese":
-                    btn_RS_cheese.ForeColor = colFormBackColor;
-                    break;
-                case "&Piled High Pepperoni":
-                    btn_RS_pepperoni.ForeColor = colFormBackColor;
-                    break;
-                case "&Mounds of Meat":
-                    btn_RS_meat.ForeColor = colFormBackColor;
-                    break;
-                case "&Veggie Patch":
-                    btn_RS_veggie.ForeColor = colFormBackColor;
-                    break;
-                case "&Super Supreme":
-                    btn_RS_supreme.ForeColor = colFormBackColor;
-                    break;
-                case "&Backyard BBQ":
-                    btn_RS_bbq.ForeColor = colFormBackColor;
-                    break;
-                case "&Add this pizza to my order!":
-                    btn_RS_addToOrder.ForeColor = colFormBackColor;
-                    break;
-                case "A&dd Another Za!":
-                    btn_RS_anotherZa.ForeColor = colFormBackColor;
-                    break;
-                case "&Check Out":
-                    btn_RS_checkOut.ForeColor = colFormBackColor;
-                    break;
-                case "Small 8 in $3.99":
-                    btn_SL_sizeSmall.ForeColor = colFormBackColor;
-                    break;
-                case "Med 12 in $7.99":
-                    btn_SL_sizeMed.ForeColor = colFormBackColor;
-                    break;
-                case "Lg 14 in $10.97":
-                    btn_SL_sizeLarge.ForeColor = colFormBackColor;
-                    break;
-                case "XLG 16 in $10.97":
-                    btn_SL_sizeXLG.ForeColor = colFormBackColor;
-                    break;
-                case "Hand-Tossed":
-                    btn_SL_crustHandTossed.ForeColor = colFormBackColor;
-                    break;
-                case "Crispy-Thin":
-                    btn_SL_crustChrispyThin.ForeColor = colFormBackColor;
-                    break;
-                case "Thick":
-                    btn_SL_crustThick.ForeColor = colFormBackColor;
-                    break;
-                case "Gluten-Free":
-                    btn_SL_crustGlutenFree.ForeColor = colFormBackColor;
-                    break;
-                case "Complete My Order":
-                    btn_JV_CompleteMyOrder.ForeColor = colFormBackColor;
-                    break;
-                case "Choose Your Za":
-                    btn_SL_ChooseZa.ForeColor = colFormBackColor;
-                    break;
-                case "Dine In":
-                    btn_TG_DineIn.ForeColor = colFormBackColor;
-                    break;
-                case "Carry Out":
-                    btn_TG_CarryOut.ForeColor = colFormBackColor;
-                    break;
-                case "Returning Customer?":
-                    btn_TG_ReturnCust.ForeColor = colFormBackColor;
-                    break;
-                case "&Next":
-                    btn_TG_NextCarryOut.ForeColor = colFormBackColor;
-                    btn_TG_NextDineIn.ForeColor = colFormBackColor;
-                    btn_TG_NextReturnCust.ForeColor = colFormBackColor;
-                    break;
-            }
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonLeaveEffect(this, currentButton);
         }
         #endregion
 
@@ -425,7 +259,8 @@ namespace BazingaPizzaria
             tabControl2.SelectTab(tab_TG_DineIn);
             txt_TG_NameDineIn.BackColor = colFormBackColor;
             txt_TG_NameDineIn.Focus();
-            TG_standardButtonSelector(btn_TG_DineIn);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
         }
 
         private void btn_TG_CarryOut_Click(object sender, EventArgs e)
@@ -435,7 +270,8 @@ namespace BazingaPizzaria
             txt_TG_NameCarryOut.BackColor = colFormBackColor;
             txt_TG_PhoneNum.BackColor = colFormBackColor;
             txt_TG_NameCarryOut.Focus();
-            TG_standardButtonSelector(btn_TG_CarryOut);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
         }
 
         private void btn_TG_ReturnCust_Click(object sender, EventArgs e)
@@ -446,7 +282,8 @@ namespace BazingaPizzaria
             txt_TG_Email.BackColor = colFormBackColor;
             txt_TG_Password.BackColor = colFormBackColor;
             txt_TG_Email.Focus();
-            TG_standardButtonSelector(btn_TG_ReturnCust);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
         }
 
         #endregion
@@ -540,16 +377,16 @@ namespace BazingaPizzaria
         #endregion
 
         #region TG standardButtons
-        private void TG_standardButtonSelector(Button button)
-        {
-            //reset all buttons in group to standard color
-            btn_TG_DineIn.BackColor = colRed;
-            btn_TG_CarryOut.BackColor = colRed;
-            btn_TG_ReturnCust.BackColor = colRed;
+        //private void TG_standardButtonSelector(Button button)
+        //{
+        //    //reset all buttons in group to standard color
+        //    btn_TG_DineIn.BackColor = colRed;
+        //    btn_TG_CarryOut.BackColor = colRed;
+        //    btn_TG_ReturnCust.BackColor = colRed;
 
-            //set the selected button back color to show it is selected
-            button.BackColor = colDarkBlue;
-        }
+        //    //set the selected button back color to show it is selected
+        //    button.BackColor = colDarkBlue;
+        //}
 
         #endregion
 
@@ -576,70 +413,10 @@ namespace BazingaPizzaria
         #region tabPageSize/Crust Code (Sue)
         //The following eight event handlers are for the Size/Crust tab of the form
 
-        private void btn_SL_sizeSmall_Click(object sender, EventArgs e)
+        private void SL_SizeCrustSelect(object sender, EventArgs e)
         {
-            SL2_standardButtonSelector(btn_SL_sizeSmall);
-        }
-
-        private void btn_SL_sizeMed_Click(object sender, EventArgs e)
-        {
-            SL2_standardButtonSelector(btn_SL_sizeMed);
-        }
-
-        private void btn_SL_sizeLarge_Click(object sender, EventArgs e)
-        {
-            SL2_standardButtonSelector(btn_SL_sizeLarge);
-        }
-
-        private void btn_SL_sizeXLG_Click(object sender, EventArgs e)
-        {
-            SL2_standardButtonSelector(btn_SL_sizeXLG);
-        }
-
-        private void btn_SL_crustHandTossed_Click(object sender, EventArgs e)
-        {
-            SL_standardButtonSelector(btn_SL_crustHandTossed);
-        }
-
-        private void btn_SL_crustCrispyThin_Click(object sender, EventArgs e)
-        {
-            SL_standardButtonSelector(btn_SL_crustChrispyThin);
-        }
-
-        private void btn_SL_crustThick_Click(object sender, EventArgs e)
-        {
-            SL_standardButtonSelector(btn_SL_crustThick);
-        }
-
-        private void btn_SL_crustGlutenFree_Click(object sender, EventArgs e)
-        {
-            SL_standardButtonSelector(btn_SL_crustGlutenFree);
-        }
-
-        private void SL_standardButtonSelector(Button button)
-        {
-            //reset all buttons in group to standard color
-
-            btn_SL_crustChrispyThin.BackColor = colRed;
-            btn_SL_crustGlutenFree.BackColor = colRed;
-            btn_SL_crustHandTossed.BackColor = colRed;
-            btn_SL_crustThick.BackColor = colRed;
-
-            //set the selected button back color to show it is selected
-            button.BackColor = colDarkBlue;
-        }
-
-        private void SL2_standardButtonSelector(Button button)
-        {
-            //reset all buttons in group to standard color
-
-            btn_SL_sizeXLG.BackColor = colRed;
-            btn_SL_sizeLarge.BackColor = colRed;
-            btn_SL_sizeMed.BackColor = colRed;
-            btn_SL_sizeSmall.BackColor = colRed;
-
-            //set the selected button back color to show it is selected
-            button.BackColor = colDarkBlue;
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
         }
 
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
@@ -821,64 +598,59 @@ namespace BazingaPizzaria
         //
         #region tabPageSpecialtyZas Code (Roxy)
 
-        //method to allow only one pizza to be selected and
-        //show visual feedback for selected
-        private void RS_standardButtonSelector(Button button)
-        {
-            //reset all buttons in group to standard color
-            btn_RS_bbq.BackColor = colRed;
-            btn_RS_cheese.BackColor = colRed;
-            btn_RS_meat.BackColor = colRed;
-            btn_RS_pepperoni.BackColor = colRed;
-            btn_RS_supreme.BackColor = colRed;
-            btn_RS_veggie.BackColor = colRed;
-            btn_RS_zaOfMonth.BackColor = colRed;
-
-            //set the selected button back color to show it is selected
-            button.BackColor = colDarkBlue;
-        }
-
+        //button click events for specialty pizza page that change call ButtonSelect
+        //method from ButtonAnimation class to highlight selected pizza and also show 
+        //the panel that has the corresponding image and description.
+        #region Za selection button clicks
         private void btn_RS_zaOfMonth_Click(object sender, EventArgs e)
         {
-            RS_standardButtonSelector(btn_RS_zaOfMonth);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
             pnl_RS_zaOfMonth.BringToFront();
         }
 
         private void btn_RS_cheese_Click(object sender, EventArgs e)
         {
-            RS_standardButtonSelector(btn_RS_cheese);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
             pnl_RS_cheese.BringToFront();
         }
 
         private void btn_RS_pepperoni_Click(object sender, EventArgs e)
         {
-            RS_standardButtonSelector(btn_RS_pepperoni);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
             pnl_RS_pepperoni.BringToFront();
         }
 
         private void btn_RS_meat_Click(object sender, EventArgs e)
         {
-            RS_standardButtonSelector(btn_RS_meat);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
             pnl_RS_meat.BringToFront();
         }
 
         private void btn_RS_veggie_Click(object sender, EventArgs e)
         {
-            RS_standardButtonSelector(btn_RS_veggie);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
             pnl_RS_veggie.BringToFront();
         }
 
         private void btn_RS_supreme_Click(object sender, EventArgs e)
         {
-            RS_standardButtonSelector(btn_RS_supreme);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
             pnl_RS_supreme.BringToFront();
         }
 
         private void btn_RS_bbq_Click(object sender, EventArgs e)
         {
-            RS_standardButtonSelector(btn_RS_bbq);
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
             pnl_RS_bbq.BringToFront();
         }
+        #endregion
 
         //
         //add to order button message simulation of adding to order
@@ -892,7 +664,10 @@ namespace BazingaPizzaria
 
         #endregion
 
-
+        private void btn_hiddenClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
     }
 }

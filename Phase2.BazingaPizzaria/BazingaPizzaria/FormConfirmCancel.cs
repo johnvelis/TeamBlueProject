@@ -22,33 +22,15 @@ namespace BazingaPizzaria
 
         private void StandardButtonEnter(object sender, EventArgs e)
         {
-            string senderString = sender.ToString().Replace("System.Windows.Forms.Button, Text: ", "");
-
-            switch (senderString)
-            {
-                case "&Yes, Please":
-                    btnYesPlease.ForeColor = colMedLightBlue;
-                    break;
-                case "&No Way!!!":
-                    btnNoWay.ForeColor = colMedLightBlue;
-                    break;
-            }
-
+            Button currentButton = sender as Button;
+            currentButton.ForeColor = colMedLightBlue;
         }
+
 
         private void StandardButtonLeave(object sender, EventArgs e)
         {
-            string senderString = sender.ToString().Replace("System.Windows.Forms.Button, Text: ", "");
-
-            switch (senderString)
-            {
-                case "&Yes, Please":
-                    btnYesPlease.ForeColor = Color.White;
-                    break;
-                case "&No Way!!!":
-                    btnNoWay.ForeColor = Color.White;
-                    break;
-            }
+            Button currentButton = sender as Button;
+            currentButton.ForeColor = Color.White;
         }
 
         private void btnYesPlease_Click(object sender, EventArgs e)

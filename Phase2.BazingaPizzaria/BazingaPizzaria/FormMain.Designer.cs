@@ -30,7 +30,10 @@
         {
             this.tabControlOrderSequence = new System.Windows.Forms.TabControl();
             this.tabPageStart = new System.Windows.Forms.TabPage();
+            this.grp_TG_Selections = new System.Windows.Forms.GroupBox();
             this.btn_TG_ReturnCust = new System.Windows.Forms.Button();
+            this.btn_TG_CarryOut = new System.Windows.Forms.Button();
+            this.btn_TG_DineIn = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tab_TG_DineIn = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
@@ -48,8 +51,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.txt_TG_Email = new System.Windows.Forms.TextBox();
-            this.btn_TG_CarryOut = new System.Windows.Forms.Button();
-            this.btn_TG_DineIn = new System.Windows.Forms.Button();
             this.tabPageSizeCrust = new System.Windows.Forms.TabPage();
             this.btn_SL_ChooseZa = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -178,8 +179,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_hiddenClose = new System.Windows.Forms.Button();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
+            this.grp_TG_Selections.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tab_TG_DineIn.SuspendLayout();
             this.tab_TG_CarryOut.SuspendLayout();
@@ -235,16 +238,14 @@
             this.tabControlOrderSequence.SelectedIndex = 0;
             this.tabControlOrderSequence.Size = new System.Drawing.Size(1200, 500);
             this.tabControlOrderSequence.TabIndex = 12;
-            this.tabControlOrderSequence.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.tabControlOrderSequence.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.tabControlOrderSequence.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.tabControlOrderSequence.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // tabPageStart
             // 
             this.tabPageStart.BackColor = System.Drawing.Color.White;
-            this.tabPageStart.Controls.Add(this.btn_TG_ReturnCust);
+            this.tabPageStart.Controls.Add(this.grp_TG_Selections);
             this.tabPageStart.Controls.Add(this.tabControl2);
-            this.tabPageStart.Controls.Add(this.btn_TG_CarryOut);
-            this.tabPageStart.Controls.Add(this.btn_TG_DineIn);
             this.tabPageStart.Location = new System.Drawing.Point(4, 22);
             this.tabPageStart.Name = "tabPageStart";
             this.tabPageStart.Padding = new System.Windows.Forms.Padding(3);
@@ -252,20 +253,64 @@
             this.tabPageStart.TabIndex = 0;
             this.tabPageStart.Text = "Start";
             // 
+            // grp_TG_Selections
+            // 
+            this.grp_TG_Selections.Controls.Add(this.btn_TG_ReturnCust);
+            this.grp_TG_Selections.Controls.Add(this.btn_TG_CarryOut);
+            this.grp_TG_Selections.Controls.Add(this.btn_TG_DineIn);
+            this.grp_TG_Selections.Location = new System.Drawing.Point(42, 67);
+            this.grp_TG_Selections.Name = "grp_TG_Selections";
+            this.grp_TG_Selections.Size = new System.Drawing.Size(510, 365);
+            this.grp_TG_Selections.TabIndex = 10;
+            this.grp_TG_Selections.TabStop = false;
+            // 
             // btn_TG_ReturnCust
             // 
             this.btn_TG_ReturnCust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_TG_ReturnCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TG_ReturnCust.ForeColor = System.Drawing.Color.White;
-            this.btn_TG_ReturnCust.Location = new System.Drawing.Point(64, 351);
+            this.btn_TG_ReturnCust.Location = new System.Drawing.Point(22, 284);
             this.btn_TG_ReturnCust.Name = "btn_TG_ReturnCust";
             this.btn_TG_ReturnCust.Size = new System.Drawing.Size(464, 40);
             this.btn_TG_ReturnCust.TabIndex = 9;
             this.btn_TG_ReturnCust.Text = "&Returning Customer?";
             this.btn_TG_ReturnCust.UseVisualStyleBackColor = false;
             this.btn_TG_ReturnCust.Click += new System.EventHandler(this.btn_TG_ReturnCust_Click);
-            this.btn_TG_ReturnCust.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_TG_ReturnCust.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_TG_ReturnCust.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_ReturnCust.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
+            // btn_TG_CarryOut
+            // 
+            this.btn_TG_CarryOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_TG_CarryOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_TG_CarryOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_TG_CarryOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TG_CarryOut.ForeColor = System.Drawing.Color.White;
+            this.btn_TG_CarryOut.Location = new System.Drawing.Point(22, 169);
+            this.btn_TG_CarryOut.Name = "btn_TG_CarryOut";
+            this.btn_TG_CarryOut.Size = new System.Drawing.Size(464, 88);
+            this.btn_TG_CarryOut.TabIndex = 5;
+            this.btn_TG_CarryOut.Text = "&Carry Out";
+            this.btn_TG_CarryOut.UseVisualStyleBackColor = false;
+            this.btn_TG_CarryOut.Click += new System.EventHandler(this.btn_TG_CarryOut_Click);
+            this.btn_TG_CarryOut.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_CarryOut.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
+            // btn_TG_DineIn
+            // 
+            this.btn_TG_DineIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
+            this.btn_TG_DineIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_TG_DineIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TG_DineIn.ForeColor = System.Drawing.Color.White;
+            this.btn_TG_DineIn.Location = new System.Drawing.Point(22, 40);
+            this.btn_TG_DineIn.Name = "btn_TG_DineIn";
+            this.btn_TG_DineIn.Size = new System.Drawing.Size(464, 88);
+            this.btn_TG_DineIn.TabIndex = 4;
+            this.btn_TG_DineIn.Text = "&Dine In";
+            this.btn_TG_DineIn.UseVisualStyleBackColor = false;
+            this.btn_TG_DineIn.Click += new System.EventHandler(this.btn_TG_DineIn_Click);
+            this.btn_TG_DineIn.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_DineIn.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // tabControl2
             // 
@@ -324,8 +369,8 @@
             this.btn_TG_NextDineIn.Text = "&Next";
             this.btn_TG_NextDineIn.UseVisualStyleBackColor = false;
             this.btn_TG_NextDineIn.Click += new System.EventHandler(this.btn_TG_NextDineIn_Click);
-            this.btn_TG_NextDineIn.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_TG_NextDineIn.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_TG_NextDineIn.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_NextDineIn.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // tab_TG_CarryOut
             // 
@@ -337,7 +382,7 @@
             this.tab_TG_CarryOut.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_CarryOut.Name = "tab_TG_CarryOut";
             this.tab_TG_CarryOut.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 439);
+            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 442);
             this.tab_TG_CarryOut.TabIndex = 1;
             this.tab_TG_CarryOut.Text = "Carry Out";
             this.tab_TG_CarryOut.UseVisualStyleBackColor = true;
@@ -393,8 +438,8 @@
             this.btn_TG_NextCarryOut.Text = "&Next";
             this.btn_TG_NextCarryOut.UseVisualStyleBackColor = false;
             this.btn_TG_NextCarryOut.Click += new System.EventHandler(this.btn_TG_NextCarryOut_Click);
-            this.btn_TG_NextCarryOut.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_TG_NextCarryOut.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_TG_NextCarryOut.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_NextCarryOut.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // tab_TG_ReturnCust
             // 
@@ -406,7 +451,7 @@
             this.tab_TG_ReturnCust.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_ReturnCust.Name = "tab_TG_ReturnCust";
             this.tab_TG_ReturnCust.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_ReturnCust.Size = new System.Drawing.Size(592, 439);
+            this.tab_TG_ReturnCust.Size = new System.Drawing.Size(592, 442);
             this.tab_TG_ReturnCust.TabIndex = 2;
             this.tab_TG_ReturnCust.Text = "Return Cust";
             this.tab_TG_ReturnCust.UseVisualStyleBackColor = true;
@@ -423,8 +468,8 @@
             this.btn_TG_NextReturnCust.Text = "&Next";
             this.btn_TG_NextReturnCust.UseVisualStyleBackColor = false;
             this.btn_TG_NextReturnCust.Click += new System.EventHandler(this.btn_TG_NextReturnCust_Click);
-            this.btn_TG_NextReturnCust.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_TG_NextReturnCust.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_TG_NextReturnCust.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_NextReturnCust.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // txt_TG_Password
             // 
@@ -465,39 +510,6 @@
             this.txt_TG_Email.Size = new System.Drawing.Size(352, 36);
             this.txt_TG_Email.TabIndex = 7;
             // 
-            // btn_TG_CarryOut
-            // 
-            this.btn_TG_CarryOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_TG_CarryOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
-            this.btn_TG_CarryOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
-            this.btn_TG_CarryOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TG_CarryOut.ForeColor = System.Drawing.Color.White;
-            this.btn_TG_CarryOut.Location = new System.Drawing.Point(64, 236);
-            this.btn_TG_CarryOut.Name = "btn_TG_CarryOut";
-            this.btn_TG_CarryOut.Size = new System.Drawing.Size(464, 88);
-            this.btn_TG_CarryOut.TabIndex = 5;
-            this.btn_TG_CarryOut.Text = "&Carry Out";
-            this.btn_TG_CarryOut.UseVisualStyleBackColor = false;
-            this.btn_TG_CarryOut.Click += new System.EventHandler(this.btn_TG_CarryOut_Click);
-            this.btn_TG_CarryOut.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_TG_CarryOut.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
-            // 
-            // btn_TG_DineIn
-            // 
-            this.btn_TG_DineIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
-            this.btn_TG_DineIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
-            this.btn_TG_DineIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TG_DineIn.ForeColor = System.Drawing.Color.White;
-            this.btn_TG_DineIn.Location = new System.Drawing.Point(64, 107);
-            this.btn_TG_DineIn.Name = "btn_TG_DineIn";
-            this.btn_TG_DineIn.Size = new System.Drawing.Size(464, 88);
-            this.btn_TG_DineIn.TabIndex = 4;
-            this.btn_TG_DineIn.Text = "&Dine In";
-            this.btn_TG_DineIn.UseVisualStyleBackColor = false;
-            this.btn_TG_DineIn.Click += new System.EventHandler(this.btn_TG_DineIn_Click);
-            this.btn_TG_DineIn.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_TG_DineIn.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
-            // 
             // tabPageSizeCrust
             // 
             this.tabPageSizeCrust.BackColor = System.Drawing.Color.White;
@@ -526,8 +538,8 @@
             this.btn_SL_ChooseZa.Text = "Choose Your Za";
             this.btn_SL_ChooseZa.UseVisualStyleBackColor = false;
             this.btn_SL_ChooseZa.Click += new System.EventHandler(this.btn_SL_ChooseZa_Click);
-            this.btn_SL_ChooseZa.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_ChooseZa.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_ChooseZa.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_ChooseZa.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // groupBox2
             // 
@@ -555,9 +567,9 @@
             this.btn_SL_crustGlutenFree.TabIndex = 3;
             this.btn_SL_crustGlutenFree.Text = "Gluten-Free";
             this.btn_SL_crustGlutenFree.UseVisualStyleBackColor = false;
-            this.btn_SL_crustGlutenFree.Click += new System.EventHandler(this.btn_SL_crustGlutenFree_Click);
-            this.btn_SL_crustGlutenFree.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_crustGlutenFree.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_crustGlutenFree.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_crustGlutenFree.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_crustGlutenFree.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_SL_crustThick
             // 
@@ -570,9 +582,9 @@
             this.btn_SL_crustThick.TabIndex = 3;
             this.btn_SL_crustThick.Text = "Thick";
             this.btn_SL_crustThick.UseVisualStyleBackColor = false;
-            this.btn_SL_crustThick.Click += new System.EventHandler(this.btn_SL_crustThick_Click);
-            this.btn_SL_crustThick.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_crustThick.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_crustThick.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_crustThick.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_crustThick.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_SL_crustChrispyThin
             // 
@@ -585,9 +597,9 @@
             this.btn_SL_crustChrispyThin.TabIndex = 2;
             this.btn_SL_crustChrispyThin.Text = "Crispy-Thin";
             this.btn_SL_crustChrispyThin.UseVisualStyleBackColor = false;
-            this.btn_SL_crustChrispyThin.Click += new System.EventHandler(this.btn_SL_crustCrispyThin_Click);
-            this.btn_SL_crustChrispyThin.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_crustChrispyThin.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_crustChrispyThin.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_crustChrispyThin.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_crustChrispyThin.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_SL_crustHandTossed
             // 
@@ -600,9 +612,9 @@
             this.btn_SL_crustHandTossed.TabIndex = 1;
             this.btn_SL_crustHandTossed.Text = "Hand-Tossed";
             this.btn_SL_crustHandTossed.UseVisualStyleBackColor = false;
-            this.btn_SL_crustHandTossed.Click += new System.EventHandler(this.btn_SL_crustHandTossed_Click);
-            this.btn_SL_crustHandTossed.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_crustHandTossed.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_crustHandTossed.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_crustHandTossed.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_crustHandTossed.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // groupBox1
             // 
@@ -630,9 +642,9 @@
             this.btn_SL_sizeXLG.TabIndex = 3;
             this.btn_SL_sizeXLG.Text = "XLG 16 in $10.97";
             this.btn_SL_sizeXLG.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeXLG.Click += new System.EventHandler(this.btn_SL_sizeXLG_Click);
-            this.btn_SL_sizeXLG.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_sizeXLG.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_sizeXLG.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeXLG.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_sizeXLG.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_SL_sizeLarge
             // 
@@ -645,9 +657,9 @@
             this.btn_SL_sizeLarge.TabIndex = 2;
             this.btn_SL_sizeLarge.Text = "Lg 14 in $10.97";
             this.btn_SL_sizeLarge.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeLarge.Click += new System.EventHandler(this.btn_SL_sizeLarge_Click);
-            this.btn_SL_sizeLarge.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_sizeLarge.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_sizeLarge.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeLarge.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_sizeLarge.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_SL_sizeMed
             // 
@@ -660,9 +672,9 @@
             this.btn_SL_sizeMed.TabIndex = 1;
             this.btn_SL_sizeMed.Text = "Med 12 in $7.99";
             this.btn_SL_sizeMed.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeMed.Click += new System.EventHandler(this.btn_SL_sizeMed_Click);
-            this.btn_SL_sizeMed.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_sizeMed.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_sizeMed.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeMed.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_sizeMed.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_SL_sizeSmall
             // 
@@ -675,9 +687,9 @@
             this.btn_SL_sizeSmall.TabIndex = 0;
             this.btn_SL_sizeSmall.Text = "Small 8 in $3.99";
             this.btn_SL_sizeSmall.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeSmall.Click += new System.EventHandler(this.btn_SL_sizeSmall_Click);
-            this.btn_SL_sizeSmall.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_SL_sizeSmall.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_SL_sizeSmall.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeSmall.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_SL_sizeSmall.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // lblSizeCrust
             // 
@@ -723,8 +735,8 @@
             this.btn_RS_checkOut.Text = "&Check Out";
             this.btn_RS_checkOut.UseVisualStyleBackColor = false;
             this.btn_RS_checkOut.Click += new System.EventHandler(this.btnCheckOut_Click);
-            this.btn_RS_checkOut.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_checkOut.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_checkOut.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_checkOut.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_anotherZa
             // 
@@ -740,8 +752,8 @@
             this.btn_RS_anotherZa.Text = "A&dd Another Za!";
             this.btn_RS_anotherZa.UseVisualStyleBackColor = false;
             this.btn_RS_anotherZa.Click += new System.EventHandler(this.btnSize_Click);
-            this.btn_RS_anotherZa.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_anotherZa.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_anotherZa.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_anotherZa.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_addToOrder
             // 
@@ -757,8 +769,8 @@
             this.btn_RS_addToOrder.Text = "&Add this pizza to my order!";
             this.btn_RS_addToOrder.UseVisualStyleBackColor = false;
             this.btn_RS_addToOrder.Click += new System.EventHandler(this.btn_RS_addToOrder_Click);
-            this.btn_RS_addToOrder.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_addToOrder.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_addToOrder.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_addToOrder.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // pnl_RS_Start
             // 
@@ -1205,8 +1217,8 @@
             this.btn_RS_bbq.Text = "&Backyard BBQ";
             this.btn_RS_bbq.UseVisualStyleBackColor = false;
             this.btn_RS_bbq.Click += new System.EventHandler(this.btn_RS_bbq_Click);
-            this.btn_RS_bbq.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_bbq.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_bbq.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_bbq.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_supreme
             // 
@@ -1222,8 +1234,8 @@
             this.btn_RS_supreme.Text = "&Super Supreme";
             this.btn_RS_supreme.UseVisualStyleBackColor = false;
             this.btn_RS_supreme.Click += new System.EventHandler(this.btn_RS_supreme_Click);
-            this.btn_RS_supreme.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_supreme.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_supreme.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_supreme.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_veggie
             // 
@@ -1239,8 +1251,8 @@
             this.btn_RS_veggie.Text = "&Veggie Patch";
             this.btn_RS_veggie.UseVisualStyleBackColor = false;
             this.btn_RS_veggie.Click += new System.EventHandler(this.btn_RS_veggie_Click);
-            this.btn_RS_veggie.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_veggie.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_veggie.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_veggie.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_meat
             // 
@@ -1256,8 +1268,8 @@
             this.btn_RS_meat.Text = "&Mounds of Meat";
             this.btn_RS_meat.UseVisualStyleBackColor = false;
             this.btn_RS_meat.Click += new System.EventHandler(this.btn_RS_meat_Click);
-            this.btn_RS_meat.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_meat.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_meat.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_meat.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_pepperoni
             // 
@@ -1273,8 +1285,8 @@
             this.btn_RS_pepperoni.Text = "&Piled High Pepperoni";
             this.btn_RS_pepperoni.UseVisualStyleBackColor = false;
             this.btn_RS_pepperoni.Click += new System.EventHandler(this.btn_RS_pepperoni_Click);
-            this.btn_RS_pepperoni.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_pepperoni.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_pepperoni.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_pepperoni.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_cheese
             // 
@@ -1290,8 +1302,8 @@
             this.btn_RS_cheese.Text = "&Ultimate Cheese";
             this.btn_RS_cheese.UseVisualStyleBackColor = false;
             this.btn_RS_cheese.Click += new System.EventHandler(this.btn_RS_cheese_Click);
-            this.btn_RS_cheese.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_cheese.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_cheese.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_cheese.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_zaOfMonth
             // 
@@ -1307,8 +1319,8 @@
             this.btn_RS_zaOfMonth.Text = "&Za of the Month";
             this.btn_RS_zaOfMonth.UseVisualStyleBackColor = false;
             this.btn_RS_zaOfMonth.Click += new System.EventHandler(this.btn_RS_zaOfMonth_Click);
-            this.btn_RS_zaOfMonth.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_RS_zaOfMonth.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_RS_zaOfMonth.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_zaOfMonth.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // tabPageCheckOut
             // 
@@ -1389,8 +1401,8 @@
             this.btn_JV_CompleteMyOrder.Text = "Complete My Order";
             this.btn_JV_CompleteMyOrder.UseVisualStyleBackColor = false;
             this.btn_JV_CompleteMyOrder.Click += new System.EventHandler(this.btn_JV_CompleteMyOrder_Click);
-            this.btn_JV_CompleteMyOrder.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btn_JV_CompleteMyOrder.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btn_JV_CompleteMyOrder.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_JV_CompleteMyOrder.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btnCancelOrder
             // 
@@ -1406,8 +1418,8 @@
             this.btnCancelOrder.Text = "Cancel My Order";
             this.btnCancelOrder.UseVisualStyleBackColor = false;
             this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
-            this.btnCancelOrder.MouseEnter += new System.EventHandler(this.StandardButtonEnter);
-            this.btnCancelOrder.MouseLeave += new System.EventHandler(this.StandardButtonLeave);
+            this.btnCancelOrder.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btnCancelOrder.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // lbl_JV_OrderItemPrice
             // 
@@ -1965,7 +1977,7 @@
             this.btn_Sample.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_Sample.Size = new System.Drawing.Size(155, 46);
             this.btn_Sample.TabIndex = 2;
-            this.btn_Sample.Text = "Sample Button";
+            this.btn_Sample.Text = "Sample ButtonEnterEffect";
             this.btn_Sample.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -2082,6 +2094,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.btn_hiddenClose);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(44, 12);
@@ -2111,10 +2124,25 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
+            // btn_hiddenClose
+            // 
+            this.btn_hiddenClose.BackColor = System.Drawing.Color.Transparent;
+            this.btn_hiddenClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_hiddenClose.FlatAppearance.BorderSize = 0;
+            this.btn_hiddenClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_hiddenClose.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_hiddenClose.Location = new System.Drawing.Point(0, 0);
+            this.btn_hiddenClose.Name = "btn_hiddenClose";
+            this.btn_hiddenClose.Size = new System.Drawing.Size(15, 15);
+            this.btn_hiddenClose.TabIndex = 18;
+            this.btn_hiddenClose.UseVisualStyleBackColor = false;
+            this.btn_hiddenClose.Click += new System.EventHandler(this.btn_hiddenClose_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.CancelButton = this.btn_hiddenClose;
             this.ClientSize = new System.Drawing.Size(1278, 770);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
@@ -2126,6 +2154,7 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControlOrderSequence.ResumeLayout(false);
             this.tabPageStart.ResumeLayout(false);
+            this.grp_TG_Selections.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tab_TG_DineIn.ResumeLayout(false);
             this.tab_TG_DineIn.PerformLayout();
@@ -2337,6 +2366,8 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lbl_JV_CCCVVCode;
         private System.Windows.Forms.TextBox textBox_JV_CCCVVCode;
+        private System.Windows.Forms.GroupBox grp_TG_Selections;
+        private System.Windows.Forms.Button btn_hiddenClose;
     }
 }
 

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\ButtonAnimation.cs" />
     <Compile Include="FormCompletedOrder.cs">
       <SubType>Form</SubType>
     </Compile>

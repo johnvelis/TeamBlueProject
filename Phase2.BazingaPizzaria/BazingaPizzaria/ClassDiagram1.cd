@@ -3,14 +3,14 @@
   <Class Name="BazingaPizzaria.Order">
     <Position X="0.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>CAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAAABAQAAAAAAAABEAAAAAAAAAAQAAAAAAAAABAEAA=</HashCode>
       <FileName>Model\Order.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BazingaPizzaria.Model.PizzaItem">
     <Position X="6" Y="0.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQADAIAAFAAAAAAIAAAAAA=</HashCode>
+      <HashCode>AQEAIAAAAAAAAAAAAABAAASABAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\PizzaItem.cs</FileName>
     </TypeIdentifier>
   </Class>
