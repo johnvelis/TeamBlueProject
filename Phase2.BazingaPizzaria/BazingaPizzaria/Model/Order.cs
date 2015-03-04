@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BazingaPizzaria.Model;
 
 namespace BazingaPizzaria
 {
@@ -10,7 +11,7 @@ namespace BazingaPizzaria
     {
         #region FIELDS
         private int _orderID;
-        private DateTime _date;
+        private DateTime _dateTime;
         private int _number;
         private String _lastName;
         private String _firstName;
@@ -24,6 +25,11 @@ namespace BazingaPizzaria
         private int _ccExpMonth;
         private int _ccExpYear;
         private int _ccCVVCode;
+
+        private List<Pizza> _pizza = new List<Pizza>();
+        private List<Beverage> _beverage = new List<Beverage>();
+
+
         #endregion
 
         #region PROPERTIES
@@ -33,11 +39,10 @@ namespace BazingaPizzaria
             set { _orderID = value; }
         }
 
-
-        public DateTime OrderDate
+        public DateTime Date
         {
-            get { return _date; }
-            set { _date = value; }
+            get { return _dateTime; }
+            set { _dateTime = value; }
         }
 
         public int Number
@@ -115,6 +120,17 @@ namespace BazingaPizzaria
         {
             get { return _ccCVVCode; }
             set { _ccCVVCode = value; }
+        }
+
+        public List<Pizza> Pizza
+        {
+            get { return _pizza; }
+            set { _pizza = value; }
+        }
+        public List<Beverage> Beverage
+        {
+            get { return _beverage; }
+            set { _beverage = value; }
         }
         #endregion
 
