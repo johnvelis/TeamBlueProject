@@ -8,29 +8,24 @@ namespace BazingaPizzaria.Model
 {
     class GenerateTestData
     {
-        internal static Customer GenerateTestCustomerData()
+        internal static Order GenerateTestOrderData()
         {
-            Customer testCustomer = new Customer();
+            Order testOrder = new Order();
+            testOrder.LastName = "Flintstone";
+            testOrder.FirstName = "Fred";
+            testOrder.Address = "1313 Cobblestone Way";
+            testOrder.City = "Bedrock";
+            testOrder.StateProvince = "Stoneville";
+            testOrder.Zip = "55555";
+            testOrder.Email = "fred@stonemail.com";
 
-            testCustomer.CustomerID = 1;
-            testCustomer.UserName = "fredflintstone";
-            testCustomer.Password = "password1234";
+            testOrder.CCName = "Fred Flintstone";
+            testOrder.CCNumber = "1111222233334444";
+            testOrder.CCExpMonth = 5;
+            testOrder.CCExpYear = 2017;
+            testOrder.CCCVVCode = 345;
 
-            testCustomer.LastName = "Flintstone";
-            testCustomer.FirstName = "Fred";
-            testCustomer.Address = "1313 Cobblestone Way";
-            testCustomer.City = "Bedrock";
-            testCustomer.StateProvince = "Stoneville";
-            testCustomer.Zip = "55555";
-            testCustomer.Email = "fred@stonemail.com";
-
-            testCustomer.CCName = "Fred Flintstone";
-            testCustomer.CCNumber = "1111222233334444";
-            testCustomer.CCExpMonth = 5;
-            testCustomer.CCExpYear = 2017;
-            testCustomer.CCCVVCode = 345;
-
-            return testCustomer;
+            return testOrder;
         }
     }
 }

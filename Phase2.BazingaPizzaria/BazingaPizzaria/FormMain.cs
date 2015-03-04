@@ -27,9 +27,9 @@ namespace BazingaPizzaria
         //Roxy's 2nd GitHub test
 
         //
-        // generate an instance of a customer class and populate with data to test forms
+        // generate an instance of a Order class and populate with data to test forms
         //
-        Customer currentCustomer = GenerateTestData.GenerateTestCustomerData();
+        Order currentOrder = GenerateTestData.GenerateTestOrderData();
         FormErrorMessage frmErrorMess = new FormErrorMessage();
 
         //
@@ -578,17 +578,17 @@ namespace BazingaPizzaria
         #region tabPageCompleteOrder Code (Velis)
         private void tabPageCompleteOrder_Enter(object sender, EventArgs e)
         {
-            lbl_JV_BillingNameConfirm.Text = currentCustomer.FirstName + " " + currentCustomer.LastName;
-            lbl_JV_BillingAddressConfirm.Text = currentCustomer.Address;
-            lbl_JV_BillingCityConfirm.Text = currentCustomer.City;
-            lbl_JV_BillingStateProvinceConfirm.Text = currentCustomer.StateProvince;
-            lbl_JV_BillingZipConfirm.Text = currentCustomer.Zip;
-            lbl_JV_BillingEmailConfirm.Text = currentCustomer.Email;
-            lbl_JV_CCNumberShort.Text = "**** " + currentCustomer.CCNumber.Substring(11, 4);
+            lbl_JV_BillingNameConfirm.Text = currentOrder.FirstName + " " + currentOrder.LastName;
+            lbl_JV_BillingAddressConfirm.Text = currentOrder.Address;
+            lbl_JV_BillingCityConfirm.Text = currentOrder.City;
+            lbl_JV_BillingStateProvinceConfirm.Text = currentOrder.StateProvince;
+            lbl_JV_BillingZipConfirm.Text = currentOrder.Zip;
+            lbl_JV_BillingEmailConfirm.Text = currentOrder.Email;
+            lbl_JV_CCNumberShort.Text = "**** " + currentOrder.CCNumber.Substring(11, 4);
             lbl_JV_CCExpConfirm.Text =
-                currentCustomer.CCExpMonth.ToString() +
+                currentOrder.CCExpMonth.ToString() +
                 "/" +
-                currentCustomer.CCExpYear.ToString();
+                currentOrder.CCExpYear.ToString();
 
         }
         #endregion
