@@ -65,6 +65,11 @@ namespace BazingaPizzaria
             this.tabControl2.ItemSize = new Size(0, 1);
             this.tabControl2.SizeMode = TabSizeMode.Fixed;
             this.tabControl2.Appearance = TabAppearance.FlatButtons;
+
+            // this hides the tabs for the Specialty/BuildAZa page
+            this.tabControl_RS_Zas.ItemSize = new Size(0, 1);
+            this.tabControl_RS_Zas.SizeMode = TabSizeMode.Fixed;
+            this.tabControl_RS_Zas.Appearance = TabAppearance.FlatButtons;
         }
 
 
@@ -598,16 +603,29 @@ namespace BazingaPizzaria
         //
         #region tabPageSpecialtyZas Code (Roxy)
 
+        #region Tab selection buttons
+
+        private void btn_RS_toSpecialties_Click(object sender, EventArgs e)
+        {
+            tabControl_RS_Zas.SelectedTab = tabPage_RS_specialties;
+            ButtonAnimation.ButtonSelect(this, btn_RS_toSpecialties);
+        }
+
+        private void btn_RS_toBuild_Click(object sender, EventArgs e)
+        {
+            tabControl_RS_Zas.SelectedTab = tabPage_RS_BuildAZa;
+            ButtonAnimation.ButtonSelect(this, btn_RS_toBuild);
+        }
+
+        private void btn_RS_justCheese_Click(object sender, EventArgs e)
+        {
+            //Add pizza without any toppings or extra charges
+        }
+        #endregion
         //button click events for specialty pizza page that change call ButtonSelect
         //method from ButtonAnimation class to highlight selected pizza and also show 
         //the panel that has the corresponding image and description.
-        #region Za selection button clicks
-        private void btn_RS_zaOfMonth_Click(object sender, EventArgs e)
-        {
-            Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
-            pnl_RS_zaOfMonth.BringToFront();
-        }
+        #region Specialty Za selection button clicks
 
         private void btn_RS_cheese_Click(object sender, EventArgs e)
         {
@@ -644,14 +662,43 @@ namespace BazingaPizzaria
             pnl_RS_supreme.BringToFront();
         }
 
-        private void btn_RS_bbq_Click(object sender, EventArgs e)
-        {
-            Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
-            pnl_RS_bbq.BringToFront();
-        }
+
         #endregion
 
+        //button click events for toppings to turn them 'on' and 'off', called from
+        //the ButtonAnimation class.  Toggles highlight.
+        #region Topping selection button clicks
+        private void btn_RS_addPepperoni_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonOnOff(this, btn_RS_addPepperoni);
+        }
+
+        private void btn_RS_addSausage_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonOnOff(this, btn_RS_addSausage);
+        }
+
+        private void btn_RS_addHam_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonOnOff(this, btn_RS_addHam);
+        }
+
+        private void btn_RS_addMushrooms_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonOnOff(this, btn_RS_addMushrooms);
+        }
+
+        private void btn_RS_addOlives_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonOnOff(this, btn_RS_addOlives);
+        }
+
+        private void btn_RS_addPeppers_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonOnOff(this, btn_RS_addPeppers);
+        }
+
+        #endregion
         //
         //add to order button message simulation of adding to order
         //

@@ -130,6 +130,9 @@
   <data name="btnStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btnCheckOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCheckOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnSpecialtyPizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSpecialtyPizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,9 +141,6 @@
   </data>
   <data name="Ultimate_Cheese_Lovers_Pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ultimate_Cheese_Lovers_Pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Zas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Zas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NavigationBlank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NavigationBlank.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,16 +160,19 @@
   <data name="bannerBuildAPizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bannerBuildAPizza2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="build_a_za_logo_150x226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\build_a_za_logo_150x226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Classic_Meat_Lovers_Pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Classic_Meat_Lovers_Pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BBQ_Lovers_PIzza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BBQ_Lovers_PIzza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnCheckOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnCheckOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Zas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="build_a_za_logo_150x226" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\build_a_za_logo_150x226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toppings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toppings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
