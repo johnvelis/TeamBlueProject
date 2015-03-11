@@ -8,6 +8,5 @@ namespace BazingaPizzaria.Model
 {
     public class Beverage
     {
-
     }
 }

@@ -8,7 +8,5 @@ namespace BazingaPizzaria.Model
 {
     public class Pizza
     {
-        //this is first piece of pizza class
-
     }
 }

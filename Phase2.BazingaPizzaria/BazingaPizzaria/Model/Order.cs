@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BazingaPizzaria.Model;
 
-namespace BazingaPizzaria
+namespace BazingaPizzaria.Model
 {
     public class Order
     {
@@ -122,12 +122,12 @@ namespace BazingaPizzaria
             set { _ccCVVCode = value; }
         }
 
-        public List<Pizza> Pizza
+        public List<Pizza> PizzaPurchase
         {
             get { return _pizza; }
             set { _pizza = value; }
         }
-        public List<Beverage> Beverage
+        public List<Beverage> BeveragePurchase
         {
             get { return _beverage; }
             set { _beverage = value; }
