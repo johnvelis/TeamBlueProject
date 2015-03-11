@@ -256,7 +256,7 @@ namespace BazingaPizzaria
         //
         #region tabStart Code (Täman)
 
-        #region Dine In, Carry Out, Return
+        #region Dine In, Carry Out
 
         private void btn_TG_DineIn_Click(object sender, EventArgs e)
         {
@@ -279,17 +279,17 @@ namespace BazingaPizzaria
             ButtonAnimation.ButtonSelect(this, currentButton);
         }
 
-        private void btn_TG_ReturnCust_Click(object sender, EventArgs e)
-        {
-            ClearFields();
+        //private void btn_TG_ReturnCust_Click(object sender, EventArgs e)
+        //{
+        //    ClearFields();
 
-            tabControl2.SelectTab(tab_TG_ReturnCust);
-            txt_TG_Email.BackColor = colFormBackColor;
-            txt_TG_Password.BackColor = colFormBackColor;
-            txt_TG_Email.Focus();
-            Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
-        }
+        //    tabControl2.SelectTab(tab_TG_ReturnCust);
+        //    txt_TG_Email.BackColor = colFormBackColor;
+        //    txt_TG_Password.BackColor = colFormBackColor;
+        //    txt_TG_Email.Focus();
+        //    Button currentButton = sender as Button;
+        //    ButtonAnimation.ButtonSelect(this, currentButton);
+        //}
 
         #endregion
 
@@ -348,36 +348,36 @@ namespace BazingaPizzaria
 
         }
 
-        private void btn_TG_NextReturnCust_Click(object sender, EventArgs e)
-        {
-            Regex emailRegex = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+        //private void btn_TG_NextReturnCust_Click(object sender, EventArgs e)
+        //{
+        //    Regex emailRegex = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
 
-            if (!emailRegex.IsMatch(txt_TG_Email.Text) || (txt_TG_Email.Text == String.Empty))
-            {
-                frmErrorMess.LabelText = "Please enter a valid Email address!";
-                frmErrorMess.ShowDialog();
+        //    if (!emailRegex.IsMatch(txt_TG_Email.Text) || (txt_TG_Email.Text == String.Empty))
+        //    {
+        //        frmErrorMess.LabelText = "Please enter a valid Email address!";
+        //        frmErrorMess.ShowDialog();
 
-                txt_TG_Email.BackColor = colFormValidationError;
-                txt_TG_Email.Focus();
-            }
-            else if (txt_TG_Password.Text == String.Empty)
-            {
-                frmErrorMess.LabelText = "Please enter your password!";
-                frmErrorMess.ShowDialog();
+        //        txt_TG_Email.BackColor = colFormValidationError;
+        //        txt_TG_Email.Focus();
+        //    }
+        //    else if (txt_TG_Password.Text == String.Empty)
+        //    {
+        //        frmErrorMess.LabelText = "Please enter your password!";
+        //        frmErrorMess.ShowDialog();
 
-                txt_TG_Password.BackColor = colFormValidationError;
-                txt_TG_Password.Focus();
-            }
-            else
-            {
-                btnStart.ForeColor = Color.Black;
-                btnSize.ForeColor = colRed;
-                btnSpecialty.ForeColor = Color.Black;
-                btnCheckOut.ForeColor = Color.Black;
+        //        txt_TG_Password.BackColor = colFormValidationError;
+        //        txt_TG_Password.Focus();
+        //    }
+        //    else
+        //    {
+        //        btnStart.ForeColor = Color.Black;
+        //        btnSize.ForeColor = colRed;
+        //        btnSpecialty.ForeColor = Color.Black;
+        //        btnCheckOut.ForeColor = Color.Black;
 
-                tabControlOrderSequence.SelectTab(tabPageSizeCrust);
-            }
-        }
+        //        tabControlOrderSequence.SelectTab(tabPageSizeCrust);
+        //    }
+        //}
 
         #endregion
 
@@ -404,8 +404,8 @@ namespace BazingaPizzaria
             txt_TG_NameDineIn.Clear();
             txt_TG_NameCarryOut.Clear();
             txt_TG_PhoneNum.Clear();
-            txt_TG_Email.Clear();
-            txt_TG_Password.Clear();
+            //txt_TG_Email.Clear();
+            //txt_TG_Password.Clear();
         }
 
         #endregion
