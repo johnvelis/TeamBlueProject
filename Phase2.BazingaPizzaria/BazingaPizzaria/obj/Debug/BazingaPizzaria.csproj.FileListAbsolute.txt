@@ -55,3 +55,12 @@ C:\Users\wolve_000\Desktop\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzari
 C:\Users\wolve_000\Desktop\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormConfirmCancel.resources
 C:\Users\wolve_000\Desktop\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.Properties.Resources.resources
 C:\Users\wolve_000\Desktop\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csproj.GenerateResource.Cache
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.exe.config
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.exe
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csprojResolveAssemblyReference.cache
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormCompletedOrder.resources
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormErrorMessage.resources
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormMain.resources
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormConfirmCancel.resources
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.Properties.Resources.resources
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csproj.GenerateResource.Cache
