@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Beverage.cs" />
     <Compile Include="Model\ButtonAnimation.cs" />
     <Compile Include="FormCompletedOrder.cs">
       <SubType>Form</SubType>
@@ -69,9 +70,9 @@
     <Compile Include="FormConfirmCancel.Designer.cs">
       <DependentUpon>FormConfirmCancel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\GenerateTestData.cs" />
     <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\Pizza.cs" />
     <Compile Include="Model\PizzaItem.cs" />
     <Compile Include="Model\Price.cs" />
     <Compile Include="Program.cs" />
