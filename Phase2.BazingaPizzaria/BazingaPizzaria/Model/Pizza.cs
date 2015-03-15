@@ -8,31 +8,35 @@ namespace BazingaPizzaria.Model
 {
     public class Pizza
     {
+        #region ENUM
+
+        public enum _topping
+        {
+            Pepperoni,
+            ItalianSausage,
+            Ham,
+            Mushrooms,
+            Olives,
+            GreenPeppers,
+
+        };
+        #endregion
         #region FIELDS
-    
+
         private int _pizzaID;
         private string _size;
         private string _crust;
         private bool _isSpecialty;
-        private enum _SpecialtyName
+        private enum _SpecialtyName //Roxie does this need to public for your purposes?
         { 
-            Ultimate_Cheese,
-            Piled_High_Pepperoni,
-            Mounds_of_Meat,
-            Veggie_Patch,
-            Super_Supreme,   
+            UltimateCheese,
+            PiledHighPepperoni,
+            MoundsofMeat,
+            VeggiePatch,
+            SuperSupreme,   
         };
         private byte _quantity = 1;
-        public enum _topping
-        {
-            Pepperoni,
-            Italian_Sausage,
-            Ham,
-            Mushrooms,
-            Olives,
-            Green_Peppers,
-
-        };
+        
 
         private List<PizzaTopping> _pizzaToppings = new List<PizzaTopping>();
         #endregion
@@ -59,6 +63,19 @@ namespace BazingaPizzaria.Model
             get { return Crust; }
             set { Crust = value; }
         }
+        public  bool isSpecialty;
                        
+        #endregion
+
+        #region CONSTUCTORS
+        public Pizza()
+        {
+
+        }
+        public  Pizza (isSpecialty)
+        {
+
+        }
+
         #endregion
     }}
