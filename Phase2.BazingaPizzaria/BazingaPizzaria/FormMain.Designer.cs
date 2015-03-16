@@ -58,6 +58,7 @@
             this.btn_SL_sizeSmall = new System.Windows.Forms.Button();
             this.lblSizeCrust = new System.Windows.Forms.Label();
             this.tabPageSpecialtyPizzas = new System.Windows.Forms.TabPage();
+            this.lbl_RS_whatNext = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_RS_justCheese = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pic_RS_pepperoni = new System.Windows.Forms.PictureBox();
+            this.btn_RS_addToOrder = new System.Windows.Forms.Button();
             this.pnl_RS_veggie = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -90,7 +92,6 @@
             this.btn_RS_supreme = new System.Windows.Forms.Button();
             this.btn_RS_veggie = new System.Windows.Forms.Button();
             this.btn_RS_meat = new System.Windows.Forms.Button();
-            this.btn_RS_addToOrder = new System.Windows.Forms.Button();
             this.btn_RS_pepperoni = new System.Windows.Forms.Button();
             this.btn_RS_cheese = new System.Windows.Forms.Button();
             this.pnl_RS_meat = new System.Windows.Forms.Panel();
@@ -104,6 +105,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.pic_RS_cheese = new System.Windows.Forms.PictureBox();
             this.tabPage_RS_BuildAZa = new System.Windows.Forms.TabPage();
+            this.btn_RS_addToOrder2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -620,6 +622,7 @@
             // tabPageSpecialtyPizzas
             // 
             this.tabPageSpecialtyPizzas.BackColor = System.Drawing.Color.White;
+            this.tabPageSpecialtyPizzas.Controls.Add(this.lbl_RS_whatNext);
             this.tabPageSpecialtyPizzas.Controls.Add(this.groupBox3);
             this.tabPageSpecialtyPizzas.Controls.Add(this.tabControl_RS_Zas);
             this.tabPageSpecialtyPizzas.Controls.Add(this.btn_RS_checkOut);
@@ -629,6 +632,18 @@
             this.tabPageSpecialtyPizzas.Size = new System.Drawing.Size(1192, 474);
             this.tabPageSpecialtyPizzas.TabIndex = 2;
             this.tabPageSpecialtyPizzas.Text = "Speicalty Pizzas";
+            // 
+            // lbl_RS_whatNext
+            // 
+            this.lbl_RS_whatNext.AutoSize = true;
+            this.lbl_RS_whatNext.BackColor = System.Drawing.Color.Yellow;
+            this.lbl_RS_whatNext.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_whatNext.Location = new System.Drawing.Point(471, 435);
+            this.lbl_RS_whatNext.Name = "lbl_RS_whatNext";
+            this.lbl_RS_whatNext.Size = new System.Drawing.Size(343, 25);
+            this.lbl_RS_whatNext.TabIndex = 11;
+            this.lbl_RS_whatNext.Text = "What would you like to do next? --->";
+            this.lbl_RS_whatNext.Visible = false;
             // 
             // groupBox3
             // 
@@ -743,6 +758,7 @@
             this.tabPage_RS_specialties.Controls.Add(this.pnl_RS_Start);
             this.tabPage_RS_specialties.Controls.Add(this.pnl_RS_supreme);
             this.tabPage_RS_specialties.Controls.Add(this.pnl_RS_pepperoni);
+            this.tabPage_RS_specialties.Controls.Add(this.btn_RS_addToOrder);
             this.tabPage_RS_specialties.Controls.Add(this.pnl_RS_veggie);
             this.tabPage_RS_specialties.Controls.Add(this.grp_RS_SpecialtyZas);
             this.tabPage_RS_specialties.Controls.Add(this.pnl_RS_meat);
@@ -902,6 +918,23 @@
             this.pic_RS_pepperoni.TabIndex = 0;
             this.pic_RS_pepperoni.TabStop = false;
             // 
+            // btn_RS_addToOrder
+            // 
+            this.btn_RS_addToOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_RS_addToOrder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_RS_addToOrder.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RS_addToOrder.ForeColor = System.Drawing.Color.White;
+            this.btn_RS_addToOrder.Location = new System.Drawing.Point(35, 340);
+            this.btn_RS_addToOrder.Name = "btn_RS_addToOrder";
+            this.btn_RS_addToOrder.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            this.btn_RS_addToOrder.Size = new System.Drawing.Size(292, 41);
+            this.btn_RS_addToOrder.TabIndex = 0;
+            this.btn_RS_addToOrder.Text = "&Add this pizza to my order!";
+            this.btn_RS_addToOrder.UseVisualStyleBackColor = false;
+            this.btn_RS_addToOrder.Click += new System.EventHandler(this.btn_RS_addToOrder_Click);
+            this.btn_RS_addToOrder.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_RS_addToOrder.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
             // pnl_RS_veggie
             // 
             this.pnl_RS_veggie.BackColor = System.Drawing.Color.White;
@@ -959,14 +992,13 @@
             this.grp_RS_SpecialtyZas.Controls.Add(this.btn_RS_supreme);
             this.grp_RS_SpecialtyZas.Controls.Add(this.btn_RS_veggie);
             this.grp_RS_SpecialtyZas.Controls.Add(this.btn_RS_meat);
-            this.grp_RS_SpecialtyZas.Controls.Add(this.btn_RS_addToOrder);
             this.grp_RS_SpecialtyZas.Controls.Add(this.btn_RS_pepperoni);
             this.grp_RS_SpecialtyZas.Controls.Add(this.btn_RS_cheese);
             this.grp_RS_SpecialtyZas.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_RS_SpecialtyZas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.grp_RS_SpecialtyZas.Location = new System.Drawing.Point(19, 15);
             this.grp_RS_SpecialtyZas.Name = "grp_RS_SpecialtyZas";
-            this.grp_RS_SpecialtyZas.Size = new System.Drawing.Size(322, 366);
+            this.grp_RS_SpecialtyZas.Size = new System.Drawing.Size(322, 318);
             this.grp_RS_SpecialtyZas.TabIndex = 0;
             this.grp_RS_SpecialtyZas.TabStop = false;
             this.grp_RS_SpecialtyZas.Text = "Specialty Zas";
@@ -1021,23 +1053,6 @@
             this.btn_RS_meat.Click += new System.EventHandler(this.btn_RS_meat_Click);
             this.btn_RS_meat.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_RS_meat.MouseLeave += new System.EventHandler(this.standardButtonLeave);
-            // 
-            // btn_RS_addToOrder
-            // 
-            this.btn_RS_addToOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_RS_addToOrder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
-            this.btn_RS_addToOrder.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RS_addToOrder.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addToOrder.Location = new System.Drawing.Point(15, 314);
-            this.btn_RS_addToOrder.Name = "btn_RS_addToOrder";
-            this.btn_RS_addToOrder.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
-            this.btn_RS_addToOrder.Size = new System.Drawing.Size(292, 41);
-            this.btn_RS_addToOrder.TabIndex = 0;
-            this.btn_RS_addToOrder.Text = "&Add this pizza to my order!";
-            this.btn_RS_addToOrder.UseVisualStyleBackColor = false;
-            this.btn_RS_addToOrder.Click += new System.EventHandler(this.btn_RS_addToOrder_Click);
-            this.btn_RS_addToOrder.MouseEnter += new System.EventHandler(this.standardButtonEnter);
-            this.btn_RS_addToOrder.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_RS_pepperoni
             // 
@@ -1180,6 +1195,7 @@
             // 
             // tabPage_RS_BuildAZa
             // 
+            this.tabPage_RS_BuildAZa.Controls.Add(this.btn_RS_addToOrder2);
             this.tabPage_RS_BuildAZa.Controls.Add(this.groupBox4);
             this.tabPage_RS_BuildAZa.Controls.Add(this.pictureBox3);
             this.tabPage_RS_BuildAZa.Location = new System.Drawing.Point(4, 22);
@@ -1188,6 +1204,20 @@
             this.tabPage_RS_BuildAZa.TabIndex = 2;
             this.tabPage_RS_BuildAZa.Text = "Build-a-Za";
             this.tabPage_RS_BuildAZa.UseVisualStyleBackColor = true;
+            // 
+            // btn_RS_addToOrder2
+            // 
+            this.btn_RS_addToOrder2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_RS_addToOrder2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_RS_addToOrder2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RS_addToOrder2.ForeColor = System.Drawing.Color.White;
+            this.btn_RS_addToOrder2.Location = new System.Drawing.Point(67, 345);
+            this.btn_RS_addToOrder2.Name = "btn_RS_addToOrder2";
+            this.btn_RS_addToOrder2.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            this.btn_RS_addToOrder2.Size = new System.Drawing.Size(292, 41);
+            this.btn_RS_addToOrder2.TabIndex = 2;
+            this.btn_RS_addToOrder2.Text = "&Add this pizza to my order!";
+            this.btn_RS_addToOrder2.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
@@ -1204,7 +1234,7 @@
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.groupBox4.Location = new System.Drawing.Point(15, 33);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(391, 347);
+            this.groupBox4.Size = new System.Drawing.Size(391, 306);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Choose Your Toppings";
@@ -1213,7 +1243,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Nirmala UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(244, 83);
+            this.label17.Location = new System.Drawing.Point(244, 65);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(89, 30);
             this.label17.TabIndex = 10;
@@ -1223,7 +1253,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Nirmala UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(66, 83);
+            this.label16.Location = new System.Drawing.Point(66, 65);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(72, 30);
             this.label16.TabIndex = 9;
@@ -1235,7 +1265,7 @@
             this.btn_RS_addPeppers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_addPeppers.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_addPeppers.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addPeppers.Location = new System.Drawing.Point(212, 271);
+            this.btn_RS_addPeppers.Location = new System.Drawing.Point(212, 239);
             this.btn_RS_addPeppers.Name = "btn_RS_addPeppers";
             this.btn_RS_addPeppers.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_addPeppers.Size = new System.Drawing.Size(155, 46);
@@ -1252,7 +1282,7 @@
             this.btn_RS_addOlives.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_addOlives.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_addOlives.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addOlives.Location = new System.Drawing.Point(212, 203);
+            this.btn_RS_addOlives.Location = new System.Drawing.Point(212, 179);
             this.btn_RS_addOlives.Name = "btn_RS_addOlives";
             this.btn_RS_addOlives.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_addOlives.Size = new System.Drawing.Size(155, 46);
@@ -1269,7 +1299,7 @@
             this.btn_RS_addMushrooms.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_addMushrooms.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_addMushrooms.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addMushrooms.Location = new System.Drawing.Point(212, 135);
+            this.btn_RS_addMushrooms.Location = new System.Drawing.Point(212, 119);
             this.btn_RS_addMushrooms.Name = "btn_RS_addMushrooms";
             this.btn_RS_addMushrooms.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_addMushrooms.Size = new System.Drawing.Size(155, 46);
@@ -1286,7 +1316,7 @@
             this.btn_RS_addHam.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_addHam.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_addHam.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addHam.Location = new System.Drawing.Point(24, 271);
+            this.btn_RS_addHam.Location = new System.Drawing.Point(24, 239);
             this.btn_RS_addHam.Name = "btn_RS_addHam";
             this.btn_RS_addHam.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_addHam.Size = new System.Drawing.Size(155, 46);
@@ -1303,7 +1333,7 @@
             this.btn_RS_addSausage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_addSausage.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_addSausage.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addSausage.Location = new System.Drawing.Point(24, 203);
+            this.btn_RS_addSausage.Location = new System.Drawing.Point(24, 179);
             this.btn_RS_addSausage.Name = "btn_RS_addSausage";
             this.btn_RS_addSausage.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_addSausage.Size = new System.Drawing.Size(155, 46);
@@ -1320,7 +1350,7 @@
             this.btn_RS_addPepperoni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_addPepperoni.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_addPepperoni.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addPepperoni.Location = new System.Drawing.Point(24, 135);
+            this.btn_RS_addPepperoni.Location = new System.Drawing.Point(24, 119);
             this.btn_RS_addPepperoni.Name = "btn_RS_addPepperoni";
             this.btn_RS_addPepperoni.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_addPepperoni.Size = new System.Drawing.Size(155, 46);
@@ -2229,6 +2259,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tabPageSpecialtyPizzas.ResumeLayout(false);
+            this.tabPageSpecialtyPizzas.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.tabControl_RS_Zas.ResumeLayout(false);
@@ -2434,6 +2465,7 @@
         private System.Windows.Forms.Button btn_RS_addHam;
         private System.Windows.Forms.Button btn_RS_addSausage;
         private System.Windows.Forms.Button btn_RS_addPepperoni;
+        private System.Windows.Forms.Button btn_RS_addToOrder2;
+        private System.Windows.Forms.Label lbl_RS_whatNext;
     }
 }
-

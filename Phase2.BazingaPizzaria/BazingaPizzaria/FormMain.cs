@@ -235,9 +235,9 @@ namespace BazingaPizzaria
 
         //Standard MouseOver effects that can be added to any button within FormMain
         #region standardButtons
-        
-         //The folowing two event handlers (standardButtonEnter and standardButtonLeave) are to 
-         //provide visual response for mouseover of the standard buttons
+
+        //The folowing two event handlers (standardButtonEnter and standardButtonLeave) are to 
+        //provide visual response for mouseover of the standard buttons
         private void standardButtonEnter(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
@@ -630,35 +630,35 @@ namespace BazingaPizzaria
         private void btn_RS_cheese_Click(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
+            ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_cheese.BringToFront();
         }
 
         private void btn_RS_pepperoni_Click(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
+            ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_pepperoni.BringToFront();
         }
 
         private void btn_RS_meat_Click(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
+            ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_meat.BringToFront();
         }
 
         private void btn_RS_veggie_Click(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
+            ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_veggie.BringToFront();
         }
 
         private void btn_RS_supreme_Click(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
+            ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_supreme.BringToFront();
         }
 
@@ -699,14 +699,26 @@ namespace BazingaPizzaria
         }
 
         #endregion
+
+        private void btn_RS_addToOrder_Click(object sender, EventArgs e)
+        {
+            RS_addZa();
+        }
+
+        private void btn_RS_addToOrder2_Click(object sender, EventArgs e)
+        {
+            RS_addZa();
+        }
+
         //
         //add to order button message simulation of adding to order
         //
-        private void btn_RS_addToOrder_Click(object sender, EventArgs e)
+        private void RS_addZa()
         {
             //code to add the pizza to the order
             frmErrorMess.LabelText = "You have added a Za to your order!";
             frmErrorMess.ShowDialog();
+            lbl_RS_whatNext.Visible = true;
         }
 
         #endregion
