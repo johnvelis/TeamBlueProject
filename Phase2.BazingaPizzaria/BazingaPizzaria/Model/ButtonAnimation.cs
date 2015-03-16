@@ -40,6 +40,43 @@ namespace BazingaPizzaria.Model
             button.BackColor = form.colDarkBlue;
         }
 
+        // For selection buttons that are in a tab within a tab
+        public static void ButtonSelectInnerTab(FormMain form, Button button)
+        {
+            // Find all TabControls on the form
+            foreach (var tab in form.Controls.OfType<TabControl>())
+            {
+                // Find all TabPages in this TabControl
+                foreach (var page in tab.Controls.OfType<TabPage>())
+                {
+                    // Find all TabControls in the TabPage
+                    foreach (var tabTwo in page.Controls.OfType<TabControl>())
+                    {
+                        // Find all TabPages inside this TabControl
+                        foreach (var pageTwo in tabTwo.Controls.OfType<TabPage>())
+                        {
+                            // Find all GroupBoxes in this tab
+                            foreach (var gb in pageTwo.Controls.OfType<GroupBox>())
+                            {
+                                // Is this the GroupBox that contains parameter button?
+                                if (gb.Contains(button))
+                                {
+                                    // Change all of the buttons in this GroupBox
+                                    foreach (var b in gb.Controls.OfType<Button>())
+                                    {
+                                        b.BackColor = form.colRed;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Highlight the selected button
+            button.BackColor = form.colDarkBlue;
+        }
+
         public static void ButtonOnOff(FormMain form, Button button)
         {
             if (button.BackColor == form.colRed)

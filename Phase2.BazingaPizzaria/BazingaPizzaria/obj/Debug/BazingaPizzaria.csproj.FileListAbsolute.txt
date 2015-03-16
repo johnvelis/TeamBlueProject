@@ -64,3 +64,15 @@ C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\
 C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormConfirmCancel.resources
 C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.Properties.Resources.resources
 C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csproj.GenerateResource.Cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csprojResolveAssemblyReference.cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormCompletedOrder.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormErrorMessage.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormMain.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.FormConfirmCancel.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.Properties.Resources.resources
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csproj.GenerateResource.Cache
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.exe
+C:\Users\Roxy\Desktop\School\Current\CIT195\Team project\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.pdb
+C:\Users\wolve_000\Desktop\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.exe
+C:\Users\wolve_000\Desktop\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.pdb
+C:\Users\wolve_000\Desktop\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.pdb

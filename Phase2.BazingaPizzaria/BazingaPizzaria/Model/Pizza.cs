@@ -38,7 +38,7 @@ namespace BazingaPizzaria.Model
         private byte _quantity = 1;
         
 
-        private List<PizzaTopping> _pizzaToppings = new List<PizzaTopping>();
+        //private List<PizzaTopping> _pizzaToppings = new List<PizzaTopping>();
         #endregion
 
         #region PROPERTIES
