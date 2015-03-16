@@ -119,6 +119,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_RS_checkOut = new System.Windows.Forms.Button();
             this.btn_RS_anotherZa = new System.Windows.Forms.Button();
+            this.tab_TG_Beverage1 = new System.Windows.Forms.TabPage();
+            this.tab_TG_Beverage2 = new System.Windows.Forms.TabPage();
             this.tabPageCheckOut = new System.Windows.Forms.TabPage();
             this.lbl_JV_CCCVVCode = new System.Windows.Forms.Label();
             this.textBox_JV_CCCVVCode = new System.Windows.Forms.TextBox();
@@ -179,13 +181,6 @@
             this.btn_hiddenClose = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCheckOut = new System.Windows.Forms.Button();
-            this.btnSpecialty = new System.Windows.Forms.Button();
-            this.btnSize = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.tab_TG_Beverage1 = new System.Windows.Forms.TabPage();
-            this.tab_TG_Beverage2 = new System.Windows.Forms.TabPage();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.grp_TG_Selections.SuspendLayout();
@@ -228,7 +223,6 @@
             this.tabPageControlsTemplate.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlOrderSequence
@@ -1399,7 +1393,6 @@
             this.btn_RS_checkOut.TabIndex = 2;
             this.btn_RS_checkOut.Text = "&Check Out";
             this.btn_RS_checkOut.UseVisualStyleBackColor = false;
-            this.btn_RS_checkOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             this.btn_RS_checkOut.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_RS_checkOut.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -1416,9 +1409,26 @@
             this.btn_RS_anotherZa.TabIndex = 1;
             this.btn_RS_anotherZa.Text = "A&dd Another Za!";
             this.btn_RS_anotherZa.UseVisualStyleBackColor = false;
-            this.btn_RS_anotherZa.Click += new System.EventHandler(this.btnSize_Click);
             this.btn_RS_anotherZa.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_RS_anotherZa.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
+            // tab_TG_Beverage1
+            // 
+            this.tab_TG_Beverage1.Location = new System.Drawing.Point(4, 22);
+            this.tab_TG_Beverage1.Name = "tab_TG_Beverage1";
+            this.tab_TG_Beverage1.Size = new System.Drawing.Size(1192, 474);
+            this.tab_TG_Beverage1.TabIndex = 7;
+            this.tab_TG_Beverage1.Text = "Beverage1";
+            this.tab_TG_Beverage1.UseVisualStyleBackColor = true;
+            // 
+            // tab_TG_Beverage2
+            // 
+            this.tab_TG_Beverage2.Location = new System.Drawing.Point(4, 22);
+            this.tab_TG_Beverage2.Name = "tab_TG_Beverage2";
+            this.tab_TG_Beverage2.Size = new System.Drawing.Size(1192, 474);
+            this.tab_TG_Beverage2.TabIndex = 8;
+            this.tab_TG_Beverage2.Text = "Beverage2";
+            this.tab_TG_Beverage2.UseVisualStyleBackColor = true;
             // 
             // tabPageCheckOut
             // 
@@ -2146,114 +2156,6 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::BazingaPizzaria.Properties.Resources.NavigationBlank;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Controls.Add(this.btnCheckOut);
-            this.panel2.Controls.Add(this.btnSpecialty);
-            this.panel2.Controls.Add(this.btnSize);
-            this.panel2.Controls.Add(this.btnStart);
-            this.panel2.Location = new System.Drawing.Point(44, 141);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(997, 109);
-            this.panel2.TabIndex = 14;
-            // 
-            // btnCheckOut
-            // 
-            this.btnCheckOut.FlatAppearance.BorderSize = 0;
-            this.btnCheckOut.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnCheckOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCheckOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckOut.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.ForeColor = System.Drawing.Color.Black;
-            this.btnCheckOut.Location = new System.Drawing.Point(746, 21);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(239, 67);
-            this.btnCheckOut.TabIndex = 3;
-            this.btnCheckOut.Text = "&Check Out";
-            this.btnCheckOut.UseVisualStyleBackColor = true;
-            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
-            this.btnCheckOut.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.btnCheckOut.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
-            // 
-            // btnSpecialty
-            // 
-            this.btnSpecialty.FlatAppearance.BorderSize = 0;
-            this.btnSpecialty.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnSpecialty.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSpecialty.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSpecialty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSpecialty.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSpecialty.ForeColor = System.Drawing.Color.Black;
-            this.btnSpecialty.Location = new System.Drawing.Point(517, 21);
-            this.btnSpecialty.Name = "btnSpecialty";
-            this.btnSpecialty.Size = new System.Drawing.Size(238, 67);
-            this.btnSpecialty.TabIndex = 2;
-            this.btnSpecialty.Text = "S&pecialty Zas";
-            this.btnSpecialty.UseVisualStyleBackColor = true;
-            this.btnSpecialty.Click += new System.EventHandler(this.btnSpecialty_Click);
-            this.btnSpecialty.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.btnSpecialty.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
-            // 
-            // btnSize
-            // 
-            this.btnSize.FlatAppearance.BorderSize = 0;
-            this.btnSize.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnSize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSize.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSize.ForeColor = System.Drawing.Color.Black;
-            this.btnSize.Location = new System.Drawing.Point(283, 20);
-            this.btnSize.Name = "btnSize";
-            this.btnSize.Size = new System.Drawing.Size(238, 69);
-            this.btnSize.TabIndex = 1;
-            this.btnSize.Text = "S&ize and Crust";
-            this.btnSize.UseVisualStyleBackColor = true;
-            this.btnSize.Click += new System.EventHandler(this.btnSize_Click);
-            this.btnSize.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.btnSize.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
-            // 
-            // btnStart
-            // 
-            this.btnStart.FlatAppearance.BorderSize = 0;
-            this.btnStart.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnStart.Location = new System.Drawing.Point(37, 21);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(246, 67);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "&Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            this.btnStart.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
-            this.btnStart.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
-            // 
-            // tab_TG_Beverage1
-            // 
-            this.tab_TG_Beverage1.Location = new System.Drawing.Point(4, 22);
-            this.tab_TG_Beverage1.Name = "tab_TG_Beverage1";
-            this.tab_TG_Beverage1.Size = new System.Drawing.Size(1192, 474);
-            this.tab_TG_Beverage1.TabIndex = 7;
-            this.tab_TG_Beverage1.Text = "Beverage1";
-            this.tab_TG_Beverage1.UseVisualStyleBackColor = true;
-            // 
-            // tab_TG_Beverage2
-            // 
-            this.tab_TG_Beverage2.Location = new System.Drawing.Point(4, 22);
-            this.tab_TG_Beverage2.Name = "tab_TG_Beverage2";
-            this.tab_TG_Beverage2.Size = new System.Drawing.Size(1192, 474);
-            this.tab_TG_Beverage2.TabIndex = 8;
-            this.tab_TG_Beverage2.Text = "Beverage2";
-            this.tab_TG_Beverage2.UseVisualStyleBackColor = true;
-            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2263,7 +2165,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControlOrderSequence);
-            this.Controls.Add(this.panel2);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormMain";
@@ -2326,7 +2227,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2344,11 +2244,6 @@
         private System.Windows.Forms.Button btn_Sample;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnCheckOut;
-        private System.Windows.Forms.Button btnSpecialty;
-        private System.Windows.Forms.Button btnSize;
-        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnCancelOrder;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;

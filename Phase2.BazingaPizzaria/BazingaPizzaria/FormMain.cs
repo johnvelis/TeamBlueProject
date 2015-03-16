@@ -80,151 +80,6 @@ namespace BazingaPizzaria
 
         //Navigation button visual response and cancel order button
         #region navigationButtons
-        //
-        // The following four click event handlers are for the navigation visual response
-        // and the navigation to tabs
-        //
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            btnStart.ForeColor = colRed;
-            btnSize.ForeColor = Color.Black;
-            btnSpecialty.ForeColor = Color.Black;
-            btnCheckOut.ForeColor = Color.Black;
-            tabControlOrderSequence.SelectedTab = tabPageStart;
-        }
-
-        private void btnSize_Click(object sender, EventArgs e)
-        {
-            btnStart.ForeColor = Color.Black;
-            btnSize.ForeColor = colRed;
-            btnSpecialty.ForeColor = Color.Black;
-            btnCheckOut.ForeColor = Color.Black;
-            tabControlOrderSequence.SelectedTab = tabPageSizeCrust;
-        }
-
-        private void btnSpecialty_Click(object sender, EventArgs e)
-        {
-            btnStart.ForeColor = Color.Black;
-            btnSize.ForeColor = Color.Black;
-            btnSpecialty.ForeColor = colRed;
-            btnCheckOut.ForeColor = Color.Black;
-            tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
-        }
-
-        private void btnCheckOut_Click(object sender, EventArgs e)
-        {
-            btnStart.ForeColor = Color.Black;
-            btnSize.ForeColor = Color.Black;
-            btnSpecialty.ForeColor = Color.Black;
-            btnCheckOut.ForeColor = colRed;
-            tabControlOrderSequence.SelectedTab = tabPageCheckOut;
-            //
-            // method to demo Current Pizza Order info
-            //
-            tabPageCheckOutPopulateData();
-        }
-
-        //
-        // The following two event handlers (buttonMouseEnter and buttonMouseLeave) are to provide
-        // visual response to button mouseover
-        //
-
-        private void buttonMouseEnter(object sender, EventArgs e)
-        {
-            if (sender == btnStart)
-            {
-                if (btnStart.ForeColor == Color.Black)
-                {
-                    btnStart.ForeColor = Color.White;
-                }
-                else
-                {
-                    btnStart.ForeColor = Color.Snow;
-                }
-            }
-            else if (sender == btnSize)
-            {
-                if (btnSize.ForeColor == Color.Black)
-                {
-                    btnSize.ForeColor = Color.White;
-                }
-                else
-                {
-                    btnSize.ForeColor = Color.Snow;
-                }
-            }
-            else if (sender == btnSpecialty)
-            {
-                if (btnSpecialty.ForeColor == Color.Black)
-                {
-                    btnSpecialty.ForeColor = Color.White;
-                }
-                else
-                {
-                    btnSpecialty.ForeColor = Color.Snow;
-                }
-            }
-            else if (sender == btnCheckOut)
-            {
-                if (btnCheckOut.ForeColor == Color.Black)
-                {
-                    btnCheckOut.ForeColor = Color.White;
-                }
-                else
-                {
-                    btnCheckOut.ForeColor = Color.Snow;
-                }
-            }
-        }
-
-        private void buttonMouseLeave(object sender, EventArgs e)
-        {
-            if (sender == btnStart)
-            {
-                if (btnStart.ForeColor == Color.Snow || btnStart.ForeColor == colRed)
-                {
-                    btnStart.ForeColor = colRed;
-                }
-                else
-                {
-                    btnStart.ForeColor = Color.Black;
-                }
-            }
-            else if (sender == btnSize)
-            {
-                if (btnSize.ForeColor == Color.Snow || btnSize.ForeColor == colRed)
-                {
-                    btnSize.ForeColor = colRed;
-                }
-                else
-                {
-                    btnSize.ForeColor = Color.Black;
-                }
-            }
-            else if (sender == btnSpecialty)
-            {
-                if (btnSpecialty.ForeColor == Color.Snow || btnSpecialty.ForeColor == colRed)
-                {
-                    btnSpecialty.ForeColor = colRed;
-                }
-                else
-                {
-                    btnSpecialty.ForeColor = Color.Black;
-                }
-            }
-            else if (sender == btnCheckOut)
-            {
-                if (btnCheckOut.ForeColor == Color.Snow || btnCheckOut.ForeColor == colRed)
-                {
-                    btnCheckOut.ForeColor = colRed;
-                }
-                else
-                {
-                    btnCheckOut.ForeColor = Color.Black;
-                }
-            }
-        }
 
         private void btnCancelOrder_Click(object sender, EventArgs e)
         {
@@ -307,11 +162,6 @@ namespace BazingaPizzaria
             }
             else
             {
-                btnStart.ForeColor = Color.Black;
-                btnSize.ForeColor = colRed;
-                btnSpecialty.ForeColor = Color.Black;
-                btnCheckOut.ForeColor = Color.Black;
-
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
         }
@@ -338,11 +188,6 @@ namespace BazingaPizzaria
             }
             else
             {
-                btnStart.ForeColor = Color.Black;
-                btnSize.ForeColor = colRed;
-                btnSpecialty.ForeColor = Color.Black;
-                btnCheckOut.ForeColor = Color.Black;
-
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
 
@@ -426,10 +271,6 @@ namespace BazingaPizzaria
 
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
-            btnStart.ForeColor = Color.Black;
-            btnSize.ForeColor = Color.Black;
-            btnSpecialty.ForeColor = colRed;
-            btnCheckOut.ForeColor = Color.Black;
             tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
         }
 
