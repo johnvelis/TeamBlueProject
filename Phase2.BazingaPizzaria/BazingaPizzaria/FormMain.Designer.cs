@@ -184,6 +184,8 @@
             this.btnSpecialty = new System.Windows.Forms.Button();
             this.btnSize = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
+            this.tab_TG_Beverage1 = new System.Windows.Forms.TabPage();
+            this.tab_TG_Beverage2 = new System.Windows.Forms.TabPage();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.grp_TG_Selections.SuspendLayout();
@@ -234,6 +236,8 @@
             this.tabControlOrderSequence.Controls.Add(this.tabPageStart);
             this.tabControlOrderSequence.Controls.Add(this.tabPageSizeCrust);
             this.tabControlOrderSequence.Controls.Add(this.tabPageSpecialtyPizzas);
+            this.tabControlOrderSequence.Controls.Add(this.tab_TG_Beverage1);
+            this.tabControlOrderSequence.Controls.Add(this.tab_TG_Beverage2);
             this.tabControlOrderSequence.Controls.Add(this.tabPageCheckOut);
             this.tabControlOrderSequence.Controls.Add(this.tabPageCompleteOrder);
             this.tabControlOrderSequence.Controls.Add(this.tabPageThankYou);
@@ -2232,6 +2236,24 @@
             this.btnStart.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
             this.btnStart.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
             // 
+            // tab_TG_Beverage1
+            // 
+            this.tab_TG_Beverage1.Location = new System.Drawing.Point(4, 22);
+            this.tab_TG_Beverage1.Name = "tab_TG_Beverage1";
+            this.tab_TG_Beverage1.Size = new System.Drawing.Size(1192, 474);
+            this.tab_TG_Beverage1.TabIndex = 7;
+            this.tab_TG_Beverage1.Text = "Beverage1";
+            this.tab_TG_Beverage1.UseVisualStyleBackColor = true;
+            // 
+            // tab_TG_Beverage2
+            // 
+            this.tab_TG_Beverage2.Location = new System.Drawing.Point(4, 22);
+            this.tab_TG_Beverage2.Name = "tab_TG_Beverage2";
+            this.tab_TG_Beverage2.Size = new System.Drawing.Size(1192, 474);
+            this.tab_TG_Beverage2.TabIndex = 8;
+            this.tab_TG_Beverage2.Text = "Beverage2";
+            this.tab_TG_Beverage2.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2467,5 +2489,7 @@
         private System.Windows.Forms.Button btn_RS_addPepperoni;
         private System.Windows.Forms.Button btn_RS_addToOrder2;
         private System.Windows.Forms.Label lbl_RS_whatNext;
+        private System.Windows.Forms.TabPage tab_TG_Beverage1;
+        private System.Windows.Forms.TabPage tab_TG_Beverage2;
     }
 }
