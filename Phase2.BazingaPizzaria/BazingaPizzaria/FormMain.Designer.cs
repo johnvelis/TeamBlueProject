@@ -181,16 +181,12 @@
             this.btn_hiddenClose = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pnl_RS_navStart = new System.Windows.Forms.Panel();
-            this.pnl_RS_navSizeCrust = new System.Windows.Forms.Panel();
-            this.pnl_RS_navChooseZa = new System.Windows.Forms.Panel();
-            this.pnl_RS_navBeverages = new System.Windows.Forms.Panel();
-            this.pnl_RS_navCheckOut = new System.Windows.Forms.Panel();
-            this.lbl_RS_navStart = new System.Windows.Forms.Label();
             this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
             this.lbl_RS_navChooseZa = new System.Windows.Forms.Label();
             this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
             this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
+            this.lbl_RS_navStart = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.grp_TG_Selections.SuspendLayout();
@@ -233,11 +229,7 @@
             this.tabPageControlsTemplate.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pnl_RS_navStart.SuspendLayout();
-            this.pnl_RS_navSizeCrust.SuspendLayout();
-            this.pnl_RS_navChooseZa.SuspendLayout();
-            this.pnl_RS_navBeverages.SuspendLayout();
-            this.pnl_RS_navCheckOut.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlOrderSequence
@@ -2171,71 +2163,12 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
-            // pnl_RS_navStart
-            // 
-            this.pnl_RS_navStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.pnl_RS_navStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_RS_navStart.Controls.Add(this.lbl_RS_navStart);
-            this.pnl_RS_navStart.Location = new System.Drawing.Point(44, 139);
-            this.pnl_RS_navStart.Name = "pnl_RS_navStart";
-            this.pnl_RS_navStart.Size = new System.Drawing.Size(239, 85);
-            this.pnl_RS_navStart.TabIndex = 17;
-            // 
-            // pnl_RS_navSizeCrust
-            // 
-            this.pnl_RS_navSizeCrust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.pnl_RS_navSizeCrust.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_RS_navSizeCrust.Controls.Add(this.lbl_RS_navSizeCrust);
-            this.pnl_RS_navSizeCrust.Location = new System.Drawing.Point(283, 139);
-            this.pnl_RS_navSizeCrust.Name = "pnl_RS_navSizeCrust";
-            this.pnl_RS_navSizeCrust.Size = new System.Drawing.Size(239, 85);
-            this.pnl_RS_navSizeCrust.TabIndex = 18;
-            // 
-            // pnl_RS_navChooseZa
-            // 
-            this.pnl_RS_navChooseZa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.pnl_RS_navChooseZa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_RS_navChooseZa.Controls.Add(this.lbl_RS_navChooseZa);
-            this.pnl_RS_navChooseZa.Location = new System.Drawing.Point(522, 139);
-            this.pnl_RS_navChooseZa.Name = "pnl_RS_navChooseZa";
-            this.pnl_RS_navChooseZa.Size = new System.Drawing.Size(239, 85);
-            this.pnl_RS_navChooseZa.TabIndex = 19;
-            // 
-            // pnl_RS_navBeverages
-            // 
-            this.pnl_RS_navBeverages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.pnl_RS_navBeverages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_RS_navBeverages.Controls.Add(this.lbl_RS_navBeverages);
-            this.pnl_RS_navBeverages.Location = new System.Drawing.Point(761, 139);
-            this.pnl_RS_navBeverages.Name = "pnl_RS_navBeverages";
-            this.pnl_RS_navBeverages.Size = new System.Drawing.Size(239, 85);
-            this.pnl_RS_navBeverages.TabIndex = 20;
-            // 
-            // pnl_RS_navCheckOut
-            // 
-            this.pnl_RS_navCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
-            this.pnl_RS_navCheckOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_RS_navCheckOut.Controls.Add(this.lbl_RS_navCheckOut);
-            this.pnl_RS_navCheckOut.Location = new System.Drawing.Point(1000, 139);
-            this.pnl_RS_navCheckOut.Name = "pnl_RS_navCheckOut";
-            this.pnl_RS_navCheckOut.Size = new System.Drawing.Size(239, 85);
-            this.pnl_RS_navCheckOut.TabIndex = 21;
-            // 
-            // lbl_RS_navStart
-            // 
-            this.lbl_RS_navStart.AutoSize = true;
-            this.lbl_RS_navStart.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navStart.Location = new System.Drawing.Point(78, 29);
-            this.lbl_RS_navStart.Name = "lbl_RS_navStart";
-            this.lbl_RS_navStart.Size = new System.Drawing.Size(80, 37);
-            this.lbl_RS_navStart.TabIndex = 0;
-            this.lbl_RS_navStart.Text = "Start";
-            // 
             // lbl_RS_navSizeCrust
             // 
             this.lbl_RS_navSizeCrust.AutoSize = true;
+            this.lbl_RS_navSizeCrust.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navSizeCrust.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navSizeCrust.Location = new System.Drawing.Point(32, 28);
+            this.lbl_RS_navSizeCrust.Location = new System.Drawing.Point(300, 41);
             this.lbl_RS_navSizeCrust.Name = "lbl_RS_navSizeCrust";
             this.lbl_RS_navSizeCrust.Size = new System.Drawing.Size(172, 37);
             this.lbl_RS_navSizeCrust.TabIndex = 0;
@@ -2244,8 +2177,9 @@
             // lbl_RS_navChooseZa
             // 
             this.lbl_RS_navChooseZa.AutoSize = true;
+            this.lbl_RS_navChooseZa.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navChooseZa.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navChooseZa.Location = new System.Drawing.Point(11, 28);
+            this.lbl_RS_navChooseZa.Location = new System.Drawing.Point(511, 41);
             this.lbl_RS_navChooseZa.Name = "lbl_RS_navChooseZa";
             this.lbl_RS_navChooseZa.Size = new System.Drawing.Size(214, 37);
             this.lbl_RS_navChooseZa.TabIndex = 0;
@@ -2254,8 +2188,9 @@
             // lbl_RS_navBeverages
             // 
             this.lbl_RS_navBeverages.AutoSize = true;
+            this.lbl_RS_navBeverages.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navBeverages.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navBeverages.Location = new System.Drawing.Point(46, 28);
+            this.lbl_RS_navBeverages.Location = new System.Drawing.Point(773, 41);
             this.lbl_RS_navBeverages.Name = "lbl_RS_navBeverages";
             this.lbl_RS_navBeverages.Size = new System.Drawing.Size(145, 37);
             this.lbl_RS_navBeverages.TabIndex = 0;
@@ -2264,12 +2199,38 @@
             // lbl_RS_navCheckOut
             // 
             this.lbl_RS_navCheckOut.AutoSize = true;
+            this.lbl_RS_navCheckOut.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navCheckOut.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navCheckOut.Location = new System.Drawing.Point(45, 28);
+            this.lbl_RS_navCheckOut.Location = new System.Drawing.Point(1009, 41);
             this.lbl_RS_navCheckOut.Name = "lbl_RS_navCheckOut";
             this.lbl_RS_navCheckOut.Size = new System.Drawing.Size(147, 37);
             this.lbl_RS_navCheckOut.TabIndex = 0;
             this.lbl_RS_navCheckOut.Text = "Check Out";
+            // 
+            // lbl_RS_navStart
+            // 
+            this.lbl_RS_navStart.AutoSize = true;
+            this.lbl_RS_navStart.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_RS_navStart.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navStart.Location = new System.Drawing.Point(90, 41);
+            this.lbl_RS_navStart.Name = "lbl_RS_navStart";
+            this.lbl_RS_navStart.Size = new System.Drawing.Size(80, 37);
+            this.lbl_RS_navStart.TabIndex = 0;
+            this.lbl_RS_navStart.Text = "Start";
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::BazingaPizzaria.Properties.Resources.NavigationBlank;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Controls.Add(this.lbl_RS_navChooseZa);
+            this.panel2.Controls.Add(this.lbl_RS_navStart);
+            this.panel2.Controls.Add(this.lbl_RS_navCheckOut);
+            this.panel2.Controls.Add(this.lbl_RS_navSizeCrust);
+            this.panel2.Controls.Add(this.lbl_RS_navBeverages);
+            this.panel2.Location = new System.Drawing.Point(44, 144);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1196, 113);
+            this.panel2.TabIndex = 17;
             // 
             // FormMain
             // 
@@ -2280,11 +2241,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControlOrderSequence);
-            this.Controls.Add(this.pnl_RS_navCheckOut);
-            this.Controls.Add(this.pnl_RS_navBeverages);
-            this.Controls.Add(this.pnl_RS_navChooseZa);
-            this.Controls.Add(this.pnl_RS_navSizeCrust);
-            this.Controls.Add(this.pnl_RS_navStart);
+            this.Controls.Add(this.panel2);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormMain";
@@ -2347,16 +2304,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.pnl_RS_navStart.ResumeLayout(false);
-            this.pnl_RS_navStart.PerformLayout();
-            this.pnl_RS_navSizeCrust.ResumeLayout(false);
-            this.pnl_RS_navSizeCrust.PerformLayout();
-            this.pnl_RS_navChooseZa.ResumeLayout(false);
-            this.pnl_RS_navChooseZa.PerformLayout();
-            this.pnl_RS_navBeverages.ResumeLayout(false);
-            this.pnl_RS_navBeverages.PerformLayout();
-            this.pnl_RS_navCheckOut.ResumeLayout(false);
-            this.pnl_RS_navCheckOut.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2516,15 +2465,11 @@
         private System.Windows.Forms.Label lbl_RS_whatNext;
         private System.Windows.Forms.TabPage tab_TG_Beverage1;
         private System.Windows.Forms.TabPage tab_TG_Beverage2;
-        private System.Windows.Forms.Panel pnl_RS_navStart;
-        private System.Windows.Forms.Panel pnl_RS_navSizeCrust;
-        private System.Windows.Forms.Panel pnl_RS_navChooseZa;
-        private System.Windows.Forms.Panel pnl_RS_navBeverages;
-        private System.Windows.Forms.Panel pnl_RS_navCheckOut;
-        private System.Windows.Forms.Label lbl_RS_navStart;
         private System.Windows.Forms.Label lbl_RS_navSizeCrust;
         private System.Windows.Forms.Label lbl_RS_navChooseZa;
         private System.Windows.Forms.Label lbl_RS_navBeverages;
         private System.Windows.Forms.Label lbl_RS_navCheckOut;
+        private System.Windows.Forms.Label lbl_RS_navStart;
+        private System.Windows.Forms.Panel panel2;
     }
 }
