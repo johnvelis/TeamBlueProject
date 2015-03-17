@@ -70,6 +70,11 @@ namespace BazingaPizzaria
             this.tabControl_RS_Zas.ItemSize = new Size(0, 1);
             this.tabControl_RS_Zas.SizeMode = TabSizeMode.Fixed;
             this.tabControl_RS_Zas.Appearance = TabAppearance.FlatButtons;
+
+            // this hides the tabs for the Beverage page
+            this.tabControl_TG_Beverages.ItemSize = new Size(0, 1);
+            this.tabControl_TG_Beverages.SizeMode = TabSizeMode.Fixed;
+            this.tabControl_TG_Beverages.Appearance = TabAppearance.FlatButtons;
         }
 
 
@@ -254,6 +259,33 @@ namespace BazingaPizzaria
         }
 
         #endregion
+
+        #endregion
+
+        //
+        // tabBeverages
+        //
+        #region tabBeverage Code (Täman)
+
+        private void btn_TG_CocaCola_Click(object sender, EventArgs e)
+        {
+            tabControl_TG_Beverages.SelectedTab = tab_TG_CocaCola;
+        }
+
+        private void btn_TG_DietCoke_Click(object sender, EventArgs e)
+        {
+            tabControl_TG_Beverages.SelectedTab = tab_TG_DietCola;
+        }
+
+        private void btn_TG_Sprite_Click(object sender, EventArgs e)
+        {
+            tabControl_TG_Beverages.SelectedTab = tab_TG_Sprite;
+        }
+
+        private void btn_TG_DrPepper_Click(object sender, EventArgs e)
+        {
+            tabControl_TG_Beverages.SelectedTab = tab_TG_DrPepper;
+        }
 
         #endregion
 
@@ -568,6 +600,19 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectedTab = tabPageBeverages;
+        }
+
+        
+
+        
+
+        
+
+        
 
     }
 }

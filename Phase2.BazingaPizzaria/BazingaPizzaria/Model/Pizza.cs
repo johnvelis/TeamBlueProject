@@ -72,10 +72,10 @@ namespace BazingaPizzaria.Model
         {
 
         }
-        public  Pizza (isSpecialty)
-        {
+        //public  Pizza (bool isSpecialty)
+        //{
 
-        }
+        //}
 
         #endregion
     }}
