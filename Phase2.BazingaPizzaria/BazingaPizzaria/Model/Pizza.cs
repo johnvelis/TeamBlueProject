@@ -39,9 +39,9 @@ namespace BazingaPizzaria.Model
         private bool _isSpecialty;
         private SpecialtyName _specialtyName;
         private byte _quantity = 1;
-        
 
-        //private List<PizzaTopping> _pizzaToppings = new List<PizzaTopping>();
+        private List<Topping> _pizzaToppings = new List<Topping>();
+
         #endregion
 
         #region PROPERTIES
