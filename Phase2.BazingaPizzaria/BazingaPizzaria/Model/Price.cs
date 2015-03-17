@@ -26,6 +26,7 @@ namespace BazingaPizzaria.Model
         {
             get { return _beverageMd; }
         }
+
         public Double BeverageLg
         {
             get { return _beverageLg; }

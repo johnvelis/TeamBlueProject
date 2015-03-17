@@ -266,7 +266,14 @@ namespace BazingaPizzaria
         // tabBeverages
         //
         #region tabBeverage Code (Täman)
+        private void TG_beverageSelect(object sender, EventArgs e)
+        {
+            Button currentButton = sender as Button;
+            ButtonAnimation.ButtonSelect(this, currentButton);
+        }
+        
 
+        #region Tab Image Buttons
         private void btn_TG_CocaCola_Click(object sender, EventArgs e)
         {
             tabControl_TG_Beverages.SelectedTab = tab_TG_CocaCola;
@@ -286,10 +293,12 @@ namespace BazingaPizzaria
         {
             tabControl_TG_Beverages.SelectedTab = tab_TG_DrPepper;
         }
+        #endregion
+
 
         private void btn_TG_BevBack_Click(object sender, EventArgs e)
         {
-            tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
+            tabControlOrderSequence.SelectedTab = tabPageSizeCrust;
         }
 
         private void btn_TG_Bev_CheckOut_Click(object sender, EventArgs e)
@@ -618,15 +627,6 @@ namespace BazingaPizzaria
         {
             tabControlOrderSequence.SelectedTab = tabPageBeverages;
         }
-
-        
-
-        
-
-        
-
-        
-
         
 
     }

@@ -121,6 +121,10 @@
             this.btn_RS_checkOut = new System.Windows.Forms.Button();
             this.btn_RS_anotherZa = new System.Windows.Forms.Button();
             this.tabPageBeverages = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.btn_TG_Bev_CheckOut = new System.Windows.Forms.Button();
             this.btn_TG_BevBack = new System.Windows.Forms.Button();
             this.tabControl_TG_Beverages = new System.Windows.Forms.TabControl();
@@ -135,14 +139,15 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Beverage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_TG_DrPepper = new System.Windows.Forms.Button();
             this.btn_TG_Sprite = new System.Windows.Forms.Button();
             this.btn_TG_DietCoke = new System.Windows.Forms.Button();
             this.btn_TG_CocaCola = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tabPageCheckOut = new System.Windows.Forms.TabPage();
             this.lbl_JV_CCCVVCode = new System.Windows.Forms.Label();
             this.textBox_JV_CCCVVCode = new System.Windows.Forms.TextBox();
@@ -209,9 +214,6 @@
             this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
             this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
             this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Beverage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.grp_TG_Selections.SuspendLayout();
@@ -1467,6 +1469,10 @@
             // 
             // tabPageBeverages
             // 
+            this.tabPageBeverages.Controls.Add(this.button1);
+            this.tabPageBeverages.Controls.Add(this.button2);
+            this.tabPageBeverages.Controls.Add(this.button3);
+            this.tabPageBeverages.Controls.Add(this.button4);
             this.tabPageBeverages.Controls.Add(this.btn_TG_Bev_CheckOut);
             this.tabPageBeverages.Controls.Add(this.btn_TG_BevBack);
             this.tabPageBeverages.Controls.Add(this.tabControl_TG_Beverages);
@@ -1477,16 +1483,74 @@
             this.tabPageBeverages.Controls.Add(this.btn_TG_Sprite);
             this.tabPageBeverages.Controls.Add(this.btn_TG_DietCoke);
             this.tabPageBeverages.Controls.Add(this.btn_TG_CocaCola);
-            this.tabPageBeverages.Controls.Add(this.button1);
-            this.tabPageBeverages.Controls.Add(this.button2);
-            this.tabPageBeverages.Controls.Add(this.button3);
-            this.tabPageBeverages.Controls.Add(this.button4);
+            this.tabPageBeverages.Controls.Add(this.groupBox5);
+            this.tabPageBeverages.Controls.Add(this.groupBox6);
             this.tabPageBeverages.Location = new System.Drawing.Point(4, 22);
             this.tabPageBeverages.Name = "tabPageBeverages";
             this.tabPageBeverages.Size = new System.Drawing.Size(1192, 474);
             this.tabPageBeverages.TabIndex = 7;
             this.tabPageBeverages.Text = "Beverage1";
             this.tabPageBeverages.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(77, 286);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 38);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Bazinga XL";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.button1.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(77, 210);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(175, 38);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Large";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.button2.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.button2.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(77, 134);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(175, 38);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Medium";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.button3.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.button3.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(77, 54);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(175, 40);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Small";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.button4.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.button4.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_TG_Bev_CheckOut
             // 
@@ -1500,6 +1564,8 @@
             this.btn_TG_Bev_CheckOut.Text = "Check Out";
             this.btn_TG_Bev_CheckOut.UseVisualStyleBackColor = false;
             this.btn_TG_Bev_CheckOut.Click += new System.EventHandler(this.btn_TG_Bev_CheckOut_Click);
+            this.btn_TG_Bev_CheckOut.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_Bev_CheckOut.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_TG_BevBack
             // 
@@ -1510,9 +1576,11 @@
             this.btn_TG_BevBack.Name = "btn_TG_BevBack";
             this.btn_TG_BevBack.Size = new System.Drawing.Size(190, 38);
             this.btn_TG_BevBack.TabIndex = 16;
-            this.btn_TG_BevBack.Text = "Back";
+            this.btn_TG_BevBack.Text = "Add Another Za";
             this.btn_TG_BevBack.UseVisualStyleBackColor = false;
             this.btn_TG_BevBack.Click += new System.EventHandler(this.btn_TG_BevBack_Click);
+            this.btn_TG_BevBack.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_BevBack.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // tabControl_TG_Beverages
             // 
@@ -1621,6 +1689,8 @@
             this.button9.TabIndex = 14;
             this.button9.Text = "Delete";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.button9.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // button10
             // 
@@ -1633,6 +1703,8 @@
             this.button10.TabIndex = 13;
             this.button10.Text = "Add";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.button10.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // dataGridView1
             // 
@@ -1647,6 +1719,24 @@
             this.dataGridView1.Size = new System.Drawing.Size(278, 150);
             this.dataGridView1.TabIndex = 12;
             // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "QTY";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 90;
+            // 
+            // Beverage
+            // 
+            this.Beverage.HeaderText = "Beverage";
+            this.Beverage.Name = "Beverage";
+            this.Beverage.Width = 95;
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            this.Price.Width = 90;
+            // 
             // btn_TG_DrPepper
             // 
             this.btn_TG_DrPepper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1658,7 +1748,9 @@
             this.btn_TG_DrPepper.TabIndex = 11;
             this.btn_TG_DrPepper.Text = "Dr. Pepper";
             this.btn_TG_DrPepper.UseVisualStyleBackColor = false;
-            this.btn_TG_DrPepper.Click += new System.EventHandler(this.btn_TG_DrPepper_Click);
+            this.btn_TG_DrPepper.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.btn_TG_DrPepper.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_DrPepper.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_TG_Sprite
             // 
@@ -1671,7 +1763,9 @@
             this.btn_TG_Sprite.TabIndex = 10;
             this.btn_TG_Sprite.Text = "Sprite";
             this.btn_TG_Sprite.UseVisualStyleBackColor = false;
-            this.btn_TG_Sprite.Click += new System.EventHandler(this.btn_TG_Sprite_Click);
+            this.btn_TG_Sprite.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.btn_TG_Sprite.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_Sprite.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_TG_DietCoke
             // 
@@ -1684,7 +1778,9 @@
             this.btn_TG_DietCoke.TabIndex = 9;
             this.btn_TG_DietCoke.Text = "Diet Coke";
             this.btn_TG_DietCoke.UseVisualStyleBackColor = false;
-            this.btn_TG_DietCoke.Click += new System.EventHandler(this.btn_TG_DietCoke_Click);
+            this.btn_TG_DietCoke.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.btn_TG_DietCoke.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_DietCoke.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_TG_CocaCola
             // 
@@ -1697,55 +1793,25 @@
             this.btn_TG_CocaCola.TabIndex = 8;
             this.btn_TG_CocaCola.Text = "Coca-Cola";
             this.btn_TG_CocaCola.UseVisualStyleBackColor = false;
-            this.btn_TG_CocaCola.Click += new System.EventHandler(this.btn_TG_CocaCola_Click);
+            this.btn_TG_CocaCola.Click += new System.EventHandler(this.TG_beverageSelect);
+            this.btn_TG_CocaCola.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_CocaCola.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
-            // button1
+            // groupBox5
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(77, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 38);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Bazinga XL";
-            this.button1.UseVisualStyleBackColor = false;
+            this.groupBox5.Location = new System.Drawing.Point(62, 34);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(200, 308);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
             // 
-            // button2
+            // groupBox6
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(77, 210);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 38);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Large";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(77, 134);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 38);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Medium";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(77, 54);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 40);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Small";
-            this.button4.UseVisualStyleBackColor = false;
+            this.groupBox6.Location = new System.Drawing.Point(297, 34);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(200, 308);
+            this.groupBox6.TabIndex = 19;
+            this.groupBox6.TabStop = false;
             // 
             // tabPageCheckOut
             // 
@@ -2542,24 +2608,6 @@
             this.lbl_RS_navBeverages.TabIndex = 0;
             this.lbl_RS_navBeverages.Text = "Bererages";
             // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "QTY";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 90;
-            // 
-            // Beverage
-            // 
-            this.Beverage.HeaderText = "Beverage";
-            this.Beverage.Name = "Beverage";
-            this.Beverage.Width = 95;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            this.Price.Width = 90;
-            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2835,5 +2883,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Beverage;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox6;
     }
 }
