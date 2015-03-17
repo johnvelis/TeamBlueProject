@@ -287,6 +287,16 @@ namespace BazingaPizzaria
             tabControl_TG_Beverages.SelectedTab = tab_TG_DrPepper;
         }
 
+        private void btn_TG_BevBack_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
+        }
+
+        private void btn_TG_Bev_CheckOut_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectedTab = tabPageCheckOut;
+        }
+
         #endregion
 
         //
@@ -601,10 +611,15 @@ namespace BazingaPizzaria
             Application.Exit();
         }
 
+
+
+        // TODO: Temporary Button (Delete after Specialty page has button to Bev page)
         private void button5_Click(object sender, EventArgs e)
         {
             tabControlOrderSequence.SelectedTab = tabPageBeverages;
         }
+
+        
 
         
 
