@@ -10,7 +10,7 @@ namespace BazingaPizzaria.Model
     {
         #region ENUM
 
-        public enum _topping
+        public enum Topping
         {
             Pepperoni,
             ItalianSausage,
@@ -20,21 +20,24 @@ namespace BazingaPizzaria.Model
             GreenPeppers,
 
         };
+
+        public enum SpecialtyName
+        {
+            UltimateCheese,
+            PiledHighPepperoni,
+            MoundsofMeat,
+            VeggiePatch,
+            SuperSupreme,
+        };
         #endregion
+
         #region FIELDS
 
         private int _pizzaID;
         private string _size;
         private string _crust;
         private bool _isSpecialty;
-        private enum _SpecialtyName //Roxie does this need to public for your purposes?
-        { 
-            UltimateCheese,
-            PiledHighPepperoni,
-            MoundsofMeat,
-            VeggiePatch,
-            SuperSupreme,   
-        };
+        private SpecialtyName _specialtyName;
         private byte _quantity = 1;
         
 
@@ -46,22 +49,22 @@ namespace BazingaPizzaria.Model
 
         public  int PizzaID
         {
-            get { return PizzaID; }
-            set { PizzaID = value; }
+            get { return _pizzaID; }
+            set { _pizzaID = value; }
         }
       
 
         public string Size
         {
-            get { return Size; }
-            set { string Size = value; }
+            get { return _size; }
+            set { string _size = value; }
         }
 
                
         public string  Crust
         {
-            get { return Crust; }
-            set { Crust = value; }
+            get { return _crust; }
+            set { _crust = value; }
         }
         public  bool isSpecialty;
                        

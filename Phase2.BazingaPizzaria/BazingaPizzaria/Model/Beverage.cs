@@ -10,7 +10,7 @@ namespace BazingaPizzaria.Model
     {
 
         private string _name;
-        private string _size;
+        private string _cupSize;
         private int _quantity;
         public enum Size { Small, Medium, Large, XL}
 
@@ -20,7 +20,7 @@ namespace BazingaPizzaria.Model
             set { _name = value; }
         }
 
-        public string Size 
+        public string CupSize 
         { 
             get; 
             set; 
