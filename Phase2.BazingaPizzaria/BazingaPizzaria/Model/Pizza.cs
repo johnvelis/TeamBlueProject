@@ -38,21 +38,21 @@ namespace BazingaPizzaria.Model
         private string _crust;
         private bool _isSpecialty;
         private SpecialtyName _specialtyName;
-        private byte _quantity = 1;
+        private byte _quantity;
 
         private List<Topping> _pizzaToppings = new List<Topping>();
 
         #endregion
 
         #region PROPERTIES
-        
 
-        public  int PizzaID
+
+        public int PizzaID
         {
             get { return _pizzaID; }
             set { _pizzaID = value; }
         }
-      
+
 
         public string Size
         {
@@ -60,14 +60,31 @@ namespace BazingaPizzaria.Model
             set { string _size = value; }
         }
 
-               
-        public string  Crust
+
+        public string Crust
         {
             get { return _crust; }
             set { _crust = value; }
         }
-        public  bool isSpecialty;
-                       
+
+        public bool IsSpecialty
+        {
+            get { return _isSpecialty; }
+            set { _isSpecialty = value; }
+        }
+
+        public SpecialtyName PizzaSpecialtyName
+        {
+            get { return _specialtyName; }
+            set { _specialtyName = value; }
+        }
+
+        public byte Quantity
+        {
+            get { return _quantity; }
+            set { _quantity = value; }
+        }
+
         #endregion
 
         #region CONSTUCTORS
@@ -81,4 +98,5 @@ namespace BazingaPizzaria.Model
         //}
 
         #endregion
-    }}
+    }
+}
