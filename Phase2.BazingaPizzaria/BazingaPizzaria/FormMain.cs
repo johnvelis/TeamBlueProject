@@ -86,6 +86,49 @@ namespace BazingaPizzaria
         //Navigation button visual response and cancel order button
         #region navigationButtons
 
+        private void tabControlOrderSequence_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int currentTab = tabControlOrderSequence.SelectedIndex;
+            switch (currentTab)
+            {
+                case 0:
+                    lbl_RS_navStart.ForeColor = Color.DarkRed;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+                    break;
+                case 1:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.DarkRed;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+                    break;
+                case 2:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.DarkRed;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+                    break;
+                case 3:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.DarkRed;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+                    break;
+                case 4:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.DarkRed;
+                    break;
+            }
+        }
+
         private void btnCancelOrder_Click(object sender, EventArgs e)
         {
             FormConfirmCancel frmConfirmCancel = new FormConfirmCancel();

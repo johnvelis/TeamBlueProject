@@ -285,6 +285,7 @@
             this.tabControlOrderSequence.SelectedIndex = 0;
             this.tabControlOrderSequence.Size = new System.Drawing.Size(1200, 500);
             this.tabControlOrderSequence.TabIndex = 12;
+            this.tabControlOrderSequence.SelectedIndexChanged += new System.EventHandler(this.tabControlOrderSequence_SelectedIndexChanged);
             this.tabControlOrderSequence.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.tabControlOrderSequence.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -2558,6 +2559,7 @@
             this.lbl_RS_navChooseZa.AutoSize = true;
             this.lbl_RS_navChooseZa.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navChooseZa.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navChooseZa.ForeColor = System.Drawing.Color.Black;
             this.lbl_RS_navChooseZa.Location = new System.Drawing.Point(511, 41);
             this.lbl_RS_navChooseZa.Name = "lbl_RS_navChooseZa";
             this.lbl_RS_navChooseZa.Size = new System.Drawing.Size(214, 37);
@@ -2569,6 +2571,7 @@
             this.lbl_RS_navStart.AutoSize = true;
             this.lbl_RS_navStart.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navStart.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navStart.ForeColor = System.Drawing.Color.DarkRed;
             this.lbl_RS_navStart.Location = new System.Drawing.Point(90, 41);
             this.lbl_RS_navStart.Name = "lbl_RS_navStart";
             this.lbl_RS_navStart.Size = new System.Drawing.Size(80, 37);
@@ -2580,6 +2583,7 @@
             this.lbl_RS_navCheckOut.AutoSize = true;
             this.lbl_RS_navCheckOut.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navCheckOut.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navCheckOut.ForeColor = System.Drawing.Color.Black;
             this.lbl_RS_navCheckOut.Location = new System.Drawing.Point(1009, 41);
             this.lbl_RS_navCheckOut.Name = "lbl_RS_navCheckOut";
             this.lbl_RS_navCheckOut.Size = new System.Drawing.Size(147, 37);
@@ -2591,6 +2595,7 @@
             this.lbl_RS_navSizeCrust.AutoSize = true;
             this.lbl_RS_navSizeCrust.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navSizeCrust.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navSizeCrust.ForeColor = System.Drawing.Color.Black;
             this.lbl_RS_navSizeCrust.Location = new System.Drawing.Point(300, 41);
             this.lbl_RS_navSizeCrust.Name = "lbl_RS_navSizeCrust";
             this.lbl_RS_navSizeCrust.Size = new System.Drawing.Size(172, 37);
@@ -2602,6 +2607,7 @@
             this.lbl_RS_navBeverages.AutoSize = true;
             this.lbl_RS_navBeverages.BackColor = System.Drawing.Color.Transparent;
             this.lbl_RS_navBeverages.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navBeverages.ForeColor = System.Drawing.Color.Black;
             this.lbl_RS_navBeverages.Location = new System.Drawing.Point(773, 41);
             this.lbl_RS_navBeverages.Name = "lbl_RS_navBeverages";
             this.lbl_RS_navBeverages.Size = new System.Drawing.Size(145, 37);
