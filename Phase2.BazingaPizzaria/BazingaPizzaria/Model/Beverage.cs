@@ -8,16 +8,11 @@ namespace BazingaPizzaria.Model
 {
     public class Beverage
     {
-        private int _beverageID;
-        private string _name;
-        private byte _quantity;
-        //private Enum _size;
 
-        public int BeverageID
-        {
-            get { return _beverageID; }
-            set { _beverageID = value; }
-        }
+        private string _name;
+        private string _size;
+        private int _quantity;
+        public enum Size { Small, Medium, Large, XL}
 
         public string Name
         {
@@ -25,18 +20,17 @@ namespace BazingaPizzaria.Model
             set { _name = value; }
         }
 
-        public byte Quantity
+        public string Size 
+        { 
+            get; 
+            set; 
+        }
+
+        public int Quantity
         {
             get { return _quantity; }
             set { _quantity = value; }
         }
 
-        //public Enumerable Size
-        //{
-        //    get { return _size; }
-        //    set { _size = value; }
-        //}
-
-        
     }
 }
