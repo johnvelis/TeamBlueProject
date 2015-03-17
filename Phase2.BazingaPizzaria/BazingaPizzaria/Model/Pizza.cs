@@ -85,7 +85,7 @@ namespace BazingaPizzaria.Model
             set { _quantity = value; }
         }
 
-        public List<Topping> PizzaTopping
+        public List<Topping> PizzaToppings
         {
             get { return _pizzaToppings; }
             set { _pizzaToppings = value; }
@@ -94,14 +94,12 @@ namespace BazingaPizzaria.Model
         #endregion
 
         #region CONSTUCTORS
+
         public Pizza()
         {
-
+            _pizzaID = 0001;
+            _quantity = 1;
         }
-        //public  Pizza (bool isSpecialty)
-        //{
-
-        //}
 
         #endregion
     }
