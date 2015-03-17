@@ -39,5 +39,17 @@ namespace BazingaPizzaria.Model
             set { _quantity = value; }
         }
 
+        public Beverage()
+        {
+
+        }
+
+        public Beverage(string name, Size beverageSize, int quantity)
+        {
+            _name = name;
+            _beverageSize = beverageSize;
+            _quantity = quantity;
+        }
+
     }
 }
