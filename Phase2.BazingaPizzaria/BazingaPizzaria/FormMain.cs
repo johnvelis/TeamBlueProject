@@ -86,6 +86,55 @@ namespace BazingaPizzaria
         //Navigation button visual response and cancel order button
         #region navigationButtons
 
+        private void tabControlOrderSequence_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int currentTab = tabControlOrderSequence.SelectedIndex;
+
+            switch (currentTab)
+            {
+                case 0:
+                    lbl_RS_navStart.ForeColor = Color.DarkRed;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+                    break;
+                case 1:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.DarkRed;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+                    break;
+                case 2:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.DarkRed;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+
+                    btn_RS_addBeverage.Visible = false;
+                    btn_RS_anotherZa.Visible = false;
+                    btn_RS_checkOut.Visible = false;
+                    pnl_RS_whatNext.Visible = false;
+                    break;
+                case 3:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.DarkRed;
+                    lbl_RS_navCheckOut.ForeColor = Color.Black;
+                    break;
+                case 4:
+                    lbl_RS_navStart.ForeColor = Color.Black;
+                    lbl_RS_navSizeCrust.ForeColor = Color.Black;
+                    lbl_RS_navChooseZa.ForeColor = Color.Black;
+                    lbl_RS_navBeverages.ForeColor = Color.Black;
+                    lbl_RS_navCheckOut.ForeColor = Color.DarkRed;
+                    break;
+            }
+        }
+
         private void btnCancelOrder_Click(object sender, EventArgs e)
         {
             FormConfirmCancel frmConfirmCancel = new FormConfirmCancel();
@@ -511,7 +560,8 @@ namespace BazingaPizzaria
 
         private void btn_RS_justCheese_Click(object sender, EventArgs e)
         {
-            //Add pizza without any toppings or extra charges
+            RS_addZa();
+            //TODO - Add pizza without any toppings or extra charges
         }
         #endregion
         //button click events for specialty pizza page that change call ButtonSelect
@@ -610,8 +660,28 @@ namespace BazingaPizzaria
             //code to add the pizza to the order
             frmErrorMess.LabelText = "You have added a Za to your order!";
             frmErrorMess.ShowDialog();
-            lbl_RS_whatNext.Visible = true;
+            btn_RS_addBeverage.Visible = true;
+            btn_RS_anotherZa.Visible = true;
+            btn_RS_checkOut.Visible = true;
+            pnl_RS_whatNext.Visible = true;
         }
+
+        #region Visible after pizza add
+
+        private void btn_RS_anotherZa_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectedIndex = 1;
+        }
+        private void btn_RS_addBeverage_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectedIndex = 3;
+        }
+        private void btn_RS_checkOut_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectedIndex = 4;
+        }
+
+        #endregion
 
         #endregion
 

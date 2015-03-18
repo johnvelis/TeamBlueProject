@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Diet_Coke_LOGO_2014" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Diet_Coke_LOGO_2014.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Classic_Meat_Lovers_Pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Classic_Meat_Lovers_Pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dr-Pepper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dr-Pepper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnYes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnYes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,9 +139,6 @@
   <data name="btnStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnCheckOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnCheckOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnSpecialtyPizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSpecialtyPizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,6 +147,9 @@
   </data>
   <data name="Ultimate_Cheese_Lovers_Pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ultimate_Cheese_Lovers_Pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NavigationBlank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NavigationBlank.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,19 +175,19 @@
   <data name="build_a_za_logo_150x226" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\build_a_za_logo_150x226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Classic_Meat_Lovers_Pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Classic_Meat_Lovers_Pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Diet_Coke_LOGO_2014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diet_Coke_LOGO_2014.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BBQ_Lovers_PIzza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BBQ_Lovers_PIzza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Zas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCheckOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCheckOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="polar_bear_coke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\polar_bear_coke.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dr-Pepper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dr-Pepper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
