@@ -689,14 +689,6 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
-
-
-
-        // TODO: Temporary Button (Delete after Specialty page has button to Bev page)
-        private void button5_Click(object sender, EventArgs e)
-        {
-            tabControlOrderSequence.SelectedTab = tabPageBeverages;
-        }
         
 
     }
