@@ -363,11 +363,11 @@ namespace BazingaPizzaria
         #region tabPageSize/Crust Code (Sue)
         //The following eight event handlers are for the Size/Crust tab of the form
 
-        private void SL_SizeCrustSelect(object sender, EventArgs e)
+        private void btn_SL_sizeSmall_Click(object sender, EventArgs e)
         {
-            Button currentButton = sender as Button;
-            ButtonAnimation.ButtonSelect(this, currentButton);
+            ButtonAnimation.ButtonSelect(this, btn_SL_sizeSmall);
         }
+
 
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
