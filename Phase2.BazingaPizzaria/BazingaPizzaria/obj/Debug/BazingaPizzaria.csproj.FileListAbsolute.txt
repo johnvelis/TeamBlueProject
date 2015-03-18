@@ -88,3 +88,6 @@ C:\Users\wolve_000\Documents\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizza
 C:\Users\wolve_000\Documents\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.exe
 C:\Users\wolve_000\Documents\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.pdb
 C:\Users\wolve_000\Documents\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.pdb
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.exe
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\BazingaPizzaria.pdb
+C:\Users\lovell15\Documents\TeamBlueRepo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.pdb

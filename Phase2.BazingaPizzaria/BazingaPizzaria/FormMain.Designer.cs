@@ -610,6 +610,7 @@
             this.btn_SL_sizeXLG.TabIndex = 3;
             this.btn_SL_sizeXLG.Text = "XLG 16 in $13.97";
             this.btn_SL_sizeXLG.UseVisualStyleBackColor = false;
+            this.btn_SL_sizeXLG.Click += new System.EventHandler(this.btn_SL_sizeXLG_Click);
             this.btn_SL_sizeXLG.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_sizeXLG.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -624,6 +625,7 @@
             this.btn_SL_sizeLarge.TabIndex = 2;
             this.btn_SL_sizeLarge.Text = "Lg 14 in $10.97";
             this.btn_SL_sizeLarge.UseVisualStyleBackColor = false;
+            this.btn_SL_sizeLarge.Click += new System.EventHandler(this.btn_SL_sizeLarge_Click);
             this.btn_SL_sizeLarge.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_sizeLarge.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -638,6 +640,7 @@
             this.btn_SL_sizeMed.TabIndex = 1;
             this.btn_SL_sizeMed.Text = "Med 12 in $7.99";
             this.btn_SL_sizeMed.UseVisualStyleBackColor = false;
+            this.btn_SL_sizeMed.Click += new System.EventHandler(this.btn_SL_sizeMed_Click);
             this.btn_SL_sizeMed.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_sizeMed.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 

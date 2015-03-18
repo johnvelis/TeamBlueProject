@@ -3,9 +3,9 @@ Authors: Team Blue - Roxy Scrivener
                      Sue Lovell
                      John Velis
                      Taman Gerring
-Group Project: Phase 1
+Group Project: Phase 2
 Purpose:  Customer ordering kiosk interface for fast food pizzeria
-Date: 2/18/2015
+Date: 3/25/2015
 ************************************/
 
 using System;
@@ -368,8 +368,22 @@ namespace BazingaPizzaria
             ButtonAnimation.ButtonSelect(this, btn_SL_sizeSmall);
         }
 
+        private void btn_SL_sizeMed_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonSelect(this, btn_SL_sizeMed);
+        }
 
-        private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
+        private void btn_SL_sizeLarge_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonSelect(this, btn_SL_sizeLarge);
+        }
+
+        private void btn_SL_sizeXLG_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonSelect(this, btn_SL_sizeXLG);
+        }
+
+            private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
             tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
         }
@@ -689,7 +703,8 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
-        
 
-    }
+        
+           
+         }
 }
