@@ -17,6 +17,8 @@ namespace BazingaPizzaria.Model
         private decimal _pizzaMed = 7.99M;
         private decimal _pizzaLg = 10.97M;
         private decimal _pizzaXlg = 13.97M;
+        private decimal _specialtyExtra;
+        private decimal _toppingExtra;
 
         #endregion
 
@@ -64,6 +66,8 @@ namespace BazingaPizzaria.Model
             _beverageSm = 1.19M;
             _beverageMd = 1.69M;
             _beverageLg = 2.19M;
+            _specialtyExtra = 3.00M;
+            _toppingExtra = 1.00M;
         }
         #endregion
     }

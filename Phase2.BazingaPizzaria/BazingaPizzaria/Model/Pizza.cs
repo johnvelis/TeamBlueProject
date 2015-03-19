@@ -18,7 +18,7 @@ namespace BazingaPizzaria.Model
             Mushrooms,
             Olives,
             GreenPeppers,
-
+            JustCheese
         };
 
         public enum SpecialtyName
@@ -27,7 +27,7 @@ namespace BazingaPizzaria.Model
             PiledHighPepperoni,
             MoundsofMeat,
             VeggiePatch,
-            SuperSupreme,
+            SuperSupreme
         };
         #endregion
 

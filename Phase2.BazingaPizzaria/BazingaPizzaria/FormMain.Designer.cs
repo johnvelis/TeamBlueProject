@@ -671,7 +671,6 @@
             // tabPageSpecialtyPizzas
             // 
             this.tabPageSpecialtyPizzas.BackColor = System.Drawing.Color.White;
-            this.tabPageSpecialtyPizzas.Controls.Add(this.pnl_RS_whatNext);
             this.tabPageSpecialtyPizzas.Controls.Add(this.groupBox3);
             this.tabPageSpecialtyPizzas.Controls.Add(this.btn_RS_addBeverage);
             this.tabPageSpecialtyPizzas.Controls.Add(this.tabControl_RS_Zas);
@@ -689,7 +688,7 @@
             this.pnl_RS_whatNext.Controls.Add(this.pictureBox9);
             this.pnl_RS_whatNext.Controls.Add(this.pictureBox8);
             this.pnl_RS_whatNext.Controls.Add(this.label22);
-            this.pnl_RS_whatNext.Location = new System.Drawing.Point(3, 3);
+            this.pnl_RS_whatNext.Location = new System.Drawing.Point(17, 656);
             this.pnl_RS_whatNext.Name = "pnl_RS_whatNext";
             this.pnl_RS_whatNext.Size = new System.Drawing.Size(1183, 421);
             this.pnl_RS_whatNext.TabIndex = 12;
@@ -2675,6 +2674,7 @@
             this.CancelButton = this.btn_hiddenClose;
             this.ClientSize = new System.Drawing.Size(1278, 770);
             this.ControlBox = false;
+            this.Controls.Add(this.pnl_RS_whatNext);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControlOrderSequence);
             this.Controls.Add(this.panel2);
