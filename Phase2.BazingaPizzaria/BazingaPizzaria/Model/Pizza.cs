@@ -39,6 +39,7 @@ namespace BazingaPizzaria.Model
         private bool _isSpecialty;
         private SpecialtyName _specialtyName;
         private byte _quantity;
+        private decimal _pizzaPrice;
 
         private List<Topping> _pizzaToppings = new List<Topping>();
 
@@ -90,6 +91,14 @@ namespace BazingaPizzaria.Model
             get { return _pizzaToppings; }
             set { _pizzaToppings = value; }
         }
+        
+
+        public decimal PizzaPrice
+        {
+             get { return _pizzaPrice; }
+            set { _pizzaPrice = value; }
+        }
+        
 
         #endregion
 

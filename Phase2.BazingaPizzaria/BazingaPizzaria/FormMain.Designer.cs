@@ -539,7 +539,6 @@
             this.btn_SL_crustGlutenFree.TabIndex = 3;
             this.btn_SL_crustGlutenFree.Text = "Gluten-Free";
             this.btn_SL_crustGlutenFree.UseVisualStyleBackColor = false;
-            this.btn_SL_crustGlutenFree.Click += new System.EventHandler(this.SL_SizeCrustSelect);
             this.btn_SL_crustGlutenFree.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_crustGlutenFree.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -554,7 +553,6 @@
             this.btn_SL_crustThick.TabIndex = 3;
             this.btn_SL_crustThick.Text = "Thick";
             this.btn_SL_crustThick.UseVisualStyleBackColor = false;
-            this.btn_SL_crustThick.Click += new System.EventHandler(this.SL_SizeCrustSelect);
             this.btn_SL_crustThick.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_crustThick.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -569,7 +567,6 @@
             this.btn_SL_crustChrispyThin.TabIndex = 2;
             this.btn_SL_crustChrispyThin.Text = "Crispy-Thin";
             this.btn_SL_crustChrispyThin.UseVisualStyleBackColor = false;
-            this.btn_SL_crustChrispyThin.Click += new System.EventHandler(this.SL_SizeCrustSelect);
             this.btn_SL_crustChrispyThin.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_crustChrispyThin.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -584,7 +581,6 @@
             this.btn_SL_crustHandTossed.TabIndex = 1;
             this.btn_SL_crustHandTossed.Text = "Hand-Tossed";
             this.btn_SL_crustHandTossed.UseVisualStyleBackColor = false;
-            this.btn_SL_crustHandTossed.Click += new System.EventHandler(this.SL_SizeCrustSelect);
             this.btn_SL_crustHandTossed.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_crustHandTossed.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -612,9 +608,9 @@
             this.btn_SL_sizeXLG.Name = "btn_SL_sizeXLG";
             this.btn_SL_sizeXLG.Size = new System.Drawing.Size(175, 38);
             this.btn_SL_sizeXLG.TabIndex = 3;
-            this.btn_SL_sizeXLG.Text = "XLG 16 in $10.97";
+            this.btn_SL_sizeXLG.Text = "XLG 16 in $13.97";
             this.btn_SL_sizeXLG.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeXLG.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeXLG.Click += new System.EventHandler(this.btn_SL_sizeXLG_Click);
             this.btn_SL_sizeXLG.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_sizeXLG.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -629,7 +625,7 @@
             this.btn_SL_sizeLarge.TabIndex = 2;
             this.btn_SL_sizeLarge.Text = "Lg 14 in $10.97";
             this.btn_SL_sizeLarge.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeLarge.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeLarge.Click += new System.EventHandler(this.btn_SL_sizeLarge_Click);
             this.btn_SL_sizeLarge.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_sizeLarge.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -644,7 +640,7 @@
             this.btn_SL_sizeMed.TabIndex = 1;
             this.btn_SL_sizeMed.Text = "Med 12 in $7.99";
             this.btn_SL_sizeMed.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeMed.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeMed.Click += new System.EventHandler(this.btn_SL_sizeMed_Click);
             this.btn_SL_sizeMed.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_sizeMed.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -659,7 +655,7 @@
             this.btn_SL_sizeSmall.TabIndex = 0;
             this.btn_SL_sizeSmall.Text = "Small 8 in $3.99";
             this.btn_SL_sizeSmall.UseVisualStyleBackColor = false;
-            this.btn_SL_sizeSmall.Click += new System.EventHandler(this.SL_SizeCrustSelect);
+            this.btn_SL_sizeSmall.Click += new System.EventHandler(this.btn_SL_sizeSmall_Click);
             this.btn_SL_sizeSmall.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.btn_SL_sizeSmall.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
