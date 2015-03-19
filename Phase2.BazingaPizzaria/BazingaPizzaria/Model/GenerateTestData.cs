@@ -21,6 +21,7 @@ namespace BazingaPizzaria.Model
             newOrder.StateProvince = "Stoneville";
             newOrder.Zip = "55555";
             newOrder.Email = "fred@stonemail.com";
+            newOrder.PhoneNumber = "555-555-5555";
 
             newOrder.CCName = "Fred Flintstone";
             newOrder.CCNumber = "1111222233334444";
@@ -37,6 +38,7 @@ namespace BazingaPizzaria.Model
             pizzaOne.Crust = "Garlic";
             pizzaOne.IsSpecialty = false;
             pizzaOne.Quantity = 1;
+            pizzaOne.PizzaPrice = 17.73M;
 
             //
             // add toppings to pizzaOne
@@ -57,7 +59,8 @@ namespace BazingaPizzaria.Model
             pizzaOne.Crust = "Cheesy";
             pizzaOne.IsSpecialty = true;
             pizzaOne.Quantity = 2;
-
+            pizzaOne.PizzaPrice = 34.73M;
+            
             //
             // add pizzaOne and pizzaTwo to testOrder
             //
