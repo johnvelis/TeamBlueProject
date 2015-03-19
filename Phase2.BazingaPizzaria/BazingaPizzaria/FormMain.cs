@@ -764,7 +764,7 @@ namespace BazingaPizzaria
         {
             if (RS_specialtyType == null)
             {
-                frmErrorMess.LabelText = "You must select a Specialty Za to add to your order. \n\n" +
+                frmErrorMess.LabelText = "Please select a Specialty Za to add to your order. \n" +
                     "Or choose Build-a-Za or Just Cheese Please!";
                 frmErrorMess.ShowDialog();
             }
@@ -778,7 +778,9 @@ namespace BazingaPizzaria
         {
             if (RS_toppings.Count == 0)
             {
-                //TODO - show message: must select at least one topping (or select Just Cheese Please!)
+                frmErrorMess.LabelText = "Please select at lease one topping. \n" +
+                    "Or choose Specialty Zas or Just Cheese Please!";
+                frmErrorMess.ShowDialog();
             }
             else
             {
