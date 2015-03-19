@@ -13,20 +13,20 @@ namespace BazingaPizzaria.Model
             //
             // generate test order
             //
-            Order testOrder = new Order();
-            testOrder.LastName = "Flintstone";
-            testOrder.FirstName = "Fred";
-            testOrder.Address = "1313 Cobblestone Way";
-            testOrder.City = "Bedrock";
-            testOrder.StateProvince = "Stoneville";
-            testOrder.Zip = "55555";
-            testOrder.Email = "fred@stonemail.com";
+            Order newOrder = new Order();
+            newOrder.LastName = "Flintstone";
+            newOrder.FirstName = "Fred";
+            newOrder.Address = "1313 Cobblestone Way";
+            newOrder.City = "Bedrock";
+            newOrder.StateProvince = "Stoneville";
+            newOrder.Zip = "55555";
+            newOrder.Email = "fred@stonemail.com";
 
-            testOrder.CCName = "Fred Flintstone";
-            testOrder.CCNumber = "1111222233334444";
-            testOrder.CCExpMonth = 5;
-            testOrder.CCExpYear = 2017;
-            testOrder.CCCVVCode = 345;
+            newOrder.CCName = "Fred Flintstone";
+            newOrder.CCNumber = "1111222233334444";
+            newOrder.CCExpMonth = 5;
+            newOrder.CCExpYear = 2017;
+            newOrder.CCCVVCode = 345;
 
             //
             // genearate pizza for order with toppings
@@ -60,8 +60,25 @@ namespace BazingaPizzaria.Model
 
             //
             // add pizzaOne and pizzaTwo to testOrder
+            //
+            newOrder.PizzaPurchase.Add(pizzaOne);
+            newOrder.PizzaPurchase.Add(pizzaTwo);
 
-            return testOrder;
+            //
+            // generate beverages for order
+            //
+            Beverage beverageOne = new Beverage("Coke", Beverage.Size.Large, 2);
+            Beverage beverageTwo = new Beverage("Orange", Beverage.Size.Small, 1);
+            Beverage beverageThree = new Beverage("Three River IPA", Beverage.Size.XL, 4);
+
+            //
+            // add beverages to testOrder
+            //
+            newOrder.BeveragePurchase.Add(beverageOne);
+            newOrder.BeveragePurchase.Add(beverageTwo);
+            newOrder.BeveragePurchase.Add(beverageThree);
+
+            return newOrder;
         }
     }
 }

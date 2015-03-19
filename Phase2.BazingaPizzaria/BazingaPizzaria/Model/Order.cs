@@ -20,6 +20,7 @@ namespace BazingaPizzaria.Model
         private String _stateProvince;
         private String _zip;
         private String _email;
+        private String _phoneNumber;
         private String _ccName;
         private String _ccNumber;
         private int _ccExpMonth;
@@ -90,6 +91,12 @@ namespace BazingaPizzaria.Model
         {
             get { return _email; }
             set { _email = value; }
+        }
+
+        public String PhoneNumber
+        {
+            get { return _phoneNumber; }
+            set { _phoneNumber = value; }
         }
 
         public String CCName
