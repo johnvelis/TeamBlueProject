@@ -70,16 +70,16 @@ namespace BazingaPizzaria.Model
             //
             // generate beverages for order
             //
-            Beverage beverageOne = new Beverage("Coke", Beverage.Size.Large, 2);
-            Beverage beverageTwo = new Beverage("Orange", Beverage.Size.Small, 1);
-            Beverage beverageThree = new Beverage("Three River IPA", Beverage.Size.XL, 4);
+            //Beverage beverageOne = new Beverage("Coke", Beverage.BevSize.Large, 2);
+            //Beverage beverageTwo = new Beverage("Orange", Beverage.BevSize.Small, 1);
+            //Beverage beverageThree = new Beverage("Three River IPA", Beverage.BevSize.XL, 4);
 
             //
             // add beverages to testOrder
             //
-            newOrder.BeveragePurchase.Add(beverageOne);
-            newOrder.BeveragePurchase.Add(beverageTwo);
-            newOrder.BeveragePurchase.Add(beverageThree);
+            //newOrder.BeveragePurchase.Add(beverageOne);
+            //newOrder.BeveragePurchase.Add(beverageTwo);
+            //newOrder.BeveragePurchase.Add(beverageThree);
 
             return newOrder;
         }

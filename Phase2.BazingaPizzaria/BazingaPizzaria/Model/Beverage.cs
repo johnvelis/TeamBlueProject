@@ -8,7 +8,7 @@ namespace BazingaPizzaria.Model
 {
     public class Beverage
     {
-        public enum Size
+        public enum BevSize
         {
             Small,
             Medium,
@@ -17,9 +17,24 @@ namespace BazingaPizzaria.Model
         }
 
         private string _name;
-        private Size _beverageSize;
+        private BevSize _beverageSize;
         private int _quantity;
+        private decimal _price;
+        private decimal _basePrice;
 
+        public decimal BasePrice
+        {
+            get { return _basePrice; }
+        }
+
+
+        public decimal BevPrice
+        {
+            get { return _price; }
+            set { _price = value; }
+        }
+
+        public string SizeName { get { return _beverageSize + " " + _name; } }
 
         public string Name
         {
@@ -27,7 +42,7 @@ namespace BazingaPizzaria.Model
             set { _name = value; }
         }
 
-        public Size BeverageSize
+        public BevSize BeverageSize
         {
             get { return _beverageSize; }
             set { _beverageSize = value; }
@@ -44,11 +59,13 @@ namespace BazingaPizzaria.Model
 
         }
 
-        public Beverage(string name, Size beverageSize, int quantity)
+        public Beverage(string name, BevSize beverageSize, int quantity, decimal price)
         {
             _name = name;
             _beverageSize = beverageSize;
             _quantity = quantity;
+            _price = price;
+            _basePrice = price;
         }
 
     }

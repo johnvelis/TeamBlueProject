@@ -32,6 +32,13 @@ namespace BazingaPizzaria
         Order currentOrder = GenerateTestData.GenerateTestOrderData();
         FormErrorMessage frmErrorMess = new FormErrorMessage();
 
+        string drink;
+        decimal price;
+        Beverage.BevSize size;
+        int rowIndex = -1;
+        bool sizeChecked;
+        bool bevChecked;
+
         //
         // Team Blue's custom colors
         //
@@ -83,7 +90,9 @@ namespace BazingaPizzaria
             this.ActiveControl = txt_TG_NameDineIn;
         }
 
+        //
         //Navigation button visual response and cancel order button
+        //
         #region navigationButtons
 
         private void tabControlOrderSequence_SelectedIndexChanged(object sender, EventArgs e)
@@ -142,7 +151,9 @@ namespace BazingaPizzaria
         }
         #endregion
 
+        //
         //Standard MouseOver effects that can be added to any button within FormMain
+        //
         #region standardButtons
 
         //The folowing two event handlers (standardButtonEnter and standardButtonLeave) are to 
@@ -315,35 +326,119 @@ namespace BazingaPizzaria
         // tabBeverages
         //
         #region tabBeverage Code (Täman)
+
         private void TG_beverageSelect(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
             ButtonAnimation.ButtonSelect(this, currentButton);
-        }
-        
+            Price bevPrice = new Price();
 
-        #region Tab Image Buttons
-        private void btn_TG_CocaCola_Click(object sender, EventArgs e)
+            // Checks what button is selected and sends size and price to object
+            if (currentButton.Text == "Small")
+            {
+                size = Model.Beverage.BevSize.Small;
+                price = bevPrice.BeverageSm;
+                sizeChecked = true;
+            }
+            else if (currentButton.Text == "Medium")
+            {
+                size = Model.Beverage.BevSize.Medium;
+                price = bevPrice.BeverageMd;
+                sizeChecked = true;
+            }
+            else if (currentButton.Text == "Large")
+            {
+                size = Model.Beverage.BevSize.Large;
+                price = bevPrice.BeverageLg;
+                sizeChecked = true;
+            }
+            else if (currentButton.Text == "Bazinga XL")
+            {
+                size = Model.Beverage.BevSize.XL;
+                price = bevPrice.BeverageXL;
+                sizeChecked = true;
+            }
+            else if (currentButton.Text == "Coca-Cola")
+            {
+                drink = currentButton.Text;
+                bevChecked = true;
+                tabControl_TG_Beverages.SelectedTab = tab_TG_CocaCola;
+            }
+            else if (currentButton.Text == "Diet Coke")
+            {
+                drink = currentButton.Text;
+                bevChecked = true;
+                tabControl_TG_Beverages.SelectedTab = tab_TG_DietCola;
+            }
+            else if (currentButton.Text == "Sprite")
+            {
+                drink = currentButton.Text;
+                bevChecked = true;
+                tabControl_TG_Beverages.SelectedTab = tab_TG_Sprite;
+            }
+            else if (currentButton.Text == "Dr. Pepper")
+            {
+                drink = currentButton.Text;
+                bevChecked = true;
+                tabControl_TG_Beverages.SelectedTab = tab_TG_DrPepper;
+            }
+        }
+
+        private void btn_TG_Add_Click(object sender, EventArgs e)
         {
-            tabControl_TG_Beverages.SelectedTab = tab_TG_CocaCola;
+            Beverage newBeverage = new Beverage(drink, size, 1, price);
+
+            if (sizeChecked == true && bevChecked == true)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.Cells[1].Value.ToString().Contains(newBeverage.SizeName))
+                    {
+                        rowIndex = row.Index;
+                    }
+                }
+
+                // Updates Current Quantity and Price
+                if (rowIndex > -1)
+                {
+                    var current = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells[0].Value.ToString());
+                    
+                    current++;
+                    newBeverage.BevPrice = current * newBeverage.BasePrice;
+                    newBeverage.Quantity = current;
+                    dataGridView1.Rows[rowIndex].Cells["Quantity"].Value = current;
+                    dataGridView1.Rows[rowIndex].Cells["PriceColumn"].Value = newBeverage.BevPrice;
+                }
+                // If item doesn't exist this will create and add it.
+                else
+                {
+                    dataGridView1.Rows.Add(newBeverage.Quantity, newBeverage.SizeName, newBeverage.BevPrice);
+
+                    dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
+                }
+            }
+
+            rowIndex = -1;
         }
 
-        private void btn_TG_DietCoke_Click(object sender, EventArgs e)
+        private void btn_TG_Delete_Click(object sender, EventArgs e)
         {
-            tabControl_TG_Beverages.SelectedTab = tab_TG_DietCola;
-        }
+            if (dataGridView1.Rows.Count > 0)
+            {
+                int selectedIndex = dataGridView1.CurrentCell.RowIndex;
+                // Deletes user selected Row
+                if (selectedIndex > -1)
+                {
+                    dataGridView1.Rows.RemoveAt(selectedIndex);
+                }
+                // Deletes last entered row if user doesn't select a row
+                else
+                {
+                    dataGridView1.Rows.RemoveAt(dataGridView1.Rows.Count - 1);
+                }
+            }
 
-        private void btn_TG_Sprite_Click(object sender, EventArgs e)
-        {
-            tabControl_TG_Beverages.SelectedTab = tab_TG_Sprite;
         }
-
-        private void btn_TG_DrPepper_Click(object sender, EventArgs e)
-        {
-            tabControl_TG_Beverages.SelectedTab = tab_TG_DrPepper;
-        }
-        #endregion
-
 
         private void btn_TG_BevBack_Click(object sender, EventArgs e)
         {
@@ -383,7 +478,7 @@ namespace BazingaPizzaria
             ButtonAnimation.ButtonSelect(this, btn_SL_sizeXLG);
         }
 
-            private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
+        private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
             tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
         }
@@ -704,7 +799,12 @@ namespace BazingaPizzaria
             Application.Exit();
         }
 
-        
-           
-         }
+
+
+
+
+
+
+
+    }
 }

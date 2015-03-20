@@ -136,12 +136,9 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tab_TG_DrPepper = new System.Windows.Forms.TabPage();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btn_TG_Delete = new System.Windows.Forms.Button();
+            this.btn_TG_Add = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Beverage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -218,6 +215,9 @@
             this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
             this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
             this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Beverage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PriceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlOrderSequence.SuspendLayout();
             this.tabPageStart.SuspendLayout();
             this.grp_TG_Selections.SuspendLayout();
@@ -1532,8 +1532,8 @@
             this.tabPageBeverages.Controls.Add(this.btn_TG_Bev_CheckOut);
             this.tabPageBeverages.Controls.Add(this.btn_TG_BevBack);
             this.tabPageBeverages.Controls.Add(this.tabControl_TG_Beverages);
-            this.tabPageBeverages.Controls.Add(this.button9);
-            this.tabPageBeverages.Controls.Add(this.button10);
+            this.tabPageBeverages.Controls.Add(this.btn_TG_Delete);
+            this.tabPageBeverages.Controls.Add(this.btn_TG_Add);
             this.tabPageBeverages.Controls.Add(this.dataGridView1);
             this.tabPageBeverages.Controls.Add(this.groupBox5);
             this.tabPageBeverages.Controls.Add(this.groupBox6);
@@ -1549,9 +1549,9 @@
             this.btn_TG_Bev_CheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_TG_Bev_CheckOut.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TG_Bev_CheckOut.ForeColor = System.Drawing.Color.White;
-            this.btn_TG_Bev_CheckOut.Location = new System.Drawing.Point(314, 406);
+            this.btn_TG_Bev_CheckOut.Location = new System.Drawing.Point(307, 406);
             this.btn_TG_Bev_CheckOut.Name = "btn_TG_Bev_CheckOut";
-            this.btn_TG_Bev_CheckOut.Size = new System.Drawing.Size(190, 38);
+            this.btn_TG_Bev_CheckOut.Size = new System.Drawing.Size(200, 38);
             this.btn_TG_Bev_CheckOut.TabIndex = 17;
             this.btn_TG_Bev_CheckOut.Text = "Check Out";
             this.btn_TG_Bev_CheckOut.UseVisualStyleBackColor = false;
@@ -1564,9 +1564,9 @@
             this.btn_TG_BevBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_TG_BevBack.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TG_BevBack.ForeColor = System.Drawing.Color.White;
-            this.btn_TG_BevBack.Location = new System.Drawing.Point(62, 406);
+            this.btn_TG_BevBack.Location = new System.Drawing.Point(58, 406);
             this.btn_TG_BevBack.Name = "btn_TG_BevBack";
-            this.btn_TG_BevBack.Size = new System.Drawing.Size(190, 38);
+            this.btn_TG_BevBack.Size = new System.Drawing.Size(200, 38);
             this.btn_TG_BevBack.TabIndex = 16;
             this.btn_TG_BevBack.Text = "Add Another Za";
             this.btn_TG_BevBack.UseVisualStyleBackColor = false;
@@ -1670,64 +1670,54 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // button9
+            // btn_TG_Delete
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(880, 204);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(175, 40);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "Delete";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.MouseEnter += new System.EventHandler(this.standardButtonEnter);
-            this.button9.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            this.btn_TG_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_TG_Delete.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TG_Delete.ForeColor = System.Drawing.Color.White;
+            this.btn_TG_Delete.Location = new System.Drawing.Point(880, 204);
+            this.btn_TG_Delete.Name = "btn_TG_Delete";
+            this.btn_TG_Delete.Size = new System.Drawing.Size(175, 40);
+            this.btn_TG_Delete.TabIndex = 14;
+            this.btn_TG_Delete.Text = "Delete";
+            this.btn_TG_Delete.UseVisualStyleBackColor = false;
+            this.btn_TG_Delete.Click += new System.EventHandler(this.btn_TG_Delete_Click);
+            this.btn_TG_Delete.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_Delete.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
-            // button10
+            // btn_TG_Add
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button10.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(650, 204);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(175, 40);
-            this.button10.TabIndex = 13;
-            this.button10.Text = "Add";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.MouseEnter += new System.EventHandler(this.standardButtonEnter);
-            this.button10.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            this.btn_TG_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_TG_Add.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TG_Add.ForeColor = System.Drawing.Color.White;
+            this.btn_TG_Add.Location = new System.Drawing.Point(650, 204);
+            this.btn_TG_Add.Name = "btn_TG_Add";
+            this.btn_TG_Add.Size = new System.Drawing.Size(175, 40);
+            this.btn_TG_Add.TabIndex = 13;
+            this.btn_TG_Add.Text = "Add";
+            this.btn_TG_Add.UseVisualStyleBackColor = false;
+            this.btn_TG_Add.Click += new System.EventHandler(this.btn_TG_Add_Click);
+            this.btn_TG_Add.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_TG_Add.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Quantity,
             this.Beverage,
-            this.Price});
+            this.PriceColumn});
             this.dataGridView1.Location = new System.Drawing.Point(720, 20);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGridView1.Size = new System.Drawing.Size(278, 150);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "QTY";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 90;
-            // 
-            // Beverage
-            // 
-            this.Beverage.HeaderText = "Beverage";
-            this.Beverage.Name = "Beverage";
-            this.Beverage.Width = 95;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            this.Price.Width = 90;
+            this.dataGridView1.TabStop = false;
             // 
             // groupBox5
             // 
@@ -2668,6 +2658,25 @@
             this.lbl_RS_navBeverages.TabIndex = 0;
             this.lbl_RS_navBeverages.Text = "Beverages";
             // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "QTY";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            this.Quantity.Width = 50;
+            // 
+            // Beverage
+            // 
+            this.Beverage.HeaderText = "Beverage";
+            this.Beverage.Name = "Beverage";
+            this.Beverage.Width = 152;
+            // 
+            // PriceColumn
+            // 
+            this.PriceColumn.HeaderText = "Price";
+            this.PriceColumn.Name = "PriceColumn";
+            this.PriceColumn.Width = 75;
+            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2931,8 +2940,8 @@
         private System.Windows.Forms.TabPage tab_TG_DietCola;
         private System.Windows.Forms.TabPage tab_TG_Sprite;
         private System.Windows.Forms.TabPage tab_TG_DrPepper;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btn_TG_Delete;
+        private System.Windows.Forms.Button btn_TG_Add;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_TG_DrPepper;
         private System.Windows.Forms.Button btn_TG_Sprite;
@@ -2944,9 +2953,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btn_TG_Bev_CheckOut;
         private System.Windows.Forms.Button btn_TG_BevBack;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Beverage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button btn_RS_addBeverage;
@@ -2955,5 +2961,8 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Beverage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PriceColumn;
     }
 }
