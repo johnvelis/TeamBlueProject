@@ -8,17 +8,19 @@ namespace BazingaPizzaria.Model
 {
     class Price
     {
-            
+
         #region Fields
-        private decimal _beverageSm;
-        private decimal _beverageMd;
-        private decimal _beverageLg;
+
+        private decimal _beverageSm = 1.19M;
+        private decimal _beverageMd = 1.69M;
+        private decimal _beverageLg = 2.19M;
+        private decimal _beverageXL = 2.69M;
+        private decimal _specialtyExtra = 3.00M;
+        private decimal _toppingExtra = 1.00M;
         private decimal _pizzaSm = 3.99M;
         private decimal _pizzaMed = 7.99M;
         private decimal _pizzaLg = 10.97M;
         private decimal _pizzaXlg = 13.97M;
-        private decimal _specialtyExtra;
-        private decimal _toppingExtra;
 
         #endregion
 
@@ -38,6 +40,11 @@ namespace BazingaPizzaria.Model
             get { return _beverageLg; }
         }
 
+        public decimal BeverageXL 
+        {
+            get { return _beverageXL; }  
+        }
+
         public decimal PizzaSm
         {
             get { return _pizzaSm; }
@@ -47,27 +54,23 @@ namespace BazingaPizzaria.Model
         {
             get { return _pizzaMed; }
         }
-       
+
         public decimal PizzaLg
         {
             get { return _pizzaLg; }
         }
-     
+
         public decimal PizzaXlg
         {
             get { return _pizzaXlg; }
         }
- 
+
         #endregion
 
         #region Constructors
-        Price()
+        public Price()
         {
-            _beverageSm = 1.19M;
-            _beverageMd = 1.69M;
-            _beverageLg = 2.19M;
-            _specialtyExtra = 3.00M;
-            _toppingExtra = 1.00M;
+
         }
         #endregion
     }
