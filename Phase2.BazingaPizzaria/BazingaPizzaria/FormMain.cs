@@ -116,16 +116,40 @@ namespace BazingaPizzaria
                     lbl_RS_navCheckOut.ForeColor = Color.Black;
                     break;
                 case 2:
+                    //Navigation animation change
                     lbl_RS_navStart.ForeColor = Color.Black;
                     lbl_RS_navSizeCrust.ForeColor = Color.Black;
                     lbl_RS_navChooseZa.ForeColor = Color.DarkRed;
                     lbl_RS_navBeverages.ForeColor = Color.Black;
                     lbl_RS_navCheckOut.ForeColor = Color.Black;
 
+                    //Hides pannel and bottom navigation buttons and start on inner tab index 0
                     btn_RS_addBeverage.Visible = false;
                     btn_RS_anotherZa.Visible = false;
                     btn_RS_checkOut.Visible = false;
                     pnl_RS_whatNext.Visible = false;
+                    tabControl_RS_Zas.SelectedIndex = 0;
+
+                    //set button colors to default
+                    btn_RS_addHam.BackColor = colRed;
+                    btn_RS_addMushrooms.BackColor = colRed;
+                    btn_RS_addOlives.BackColor = colRed;
+                    btn_RS_addPepperoni.BackColor = colRed;
+                    btn_RS_addPeppers.BackColor = colRed;
+                    btn_RS_addSausage.BackColor = colRed;
+                    btn_RS_cheese.BackColor = colRed;
+                    btn_RS_justCheese.BackColor = colRed;
+                    btn_RS_meat.BackColor = colRed;
+                    btn_RS_pepperoni.BackColor = colRed;
+                    btn_RS_supreme.BackColor = colRed;
+                    btn_RS_toBuild.BackColor = colRed;
+                    btn_RS_toSpecialties.BackColor = colRed;
+                    btn_RS_veggie.BackColor = colRed;
+
+                    //sets local variables to defaults
+                    RS_specialtyType = null;
+                    RS_isSpecialty = false;
+                    RS_toppings.Clear();
                     break;
                 case 3:
                     lbl_RS_navStart.ForeColor = Color.Black;
@@ -456,6 +480,10 @@ namespace BazingaPizzaria
         // tabPageSize/Crust - Sue
         //
         #region tabPageSize/Crust Code (Sue)
+
+        //creates pizza variable
+        Pizza newPizza;
+
         //The following eight event handlers are for the Size/Crust tab of the form
 
         private void btn_SL_sizeSmall_Click(object sender, EventArgs e)
@@ -480,6 +508,9 @@ namespace BazingaPizzaria
 
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
+                //instanciates new pizza object
+            newPizza = new Pizza();
+                //TODO add pizza properties based on user button selections
             tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
         }
 
@@ -658,19 +689,23 @@ namespace BazingaPizzaria
         private void btn_RS_toSpecialties_Click(object sender, EventArgs e)
         {
             tabControl_RS_Zas.SelectedTab = tabPage_RS_specialties;
+            RS_isSpecialty = true;
             ButtonAnimation.ButtonSelect(this, btn_RS_toSpecialties);
         }
 
         private void btn_RS_toBuild_Click(object sender, EventArgs e)
         {
             tabControl_RS_Zas.SelectedTab = tabPage_RS_BuildAZa;
+            RS_isSpecialty = false;
             ButtonAnimation.ButtonSelect(this, btn_RS_toBuild);
         }
 
         private void btn_RS_justCheese_Click(object sender, EventArgs e)
         {
+            RS_isSpecialty = false;
+            RS_toppings.Clear();
+            RS_toppings.Add(Pizza.Topping.JustCheese);
             RS_addZa();
-            //TODO - Add pizza without any toppings or extra charges
         }
         #endregion
         //button click events for specialty pizza page that change call ButtonSelect
@@ -678,11 +713,16 @@ namespace BazingaPizzaria
         //the panel that has the corresponding image and description.
         #region Specialty Za selection button clicks
 
+        public int? RS_specialtyType;
+        public bool RS_isSpecialty;
+
         private void btn_RS_cheese_Click(object sender, EventArgs e)
         {
             Button currentButton = sender as Button;
             ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_cheese.BringToFront();
+
+            RS_specialtyType = currentButton.TabIndex;
         }
 
         private void btn_RS_pepperoni_Click(object sender, EventArgs e)
@@ -690,6 +730,8 @@ namespace BazingaPizzaria
             Button currentButton = sender as Button;
             ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_pepperoni.BringToFront();
+
+            RS_specialtyType = currentButton.TabIndex;
         }
 
         private void btn_RS_meat_Click(object sender, EventArgs e)
@@ -697,6 +739,8 @@ namespace BazingaPizzaria
             Button currentButton = sender as Button;
             ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_meat.BringToFront();
+
+            RS_specialtyType = currentButton.TabIndex;
         }
 
         private void btn_RS_veggie_Click(object sender, EventArgs e)
@@ -704,6 +748,8 @@ namespace BazingaPizzaria
             Button currentButton = sender as Button;
             ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_veggie.BringToFront();
+
+            RS_specialtyType = currentButton.TabIndex;
         }
 
         private void btn_RS_supreme_Click(object sender, EventArgs e)
@@ -711,41 +757,99 @@ namespace BazingaPizzaria
             Button currentButton = sender as Button;
             ButtonAnimation.ButtonSelectInnerTab(this, currentButton);
             pnl_RS_supreme.BringToFront();
-        }
 
+            RS_specialtyType = currentButton.TabIndex;
+        }
 
         #endregion
 
         //button click events for toppings to turn them 'on' and 'off', called from
         //the ButtonAnimation class.  Toggles highlight.
         #region Topping selection button clicks
+
+        List<Pizza.Topping> RS_toppings = new List<Pizza.Topping>();
+
         private void btn_RS_addPepperoni_Click(object sender, EventArgs e)
         {
+            if (RS_toppings.Contains(Pizza.Topping.Pepperoni))
+            {
+                RS_toppings.RemoveAt(RS_toppings.IndexOf(Pizza.Topping.Pepperoni));
+            }
+            else
+            {
+                RS_toppings.Add(Pizza.Topping.Pepperoni);
+            }
+
             ButtonAnimation.ButtonOnOff(this, btn_RS_addPepperoni);
         }
 
         private void btn_RS_addSausage_Click(object sender, EventArgs e)
         {
+            if (RS_toppings.Contains(Pizza.Topping.ItalianSausage))
+            {
+                RS_toppings.RemoveAt(RS_toppings.IndexOf(Pizza.Topping.ItalianSausage));
+            }
+            else
+            {
+                RS_toppings.Add(Pizza.Topping.ItalianSausage);
+            }
+
             ButtonAnimation.ButtonOnOff(this, btn_RS_addSausage);
         }
 
         private void btn_RS_addHam_Click(object sender, EventArgs e)
         {
+            if (RS_toppings.Contains(Pizza.Topping.Ham))
+            {
+                RS_toppings.RemoveAt(RS_toppings.IndexOf(Pizza.Topping.Ham));
+            }
+            else
+            {
+                RS_toppings.Add(Pizza.Topping.Ham);
+            }
+
             ButtonAnimation.ButtonOnOff(this, btn_RS_addHam);
         }
 
         private void btn_RS_addMushrooms_Click(object sender, EventArgs e)
         {
+            if (RS_toppings.Contains(Pizza.Topping.Mushrooms))
+            {
+                RS_toppings.RemoveAt(RS_toppings.IndexOf(Pizza.Topping.Mushrooms));
+            }
+            else
+            {
+                RS_toppings.Add(Pizza.Topping.Mushrooms);
+            }
+
             ButtonAnimation.ButtonOnOff(this, btn_RS_addMushrooms);
         }
 
         private void btn_RS_addOlives_Click(object sender, EventArgs e)
         {
+            if (RS_toppings.Contains(Pizza.Topping.Olives))
+            {
+                RS_toppings.RemoveAt(RS_toppings.IndexOf(Pizza.Topping.Olives));
+            }
+            else
+            {
+                RS_toppings.Add(Pizza.Topping.Olives);
+            }
+
             ButtonAnimation.ButtonOnOff(this, btn_RS_addOlives);
         }
 
         private void btn_RS_addPeppers_Click(object sender, EventArgs e)
         {
+            if (RS_toppings.Contains(Pizza.Topping.GreenPeppers))
+            {
+                RS_toppings.RemoveAt(RS_toppings.IndexOf(Pizza.Topping.GreenPeppers));
+            }
+            else
+            {
+                RS_toppings.Add(Pizza.Topping.GreenPeppers);
+            }
+
             ButtonAnimation.ButtonOnOff(this, btn_RS_addPeppers);
         }
 
@@ -753,12 +857,30 @@ namespace BazingaPizzaria
 
         private void btn_RS_addToOrder_Click(object sender, EventArgs e)
         {
-            RS_addZa();
+            if (RS_specialtyType == null)
+            {
+                frmErrorMess.LabelText = "Please select a Specialty Za to add to your order. \n" +
+                    "Or choose Build-a-Za or Just Cheese Please!";
+                frmErrorMess.ShowDialog();
+            }
+            else
+            {
+                RS_addZa();
+            }
         }
 
         private void btn_RS_addToOrder2_Click(object sender, EventArgs e)
         {
-            RS_addZa();
+            if (RS_toppings.Count == 0)
+            {
+                frmErrorMess.LabelText = "Please select at lease one topping. \n" +
+                    "Or choose Specialty Zas or Just Cheese Please!";
+                frmErrorMess.ShowDialog();
+            }
+            else
+            {
+                RS_addZa();
+            }
         }
 
         //
@@ -766,7 +888,51 @@ namespace BazingaPizzaria
         //
         private void RS_addZa()
         {
-            //code to add the pizza to the order
+            //TODO code to add the pizza to the order
+
+            newPizza.IsSpecialty = RS_isSpecialty;
+
+            if (RS_isSpecialty == true)
+            {
+                switch (RS_specialtyType)
+                {
+                    case 1:
+                        newPizza.PizzaSpecialtyName = Pizza.SpecialtyName.UltimateCheese;
+                        break;
+                    case 2:
+                        newPizza.PizzaSpecialtyName = Pizza.SpecialtyName.PiledHighPepperoni;
+                        break;
+                    case 3:
+                        newPizza.PizzaSpecialtyName = Pizza.SpecialtyName.MoundsofMeat;
+                        break;
+                    case 4:
+                        newPizza.PizzaSpecialtyName = Pizza.SpecialtyName.VeggiePatch;
+                        break;
+                    case 5:
+                        newPizza.PizzaSpecialtyName = Pizza.SpecialtyName.SuperSupreme;
+                        break;
+                }
+
+                //TODO - add 3.00m to Sue's original price variable and then set newPizza price
+            }
+            else
+            {
+                if (RS_toppings.Contains(Pizza.Topping.JustCheese))
+                {
+                    //TODO - set newPizza price to whatever Sue's original price variable
+                }
+                else
+                {
+                    //TODO - add (decimal)RS_toppings.Length to Sue's original price
+                }
+                //Add toppings from local list to object list
+                newPizza.PizzaToppings.AddRange(RS_toppings);
+            }
+
+            //TODO - add newPizza to newOrder PizzaPurchase list
+                //newOrder.PizzaPurchase.Add(newPizza);
+
+            //Display confirmation to user and display navigation buttons
             frmErrorMess.LabelText = "You have added a Za to your order!";
             frmErrorMess.ShowDialog();
             btn_RS_addBeverage.Visible = true;

@@ -58,11 +58,6 @@
             this.btn_SL_sizeSmall = new System.Windows.Forms.Button();
             this.lblSizeCrust = new System.Windows.Forms.Label();
             this.tabPageSpecialtyPizzas = new System.Windows.Forms.TabPage();
-            this.pnl_RS_whatNext = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_RS_justCheese = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -205,6 +200,11 @@
             this.btn_Sample = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblControlsTemplate = new System.Windows.Forms.Label();
+            this.pnl_RS_whatNext = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_hiddenClose = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
@@ -228,10 +228,6 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPageSpecialtyPizzas.SuspendLayout();
-            this.pnl_RS_whatNext.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.tabControl_RS_Zas.SuspendLayout();
             this.tabPage_RS_start.SuspendLayout();
@@ -275,6 +271,10 @@
             this.tabPageCheckOut.SuspendLayout();
             this.tabPageCompleteOrder.SuspendLayout();
             this.tabPageControlsTemplate.SuspendLayout();
+            this.pnl_RS_whatNext.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -682,58 +682,6 @@
             this.tabPageSpecialtyPizzas.Size = new System.Drawing.Size(1192, 474);
             this.tabPageSpecialtyPizzas.TabIndex = 2;
             this.tabPageSpecialtyPizzas.Text = "Speicalty Pizzas";
-            // 
-            // pnl_RS_whatNext
-            // 
-            this.pnl_RS_whatNext.Controls.Add(this.pictureBox10);
-            this.pnl_RS_whatNext.Controls.Add(this.pictureBox9);
-            this.pnl_RS_whatNext.Controls.Add(this.pictureBox8);
-            this.pnl_RS_whatNext.Controls.Add(this.label22);
-            this.pnl_RS_whatNext.Location = new System.Drawing.Point(3, 3);
-            this.pnl_RS_whatNext.Name = "pnl_RS_whatNext";
-            this.pnl_RS_whatNext.Size = new System.Drawing.Size(1183, 421);
-            this.pnl_RS_whatNext.TabIndex = 12;
-            this.pnl_RS_whatNext.Visible = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox10.Location = new System.Drawing.Point(1040, 364);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 54);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox9.Location = new System.Drawing.Point(849, 364);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 54);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 2;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox8.Location = new System.Drawing.Point(660, 364);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 54);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(644, 320);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(507, 45);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "What would you like to do next?";
             // 
             // groupBox3
             // 
@@ -2542,6 +2490,58 @@
             this.lblControlsTemplate.TabIndex = 0;
             this.lblControlsTemplate.Text = "Controls Template";
             // 
+            // pnl_RS_whatNext
+            // 
+            this.pnl_RS_whatNext.Controls.Add(this.pictureBox10);
+            this.pnl_RS_whatNext.Controls.Add(this.pictureBox9);
+            this.pnl_RS_whatNext.Controls.Add(this.pictureBox8);
+            this.pnl_RS_whatNext.Controls.Add(this.label22);
+            this.pnl_RS_whatNext.Location = new System.Drawing.Point(6, 3);
+            this.pnl_RS_whatNext.Name = "pnl_RS_whatNext";
+            this.pnl_RS_whatNext.Size = new System.Drawing.Size(1183, 421);
+            this.pnl_RS_whatNext.TabIndex = 12;
+            this.pnl_RS_whatNext.Visible = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::BazingaPizzaria.Properties.Resources.arrow;
+            this.pictureBox10.Location = new System.Drawing.Point(1040, 364);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(100, 54);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::BazingaPizzaria.Properties.Resources.arrow;
+            this.pictureBox9.Location = new System.Drawing.Point(849, 364);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(100, 54);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 2;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::BazingaPizzaria.Properties.Resources.arrow;
+            this.pictureBox8.Location = new System.Drawing.Point(660, 364);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 54);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(644, 320);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(507, 45);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "What would you like to do next?";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -2704,11 +2704,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tabPageSpecialtyPizzas.ResumeLayout(false);
-            this.pnl_RS_whatNext.ResumeLayout(false);
-            this.pnl_RS_whatNext.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.tabControl_RS_Zas.ResumeLayout(false);
@@ -2763,6 +2758,11 @@
             this.tabPageCompleteOrder.PerformLayout();
             this.tabPageControlsTemplate.ResumeLayout(false);
             this.tabPageControlsTemplate.PerformLayout();
+            this.pnl_RS_whatNext.ResumeLayout(false);
+            this.pnl_RS_whatNext.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
