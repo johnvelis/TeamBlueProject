@@ -26,6 +26,7 @@ namespace BazingaPizzaria.Model
         private int _ccExpMonth;
         private int _ccExpYear;
         private int _ccCVVCode;
+        private bool _dineIn;
 
         private List<Pizza> _pizza = new List<Pizza>();
         private List<Beverage> _beverage = new List<Beverage>();
@@ -129,6 +130,8 @@ namespace BazingaPizzaria.Model
             set { _ccCVVCode = value; }
         }
 
+        public bool DineIn { get; set; }
+
         public List<Pizza> PizzaPurchase
         {
             get { return _pizza; }
@@ -146,6 +149,20 @@ namespace BazingaPizzaria.Model
         {
 
         }
+
+        public Order(string FirstName, bool DineIn)
+        {
+            _firstName = FirstName;
+            _dineIn = DineIn;
+        }
+
+        public Order(string FirstName, bool DineIn, string PhoneNumber)
+        {
+            _firstName = FirstName;
+            _dineIn = DineIn;
+            _phoneNumber = PhoneNumber;
+        }
+      
         #endregion
     }
 }

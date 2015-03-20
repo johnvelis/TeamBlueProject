@@ -241,6 +241,8 @@ namespace BazingaPizzaria
 
         private void btn_TG_NextDineIn_Click(object sender, EventArgs e)
         {
+            bool dineIn = true;
+
             if (txt_TG_NameDineIn.Text == String.Empty)
             {
                 frmErrorMess.LabelText = "Please enter your Name!";
@@ -251,6 +253,7 @@ namespace BazingaPizzaria
             }
             else
             {
+                Order newOrder = new Order(txt_TG_NameDineIn.Text, dineIn);
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
         }
@@ -258,6 +261,7 @@ namespace BazingaPizzaria
         private void btn_TG_NextCarryOut_Click(object sender, EventArgs e)
         {
             // Regex phoneNum = new Regex(@"^(\d{3})[ -]?(\d{3})[ -]?(\d{4}) x(\d*)");
+            bool dineIn = false;
 
             if (txt_TG_NameCarryOut.Text == String.Empty)
             {
@@ -277,6 +281,7 @@ namespace BazingaPizzaria
             }
             else
             {
+                Order newOrder = new Order(txt_TG_NameCarryOut.Text, dineIn, txt_TG_PhoneNum.Text);
                 tabControlOrderSequence.SelectTab(tabPageSizeCrust);
             }
 
