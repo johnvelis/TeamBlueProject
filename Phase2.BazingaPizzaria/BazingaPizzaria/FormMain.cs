@@ -29,7 +29,7 @@ namespace BazingaPizzaria
         //
         // generate an instance of a Order class and populate with data to test forms
         //
-        Order currentOrder = GenerateTestData.GenerateTestOrderData();
+        public Order newOrder = GenerateTestData.GenerateTestOrderData();
         FormErrorMessage frmErrorMess = new FormErrorMessage();
 
         string drink;
@@ -653,17 +653,17 @@ namespace BazingaPizzaria
         #region tabPageCompleteOrder Code (Velis)
         private void tabPageCompleteOrder_Enter(object sender, EventArgs e)
         {
-            lbl_JV_BillingNameConfirm.Text = currentOrder.FirstName + " " + currentOrder.LastName;
-            lbl_JV_BillingAddressConfirm.Text = currentOrder.Address;
-            lbl_JV_BillingCityConfirm.Text = currentOrder.City;
-            lbl_JV_BillingStateProvinceConfirm.Text = currentOrder.StateProvince;
-            lbl_JV_BillingZipConfirm.Text = currentOrder.Zip;
-            lbl_JV_BillingEmailConfirm.Text = currentOrder.Email;
-            lbl_JV_CCNumberShort.Text = "**** " + currentOrder.CCNumber.Substring(11, 4);
+            lbl_JV_BillingNameConfirm.Text = newOrder.FirstName + " " + newOrder.LastName;
+            lbl_JV_BillingAddressConfirm.Text = newOrder.Address;
+            lbl_JV_BillingCityConfirm.Text = newOrder.City;
+            lbl_JV_BillingStateProvinceConfirm.Text = newOrder.StateProvince;
+            lbl_JV_BillingZipConfirm.Text = newOrder.Zip;
+            lbl_JV_BillingEmailConfirm.Text = newOrder.Email;
+            lbl_JV_CCNumberShort.Text = "**** " + newOrder.CCNumber.Substring(11, 4);
             lbl_JV_CCExpConfirm.Text =
-                currentOrder.CCExpMonth.ToString() +
+                newOrder.CCExpMonth.ToString() +
                 "/" +
-                currentOrder.CCExpYear.ToString();
+                newOrder.CCExpYear.ToString();
 
         }
         #endregion
