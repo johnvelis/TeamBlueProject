@@ -16,20 +16,20 @@ namespace BazingaPizzaria.Model
             Order newOrder = new Order();
             newOrder.Date = DateTime.Now;
             newOrder.Number = 11;
-            newOrder.LastName = "Flintstone";
-            newOrder.FirstName = "Fred";
-            newOrder.Address = "1313 Cobblestone Way";
-            newOrder.City = "Bedrock";
-            newOrder.StateProvince = "Stoneville";
-            newOrder.Zip = "55555";
-            newOrder.Email = "fred@stonemail.com";
-            newOrder.PhoneNumber = "555-555-5555";
+            //newOrder.LastName = "Flintstone";
+            //newOrder.FirstName = "Fred";
+            //newOrder.Address = "1313 Cobblestone Way";
+            //newOrder.City = "Bedrock";
+            //newOrder.StateProvince = "Stoneville";
+            //newOrder.Zip = "55555";
+            //newOrder.Email = "fred@stonemail.com";
+            //newOrder.PhoneNumber = "555-555-5555";
 
-            newOrder.CCName = "Fred Flintstone";
-            newOrder.CCNumber = "1111222233334444";
-            newOrder.CCExpMonth = 5;
-            newOrder.CCExpYear = 2017;
-            newOrder.CCCVVCode = 345;
+            //newOrder.CCName = "Fred Flintstone";
+            //newOrder.CCNumber = "1111222233334444";
+            //newOrder.CCExpMonth = 5;
+            //newOrder.CCExpYear = 2017;
+            //newOrder.CCCVVCode = 345;
 
             //
             // genearate pizza for order with toppings

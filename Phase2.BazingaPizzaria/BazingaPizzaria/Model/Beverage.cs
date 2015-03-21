@@ -24,7 +24,7 @@ namespace BazingaPizzaria.Model
         private string _name;
         private BevSize _beverageSize;
         private int _quantity;
-        private decimal _price;
+        private decimal _bevPrice;
         private decimal _basePrice;
         #endregion
 
@@ -37,8 +37,8 @@ namespace BazingaPizzaria.Model
 
         public decimal BevPrice
         {
-            get { return _price; }
-            set { _price = value; }
+            get { return _bevPrice; }
+            set { _bevPrice = value; }
         }
 
         public string SizeName { get { return _beverageSize + " " + _name; } }
@@ -76,7 +76,7 @@ namespace BazingaPizzaria.Model
             _quantity.ToString().PadLeft(5) + "\t" +
             _beverageSize.ToString().PadRight(10) + "\t" +
             _name.ToString().PadRight(15) + "\t" +
-            _price.ToString("C").PadLeft(15);
+            _bevPrice.ToString("C").PadLeft(15);
 
             return (fullBeverageDescription);
         }
@@ -101,7 +101,7 @@ namespace BazingaPizzaria.Model
             _name = name;
             _beverageSize = beverageSize;
             _quantity = quantity;
-            _price = price;
+            _bevPrice = price;
             _basePrice = price;
         }
         #endregion

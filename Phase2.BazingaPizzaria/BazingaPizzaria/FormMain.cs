@@ -528,15 +528,65 @@ namespace BazingaPizzaria
         #region tabPageCheckOut Code (Velis)
 
         //
-        // method to populate tabPageCheckOut form
+        // initialize tabPageCheckOut
         //
-
-
         private void tabPageCheckOut_Enter(object sender, EventArgs e)
         {
+            //
+            // set the visiblity of the GroupBoxes on form
+            //
             grpbox_JV_ConfirmPaymentInfo.Visible = false;
+            grpbox_JV_PayForOrder.Visible = false;
+            grpbox_JV_OrderInformation.Visible = true;
+            grpbox_JV_ThankYou.Visible = false;
+            
+            //
+            // fill in the Pizzas Information GroupBox before order confirmation
+            //
+            listBox_JV_Pizzas.DataSource = newOrder.PizzaPurchase;
+            textBox_JV_PizzaSubtotal.Text = newOrder.PizzaSubtotal().ToString("C");
 
+            //
+            // fill in the Beverage Information GroupBox before order confirmation
+            //
+            listBox_JV_Beverages.DataSource = newOrder.BeveragePurchase;
+            textBox_JV_BeverageSubtotal.Text = newOrder.BeverageSubtotal().ToString("C");
 
+            // update the order total
+            txtBox_JV_OrderTotal.Text = newOrder.OrderTotal().ToString("C");
+
+        }
+
+        //
+        // button click to continue to Payment Info groupbox
+        //
+        private void btn_JV_ContinueToPaymentInfo_Click(object sender, EventArgs e)
+        {
+            //
+            // set the visiblity of the GroupBoxes on form
+            //
+            grpbox_JV_ConfirmPaymentInfo.Visible = false;
+            grpbox_JV_PayForOrder.Visible = true;
+            grpbox_JV_OrderInformation.Visible = false;
+            grpbox_JV_ThankYou.Visible = false;
+        }
+
+        //
+        // button click to continue to Thank You groupbox
+        //
+                private void btn_JV_CompleteOrder_Click(object sender, EventArgs e)
+        {
+            //
+            // set the visiblity of the GroupBoxes on form
+            //
+            grpbox_JV_ConfirmPaymentInfo.Visible = false;
+            grpbox_JV_PayForOrder.Visible = false;
+            grpbox_JV_OrderInformation.Visible = false;
+            grpbox_JV_ThankYou.Visible = true;
+
+            lbl_JV_OrderNumberTime.Text =
+                "You are order " + newOrder.Number.ToString() + ". " +
+                "Your order will be ready at " + DateTime.Now.AddMinutes(30).ToShortTimeString() + ".";
         }
 
         #region Checkout Form Validation
@@ -555,6 +605,10 @@ namespace BazingaPizzaria
                 textBox_JV_CCZip.Focus();
             }
         }
+
+        //
+        //TODO: Velis - validate cc number
+        //
 
         //
         // validate all required credit card fields
@@ -674,7 +728,7 @@ namespace BazingaPizzaria
             lbl_JV_BillingStateProvinceConfirm.Text = newOrder.StateProvince;
             lbl_JV_BillingZipConfirm.Text = newOrder.Zip;
             lbl_JV_BillingEmailConfirm.Text = newOrder.Email;
-            lbl_JV_CCNumberShort.Text = "**** " + newOrder.CCNumber.Substring(11, 4);
+            lbl_JV_CCNumberShort.Text = "**** " + newOrder.CCNumber.Substring(8, 4);
             lbl_JV_CCExpConfirm.Text =
                 newOrder.CCExpMonth.ToString() +
                 "/" +
@@ -971,6 +1025,14 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
+
+
+
+
+
+
+
+
 
 
 

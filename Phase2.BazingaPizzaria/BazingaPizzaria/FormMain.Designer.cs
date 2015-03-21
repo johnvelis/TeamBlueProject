@@ -32,12 +32,6 @@
             this.btn_hiddenClose = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_RS_navChooseZa = new System.Windows.Forms.Label();
-            this.lbl_RS_navStart = new System.Windows.Forms.Label();
-            this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
-            this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
-            this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
             this.tabPageControlsTemplate = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,8 +39,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblControlsTemplate = new System.Windows.Forms.Label();
             this.tabPageCheckOut = new System.Windows.Forms.TabPage();
+            this.grpbox_JV_ThankYou = new System.Windows.Forms.GroupBox();
+            this.lbl_JV_OrderNumberTime = new System.Windows.Forms.Label();
+            this.lblThankYou = new System.Windows.Forms.Label();
+            this.grpbox_JV_OrderInformation = new System.Windows.Forms.GroupBox();
+            this.btn_JV_ContinueToPaymentInfo = new System.Windows.Forms.Button();
+            this.btn_JV_CancelOrder = new System.Windows.Forms.Button();
+            this.lblOrderTotal = new System.Windows.Forms.Label();
+            this.txtBox_JV_OrderTotal = new System.Windows.Forms.TextBox();
+            this.lbl_JV_BeveragesOrdered = new System.Windows.Forms.Label();
+            this.lbl_JV_PizzasOrdered = new System.Windows.Forms.Label();
+            this.lbl_JV_BeverageSubtotal = new System.Windows.Forms.Label();
+            this.textBox_JV_BeverageSubtotal = new System.Windows.Forms.TextBox();
+            this.listBox_JV_Beverages = new System.Windows.Forms.ListBox();
+            this.lbl_JV_PizzaSubtotal = new System.Windows.Forms.Label();
+            this.textBox_JV_PizzaSubtotal = new System.Windows.Forms.TextBox();
+            this.listBox_JV_Pizzas = new System.Windows.Forms.ListBox();
+            this.lbl_JV_OrderInfo = new System.Windows.Forms.Label();
             this.grpbox_JV_ConfirmPaymentInfo = new System.Windows.Forms.GroupBox();
-            this.lbl_JV_ConfirmPaymentInfo = new System.Windows.Forms.Label();
+            this.btn_JV_CompleteOrder = new System.Windows.Forms.Button();
+            this.btn_JV_CancelOrder2 = new System.Windows.Forms.Button();
             this.lbl_JV_BillingNameConfirm = new System.Windows.Forms.Label();
             this.lbl_JV_ConfirmBillingInformation = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -57,6 +69,7 @@
             this.lbl_JV_CCNumberShort = new System.Windows.Forms.Label();
             this.lbl_JV_BillingStateProvinceConfirm = new System.Windows.Forms.Label();
             this.lbl_JV_BillingZipConfirm = new System.Windows.Forms.Label();
+            this.lbl_JV_ConfirmPaymentInfo = new System.Windows.Forms.Label();
             this.grpbox_JV_PayForOrder = new System.Windows.Forms.GroupBox();
             this.lbl_JV_PayForYourOrder = new System.Windows.Forms.Label();
             this.lbl_JV_CCCVVCode = new System.Windows.Forms.Label();
@@ -206,13 +219,19 @@
             this.txt_TG_NameCarryOut = new System.Windows.Forms.TextBox();
             this.btn_TG_NextCarryOut = new System.Windows.Forms.Button();
             this.tabControlOrderSequence = new System.Windows.Forms.TabControl();
-            this.btn_JV_CompleteOrder = new System.Windows.Forms.Button();
-            this.btn_JV_CancelOrder2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_RS_navChooseZa = new System.Windows.Forms.Label();
+            this.lbl_RS_navStart = new System.Windows.Forms.Label();
+            this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
+            this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
+            this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
             this.tabPageControlsTemplate.SuspendLayout();
             this.tabPageCheckOut.SuspendLayout();
+            this.grpbox_JV_ThankYou.SuspendLayout();
+            this.grpbox_JV_OrderInformation.SuspendLayout();
             this.grpbox_JV_ConfirmPaymentInfo.SuspendLayout();
             this.grpbox_JV_PayForOrder.SuspendLayout();
             this.tabPageBeverages.SuspendLayout();
@@ -269,6 +288,8 @@
             this.tab_TG_DineIn.SuspendLayout();
             this.tab_TG_CarryOut.SuspendLayout();
             this.tabControlOrderSequence.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -317,75 +338,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::BazingaPizzaria.Properties.Resources.NavigationBlank;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Controls.Add(this.lbl_RS_navChooseZa);
-            this.panel2.Controls.Add(this.lbl_RS_navStart);
-            this.panel2.Controls.Add(this.lbl_RS_navCheckOut);
-            this.panel2.Controls.Add(this.lbl_RS_navSizeCrust);
-            this.panel2.Controls.Add(this.lbl_RS_navBeverages);
-            this.panel2.Location = new System.Drawing.Point(44, 144);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1196, 113);
-            this.panel2.TabIndex = 17;
-            // 
-            // lbl_RS_navChooseZa
-            // 
-            this.lbl_RS_navChooseZa.AutoSize = true;
-            this.lbl_RS_navChooseZa.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_RS_navChooseZa.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navChooseZa.Location = new System.Drawing.Point(511, 41);
-            this.lbl_RS_navChooseZa.Name = "lbl_RS_navChooseZa";
-            this.lbl_RS_navChooseZa.Size = new System.Drawing.Size(267, 46);
-            this.lbl_RS_navChooseZa.TabIndex = 0;
-            this.lbl_RS_navChooseZa.Text = "Choose Your Za";
-            // 
-            // lbl_RS_navStart
-            // 
-            this.lbl_RS_navStart.AutoSize = true;
-            this.lbl_RS_navStart.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_RS_navStart.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navStart.Location = new System.Drawing.Point(90, 41);
-            this.lbl_RS_navStart.Name = "lbl_RS_navStart";
-            this.lbl_RS_navStart.Size = new System.Drawing.Size(97, 46);
-            this.lbl_RS_navStart.TabIndex = 0;
-            this.lbl_RS_navStart.Text = "Start";
-            // 
-            // lbl_RS_navCheckOut
-            // 
-            this.lbl_RS_navCheckOut.AutoSize = true;
-            this.lbl_RS_navCheckOut.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_RS_navCheckOut.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navCheckOut.Location = new System.Drawing.Point(1009, 41);
-            this.lbl_RS_navCheckOut.Name = "lbl_RS_navCheckOut";
-            this.lbl_RS_navCheckOut.Size = new System.Drawing.Size(183, 46);
-            this.lbl_RS_navCheckOut.TabIndex = 0;
-            this.lbl_RS_navCheckOut.Text = "Check Out";
-            // 
-            // lbl_RS_navSizeCrust
-            // 
-            this.lbl_RS_navSizeCrust.AutoSize = true;
-            this.lbl_RS_navSizeCrust.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_RS_navSizeCrust.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navSizeCrust.Location = new System.Drawing.Point(300, 41);
-            this.lbl_RS_navSizeCrust.Name = "lbl_RS_navSizeCrust";
-            this.lbl_RS_navSizeCrust.Size = new System.Drawing.Size(214, 46);
-            this.lbl_RS_navSizeCrust.TabIndex = 0;
-            this.lbl_RS_navSizeCrust.Text = "Size && Crust";
-            // 
-            // lbl_RS_navBeverages
-            // 
-            this.lbl_RS_navBeverages.AutoSize = true;
-            this.lbl_RS_navBeverages.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_RS_navBeverages.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_navBeverages.Location = new System.Drawing.Point(773, 41);
-            this.lbl_RS_navBeverages.Name = "lbl_RS_navBeverages";
-            this.lbl_RS_navBeverages.Size = new System.Drawing.Size(182, 46);
-            this.lbl_RS_navBeverages.TabIndex = 0;
-            this.lbl_RS_navBeverages.Text = "Beverages";
             // 
             // tabPageControlsTemplate
             // 
@@ -460,6 +412,8 @@
             // tabPageCheckOut
             // 
             this.tabPageCheckOut.BackColor = System.Drawing.Color.White;
+            this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ThankYou);
+            this.tabPageCheckOut.Controls.Add(this.grpbox_JV_OrderInformation);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ConfirmPaymentInfo);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_PayForOrder);
             this.tabPageCheckOut.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -469,11 +423,201 @@
             this.tabPageCheckOut.TabIndex = 3;
             this.tabPageCheckOut.Text = "Check Out";
             // 
+            // grpbox_JV_ThankYou
+            // 
+            this.grpbox_JV_ThankYou.Controls.Add(this.lbl_JV_OrderNumberTime);
+            this.grpbox_JV_ThankYou.Controls.Add(this.lblThankYou);
+            this.grpbox_JV_ThankYou.Controls.Add(this.pictureBox11);
+            this.grpbox_JV_ThankYou.Location = new System.Drawing.Point(7, 10);
+            this.grpbox_JV_ThankYou.Name = "grpbox_JV_ThankYou";
+            this.grpbox_JV_ThankYou.Size = new System.Drawing.Size(1177, 452);
+            this.grpbox_JV_ThankYou.TabIndex = 79;
+            this.grpbox_JV_ThankYou.TabStop = false;
+            // 
+            // lbl_JV_OrderNumberTime
+            // 
+            this.lbl_JV_OrderNumberTime.AutoSize = true;
+            this.lbl_JV_OrderNumberTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_OrderNumberTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_JV_OrderNumberTime.Location = new System.Drawing.Point(49, 102);
+            this.lbl_JV_OrderNumberTime.Name = "lbl_JV_OrderNumberTime";
+            this.lbl_JV_OrderNumberTime.Size = new System.Drawing.Size(371, 29);
+            this.lbl_JV_OrderNumberTime.TabIndex = 1;
+            this.lbl_JV_OrderNumberTime.Text = "Order number and time ready";
+            this.lbl_JV_OrderNumberTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblThankYou
+            // 
+            this.lblThankYou.AutoSize = true;
+            this.lblThankYou.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThankYou.Location = new System.Drawing.Point(31, 33);
+            this.lblThankYou.Name = "lblThankYou";
+            this.lblThankYou.Size = new System.Drawing.Size(739, 69);
+            this.lblThankYou.TabIndex = 0;
+            this.lblThankYou.Text = "Thank You for Your Order";
+            // 
+            // grpbox_JV_OrderInformation
+            // 
+            this.grpbox_JV_OrderInformation.Controls.Add(this.btn_JV_ContinueToPaymentInfo);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.btn_JV_CancelOrder);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.lblOrderTotal);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.txtBox_JV_OrderTotal);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.lbl_JV_BeveragesOrdered);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.lbl_JV_PizzasOrdered);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.lbl_JV_BeverageSubtotal);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.textBox_JV_BeverageSubtotal);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.listBox_JV_Beverages);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.lbl_JV_PizzaSubtotal);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.textBox_JV_PizzaSubtotal);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.listBox_JV_Pizzas);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.lbl_JV_OrderInfo);
+            this.grpbox_JV_OrderInformation.Location = new System.Drawing.Point(8, 7);
+            this.grpbox_JV_OrderInformation.Name = "grpbox_JV_OrderInformation";
+            this.grpbox_JV_OrderInformation.Size = new System.Drawing.Size(1182, 467);
+            this.grpbox_JV_OrderInformation.TabIndex = 78;
+            this.grpbox_JV_OrderInformation.TabStop = false;
+            // 
+            // btn_JV_ContinueToPaymentInfo
+            // 
+            this.btn_JV_ContinueToPaymentInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_JV_ContinueToPaymentInfo.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_JV_ContinueToPaymentInfo.ForeColor = System.Drawing.SystemColors.Window;
+            this.btn_JV_ContinueToPaymentInfo.Location = new System.Drawing.Point(908, 374);
+            this.btn_JV_ContinueToPaymentInfo.Name = "btn_JV_ContinueToPaymentInfo";
+            this.btn_JV_ContinueToPaymentInfo.Size = new System.Drawing.Size(261, 64);
+            this.btn_JV_ContinueToPaymentInfo.TabIndex = 33;
+            this.btn_JV_ContinueToPaymentInfo.Text = "Continue";
+            this.btn_JV_ContinueToPaymentInfo.UseVisualStyleBackColor = false;
+            this.btn_JV_ContinueToPaymentInfo.Click += new System.EventHandler(this.btn_JV_ContinueToPaymentInfo_Click);
+            // 
+            // btn_JV_CancelOrder
+            // 
+            this.btn_JV_CancelOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_JV_CancelOrder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_JV_CancelOrder.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_JV_CancelOrder.ForeColor = System.Drawing.Color.White;
+            this.btn_JV_CancelOrder.Location = new System.Drawing.Point(620, 374);
+            this.btn_JV_CancelOrder.Name = "btn_JV_CancelOrder";
+            this.btn_JV_CancelOrder.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            this.btn_JV_CancelOrder.Size = new System.Drawing.Size(261, 64);
+            this.btn_JV_CancelOrder.TabIndex = 34;
+            this.btn_JV_CancelOrder.Text = "Cancel My Order";
+            this.btn_JV_CancelOrder.UseVisualStyleBackColor = false;
+            this.btn_JV_CancelOrder.Click += new System.EventHandler(this.btn_JV_CancelOrder_Click);
+            // 
+            // lblOrderTotal
+            // 
+            this.lblOrderTotal.AutoSize = true;
+            this.lblOrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderTotal.Location = new System.Drawing.Point(908, 297);
+            this.lblOrderTotal.Name = "lblOrderTotal";
+            this.lblOrderTotal.Size = new System.Drawing.Size(111, 25);
+            this.lblOrderTotal.TabIndex = 32;
+            this.lblOrderTotal.Text = "Order Total";
+            // 
+            // txtBox_JV_OrderTotal
+            // 
+            this.txtBox_JV_OrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_JV_OrderTotal.Location = new System.Drawing.Point(1057, 294);
+            this.txtBox_JV_OrderTotal.Name = "txtBox_JV_OrderTotal";
+            this.txtBox_JV_OrderTotal.Size = new System.Drawing.Size(112, 30);
+            this.txtBox_JV_OrderTotal.TabIndex = 31;
+            this.txtBox_JV_OrderTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbl_JV_BeveragesOrdered
+            // 
+            this.lbl_JV_BeveragesOrdered.AutoSize = true;
+            this.lbl_JV_BeveragesOrdered.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BeveragesOrdered.Location = new System.Drawing.Point(17, 219);
+            this.lbl_JV_BeveragesOrdered.Name = "lbl_JV_BeveragesOrdered";
+            this.lbl_JV_BeveragesOrdered.Size = new System.Drawing.Size(242, 37);
+            this.lbl_JV_BeveragesOrdered.TabIndex = 30;
+            this.lbl_JV_BeveragesOrdered.Text = "Beverages Ordered";
+            // 
+            // lbl_JV_PizzasOrdered
+            // 
+            this.lbl_JV_PizzasOrdered.AutoSize = true;
+            this.lbl_JV_PizzasOrdered.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_PizzasOrdered.Location = new System.Drawing.Point(13, 29);
+            this.lbl_JV_PizzasOrdered.Name = "lbl_JV_PizzasOrdered";
+            this.lbl_JV_PizzasOrdered.Size = new System.Drawing.Size(193, 37);
+            this.lbl_JV_PizzasOrdered.TabIndex = 29;
+            this.lbl_JV_PizzasOrdered.Text = "Pizzas Ordered";
+            // 
+            // lbl_JV_BeverageSubtotal
+            // 
+            this.lbl_JV_BeverageSubtotal.AutoSize = true;
+            this.lbl_JV_BeverageSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_BeverageSubtotal.Location = new System.Drawing.Point(846, 258);
+            this.lbl_JV_BeverageSubtotal.Name = "lbl_JV_BeverageSubtotal";
+            this.lbl_JV_BeverageSubtotal.Size = new System.Drawing.Size(173, 25);
+            this.lbl_JV_BeverageSubtotal.TabIndex = 28;
+            this.lbl_JV_BeverageSubtotal.Text = "Beverage Subtotal";
+            // 
+            // textBox_JV_BeverageSubtotal
+            // 
+            this.textBox_JV_BeverageSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_JV_BeverageSubtotal.Location = new System.Drawing.Point(1057, 255);
+            this.textBox_JV_BeverageSubtotal.Name = "textBox_JV_BeverageSubtotal";
+            this.textBox_JV_BeverageSubtotal.Size = new System.Drawing.Size(112, 30);
+            this.textBox_JV_BeverageSubtotal.TabIndex = 27;
+            this.textBox_JV_BeverageSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // listBox_JV_Beverages
+            // 
+            this.listBox_JV_Beverages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox_JV_Beverages.FormattingEnabled = true;
+            this.listBox_JV_Beverages.ItemHeight = 25;
+            this.listBox_JV_Beverages.Location = new System.Drawing.Point(20, 259);
+            this.listBox_JV_Beverages.Name = "listBox_JV_Beverages";
+            this.listBox_JV_Beverages.Size = new System.Drawing.Size(574, 179);
+            this.listBox_JV_Beverages.TabIndex = 26;
+            // 
+            // lbl_JV_PizzaSubtotal
+            // 
+            this.lbl_JV_PizzaSubtotal.AutoSize = true;
+            this.lbl_JV_PizzaSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_PizzaSubtotal.Location = new System.Drawing.Point(882, 218);
+            this.lbl_JV_PizzaSubtotal.Name = "lbl_JV_PizzaSubtotal";
+            this.lbl_JV_PizzaSubtotal.Size = new System.Drawing.Size(137, 25);
+            this.lbl_JV_PizzaSubtotal.TabIndex = 25;
+            this.lbl_JV_PizzaSubtotal.Text = "Pizza Subtotal";
+            // 
+            // textBox_JV_PizzaSubtotal
+            // 
+            this.textBox_JV_PizzaSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_JV_PizzaSubtotal.Location = new System.Drawing.Point(1057, 215);
+            this.textBox_JV_PizzaSubtotal.Name = "textBox_JV_PizzaSubtotal";
+            this.textBox_JV_PizzaSubtotal.Size = new System.Drawing.Size(112, 30);
+            this.textBox_JV_PizzaSubtotal.TabIndex = 24;
+            this.textBox_JV_PizzaSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // listBox_JV_Pizzas
+            // 
+            this.listBox_JV_Pizzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox_JV_Pizzas.FormattingEnabled = true;
+            this.listBox_JV_Pizzas.ItemHeight = 25;
+            this.listBox_JV_Pizzas.Location = new System.Drawing.Point(20, 69);
+            this.listBox_JV_Pizzas.Name = "listBox_JV_Pizzas";
+            this.listBox_JV_Pizzas.Size = new System.Drawing.Size(1149, 129);
+            this.listBox_JV_Pizzas.TabIndex = 23;
+            // 
+            // lbl_JV_OrderInfo
+            // 
+            this.lbl_JV_OrderInfo.AutoSize = true;
+            this.lbl_JV_OrderInfo.BackColor = System.Drawing.Color.White;
+            this.lbl_JV_OrderInfo.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_OrderInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
+            this.lbl_JV_OrderInfo.Location = new System.Drawing.Point(432, 0);
+            this.lbl_JV_OrderInfo.Name = "lbl_JV_OrderInfo";
+            this.lbl_JV_OrderInfo.Size = new System.Drawing.Size(316, 46);
+            this.lbl_JV_OrderInfo.TabIndex = 18;
+            this.lbl_JV_OrderInfo.Text = "Order Information";
+            // 
             // grpbox_JV_ConfirmPaymentInfo
             // 
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.btn_JV_CompleteOrder);
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.btn_JV_CancelOrder2);
-            this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.lbl_JV_ConfirmPaymentInfo);
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.lbl_JV_BillingNameConfirm);
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.lbl_JV_ConfirmBillingInformation);
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.label25);
@@ -484,22 +628,40 @@
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.lbl_JV_CCNumberShort);
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.lbl_JV_BillingStateProvinceConfirm);
             this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.lbl_JV_BillingZipConfirm);
+            this.grpbox_JV_ConfirmPaymentInfo.Controls.Add(this.lbl_JV_ConfirmPaymentInfo);
             this.grpbox_JV_ConfirmPaymentInfo.Location = new System.Drawing.Point(639, 4);
             this.grpbox_JV_ConfirmPaymentInfo.Name = "grpbox_JV_ConfirmPaymentInfo";
             this.grpbox_JV_ConfirmPaymentInfo.Size = new System.Drawing.Size(552, 463);
             this.grpbox_JV_ConfirmPaymentInfo.TabIndex = 77;
             this.grpbox_JV_ConfirmPaymentInfo.TabStop = false;
             // 
-            // lbl_JV_ConfirmPaymentInfo
+            // btn_JV_CompleteOrder
             // 
-            this.lbl_JV_ConfirmPaymentInfo.AutoSize = true;
-            this.lbl_JV_ConfirmPaymentInfo.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_JV_ConfirmPaymentInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
-            this.lbl_JV_ConfirmPaymentInfo.Location = new System.Drawing.Point(42, 0);
-            this.lbl_JV_ConfirmPaymentInfo.Name = "lbl_JV_ConfirmPaymentInfo";
-            this.lbl_JV_ConfirmPaymentInfo.Size = new System.Drawing.Size(489, 46);
-            this.lbl_JV_ConfirmPaymentInfo.TabIndex = 79;
-            this.lbl_JV_ConfirmPaymentInfo.Text = "Confirm Payment Informaion";
+            this.btn_JV_CompleteOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_JV_CompleteOrder.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_JV_CompleteOrder.ForeColor = System.Drawing.SystemColors.Window;
+            this.btn_JV_CompleteOrder.Location = new System.Drawing.Point(292, 400);
+            this.btn_JV_CompleteOrder.Name = "btn_JV_CompleteOrder";
+            this.btn_JV_CompleteOrder.Size = new System.Drawing.Size(261, 64);
+            this.btn_JV_CompleteOrder.TabIndex = 80;
+            this.btn_JV_CompleteOrder.Text = "Complete Order";
+            this.btn_JV_CompleteOrder.UseVisualStyleBackColor = false;
+            this.btn_JV_CompleteOrder.Click += new System.EventHandler(this.btn_JV_CompleteOrder_Click);
+            // 
+            // btn_JV_CancelOrder2
+            // 
+            this.btn_JV_CancelOrder2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_JV_CancelOrder2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_JV_CancelOrder2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_JV_CancelOrder2.ForeColor = System.Drawing.Color.White;
+            this.btn_JV_CancelOrder2.Location = new System.Drawing.Point(4, 400);
+            this.btn_JV_CancelOrder2.Name = "btn_JV_CancelOrder2";
+            this.btn_JV_CancelOrder2.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            this.btn_JV_CancelOrder2.Size = new System.Drawing.Size(261, 64);
+            this.btn_JV_CancelOrder2.TabIndex = 81;
+            this.btn_JV_CancelOrder2.Text = "Cancel My Order";
+            this.btn_JV_CancelOrder2.UseVisualStyleBackColor = false;
+            this.btn_JV_CancelOrder2.Click += new System.EventHandler(this.btn_JV_CancelOrder_Click);
             // 
             // lbl_JV_BillingNameConfirm
             // 
@@ -611,6 +773,17 @@
             this.lbl_JV_BillingZipConfirm.Size = new System.Drawing.Size(55, 37);
             this.lbl_JV_BillingZipConfirm.TabIndex = 73;
             this.lbl_JV_BillingZipConfirm.Text = "Zip";
+            // 
+            // lbl_JV_ConfirmPaymentInfo
+            // 
+            this.lbl_JV_ConfirmPaymentInfo.AutoSize = true;
+            this.lbl_JV_ConfirmPaymentInfo.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_JV_ConfirmPaymentInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
+            this.lbl_JV_ConfirmPaymentInfo.Location = new System.Drawing.Point(42, 0);
+            this.lbl_JV_ConfirmPaymentInfo.Name = "lbl_JV_ConfirmPaymentInfo";
+            this.lbl_JV_ConfirmPaymentInfo.Size = new System.Drawing.Size(489, 46);
+            this.lbl_JV_ConfirmPaymentInfo.TabIndex = 79;
+            this.lbl_JV_ConfirmPaymentInfo.Text = "Confirm Payment Informaion";
             // 
             // grpbox_JV_PayForOrder
             // 
@@ -2535,32 +2708,84 @@
             this.tabControlOrderSequence.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.tabControlOrderSequence.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
-            // btn_JV_CompleteOrder
+            // panel2
             // 
-            this.btn_JV_CompleteOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_JV_CompleteOrder.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_JV_CompleteOrder.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_JV_CompleteOrder.Location = new System.Drawing.Point(292, 400);
-            this.btn_JV_CompleteOrder.Name = "btn_JV_CompleteOrder";
-            this.btn_JV_CompleteOrder.Size = new System.Drawing.Size(261, 64);
-            this.btn_JV_CompleteOrder.TabIndex = 80;
-            this.btn_JV_CompleteOrder.Text = "Continue";
-            this.btn_JV_CompleteOrder.UseVisualStyleBackColor = false;
+            this.panel2.BackgroundImage = global::BazingaPizzaria.Properties.Resources.NavigationBlank;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Controls.Add(this.lbl_RS_navChooseZa);
+            this.panel2.Controls.Add(this.lbl_RS_navStart);
+            this.panel2.Controls.Add(this.lbl_RS_navCheckOut);
+            this.panel2.Controls.Add(this.lbl_RS_navSizeCrust);
+            this.panel2.Controls.Add(this.lbl_RS_navBeverages);
+            this.panel2.Location = new System.Drawing.Point(44, 144);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1196, 113);
+            this.panel2.TabIndex = 17;
             // 
-            // btn_JV_CancelOrder2
+            // lbl_RS_navChooseZa
             // 
-            this.btn_JV_CancelOrder2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_JV_CancelOrder2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
-            this.btn_JV_CancelOrder2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_JV_CancelOrder2.ForeColor = System.Drawing.Color.White;
-            this.btn_JV_CancelOrder2.Location = new System.Drawing.Point(4, 400);
-            this.btn_JV_CancelOrder2.Name = "btn_JV_CancelOrder2";
-            this.btn_JV_CancelOrder2.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
-            this.btn_JV_CancelOrder2.Size = new System.Drawing.Size(261, 64);
-            this.btn_JV_CancelOrder2.TabIndex = 81;
-            this.btn_JV_CancelOrder2.Text = "Cancel My Order";
-            this.btn_JV_CancelOrder2.UseVisualStyleBackColor = false;
-            this.btn_JV_CancelOrder2.Click += new System.EventHandler(this.btn_JV_CancelOrder_Click);
+            this.lbl_RS_navChooseZa.AutoSize = true;
+            this.lbl_RS_navChooseZa.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_RS_navChooseZa.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navChooseZa.Location = new System.Drawing.Point(511, 41);
+            this.lbl_RS_navChooseZa.Name = "lbl_RS_navChooseZa";
+            this.lbl_RS_navChooseZa.Size = new System.Drawing.Size(267, 46);
+            this.lbl_RS_navChooseZa.TabIndex = 0;
+            this.lbl_RS_navChooseZa.Text = "Choose Your Za";
+            // 
+            // lbl_RS_navStart
+            // 
+            this.lbl_RS_navStart.AutoSize = true;
+            this.lbl_RS_navStart.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_RS_navStart.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navStart.Location = new System.Drawing.Point(90, 41);
+            this.lbl_RS_navStart.Name = "lbl_RS_navStart";
+            this.lbl_RS_navStart.Size = new System.Drawing.Size(97, 46);
+            this.lbl_RS_navStart.TabIndex = 0;
+            this.lbl_RS_navStart.Text = "Start";
+            // 
+            // lbl_RS_navCheckOut
+            // 
+            this.lbl_RS_navCheckOut.AutoSize = true;
+            this.lbl_RS_navCheckOut.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_RS_navCheckOut.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navCheckOut.Location = new System.Drawing.Point(1009, 41);
+            this.lbl_RS_navCheckOut.Name = "lbl_RS_navCheckOut";
+            this.lbl_RS_navCheckOut.Size = new System.Drawing.Size(183, 46);
+            this.lbl_RS_navCheckOut.TabIndex = 0;
+            this.lbl_RS_navCheckOut.Text = "Check Out";
+            // 
+            // lbl_RS_navSizeCrust
+            // 
+            this.lbl_RS_navSizeCrust.AutoSize = true;
+            this.lbl_RS_navSizeCrust.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_RS_navSizeCrust.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navSizeCrust.Location = new System.Drawing.Point(300, 41);
+            this.lbl_RS_navSizeCrust.Name = "lbl_RS_navSizeCrust";
+            this.lbl_RS_navSizeCrust.Size = new System.Drawing.Size(214, 46);
+            this.lbl_RS_navSizeCrust.TabIndex = 0;
+            this.lbl_RS_navSizeCrust.Text = "Size && Crust";
+            // 
+            // lbl_RS_navBeverages
+            // 
+            this.lbl_RS_navBeverages.AutoSize = true;
+            this.lbl_RS_navBeverages.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_RS_navBeverages.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_navBeverages.Location = new System.Drawing.Point(773, 41);
+            this.lbl_RS_navBeverages.Name = "lbl_RS_navBeverages";
+            this.lbl_RS_navBeverages.Size = new System.Drawing.Size(182, 46);
+            this.lbl_RS_navBeverages.TabIndex = 0;
+            this.lbl_RS_navBeverages.Text = "Beverages";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::BazingaPizzaria.Properties.Resources.snappy_pizza;
+            this.pictureBox11.Location = new System.Drawing.Point(639, 79);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(539, 363);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 4;
+            this.pictureBox11.TabStop = false;
             // 
             // FormMain
             // 
@@ -2579,11 +2804,13 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.tabPageControlsTemplate.ResumeLayout(false);
             this.tabPageControlsTemplate.PerformLayout();
             this.tabPageCheckOut.ResumeLayout(false);
+            this.grpbox_JV_ThankYou.ResumeLayout(false);
+            this.grpbox_JV_ThankYou.PerformLayout();
+            this.grpbox_JV_OrderInformation.ResumeLayout(false);
+            this.grpbox_JV_OrderInformation.PerformLayout();
             this.grpbox_JV_ConfirmPaymentInfo.ResumeLayout(false);
             this.grpbox_JV_ConfirmPaymentInfo.PerformLayout();
             this.grpbox_JV_PayForOrder.ResumeLayout(false);
@@ -2654,6 +2881,9 @@
             this.tab_TG_CarryOut.ResumeLayout(false);
             this.tab_TG_CarryOut.PerformLayout();
             this.tabControlOrderSequence.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2840,5 +3070,23 @@
         private System.Windows.Forms.Label lbl_JV_ConfirmPaymentInfo;
         private System.Windows.Forms.Button btn_JV_CompleteOrder;
         private System.Windows.Forms.Button btn_JV_CancelOrder2;
+        private System.Windows.Forms.GroupBox grpbox_JV_OrderInformation;
+        private System.Windows.Forms.Label lbl_JV_OrderInfo;
+        private System.Windows.Forms.Button btn_JV_ContinueToPaymentInfo;
+        private System.Windows.Forms.Button btn_JV_CancelOrder;
+        private System.Windows.Forms.Label lblOrderTotal;
+        private System.Windows.Forms.TextBox txtBox_JV_OrderTotal;
+        private System.Windows.Forms.Label lbl_JV_BeveragesOrdered;
+        private System.Windows.Forms.Label lbl_JV_PizzasOrdered;
+        private System.Windows.Forms.Label lbl_JV_BeverageSubtotal;
+        private System.Windows.Forms.TextBox textBox_JV_BeverageSubtotal;
+        private System.Windows.Forms.ListBox listBox_JV_Beverages;
+        private System.Windows.Forms.Label lbl_JV_PizzaSubtotal;
+        private System.Windows.Forms.TextBox textBox_JV_PizzaSubtotal;
+        private System.Windows.Forms.ListBox listBox_JV_Pizzas;
+        private System.Windows.Forms.GroupBox grpbox_JV_ThankYou;
+        private System.Windows.Forms.Label lbl_JV_OrderNumberTime;
+        private System.Windows.Forms.Label lblThankYou;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

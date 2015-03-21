@@ -54,12 +54,12 @@ namespace BazingaPizzaria.Model
             set { _pizzaID = value; }
         }
 
-
         public string Size
         {
             get { return _size; }
-            set { string _size = value; }
+            set { _size = value; }
         }
+        
 
 
         public string Crust

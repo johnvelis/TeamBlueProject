@@ -185,12 +185,17 @@ namespace BazingaPizzaria.Model
             foreach (Beverage beverage in _beverage)
             {
                 // fix with correct pricing [JOHN]
-                beverageSubtotal = beverageSubtotal + beverage.Quantity;
+                beverageSubtotal = beverageSubtotal + beverage.BevPrice;
             }
 
             return (beverageSubtotal);
         }
 
+        // calculate the total for the order
+        public decimal OrderTotal()
+        {
+            return (PizzaSubtotal() + BeverageSubtotal());
+        }
         #endregion
 
         #region Constructors
