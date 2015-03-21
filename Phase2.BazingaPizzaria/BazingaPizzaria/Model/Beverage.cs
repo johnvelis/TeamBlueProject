@@ -8,6 +8,8 @@ namespace BazingaPizzaria.Model
 {
     public class Beverage
     {
+        #region ENUM
+
         public enum BevSize
         {
             Small,
@@ -16,12 +18,17 @@ namespace BazingaPizzaria.Model
             XL
         }
 
+        #endregion
+
+        #region FIELDS
         private string _name;
         private BevSize _beverageSize;
         private int _quantity;
         private decimal _price;
         private decimal _basePrice;
+        #endregion
 
+        #region PROPERTIES
         public decimal BasePrice
         {
             get { return _basePrice; }
@@ -54,6 +61,36 @@ namespace BazingaPizzaria.Model
             set { _quantity = value; }
         }
 
+        #endregion
+
+        #region METHODS
+
+        // build out string for beverage
+        //
+        //TODO: Velis - format prices to align in beverage listbox
+        //
+        public string FullBeverageDescription()
+        {
+            string fullBeverageDescription;
+            fullBeverageDescription =
+            _quantity.ToString().PadLeft(5) + "\t" +
+            _beverageSize.ToString().PadRight(10) + "\t" +
+            _name.ToString().PadRight(15) + "\t" +
+            _price.ToString("C").PadLeft(15);
+
+            return (fullBeverageDescription);
+        }
+
+        //HACK: Velis - to get the full berverage description into the listbo
+        public override string ToString()
+        {
+            return (FullBeverageDescription());
+        }
+
+        #endregion
+
+        #region CONSTRUCTORS
+
         public Beverage()
         {
 
@@ -67,6 +104,6 @@ namespace BazingaPizzaria.Model
             _price = price;
             _basePrice = price;
         }
-
+        #endregion
     }
 }

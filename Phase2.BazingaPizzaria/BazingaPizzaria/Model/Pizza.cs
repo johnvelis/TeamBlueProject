@@ -37,7 +37,7 @@ namespace BazingaPizzaria.Model
         private string _size;
         private string _crust;
         private bool _isSpecialty;
-        private SpecialtyName _specialtyName;
+        private Nullable<SpecialtyName> _specialtyName;
         private byte _quantity;
         private decimal _pizzaPrice;
 
@@ -74,7 +74,7 @@ namespace BazingaPizzaria.Model
             set { _isSpecialty = value; }
         }
 
-        public SpecialtyName PizzaSpecialtyName
+        public Nullable<SpecialtyName> PizzaSpecialtyName
         {
             get { return _specialtyName; }
             set { _specialtyName = value; }
@@ -99,6 +99,49 @@ namespace BazingaPizzaria.Model
             set { _pizzaPrice = value; }
         }
         
+
+        #endregion
+
+        #region METHODS
+
+        // build out string for pizza
+        //
+        //TODO: Velis - format prices to align in pizza listbox
+        //
+        public string FullPizzaDescription()
+        {
+            string fullPizzaDescription;
+            if (_isSpecialty)
+            {
+                fullPizzaDescription =
+                    _quantity.ToString().PadLeft(5) + "\t" +
+                    _size.ToString().PadRight(10) + "\t" +
+                    _crust.ToString().PadRight(10) + "\t" +
+                    "Specialty Pizza".PadRight(10) + "\t" +
+                    _pizzaPrice.ToString("C").PadLeft(10) + "\t" +
+                    _specialtyName.ToString();
+
+            }
+            else
+            {
+                string pizzaToppings = string.Join(", ", _pizzaToppings.ToArray());
+
+                fullPizzaDescription =
+                    _quantity.ToString().PadLeft(5) + "\t" +
+                    _size.ToString().PadRight(10) + "\t" +
+                    _crust.ToString().PadRight(10) + "\t" +
+                    "Toppings Pizza".PadRight(10) + "\t" +
+                    _pizzaPrice.ToString("C").PadLeft(10) + "\t" +
+                    pizzaToppings.ToString();
+            }
+            return (fullPizzaDescription);
+        }
+
+        //HACK: Velis - to get the full pizza description into the listbox
+        public override string ToString()
+        {
+            return (FullPizzaDescription());
+        }
 
         #endregion
 

@@ -14,6 +14,8 @@ namespace BazingaPizzaria.Model
             // generate test order
             //
             Order newOrder = new Order();
+            newOrder.Date = DateTime.Now;
+            newOrder.Number = 11;
             newOrder.LastName = "Flintstone";
             newOrder.FirstName = "Fred";
             newOrder.Address = "1313 Cobblestone Way";
@@ -37,8 +39,9 @@ namespace BazingaPizzaria.Model
             pizzaOne.Size = "Large";
             pizzaOne.Crust = "Garlic";
             pizzaOne.IsSpecialty = false;
+            pizzaOne.PizzaSpecialtyName = null;
             pizzaOne.Quantity = 1;
-            pizzaOne.PizzaPrice = 17.73M;
+            pizzaOne.PizzaPrice = 17.73m;
 
             //
             // add toppings to pizzaOne
@@ -54,13 +57,14 @@ namespace BazingaPizzaria.Model
             // genearate specialty pizza for order (2 pizzas)
             //
             Pizza pizzaTwo = new Pizza();
-            pizzaOne.PizzaID = 0002;
-            pizzaOne.Size = "Small";
-            pizzaOne.Crust = "Cheesy";
-            pizzaOne.IsSpecialty = true;
-            pizzaOne.Quantity = 2;
-            pizzaOne.PizzaPrice = 34.73M;
-            
+            pizzaTwo.PizzaID = 0002;
+            pizzaTwo.Size = "Small";
+            pizzaTwo.Crust = "Cheesy";
+            pizzaTwo.IsSpecialty = true;
+            pizzaTwo.PizzaSpecialtyName = Pizza.SpecialtyName.SuperSupreme;
+            pizzaTwo.Quantity = 2;
+            pizzaTwo.PizzaPrice = 34.73m;
+
             //
             // add pizzaOne and pizzaTwo to testOrder
             //
@@ -70,16 +74,16 @@ namespace BazingaPizzaria.Model
             //
             // generate beverages for order
             //
-            //Beverage beverageOne = new Beverage("Coke", Beverage.BevSize.Large, 2);
-            //Beverage beverageTwo = new Beverage("Orange", Beverage.BevSize.Small, 1);
-            //Beverage beverageThree = new Beverage("Three River IPA", Beverage.BevSize.XL, 4);
+            Beverage beverageOne = new Beverage("Coke", Beverage.BevSize.Large, 2, 2.50m);
+            Beverage beverageTwo = new Beverage("Orange", Beverage.BevSize.Small, 1, 0.79m);
+            Beverage beverageThree = new Beverage("Three River IPA", Beverage.BevSize.XL, 2, 9.79m);
 
             //
             // add beverages to testOrder
             //
-            //newOrder.BeveragePurchase.Add(beverageOne);
-            //newOrder.BeveragePurchase.Add(beverageTwo);
-            //newOrder.BeveragePurchase.Add(beverageThree);
+            newOrder.BeveragePurchase.Add(beverageOne);
+            newOrder.BeveragePurchase.Add(beverageTwo);
+            newOrder.BeveragePurchase.Add(beverageThree);
 
             return newOrder;
         }

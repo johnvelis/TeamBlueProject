@@ -531,22 +531,6 @@ namespace BazingaPizzaria
         //
         private void tabPageCheckOutPopulateData()
         {
-            listBox_JV_OrderItemQuantity.Items.Clear();
-            listBox_JV_OrderItemName.Items.Clear();
-            listBox_JV_OrderItemPrice.Items.Clear();
-
-            //
-            // Add demo text to Pizza Order listboxes
-            //
-            listBox_JV_OrderItemQuantity.Items.Add("1");
-            listBox_JV_OrderItemQuantity.Items.Add("1");
-            listBox_JV_OrderItemName.Items.Add("Meatlovers Special");
-            listBox_JV_OrderItemName.Items.Add("Hawaiian Special");
-            listBox_JV_OrderItemPrice.Items.Add("$15.95");
-            listBox_JV_OrderItemPrice.Items.Add("$17.95");
-            textBox_JV_OrderSubtotal.Text = "$33.90";
-            textBox_JV_OrderTax.Text = "$  2.03";
-            textBox_JV_OrderTotal.Text = "$35.93";
 
             textBox_JV_CCName.Text = "John Velis";
         }

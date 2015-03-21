@@ -144,6 +144,55 @@ namespace BazingaPizzaria.Model
         }
         #endregion
 
+        #region METHODS
+        // return a string with the full name
+        public string FullName()
+        {
+            return (_firstName + " " + _lastName);
+        }
+
+        // return a string with the full address
+        public string FullAddress()
+        {
+            return (
+                _address + "\r\n" +
+                _city + ", " + _stateProvince + " " + _zip);
+        }
+
+        // return a string with the full credit card expiration date
+        public string FullCCExpDate()
+        {
+            return (
+                _ccExpMonth + "/" + _ccExpYear);
+        }
+
+        // calculate the subtotal for the pizzas
+        public decimal PizzaSubtotal()
+        {
+            decimal pizzaSubtotal = 0;
+            foreach (Pizza pizza in _pizza)
+            {
+                pizzaSubtotal = pizzaSubtotal + pizza.PizzaPrice;
+            }
+
+            return (pizzaSubtotal);
+        }
+
+        // calculate the subtotal for the pizzas
+        public decimal BeverageSubtotal()
+        {
+            decimal beverageSubtotal = 0;
+            foreach (Beverage beverage in _beverage)
+            {
+                // fix with correct pricing [JOHN]
+                beverageSubtotal = beverageSubtotal + beverage.Quantity;
+            }
+
+            return (beverageSubtotal);
+        }
+
+        #endregion
+
         #region Constructors
         public Order()
         {
