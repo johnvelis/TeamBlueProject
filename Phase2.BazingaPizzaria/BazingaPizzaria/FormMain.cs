@@ -168,10 +168,11 @@ namespace BazingaPizzaria
             }
         }
 
-        private void btnCancelOrder_Click(object sender, EventArgs e)
+        private void btn_JV_CancelOrder_Click(object sender, EventArgs e)
         {
             FormConfirmCancel frmConfirmCancel = new FormConfirmCancel();
-            frmConfirmCancel.ShowDialog();
+            frmConfirmCancel.ShowDialog();       
+
         }
         #endregion
 
@@ -529,28 +530,13 @@ namespace BazingaPizzaria
         //
         // method to populate tabPageCheckOut form
         //
-        private void tabPageCheckOutPopulateData()
-        {
 
-            textBox_JV_CCName.Text = "John Velis";
-        }
 
         private void tabPageCheckOut_Enter(object sender, EventArgs e)
         {
             grpbox_JV_ConfirmPaymentInfo.Visible = false;
 
-            newOrder.LastName = "Velis";
-            lbl_JV_BillingNameConfirm.Text = newOrder.FirstName + " " + newOrder.LastName;
-            lbl_JV_BillingAddressConfirm.Text = newOrder.Address;
-            lbl_JV_BillingCityConfirm.Text = newOrder.City;
-            lbl_JV_BillingStateProvinceConfirm.Text = newOrder.StateProvince;
-            lbl_JV_BillingZipConfirm.Text = newOrder.Zip;
-            lbl_JV_BillingEmailConfirm.Text = newOrder.Email;
-            lbl_JV_CCNumberShort.Text = "**** " + newOrder.CCNumber.Substring(11, 4);
-            lbl_JV_CCExpConfirm.Text =
-                newOrder.CCExpMonth.ToString() +
-                "/" +
-                newOrder.CCExpYear.ToString();
+
         }
 
         #region Checkout Form Validation
@@ -645,6 +631,8 @@ namespace BazingaPizzaria
                 //TODO: Velis - make new group visible
                 grpbox_JV_PayForOrder.Visible = false;
                 grpbox_JV_ConfirmPaymentInfo.Visible = true;
+                updatePaymentInfo();
+                updateConfirmPaymentInfoGroupBox();
             }
         }
 
@@ -663,6 +651,36 @@ namespace BazingaPizzaria
             lbl_JV_CCExpYear.ForeColor = colFormNormalText;
             textBox_JV_CCCVVCode.ForeColor = colFormNormalText;
         }
+
+        private void updatePaymentInfo()
+        {
+            newOrder.CCName = textBox_JV_CCName.Text;
+            newOrder.Address = textBox_JV_CCAddress.Text;
+            newOrder.City = textBox_JV_CCCity.Text;
+            newOrder.StateProvince = textBox_JV_CCState.Text;
+            newOrder.Zip = textBox_JV_CCZip.Text;
+            newOrder.CCNumber = textBox_JV_CCNumber.Text;
+            newOrder.CCExpMonth = int.Parse(comboBox_JV_CCExpMonth.SelectedItem.ToString());
+            newOrder.CCExpYear = int.Parse(comboBox_JV_CCExpYear.SelectedItem.ToString());
+            newOrder.CCCVVCode = int.Parse(textBox_JV_CCCVVCode.Text);
+        }
+
+        private void updateConfirmPaymentInfoGroupBox()
+        {
+            newOrder.LastName = "Velis";
+            lbl_JV_BillingNameConfirm.Text = newOrder.CCName;
+            lbl_JV_BillingAddressConfirm.Text = newOrder.Address;
+            lbl_JV_BillingCityConfirm.Text = newOrder.City;
+            lbl_JV_BillingStateProvinceConfirm.Text = newOrder.StateProvince;
+            lbl_JV_BillingZipConfirm.Text = newOrder.Zip;
+            lbl_JV_BillingEmailConfirm.Text = newOrder.Email;
+            lbl_JV_CCNumberShort.Text = "**** " + newOrder.CCNumber.Substring(11, 4);
+            lbl_JV_CCExpConfirm.Text =
+                newOrder.CCExpMonth.ToString() +
+                "/" +
+                newOrder.CCExpYear.ToString();
+        }
+
         #endregion
 
         #endregion
@@ -953,6 +971,7 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
+
 
 
 
