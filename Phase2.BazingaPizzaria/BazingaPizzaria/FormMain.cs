@@ -535,6 +535,24 @@ namespace BazingaPizzaria
             textBox_JV_CCName.Text = "John Velis";
         }
 
+        private void tabPageCheckOut_Enter(object sender, EventArgs e)
+        {
+            grpbox_JV_ConfirmPaymentInfo.Visible = false;
+
+            newOrder.LastName = "Velis";
+            lbl_JV_BillingNameConfirm.Text = newOrder.FirstName + " " + newOrder.LastName;
+            lbl_JV_BillingAddressConfirm.Text = newOrder.Address;
+            lbl_JV_BillingCityConfirm.Text = newOrder.City;
+            lbl_JV_BillingStateProvinceConfirm.Text = newOrder.StateProvince;
+            lbl_JV_BillingZipConfirm.Text = newOrder.Zip;
+            lbl_JV_BillingEmailConfirm.Text = newOrder.Email;
+            lbl_JV_CCNumberShort.Text = "**** " + newOrder.CCNumber.Substring(11, 4);
+            lbl_JV_CCExpConfirm.Text =
+                newOrder.CCExpMonth.ToString() +
+                "/" +
+                newOrder.CCExpYear.ToString();
+        }
+
         #region Checkout Form Validation
         //
         // validate the zip code for using proper regular expression
@@ -623,8 +641,10 @@ namespace BazingaPizzaria
             }
             else
             {
-                FormCompletedOrder frmCompletedOrder = new FormCompletedOrder(this);
-                tabControlOrderSequence.SelectedTab = tabPageCompleteOrder;
+                //FormCompletedOrder frmCompletedOrder = new FormCompletedOrder(this);
+                //TODO: Velis - make new group visible
+                grpbox_JV_PayForOrder.Visible = false;
+                grpbox_JV_ConfirmPaymentInfo.Visible = true;
             }
         }
 
@@ -647,26 +667,6 @@ namespace BazingaPizzaria
 
         #endregion
 
-        //
-        // tabPageCompleteOrder - Velis
-        //
-        #region tabPageCompleteOrder Code (Velis)
-        private void tabPageCompleteOrder_Enter(object sender, EventArgs e)
-        {
-            lbl_JV_BillingNameConfirm.Text = newOrder.FirstName + " " + newOrder.LastName;
-            lbl_JV_BillingAddressConfirm.Text = newOrder.Address;
-            lbl_JV_BillingCityConfirm.Text = newOrder.City;
-            lbl_JV_BillingStateProvinceConfirm.Text = newOrder.StateProvince;
-            lbl_JV_BillingZipConfirm.Text = newOrder.Zip;
-            lbl_JV_BillingEmailConfirm.Text = newOrder.Email;
-            lbl_JV_CCNumberShort.Text = "**** " + newOrder.CCNumber.Substring(11, 4);
-            lbl_JV_CCExpConfirm.Text =
-                newOrder.CCExpMonth.ToString() +
-                "/" +
-                newOrder.CCExpYear.ToString();
-
-        }
-        #endregion
 
         //
         // tabPageSpecialtyZas - Roxy
@@ -953,6 +953,9 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
+
+
+
 
 
 
