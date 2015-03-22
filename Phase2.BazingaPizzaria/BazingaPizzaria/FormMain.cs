@@ -171,7 +171,7 @@ namespace BazingaPizzaria
         private void btn_JV_CancelOrder_Click(object sender, EventArgs e)
         {
             FormConfirmCancel frmConfirmCancel = new FormConfirmCancel();
-            frmConfirmCancel.ShowDialog();       
+            frmConfirmCancel.ShowDialog();
 
         }
         #endregion
@@ -432,7 +432,7 @@ namespace BazingaPizzaria
                 if (rowIndex > -1)
                 {
                     var current = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells[0].Value.ToString());
-                    
+
                     current++;
                     newBeverage.BevPrice = current * newBeverage.BasePrice;
                     newBeverage.Quantity = current;
@@ -514,9 +514,9 @@ namespace BazingaPizzaria
 
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
-                //instanciates new pizza object
+            //instanciates new pizza object
             newPizza = new Pizza();
-                //TODO add pizza properties based on user button selections
+            //TODO add pizza properties based on user button selections
             tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
         }
 
@@ -539,7 +539,7 @@ namespace BazingaPizzaria
             grpbox_JV_PayForOrder.Visible = false;
             grpbox_JV_OrderInformation.Visible = true;
             grpbox_JV_ThankYou.Visible = false;
-            
+
             //
             // fill in the Pizzas Information GroupBox before order confirmation
             //
@@ -574,7 +574,7 @@ namespace BazingaPizzaria
         //
         // button click to continue to Thank You groupbox
         //
-                private void btn_JV_CompleteOrder_Click(object sender, EventArgs e)
+        private void btn_JV_CompleteOrder_Click(object sender, EventArgs e)
         {
             //
             // set the visiblity of the GroupBoxes on form
@@ -587,6 +587,22 @@ namespace BazingaPizzaria
             lbl_JV_OrderNumberTime.Text =
                 "You are order " + newOrder.Number.ToString() + ". " +
                 "Your order will be ready at " + DateTime.Now.AddMinutes(30).ToShortTimeString() + ".";
+        }
+
+        //
+        // button to add another pizza from Check Out
+        //
+        private void btn_JV_AddPizza_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectTab(tabPageSizeCrust);
+        }
+
+        //
+        // button to add another Beverage from Check Out
+        //
+        private void btn_JV_AddBeverage_Click(object sender, EventArgs e)
+        {
+            tabControlOrderSequence.SelectTab(tabPageBeverages);
         }
 
         #region Checkout Form Validation
@@ -991,7 +1007,7 @@ namespace BazingaPizzaria
             }
 
             //TODO - add newPizza to newOrder PizzaPurchase list
-                //newOrder.PizzaPurchase.Add(newPizza);
+            //newOrder.PizzaPurchase.Add(newPizza);
 
             //Display confirmation to user and display navigation buttons
             frmErrorMess.LabelText = "You have added a Za to your order!";
@@ -1025,6 +1041,8 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
+
+
 
 
 
