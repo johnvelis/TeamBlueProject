@@ -42,6 +42,7 @@
             this.grpbox_JV_ThankYou = new System.Windows.Forms.GroupBox();
             this.lbl_JV_OrderNumberTime = new System.Windows.Forms.Label();
             this.lblThankYou = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.grpbox_JV_OrderInformation = new System.Windows.Forms.GroupBox();
             this.btn_JV_ContinueToPaymentInfo = new System.Windows.Forms.Button();
             this.btn_JV_CancelOrder = new System.Windows.Forms.Button();
@@ -225,12 +226,14 @@
             this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
             this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
             this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.btn_JV_AddPizza = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageControlsTemplate.SuspendLayout();
             this.tabPageCheckOut.SuspendLayout();
             this.grpbox_JV_ThankYou.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.grpbox_JV_OrderInformation.SuspendLayout();
             this.grpbox_JV_ConfirmPaymentInfo.SuspendLayout();
             this.grpbox_JV_PayForOrder.SuspendLayout();
@@ -289,7 +292,6 @@
             this.tab_TG_CarryOut.SuspendLayout();
             this.tabControlOrderSequence.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -412,10 +414,10 @@
             // tabPageCheckOut
             // 
             this.tabPageCheckOut.BackColor = System.Drawing.Color.White;
-            this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ThankYou);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_OrderInformation);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ConfirmPaymentInfo);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_PayForOrder);
+            this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ThankYou);
             this.tabPageCheckOut.ForeColor = System.Drawing.SystemColors.WindowText;
             this.tabPageCheckOut.Location = new System.Drawing.Point(4, 25);
             this.tabPageCheckOut.Name = "tabPageCheckOut";
@@ -456,8 +458,20 @@
             this.lblThankYou.TabIndex = 0;
             this.lblThankYou.Text = "Thank You for Your Order";
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::BazingaPizzaria.Properties.Resources.snappy_pizza;
+            this.pictureBox11.Location = new System.Drawing.Point(639, 79);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(539, 363);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 4;
+            this.pictureBox11.TabStop = false;
+            // 
             // grpbox_JV_OrderInformation
             // 
+            this.grpbox_JV_OrderInformation.Controls.Add(this.button5);
+            this.grpbox_JV_OrderInformation.Controls.Add(this.btn_JV_AddPizza);
             this.grpbox_JV_OrderInformation.Controls.Add(this.btn_JV_ContinueToPaymentInfo);
             this.grpbox_JV_OrderInformation.Controls.Add(this.btn_JV_CancelOrder);
             this.grpbox_JV_OrderInformation.Controls.Add(this.lblOrderTotal);
@@ -489,6 +503,8 @@
             this.btn_JV_ContinueToPaymentInfo.Text = "Continue";
             this.btn_JV_ContinueToPaymentInfo.UseVisualStyleBackColor = false;
             this.btn_JV_ContinueToPaymentInfo.Click += new System.EventHandler(this.btn_JV_ContinueToPaymentInfo_Click);
+            this.btn_JV_ContinueToPaymentInfo.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_JV_ContinueToPaymentInfo.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_JV_CancelOrder
             // 
@@ -504,6 +520,8 @@
             this.btn_JV_CancelOrder.Text = "Cancel My Order";
             this.btn_JV_CancelOrder.UseVisualStyleBackColor = false;
             this.btn_JV_CancelOrder.Click += new System.EventHandler(this.btn_JV_CancelOrder_Click);
+            this.btn_JV_CancelOrder.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_JV_CancelOrder.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // lblOrderTotal
             // 
@@ -528,7 +546,7 @@
             // 
             this.lbl_JV_BeveragesOrdered.AutoSize = true;
             this.lbl_JV_BeveragesOrdered.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_JV_BeveragesOrdered.Location = new System.Drawing.Point(17, 219);
+            this.lbl_JV_BeveragesOrdered.Location = new System.Drawing.Point(17, 231);
             this.lbl_JV_BeveragesOrdered.Name = "lbl_JV_BeveragesOrdered";
             this.lbl_JV_BeveragesOrdered.Size = new System.Drawing.Size(242, 37);
             this.lbl_JV_BeveragesOrdered.TabIndex = 30;
@@ -538,7 +556,7 @@
             // 
             this.lbl_JV_PizzasOrdered.AutoSize = true;
             this.lbl_JV_PizzasOrdered.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_JV_PizzasOrdered.Location = new System.Drawing.Point(13, 29);
+            this.lbl_JV_PizzasOrdered.Location = new System.Drawing.Point(13, 15);
             this.lbl_JV_PizzasOrdered.Name = "lbl_JV_PizzasOrdered";
             this.lbl_JV_PizzasOrdered.Size = new System.Drawing.Size(193, 37);
             this.lbl_JV_PizzasOrdered.TabIndex = 29;
@@ -568,9 +586,9 @@
             this.listBox_JV_Beverages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_JV_Beverages.FormattingEnabled = true;
             this.listBox_JV_Beverages.ItemHeight = 25;
-            this.listBox_JV_Beverages.Location = new System.Drawing.Point(20, 259);
+            this.listBox_JV_Beverages.Location = new System.Drawing.Point(20, 271);
             this.listBox_JV_Beverages.Name = "listBox_JV_Beverages";
-            this.listBox_JV_Beverages.Size = new System.Drawing.Size(574, 179);
+            this.listBox_JV_Beverages.Size = new System.Drawing.Size(574, 129);
             this.listBox_JV_Beverages.TabIndex = 26;
             // 
             // lbl_JV_PizzaSubtotal
@@ -597,7 +615,7 @@
             this.listBox_JV_Pizzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_JV_Pizzas.FormattingEnabled = true;
             this.listBox_JV_Pizzas.ItemHeight = 25;
-            this.listBox_JV_Pizzas.Location = new System.Drawing.Point(20, 69);
+            this.listBox_JV_Pizzas.Location = new System.Drawing.Point(20, 55);
             this.listBox_JV_Pizzas.Name = "listBox_JV_Pizzas";
             this.listBox_JV_Pizzas.Size = new System.Drawing.Size(1149, 129);
             this.listBox_JV_Pizzas.TabIndex = 23;
@@ -647,6 +665,8 @@
             this.btn_JV_CompleteOrder.Text = "Complete Order";
             this.btn_JV_CompleteOrder.UseVisualStyleBackColor = false;
             this.btn_JV_CompleteOrder.Click += new System.EventHandler(this.btn_JV_CompleteOrder_Click);
+            this.btn_JV_CompleteOrder.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_JV_CompleteOrder.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // btn_JV_CancelOrder2
             // 
@@ -662,6 +682,8 @@
             this.btn_JV_CancelOrder2.Text = "Cancel My Order";
             this.btn_JV_CancelOrder2.UseVisualStyleBackColor = false;
             this.btn_JV_CancelOrder2.Click += new System.EventHandler(this.btn_JV_CancelOrder_Click);
+            this.btn_JV_CancelOrder2.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_JV_CancelOrder2.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // lbl_JV_BillingNameConfirm
             // 
@@ -2777,15 +2799,37 @@
             this.lbl_RS_navBeverages.TabIndex = 0;
             this.lbl_RS_navBeverages.Text = "Beverages";
             // 
-            // pictureBox11
+            // btn_JV_AddPizza
             // 
-            this.pictureBox11.Image = global::BazingaPizzaria.Properties.Resources.snappy_pizza;
-            this.pictureBox11.Location = new System.Drawing.Point(639, 79);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(539, 363);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 4;
-            this.pictureBox11.TabStop = false;
+            this.btn_JV_AddPizza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_JV_AddPizza.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.btn_JV_AddPizza.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_JV_AddPizza.ForeColor = System.Drawing.Color.White;
+            this.btn_JV_AddPizza.Location = new System.Drawing.Point(20, 190);
+            this.btn_JV_AddPizza.Name = "btn_JV_AddPizza";
+            this.btn_JV_AddPizza.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            this.btn_JV_AddPizza.Size = new System.Drawing.Size(152, 49);
+            this.btn_JV_AddPizza.TabIndex = 35;
+            this.btn_JV_AddPizza.Text = "Add a Pizza";
+            this.btn_JV_AddPizza.UseVisualStyleBackColor = false;
+            this.btn_JV_AddPizza.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.btn_JV_AddPizza.MouseLeave += new System.EventHandler(this.standardButtonLeave);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
+            this.button5.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(20, 407);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            this.button5.Size = new System.Drawing.Size(152, 49);
+            this.button5.TabIndex = 36;
+            this.button5.Text = "Add a Pizza";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.MouseEnter += new System.EventHandler(this.standardButtonEnter);
+            this.button5.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
             // FormMain
             // 
@@ -2809,6 +2853,7 @@
             this.tabPageCheckOut.ResumeLayout(false);
             this.grpbox_JV_ThankYou.ResumeLayout(false);
             this.grpbox_JV_ThankYou.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.grpbox_JV_OrderInformation.ResumeLayout(false);
             this.grpbox_JV_OrderInformation.PerformLayout();
             this.grpbox_JV_ConfirmPaymentInfo.ResumeLayout(false);
@@ -2883,7 +2928,6 @@
             this.tabControlOrderSequence.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3088,5 +3132,7 @@
         private System.Windows.Forms.Label lbl_JV_OrderNumberTime;
         private System.Windows.Forms.Label lblThankYou;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_JV_AddPizza;
     }
 }
