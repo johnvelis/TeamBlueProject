@@ -136,12 +136,12 @@ namespace BazingaPizzaria.Model
             }
             return (fullPizzaDescription);
         }
-
         //HACK: Velis - to get the full pizza description into the listbox
-        //public override string ToString()
-        //{
-        //    return (FullPizzaDescription());
-        //}
+        public override string ToString()
+        {
+            return (FullPizzaDescription());
+        }
+
 
         #endregion
 
