@@ -114,6 +114,20 @@ namespace BazingaPizzaria
                     lbl_RS_navChooseZa.ForeColor = Color.Black;
                     lbl_RS_navBeverages.ForeColor = Color.Black;
                     lbl_RS_navCheckOut.ForeColor = Color.Black;
+
+                    btn_SL_sizeLarge.BackColor = colDarkBlue;
+                    btn_SL_crustHandTossed.BackColor = colDarkBlue;
+                    btn_SL_sizeSmall.BackColor = colRed;
+                    btn_SL_sizeMed.BackColor = colRed;
+                    btn_SL_sizeXLG.BackColor = colRed;
+                    btn_SL_crustChrispyThin.BackColor = colRed;
+                    btn_SL_crustThick.BackColor = colRed;
+                    btn_SL_crustGlutenFree.BackColor = colRed;
+
+                    newPizzaPrice = 10.97m;
+                    pizzaSize = "Large";
+                    pizzaCrust = "Hand-Tossed";
+
                     break;
                 case 2:
                     //Navigation animation change
@@ -491,54 +505,70 @@ namespace BazingaPizzaria
 
         //creates pizza variable
         Pizza newPizza;
-        decimal newPizzaPrice = 0m;
+        decimal newPizzaPrice = 10.97m;
+        string pizzaSize = "Large";
+        string pizzaCrust = "Hand-Tossed";
 
         //The following eight event handlers are for the Size/Crust tab of the form
 
         private void btn_SL_sizeSmall_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_sizeSmall);
+            pizzaSize = "Small";
+            newPizzaPrice = 3.99m;
         }
 
         private void btn_SL_sizeMed_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_sizeMed);
+            pizzaSize = "Medium";
+            newPizzaPrice = 7.99m;
         }
 
         private void btn_SL_sizeLarge_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_sizeLarge);
+            pizzaSize = "Large";
+            newPizzaPrice = 10.97m;
         }
 
         private void btn_SL_sizeXLG_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_sizeXLG);
+            pizzaSize = "Extra Large";
+            newPizzaPrice = 13.97m;
         }
 
         private void btn_SL_crustHandTossed_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_crustHandTossed);
+            pizzaCrust = "Hand Tossed";
         }
 
         private void btn_SL_crustChrispyThin_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_crustChrispyThin);
+            pizzaCrust = "Crispy-Thin";
         }
 
         private void btn_SL_crustThick_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_crustThick);
+            pizzaCrust = "Thick";
         }
 
         private void btn_SL_crustGlutenFree_Click(object sender, EventArgs e)
         {
             ButtonAnimation.ButtonSelect(this, btn_SL_crustGlutenFree);
+            pizzaCrust = "Gluten-Free";
         }
 
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
-            //instanciates new pizza object
+            //instansiates new pizza object
             newPizza = new Pizza();
+            newPizza.Size = pizzaSize;
+            newPizza.Crust = pizzaCrust;
             //TODO add pizza properties based on user button selections
             tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
         }
