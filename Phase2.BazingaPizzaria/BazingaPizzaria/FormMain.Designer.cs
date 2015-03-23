@@ -314,7 +314,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(44, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1156, 143);
+            this.panel1.Size = new System.Drawing.Size(1196, 143);
             this.panel1.TabIndex = 16;
             // 
             // btn_hiddenClose
@@ -436,6 +436,7 @@
             this.tabPageCheckOut.Size = new System.Drawing.Size(1192, 474);
             this.tabPageCheckOut.TabIndex = 3;
             this.tabPageCheckOut.Text = "Check Out";
+            this.tabPageCheckOut.Enter += new System.EventHandler(this.tabPageCheckOut_Enter);
             // 
             // grpbox_JV_OrderInformation
             // 
@@ -2909,7 +2910,6 @@
             this.tabControlOrderSequence.Size = new System.Drawing.Size(1200, 500);
             this.tabControlOrderSequence.TabIndex = 12;
             this.tabControlOrderSequence.SelectedIndexChanged += new System.EventHandler(this.tabControlOrderSequence_SelectedIndexChanged);
-            this.tabControlOrderSequence.Enter += new System.EventHandler(this.tabPageCheckOut_Enter);
             this.tabControlOrderSequence.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.tabControlOrderSequence.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
