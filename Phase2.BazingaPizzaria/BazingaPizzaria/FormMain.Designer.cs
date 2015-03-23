@@ -135,6 +135,9 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.lbl_RS_quantity3 = new System.Windows.Forms.Label();
+            this.nud_RS_justCheeseQuantity = new System.Windows.Forms.NumericUpDown();
             this.btn_RS_justCheese = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_RS_toBuild = new System.Windows.Forms.Button();
@@ -144,6 +147,8 @@
             this.tabPage_RS_start = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage_RS_specialties = new System.Windows.Forms.TabPage();
+            this.lbl_RS_quantity = new System.Windows.Forms.Label();
+            this.nud_RS_specialtyQuantity = new System.Windows.Forms.NumericUpDown();
             this.pnl_RS_Start = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -181,6 +186,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.pic_RS_cheese = new System.Windows.Forms.PictureBox();
             this.tabPage_RS_BuildAZa = new System.Windows.Forms.TabPage();
+            this.lbl_RS_quantity2 = new System.Windows.Forms.Label();
+            this.nud_RS_buildZaQuantity = new System.Windows.Forms.NumericUpDown();
             this.btn_RS_addToOrder2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -230,13 +237,6 @@
             this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
             this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
             this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
-            this.nud_RS_specialtyQuantity = new System.Windows.Forms.NumericUpDown();
-            this.lbl_RS_quantity = new System.Windows.Forms.Label();
-            this.lbl_RS_quantity2 = new System.Windows.Forms.Label();
-            this.nud_RS_buildZaQuantity = new System.Windows.Forms.NumericUpDown();
-            this.lbl_RS_quantity3 = new System.Windows.Forms.Label();
-            this.nud_RS_justCheeseQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageControlsTemplate.SuspendLayout();
@@ -265,10 +265,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).BeginInit();
             this.tabControl_RS_Zas.SuspendLayout();
             this.tabPage_RS_start.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage_RS_specialties.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).BeginInit();
             this.pnl_RS_Start.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_RS_start)).BeginInit();
@@ -289,6 +291,7 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_RS_cheese)).BeginInit();
             this.tabPage_RS_BuildAZa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPageSizeCrust.SuspendLayout();
@@ -301,9 +304,6 @@
             this.tab_TG_CarryOut.SuspendLayout();
             this.tabControlOrderSequence.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -314,7 +314,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(44, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1196, 143);
+            this.panel1.Size = new System.Drawing.Size(1156, 143);
             this.panel1.TabIndex = 16;
             // 
             // btn_hiddenClose
@@ -1644,6 +1644,44 @@
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(165, 281);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(30, 15);
+            this.label26.TabIndex = 15;
+            this.label26.Text = "-Or-";
+            // 
+            // lbl_RS_quantity3
+            // 
+            this.lbl_RS_quantity3.AutoSize = true;
+            this.lbl_RS_quantity3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_quantity3.Location = new System.Drawing.Point(23, 336);
+            this.lbl_RS_quantity3.Name = "lbl_RS_quantity3";
+            this.lbl_RS_quantity3.Size = new System.Drawing.Size(58, 15);
+            this.lbl_RS_quantity3.TabIndex = 2;
+            this.lbl_RS_quantity3.Text = "&Quantity:";
+            // 
+            // nud_RS_justCheeseQuantity
+            // 
+            this.nud_RS_justCheeseQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_RS_justCheeseQuantity.Location = new System.Drawing.Point(87, 333);
+            this.nud_RS_justCheeseQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_RS_justCheeseQuantity.Name = "nud_RS_justCheeseQuantity";
+            this.nud_RS_justCheeseQuantity.Size = new System.Drawing.Size(44, 23);
+            this.nud_RS_justCheeseQuantity.TabIndex = 3;
+            this.nud_RS_justCheeseQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // btn_RS_justCheese
             // 
             this.btn_RS_justCheese.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1777,6 +1815,34 @@
             this.tabPage_RS_specialties.TabIndex = 0;
             this.tabPage_RS_specialties.Text = "Specialties";
             this.tabPage_RS_specialties.UseVisualStyleBackColor = true;
+            // 
+            // lbl_RS_quantity
+            // 
+            this.lbl_RS_quantity.AutoSize = true;
+            this.lbl_RS_quantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_quantity.Location = new System.Drawing.Point(16, 355);
+            this.lbl_RS_quantity.Name = "lbl_RS_quantity";
+            this.lbl_RS_quantity.Size = new System.Drawing.Size(58, 15);
+            this.lbl_RS_quantity.TabIndex = 1;
+            this.lbl_RS_quantity.Text = "&Quantity:";
+            // 
+            // nud_RS_specialtyQuantity
+            // 
+            this.nud_RS_specialtyQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_RS_specialtyQuantity.Location = new System.Drawing.Point(80, 352);
+            this.nud_RS_specialtyQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_RS_specialtyQuantity.Name = "nud_RS_specialtyQuantity";
+            this.nud_RS_specialtyQuantity.Size = new System.Drawing.Size(44, 23);
+            this.nud_RS_specialtyQuantity.TabIndex = 2;
+            this.nud_RS_specialtyQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // pnl_RS_Start
             // 
@@ -2213,6 +2279,34 @@
             this.tabPage_RS_BuildAZa.TabIndex = 2;
             this.tabPage_RS_BuildAZa.Text = "Build-a-Za";
             this.tabPage_RS_BuildAZa.UseVisualStyleBackColor = true;
+            // 
+            // lbl_RS_quantity2
+            // 
+            this.lbl_RS_quantity2.AutoSize = true;
+            this.lbl_RS_quantity2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_quantity2.Location = new System.Drawing.Point(12, 361);
+            this.lbl_RS_quantity2.Name = "lbl_RS_quantity2";
+            this.lbl_RS_quantity2.Size = new System.Drawing.Size(58, 15);
+            this.lbl_RS_quantity2.TabIndex = 0;
+            this.lbl_RS_quantity2.Text = "&Quantity:";
+            // 
+            // nud_RS_buildZaQuantity
+            // 
+            this.nud_RS_buildZaQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_RS_buildZaQuantity.Location = new System.Drawing.Point(76, 358);
+            this.nud_RS_buildZaQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_RS_buildZaQuantity.Name = "nud_RS_buildZaQuantity";
+            this.nud_RS_buildZaQuantity.Size = new System.Drawing.Size(44, 23);
+            this.nud_RS_buildZaQuantity.TabIndex = 1;
+            this.nud_RS_buildZaQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btn_RS_addToOrder2
             // 
@@ -2742,7 +2836,7 @@
             this.tab_TG_CarryOut.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_CarryOut.Name = "tab_TG_CarryOut";
             this.tab_TG_CarryOut.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 439);
+            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 442);
             this.tab_TG_CarryOut.TabIndex = 1;
             this.tab_TG_CarryOut.Text = "Carry Out";
             this.tab_TG_CarryOut.UseVisualStyleBackColor = true;
@@ -2888,100 +2982,6 @@
             this.lbl_RS_navBeverages.TabIndex = 0;
             this.lbl_RS_navBeverages.Text = "Beverages";
             // 
-            // nud_RS_specialtyQuantity
-            // 
-            this.nud_RS_specialtyQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_RS_specialtyQuantity.Location = new System.Drawing.Point(80, 352);
-            this.nud_RS_specialtyQuantity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_RS_specialtyQuantity.Name = "nud_RS_specialtyQuantity";
-            this.nud_RS_specialtyQuantity.Size = new System.Drawing.Size(44, 23);
-            this.nud_RS_specialtyQuantity.TabIndex = 2;
-            this.nud_RS_specialtyQuantity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // lbl_RS_quantity
-            // 
-            this.lbl_RS_quantity.AutoSize = true;
-            this.lbl_RS_quantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_quantity.Location = new System.Drawing.Point(16, 355);
-            this.lbl_RS_quantity.Name = "lbl_RS_quantity";
-            this.lbl_RS_quantity.Size = new System.Drawing.Size(58, 15);
-            this.lbl_RS_quantity.TabIndex = 1;
-            this.lbl_RS_quantity.Text = "&Quantity:";
-            // 
-            // lbl_RS_quantity2
-            // 
-            this.lbl_RS_quantity2.AutoSize = true;
-            this.lbl_RS_quantity2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_quantity2.Location = new System.Drawing.Point(12, 361);
-            this.lbl_RS_quantity2.Name = "lbl_RS_quantity2";
-            this.lbl_RS_quantity2.Size = new System.Drawing.Size(58, 15);
-            this.lbl_RS_quantity2.TabIndex = 0;
-            this.lbl_RS_quantity2.Text = "&Quantity:";
-            // 
-            // nud_RS_buildZaQuantity
-            // 
-            this.nud_RS_buildZaQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_RS_buildZaQuantity.Location = new System.Drawing.Point(76, 358);
-            this.nud_RS_buildZaQuantity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_RS_buildZaQuantity.Name = "nud_RS_buildZaQuantity";
-            this.nud_RS_buildZaQuantity.Size = new System.Drawing.Size(44, 23);
-            this.nud_RS_buildZaQuantity.TabIndex = 1;
-            this.nud_RS_buildZaQuantity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // lbl_RS_quantity3
-            // 
-            this.lbl_RS_quantity3.AutoSize = true;
-            this.lbl_RS_quantity3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_quantity3.Location = new System.Drawing.Point(23, 336);
-            this.lbl_RS_quantity3.Name = "lbl_RS_quantity3";
-            this.lbl_RS_quantity3.Size = new System.Drawing.Size(58, 15);
-            this.lbl_RS_quantity3.TabIndex = 2;
-            this.lbl_RS_quantity3.Text = "&Quantity:";
-            // 
-            // nud_RS_justCheeseQuantity
-            // 
-            this.nud_RS_justCheeseQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_RS_justCheeseQuantity.Location = new System.Drawing.Point(87, 333);
-            this.nud_RS_justCheeseQuantity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_RS_justCheeseQuantity.Name = "nud_RS_justCheeseQuantity";
-            this.nud_RS_justCheeseQuantity.Size = new System.Drawing.Size(44, 23);
-            this.nud_RS_justCheeseQuantity.TabIndex = 3;
-            this.nud_RS_justCheeseQuantity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(165, 281);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(30, 15);
-            this.label26.TabIndex = 15;
-            this.label26.Text = "-Or-";
-            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3032,11 +3032,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).EndInit();
             this.tabControl_RS_Zas.ResumeLayout(false);
             this.tabPage_RS_start.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage_RS_specialties.ResumeLayout(false);
             this.tabPage_RS_specialties.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).EndInit();
             this.pnl_RS_Start.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -3064,6 +3066,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_RS_cheese)).EndInit();
             this.tabPage_RS_BuildAZa.ResumeLayout(false);
             this.tabPage_RS_BuildAZa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -3081,9 +3084,6 @@
             this.tabControlOrderSequence.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).EndInit();
             this.ResumeLayout(false);
 
         }
