@@ -1593,7 +1593,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox10.Location = new System.Drawing.Point(1016, 364);
+            this.pictureBox10.Location = new System.Drawing.Point(1016, 363);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(100, 54);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1603,7 +1603,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox9.Location = new System.Drawing.Point(801, 364);
+            this.pictureBox9.Location = new System.Drawing.Point(801, 363);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(100, 54);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1613,7 +1613,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox8.Location = new System.Drawing.Point(611, 364);
+            this.pictureBox8.Location = new System.Drawing.Point(611, 363);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(100, 54);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1624,7 +1624,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(617, 320);
+            this.label22.Location = new System.Drawing.Point(617, 316);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(507, 45);
             this.label22.TabIndex = 0;
