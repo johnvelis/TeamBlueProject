@@ -1592,7 +1592,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox10.Location = new System.Drawing.Point(1040, 364);
+            this.pictureBox10.Location = new System.Drawing.Point(1016, 364);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(100, 54);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1602,7 +1602,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox9.Location = new System.Drawing.Point(849, 364);
+            this.pictureBox9.Location = new System.Drawing.Point(801, 364);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(100, 54);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1612,7 +1612,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox8.Location = new System.Drawing.Point(660, 364);
+            this.pictureBox8.Location = new System.Drawing.Point(611, 364);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(100, 54);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1623,7 +1623,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(644, 320);
+            this.label22.Location = new System.Drawing.Point(617, 320);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(507, 45);
             this.label22.TabIndex = 0;
@@ -1752,7 +1752,7 @@
             this.btn_RS_addBeverage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_addBeverage.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_addBeverage.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_addBeverage.Location = new System.Drawing.Point(628, 427);
+            this.btn_RS_addBeverage.Location = new System.Drawing.Point(580, 427);
             this.btn_RS_addBeverage.Name = "btn_RS_addBeverage";
             this.btn_RS_addBeverage.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_addBeverage.Size = new System.Drawing.Size(177, 41);
@@ -2492,12 +2492,12 @@
             this.btn_RS_checkOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_checkOut.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_checkOut.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_checkOut.Location = new System.Drawing.Point(1006, 427);
+            this.btn_RS_checkOut.Location = new System.Drawing.Point(960, 427);
             this.btn_RS_checkOut.Name = "btn_RS_checkOut";
             this.btn_RS_checkOut.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
-            this.btn_RS_checkOut.Size = new System.Drawing.Size(177, 41);
+            this.btn_RS_checkOut.Size = new System.Drawing.Size(223, 41);
             this.btn_RS_checkOut.TabIndex = 2;
-            this.btn_RS_checkOut.Text = "&Check Out";
+            this.btn_RS_checkOut.Text = "&View Order/Check Out";
             this.btn_RS_checkOut.UseVisualStyleBackColor = false;
             this.btn_RS_checkOut.Visible = false;
             this.btn_RS_checkOut.Click += new System.EventHandler(this.btn_RS_checkOut_Click);
@@ -2510,7 +2510,7 @@
             this.btn_RS_anotherZa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(195)))), ((int)(((byte)(232)))));
             this.btn_RS_anotherZa.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_RS_anotherZa.ForeColor = System.Drawing.Color.White;
-            this.btn_RS_anotherZa.Location = new System.Drawing.Point(817, 427);
+            this.btn_RS_anotherZa.Location = new System.Drawing.Point(769, 427);
             this.btn_RS_anotherZa.Name = "btn_RS_anotherZa";
             this.btn_RS_anotherZa.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.btn_RS_anotherZa.Size = new System.Drawing.Size(177, 41);

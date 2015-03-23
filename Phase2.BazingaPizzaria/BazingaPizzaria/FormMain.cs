@@ -115,6 +115,7 @@ namespace BazingaPizzaria
                     lbl_RS_navBeverages.ForeColor = Color.Black;
                     lbl_RS_navCheckOut.ForeColor = Color.Black;
 
+                    //default buttons
                     btn_SL_sizeLarge.BackColor = colDarkBlue;
                     btn_SL_crustHandTossed.BackColor = colDarkBlue;
                     btn_SL_sizeSmall.BackColor = colRed;
@@ -124,6 +125,7 @@ namespace BazingaPizzaria
                     btn_SL_crustThick.BackColor = colRed;
                     btn_SL_crustGlutenFree.BackColor = colRed;
 
+                    //default variables
                     newPizzaPrice = 10.97m;
                     pizzaSize = "Large";
                     pizzaCrust = "Hand-Tossed";
@@ -1130,6 +1132,7 @@ namespace BazingaPizzaria
 
         #endregion
 
+        //hidden close button in top left corner of app
         private void btn_hiddenClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
