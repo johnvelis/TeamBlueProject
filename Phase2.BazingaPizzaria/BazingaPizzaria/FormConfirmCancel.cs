@@ -35,7 +35,7 @@ namespace BazingaPizzaria
 
         private void btnYesPlease_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            Application.Exit();
         }
 
         private void btnNoWay_Click(object sender, EventArgs e)

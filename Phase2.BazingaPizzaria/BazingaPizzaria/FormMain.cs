@@ -605,6 +605,34 @@ namespace BazingaPizzaria
             tabControlOrderSequence.SelectTab(tabPageBeverages);
         }
 
+        //
+        // button to remove selected pizza from Check Out
+        //
+        private void btn_JV_DeleteSelectedPizza_Click(object sender, EventArgs e)
+        {
+            if (listBox_JV_Pizzas.SelectedIndex >= 0)
+            {
+                newOrder.PizzaPurchase.RemoveAt(listBox_JV_Pizzas.SelectedIndex);
+                listBox_JV_Pizzas.DataSource = null;
+                listBox_JV_Pizzas.DataSource = newOrder.PizzaPurchase;
+                listBox_JV_Pizzas.Refresh();
+            }
+        }
+        
+        //
+        // button to remove selected beverage from Check Out
+        //
+        private void btn_JV_DeletedSelectedBeverage_Click(object sender, EventArgs e)
+        {
+            if (listBox_JV_Pizzas.SelectedIndex >= 0)
+            {
+                newOrder.BeveragePurchase.RemoveAt(listBox_JV_Beverages.SelectedIndex);
+                listBox_JV_Beverages.DataSource = null;
+                listBox_JV_Beverages.DataSource = newOrder.BeveragePurchase;
+                listBox_JV_Beverages.Refresh();
+            }
+        }
+
         #region Checkout Form Validation
         //
         // validate the zip code for using proper regular expression
@@ -1041,6 +1069,8 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
+
+
 
 
 
