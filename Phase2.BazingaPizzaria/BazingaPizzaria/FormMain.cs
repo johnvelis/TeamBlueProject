@@ -445,6 +445,8 @@ namespace BazingaPizzaria
                     dataGridView1.Rows.Add(newBeverage.Quantity, newBeverage.SizeName, newBeverage.BevPrice);
 
                     dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
+
+                    newOrder.BeveragePurchase.Add(newBeverage);
                 }
             }
 
