@@ -135,9 +135,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.lbl_RS_quantity3 = new System.Windows.Forms.Label();
-            this.nud_RS_justCheeseQuantity = new System.Windows.Forms.NumericUpDown();
             this.btn_RS_justCheese = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_RS_toBuild = new System.Windows.Forms.Button();
@@ -147,8 +144,6 @@
             this.tabPage_RS_start = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage_RS_specialties = new System.Windows.Forms.TabPage();
-            this.lbl_RS_quantity = new System.Windows.Forms.Label();
-            this.nud_RS_specialtyQuantity = new System.Windows.Forms.NumericUpDown();
             this.pnl_RS_Start = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -186,8 +181,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.pic_RS_cheese = new System.Windows.Forms.PictureBox();
             this.tabPage_RS_BuildAZa = new System.Windows.Forms.TabPage();
-            this.lbl_RS_quantity2 = new System.Windows.Forms.Label();
-            this.nud_RS_buildZaQuantity = new System.Windows.Forms.NumericUpDown();
             this.btn_RS_addToOrder2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -237,6 +230,13 @@
             this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
             this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
             this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
+            this.nud_RS_specialtyQuantity = new System.Windows.Forms.NumericUpDown();
+            this.lbl_RS_quantity = new System.Windows.Forms.Label();
+            this.lbl_RS_quantity2 = new System.Windows.Forms.Label();
+            this.nud_RS_buildZaQuantity = new System.Windows.Forms.NumericUpDown();
+            this.lbl_RS_quantity3 = new System.Windows.Forms.Label();
+            this.nud_RS_justCheeseQuantity = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageControlsTemplate.SuspendLayout();
@@ -265,12 +265,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).BeginInit();
             this.tabControl_RS_Zas.SuspendLayout();
             this.tabPage_RS_start.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage_RS_specialties.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).BeginInit();
             this.pnl_RS_Start.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_RS_start)).BeginInit();
@@ -291,7 +289,6 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_RS_cheese)).BeginInit();
             this.tabPage_RS_BuildAZa.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPageSizeCrust.SuspendLayout();
@@ -304,6 +301,9 @@
             this.tab_TG_CarryOut.SuspendLayout();
             this.tabControlOrderSequence.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -338,7 +338,7 @@
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(234)))), ((int)(((byte)(246)))));
             this.label24.Location = new System.Drawing.Point(124, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(1170, 145);
+            this.label24.Size = new System.Drawing.Size(935, 116);
             this.label24.TabIndex = 0;
             this.label24.Text = "Bazinga Pizzeria";
             // 
@@ -361,10 +361,10 @@
             this.tabPageControlsTemplate.Controls.Add(this.btn_Sample);
             this.tabPageControlsTemplate.Controls.Add(this.label1);
             this.tabPageControlsTemplate.Controls.Add(this.lblControlsTemplate);
-            this.tabPageControlsTemplate.Location = new System.Drawing.Point(4, 25);
+            this.tabPageControlsTemplate.Location = new System.Drawing.Point(4, 22);
             this.tabPageControlsTemplate.Name = "tabPageControlsTemplate";
             this.tabPageControlsTemplate.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.tabPageControlsTemplate.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageControlsTemplate.Size = new System.Drawing.Size(1192, 474);
             this.tabPageControlsTemplate.TabIndex = 4;
             this.tabPageControlsTemplate.Text = "Controls Template";
             // 
@@ -374,7 +374,7 @@
             this.label3.Font = new System.Drawing.Font("Verdana", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(174, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(358, 57);
+            this.label3.Size = new System.Drawing.Size(284, 45);
             this.label3.TabIndex = 4;
             this.label3.Text = "HeadingFont";
             // 
@@ -384,7 +384,7 @@
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(177, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 37);
+            this.label2.Size = new System.Drawing.Size(162, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "GeneralTextFont";
             // 
@@ -410,7 +410,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.label1.Location = new System.Drawing.Point(175, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 46);
+            this.label1.Size = new System.Drawing.Size(232, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "SubHeadingFont";
             // 
@@ -419,7 +419,7 @@
             this.lblControlsTemplate.AutoSize = true;
             this.lblControlsTemplate.Location = new System.Drawing.Point(1050, 20);
             this.lblControlsTemplate.Name = "lblControlsTemplate";
-            this.lblControlsTemplate.Size = new System.Drawing.Size(123, 17);
+            this.lblControlsTemplate.Size = new System.Drawing.Size(92, 13);
             this.lblControlsTemplate.TabIndex = 0;
             this.lblControlsTemplate.Text = "Controls Template";
             // 
@@ -431,12 +431,11 @@
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_PayForOrder);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ThankYou);
             this.tabPageCheckOut.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.tabPageCheckOut.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCheckOut.Location = new System.Drawing.Point(4, 22);
             this.tabPageCheckOut.Name = "tabPageCheckOut";
-            this.tabPageCheckOut.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageCheckOut.Size = new System.Drawing.Size(1192, 474);
             this.tabPageCheckOut.TabIndex = 3;
             this.tabPageCheckOut.Text = "Check Out";
-            this.tabPageCheckOut.Enter += new System.EventHandler(this.tabPageCheckOut_Enter);
             // 
             // grpbox_JV_OrderInformation
             // 
@@ -565,7 +564,7 @@
             this.lblOrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrderTotal.Location = new System.Drawing.Point(909, 275);
             this.lblOrderTotal.Name = "lblOrderTotal";
-            this.lblOrderTotal.Size = new System.Drawing.Size(111, 25);
+            this.lblOrderTotal.Size = new System.Drawing.Size(88, 20);
             this.lblOrderTotal.TabIndex = 32;
             this.lblOrderTotal.Text = "Order Total";
             // 
@@ -574,7 +573,7 @@
             this.txtBox_JV_OrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_JV_OrderTotal.Location = new System.Drawing.Point(1058, 272);
             this.txtBox_JV_OrderTotal.Name = "txtBox_JV_OrderTotal";
-            this.txtBox_JV_OrderTotal.Size = new System.Drawing.Size(112, 30);
+            this.txtBox_JV_OrderTotal.Size = new System.Drawing.Size(112, 26);
             this.txtBox_JV_OrderTotal.TabIndex = 31;
             this.txtBox_JV_OrderTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -584,7 +583,7 @@
             this.lbl_JV_BeveragesOrdered.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BeveragesOrdered.Location = new System.Drawing.Point(17, 231);
             this.lbl_JV_BeveragesOrdered.Name = "lbl_JV_BeveragesOrdered";
-            this.lbl_JV_BeveragesOrdered.Size = new System.Drawing.Size(242, 37);
+            this.lbl_JV_BeveragesOrdered.Size = new System.Drawing.Size(189, 30);
             this.lbl_JV_BeveragesOrdered.TabIndex = 30;
             this.lbl_JV_BeveragesOrdered.Text = "Beverages Ordered";
             // 
@@ -594,7 +593,7 @@
             this.lbl_JV_PizzasOrdered.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_PizzasOrdered.Location = new System.Drawing.Point(13, 15);
             this.lbl_JV_PizzasOrdered.Name = "lbl_JV_PizzasOrdered";
-            this.lbl_JV_PizzasOrdered.Size = new System.Drawing.Size(193, 37);
+            this.lbl_JV_PizzasOrdered.Size = new System.Drawing.Size(152, 30);
             this.lbl_JV_PizzasOrdered.TabIndex = 29;
             this.lbl_JV_PizzasOrdered.Text = "Pizzas Ordered";
             // 
@@ -604,7 +603,7 @@
             this.lbl_JV_BeverageSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_BeverageSubtotal.Location = new System.Drawing.Point(847, 236);
             this.lbl_JV_BeverageSubtotal.Name = "lbl_JV_BeverageSubtotal";
-            this.lbl_JV_BeverageSubtotal.Size = new System.Drawing.Size(173, 25);
+            this.lbl_JV_BeverageSubtotal.Size = new System.Drawing.Size(141, 20);
             this.lbl_JV_BeverageSubtotal.TabIndex = 28;
             this.lbl_JV_BeverageSubtotal.Text = "Beverage Subtotal";
             // 
@@ -613,7 +612,7 @@
             this.textBox_JV_BeverageSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_BeverageSubtotal.Location = new System.Drawing.Point(1058, 233);
             this.textBox_JV_BeverageSubtotal.Name = "textBox_JV_BeverageSubtotal";
-            this.textBox_JV_BeverageSubtotal.Size = new System.Drawing.Size(112, 30);
+            this.textBox_JV_BeverageSubtotal.Size = new System.Drawing.Size(112, 26);
             this.textBox_JV_BeverageSubtotal.TabIndex = 27;
             this.textBox_JV_BeverageSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -621,10 +620,10 @@
             // 
             this.listBox_JV_Beverages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_JV_Beverages.FormattingEnabled = true;
-            this.listBox_JV_Beverages.ItemHeight = 25;
+            this.listBox_JV_Beverages.ItemHeight = 20;
             this.listBox_JV_Beverages.Location = new System.Drawing.Point(20, 271);
             this.listBox_JV_Beverages.Name = "listBox_JV_Beverages";
-            this.listBox_JV_Beverages.Size = new System.Drawing.Size(574, 104);
+            this.listBox_JV_Beverages.Size = new System.Drawing.Size(574, 124);
             this.listBox_JV_Beverages.TabIndex = 26;
             // 
             // lbl_JV_PizzaSubtotal
@@ -633,7 +632,7 @@
             this.lbl_JV_PizzaSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_JV_PizzaSubtotal.Location = new System.Drawing.Point(883, 196);
             this.lbl_JV_PizzaSubtotal.Name = "lbl_JV_PizzaSubtotal";
-            this.lbl_JV_PizzaSubtotal.Size = new System.Drawing.Size(137, 25);
+            this.lbl_JV_PizzaSubtotal.Size = new System.Drawing.Size(111, 20);
             this.lbl_JV_PizzaSubtotal.TabIndex = 25;
             this.lbl_JV_PizzaSubtotal.Text = "Pizza Subtotal";
             // 
@@ -642,7 +641,7 @@
             this.textBox_JV_PizzaSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_PizzaSubtotal.Location = new System.Drawing.Point(1058, 193);
             this.textBox_JV_PizzaSubtotal.Name = "textBox_JV_PizzaSubtotal";
-            this.textBox_JV_PizzaSubtotal.Size = new System.Drawing.Size(112, 30);
+            this.textBox_JV_PizzaSubtotal.Size = new System.Drawing.Size(112, 26);
             this.textBox_JV_PizzaSubtotal.TabIndex = 24;
             this.textBox_JV_PizzaSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -650,10 +649,10 @@
             // 
             this.listBox_JV_Pizzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_JV_Pizzas.FormattingEnabled = true;
-            this.listBox_JV_Pizzas.ItemHeight = 25;
+            this.listBox_JV_Pizzas.ItemHeight = 20;
             this.listBox_JV_Pizzas.Location = new System.Drawing.Point(20, 55);
             this.listBox_JV_Pizzas.Name = "listBox_JV_Pizzas";
-            this.listBox_JV_Pizzas.Size = new System.Drawing.Size(1149, 104);
+            this.listBox_JV_Pizzas.Size = new System.Drawing.Size(1149, 124);
             this.listBox_JV_Pizzas.TabIndex = 23;
             // 
             // lbl_JV_OrderInfo
@@ -664,7 +663,7 @@
             this.lbl_JV_OrderInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.lbl_JV_OrderInfo.Location = new System.Drawing.Point(432, 0);
             this.lbl_JV_OrderInfo.Name = "lbl_JV_OrderInfo";
-            this.lbl_JV_OrderInfo.Size = new System.Drawing.Size(316, 46);
+            this.lbl_JV_OrderInfo.Size = new System.Drawing.Size(253, 37);
             this.lbl_JV_OrderInfo.TabIndex = 18;
             this.lbl_JV_OrderInfo.Text = "Order Information";
             // 
@@ -728,7 +727,7 @@
             this.lbl_JV_BillingNameConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingNameConfirm.Location = new System.Drawing.Point(50, 108);
             this.lbl_JV_BillingNameConfirm.Name = "lbl_JV_BillingNameConfirm";
-            this.lbl_JV_BillingNameConfirm.Size = new System.Drawing.Size(88, 37);
+            this.lbl_JV_BillingNameConfirm.Size = new System.Drawing.Size(69, 30);
             this.lbl_JV_BillingNameConfirm.TabIndex = 78;
             this.lbl_JV_BillingNameConfirm.Text = "Name";
             this.lbl_JV_BillingNameConfirm.Enter += new System.EventHandler(this.tabPageCheckOut_Enter);
@@ -740,7 +739,7 @@
             this.lbl_JV_ConfirmBillingInformation.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_ConfirmBillingInformation.Location = new System.Drawing.Point(21, 71);
             this.lbl_JV_ConfirmBillingInformation.Name = "lbl_JV_ConfirmBillingInformation";
-            this.lbl_JV_ConfirmBillingInformation.Size = new System.Drawing.Size(261, 37);
+            this.lbl_JV_ConfirmBillingInformation.Size = new System.Drawing.Size(201, 30);
             this.lbl_JV_ConfirmBillingInformation.TabIndex = 69;
             this.lbl_JV_ConfirmBillingInformation.Text = "Billing Information";
             // 
@@ -751,7 +750,7 @@
             this.label25.ForeColor = System.Drawing.Color.Black;
             this.label25.Location = new System.Drawing.Point(21, 309);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(325, 37);
+            this.label25.Size = new System.Drawing.Size(248, 30);
             this.label25.TabIndex = 77;
             this.label25.Text = "Credit Card Information";
             // 
@@ -762,7 +761,7 @@
             this.lbl_JV_BillingEmailConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingEmailConfirm.Location = new System.Drawing.Point(49, 264);
             this.lbl_JV_BillingEmailConfirm.Name = "lbl_JV_BillingEmailConfirm";
-            this.lbl_JV_BillingEmailConfirm.Size = new System.Drawing.Size(82, 37);
+            this.lbl_JV_BillingEmailConfirm.Size = new System.Drawing.Size(63, 30);
             this.lbl_JV_BillingEmailConfirm.TabIndex = 76;
             this.lbl_JV_BillingEmailConfirm.Text = "Email";
             // 
@@ -773,7 +772,7 @@
             this.lbl_JV_BillingAddressConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingAddressConfirm.Location = new System.Drawing.Point(49, 147);
             this.lbl_JV_BillingAddressConfirm.Name = "lbl_JV_BillingAddressConfirm";
-            this.lbl_JV_BillingAddressConfirm.Size = new System.Drawing.Size(111, 37);
+            this.lbl_JV_BillingAddressConfirm.Size = new System.Drawing.Size(87, 30);
             this.lbl_JV_BillingAddressConfirm.TabIndex = 70;
             this.lbl_JV_BillingAddressConfirm.Text = "Address";
             // 
@@ -784,7 +783,7 @@
             this.lbl_JV_CCExpConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCExpConfirm.Location = new System.Drawing.Point(311, 346);
             this.lbl_JV_CCExpConfirm.Name = "lbl_JV_CCExpConfirm";
-            this.lbl_JV_CCExpConfirm.Size = new System.Drawing.Size(136, 37);
+            this.lbl_JV_CCExpConfirm.Size = new System.Drawing.Size(105, 30);
             this.lbl_JV_CCExpConfirm.TabIndex = 75;
             this.lbl_JV_CCExpConfirm.Text = "Expiration";
             // 
@@ -795,7 +794,7 @@
             this.lbl_JV_BillingCityConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingCityConfirm.Location = new System.Drawing.Point(49, 187);
             this.lbl_JV_BillingCityConfirm.Name = "lbl_JV_BillingCityConfirm";
-            this.lbl_JV_BillingCityConfirm.Size = new System.Drawing.Size(63, 37);
+            this.lbl_JV_BillingCityConfirm.Size = new System.Drawing.Size(48, 30);
             this.lbl_JV_BillingCityConfirm.TabIndex = 71;
             this.lbl_JV_BillingCityConfirm.Text = "City";
             // 
@@ -806,7 +805,7 @@
             this.lbl_JV_CCNumberShort.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCNumberShort.Location = new System.Drawing.Point(49, 343);
             this.lbl_JV_CCNumberShort.Name = "lbl_JV_CCNumberShort";
-            this.lbl_JV_CCNumberShort.Size = new System.Drawing.Size(256, 37);
+            this.lbl_JV_CCNumberShort.Size = new System.Drawing.Size(199, 30);
             this.lbl_JV_CCNumberShort.TabIndex = 74;
             this.lbl_JV_CCNumberShort.Text = "Credit Card Number";
             // 
@@ -817,7 +816,7 @@
             this.lbl_JV_BillingStateProvinceConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingStateProvinceConfirm.Location = new System.Drawing.Point(50, 227);
             this.lbl_JV_BillingStateProvinceConfirm.Name = "lbl_JV_BillingStateProvinceConfirm";
-            this.lbl_JV_BillingStateProvinceConfirm.Size = new System.Drawing.Size(188, 37);
+            this.lbl_JV_BillingStateProvinceConfirm.Size = new System.Drawing.Size(146, 30);
             this.lbl_JV_BillingStateProvinceConfirm.TabIndex = 72;
             this.lbl_JV_BillingStateProvinceConfirm.Text = "State/Province";
             // 
@@ -828,7 +827,7 @@
             this.lbl_JV_BillingZipConfirm.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingZipConfirm.Location = new System.Drawing.Point(437, 227);
             this.lbl_JV_BillingZipConfirm.Name = "lbl_JV_BillingZipConfirm";
-            this.lbl_JV_BillingZipConfirm.Size = new System.Drawing.Size(55, 37);
+            this.lbl_JV_BillingZipConfirm.Size = new System.Drawing.Size(42, 30);
             this.lbl_JV_BillingZipConfirm.TabIndex = 73;
             this.lbl_JV_BillingZipConfirm.Text = "Zip";
             // 
@@ -839,7 +838,7 @@
             this.lbl_JV_ConfirmPaymentInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.lbl_JV_ConfirmPaymentInfo.Location = new System.Drawing.Point(42, 0);
             this.lbl_JV_ConfirmPaymentInfo.Name = "lbl_JV_ConfirmPaymentInfo";
-            this.lbl_JV_ConfirmPaymentInfo.Size = new System.Drawing.Size(489, 46);
+            this.lbl_JV_ConfirmPaymentInfo.Size = new System.Drawing.Size(392, 37);
             this.lbl_JV_ConfirmPaymentInfo.TabIndex = 79;
             this.lbl_JV_ConfirmPaymentInfo.Text = "Confirm Payment Informaion";
             // 
@@ -882,7 +881,7 @@
             this.lbl_JV_PayForYourOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(153)))), ((int)(((byte)(214)))));
             this.lbl_JV_PayForYourOrder.Location = new System.Drawing.Point(147, 0);
             this.lbl_JV_PayForYourOrder.Name = "lbl_JV_PayForYourOrder";
-            this.lbl_JV_PayForYourOrder.Size = new System.Drawing.Size(318, 46);
+            this.lbl_JV_PayForYourOrder.Size = new System.Drawing.Size(254, 37);
             this.lbl_JV_PayForYourOrder.TabIndex = 39;
             this.lbl_JV_PayForYourOrder.Text = "Pay for Your Order";
             // 
@@ -894,7 +893,7 @@
             this.lbl_JV_CCCVVCode.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCCVVCode.Location = new System.Drawing.Point(485, 285);
             this.lbl_JV_CCCVVCode.Name = "lbl_JV_CCCVVCode";
-            this.lbl_JV_CCCVVCode.Size = new System.Drawing.Size(68, 37);
+            this.lbl_JV_CCCVVCode.Size = new System.Drawing.Size(52, 30);
             this.lbl_JV_CCCVVCode.TabIndex = 0;
             this.lbl_JV_CCCVVCode.Text = "CVV";
             // 
@@ -905,7 +904,7 @@
             this.lbl_JV_BillingInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_BillingInfo.Location = new System.Drawing.Point(20, 45);
             this.lbl_JV_BillingInfo.Name = "lbl_JV_BillingInfo";
-            this.lbl_JV_BillingInfo.Size = new System.Drawing.Size(261, 37);
+            this.lbl_JV_BillingInfo.Size = new System.Drawing.Size(201, 30);
             this.lbl_JV_BillingInfo.TabIndex = 40;
             this.lbl_JV_BillingInfo.Text = "Billing Information";
             // 
@@ -914,7 +913,7 @@
             this.textBox_JV_CCCVVCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCCVVCode.Location = new System.Drawing.Point(551, 290);
             this.textBox_JV_CCCVVCode.Name = "textBox_JV_CCCVVCode";
-            this.textBox_JV_CCCVVCode.Size = new System.Drawing.Size(58, 30);
+            this.textBox_JV_CCCVVCode.Size = new System.Drawing.Size(58, 26);
             this.textBox_JV_CCCVVCode.TabIndex = 6;
             // 
             // lbl_JV_CCName
@@ -925,7 +924,7 @@
             this.lbl_JV_CCName.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCName.Location = new System.Drawing.Point(20, 85);
             this.lbl_JV_CCName.Name = "lbl_JV_CCName";
-            this.lbl_JV_CCName.Size = new System.Drawing.Size(189, 37);
+            this.lbl_JV_CCName.Size = new System.Drawing.Size(148, 30);
             this.lbl_JV_CCName.TabIndex = 41;
             this.lbl_JV_CCName.Text = "Name on Card";
             // 
@@ -951,7 +950,7 @@
             this.lbl_JV_CCAddress.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCAddress.Location = new System.Drawing.Point(20, 128);
             this.lbl_JV_CCAddress.Name = "lbl_JV_CCAddress";
-            this.lbl_JV_CCAddress.Size = new System.Drawing.Size(111, 37);
+            this.lbl_JV_CCAddress.Size = new System.Drawing.Size(87, 30);
             this.lbl_JV_CCAddress.TabIndex = 42;
             this.lbl_JV_CCAddress.Text = "Address";
             // 
@@ -979,7 +978,7 @@
             this.lbl_JV_CCCity.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCCity.Location = new System.Drawing.Point(20, 167);
             this.lbl_JV_CCCity.Name = "lbl_JV_CCCity";
-            this.lbl_JV_CCCity.Size = new System.Drawing.Size(63, 37);
+            this.lbl_JV_CCCity.Size = new System.Drawing.Size(48, 30);
             this.lbl_JV_CCCity.TabIndex = 43;
             this.lbl_JV_CCCity.Text = "City";
             // 
@@ -991,7 +990,7 @@
             this.lbl_JV_CCExpYear.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCExpYear.Location = new System.Drawing.Point(408, 360);
             this.lbl_JV_CCExpYear.Name = "lbl_JV_CCExpYear";
-            this.lbl_JV_CCExpYear.Size = new System.Drawing.Size(67, 37);
+            this.lbl_JV_CCExpYear.Size = new System.Drawing.Size(52, 30);
             this.lbl_JV_CCExpYear.TabIndex = 60;
             this.lbl_JV_CCExpYear.Text = "Year";
             // 
@@ -1002,7 +1001,7 @@
             this.lbl_JV_CCStateProvince.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCStateProvince.Location = new System.Drawing.Point(20, 207);
             this.lbl_JV_CCStateProvince.Name = "lbl_JV_CCStateProvince";
-            this.lbl_JV_CCStateProvince.Size = new System.Drawing.Size(188, 37);
+            this.lbl_JV_CCStateProvince.Size = new System.Drawing.Size(146, 30);
             this.lbl_JV_CCStateProvince.TabIndex = 44;
             this.lbl_JV_CCStateProvince.Text = "State/Province";
             // 
@@ -1014,7 +1013,7 @@
             this.lbl_JV_CCExpMonth.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCExpMonth.Location = new System.Drawing.Point(269, 360);
             this.lbl_JV_CCExpMonth.Name = "lbl_JV_CCExpMonth";
-            this.lbl_JV_CCExpMonth.Size = new System.Drawing.Size(96, 37);
+            this.lbl_JV_CCExpMonth.Size = new System.Drawing.Size(75, 30);
             this.lbl_JV_CCExpMonth.TabIndex = 58;
             this.lbl_JV_CCExpMonth.Text = "Month";
             // 
@@ -1025,7 +1024,7 @@
             this.lbl_JV_CCZip.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCZip.Location = new System.Drawing.Point(459, 207);
             this.lbl_JV_CCZip.Name = "lbl_JV_CCZip";
-            this.lbl_JV_CCZip.Size = new System.Drawing.Size(55, 37);
+            this.lbl_JV_CCZip.Size = new System.Drawing.Size(42, 30);
             this.lbl_JV_CCZip.TabIndex = 45;
             this.lbl_JV_CCZip.Text = "Zip";
             // 
@@ -1054,7 +1053,7 @@
             "2030"});
             this.comboBox_JV_CCExpYear.Location = new System.Drawing.Point(413, 329);
             this.comboBox_JV_CCExpYear.Name = "comboBox_JV_CCExpYear";
-            this.comboBox_JV_CCExpYear.Size = new System.Drawing.Size(80, 33);
+            this.comboBox_JV_CCExpYear.Size = new System.Drawing.Size(80, 28);
             this.comboBox_JV_CCExpYear.TabIndex = 8;
             // 
             // lbl_JV_CCInfo
@@ -1064,7 +1063,7 @@
             this.lbl_JV_CCInfo.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCInfo.Location = new System.Drawing.Point(20, 248);
             this.lbl_JV_CCInfo.Name = "lbl_JV_CCInfo";
-            this.lbl_JV_CCInfo.Size = new System.Drawing.Size(325, 37);
+            this.lbl_JV_CCInfo.Size = new System.Drawing.Size(248, 30);
             this.lbl_JV_CCInfo.TabIndex = 46;
             this.lbl_JV_CCInfo.Text = "Credit Card Information";
             // 
@@ -1089,7 +1088,7 @@
             "12"});
             this.comboBox_JV_CCExpMonth.Location = new System.Drawing.Point(274, 329);
             this.comboBox_JV_CCExpMonth.Name = "comboBox_JV_CCExpMonth";
-            this.comboBox_JV_CCExpMonth.Size = new System.Drawing.Size(121, 33);
+            this.comboBox_JV_CCExpMonth.Size = new System.Drawing.Size(121, 28);
             this.comboBox_JV_CCExpMonth.TabIndex = 7;
             // 
             // lbl_JV_CCNumber
@@ -1099,7 +1098,7 @@
             this.lbl_JV_CCNumber.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCNumber.Location = new System.Drawing.Point(20, 284);
             this.lbl_JV_CCNumber.Name = "lbl_JV_CCNumber";
-            this.lbl_JV_CCNumber.Size = new System.Drawing.Size(256, 37);
+            this.lbl_JV_CCNumber.Size = new System.Drawing.Size(199, 30);
             this.lbl_JV_CCNumber.TabIndex = 47;
             this.lbl_JV_CCNumber.Text = "Credit Card Number";
             // 
@@ -1108,7 +1107,7 @@
             this.textBox_JV_CCNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCNumber.Location = new System.Drawing.Point(274, 289);
             this.textBox_JV_CCNumber.Name = "textBox_JV_CCNumber";
-            this.textBox_JV_CCNumber.Size = new System.Drawing.Size(205, 30);
+            this.textBox_JV_CCNumber.Size = new System.Drawing.Size(205, 26);
             this.textBox_JV_CCNumber.TabIndex = 5;
             // 
             // lbl_JV_CCExpiration
@@ -1118,7 +1117,7 @@
             this.lbl_JV_CCExpiration.ForeColor = System.Drawing.Color.Black;
             this.lbl_JV_CCExpiration.Location = new System.Drawing.Point(20, 327);
             this.lbl_JV_CCExpiration.Name = "lbl_JV_CCExpiration";
-            this.lbl_JV_CCExpiration.Size = new System.Drawing.Size(136, 37);
+            this.lbl_JV_CCExpiration.Size = new System.Drawing.Size(105, 30);
             this.lbl_JV_CCExpiration.TabIndex = 48;
             this.lbl_JV_CCExpiration.Text = "Expiration";
             // 
@@ -1127,7 +1126,7 @@
             this.textBox_JV_CCZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCZip.Location = new System.Drawing.Point(523, 212);
             this.textBox_JV_CCZip.Name = "textBox_JV_CCZip";
-            this.textBox_JV_CCZip.Size = new System.Drawing.Size(86, 30);
+            this.textBox_JV_CCZip.Size = new System.Drawing.Size(86, 26);
             this.textBox_JV_CCZip.TabIndex = 4;
             this.textBox_JV_CCZip.Leave += new System.EventHandler(this.textBox_JV_CCZipValidation_Leave);
             // 
@@ -1136,7 +1135,7 @@
             this.textBox_JV_CCName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCName.Location = new System.Drawing.Point(274, 90);
             this.textBox_JV_CCName.Name = "textBox_JV_CCName";
-            this.textBox_JV_CCName.Size = new System.Drawing.Size(335, 30);
+            this.textBox_JV_CCName.Size = new System.Drawing.Size(335, 26);
             this.textBox_JV_CCName.TabIndex = 0;
             // 
             // textBox_JV_CCState
@@ -1144,7 +1143,7 @@
             this.textBox_JV_CCState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCState.Location = new System.Drawing.Point(274, 212);
             this.textBox_JV_CCState.Name = "textBox_JV_CCState";
-            this.textBox_JV_CCState.Size = new System.Drawing.Size(169, 30);
+            this.textBox_JV_CCState.Size = new System.Drawing.Size(169, 26);
             this.textBox_JV_CCState.TabIndex = 3;
             // 
             // textBox_JV_CCAddress
@@ -1152,7 +1151,7 @@
             this.textBox_JV_CCAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCAddress.Location = new System.Drawing.Point(274, 133);
             this.textBox_JV_CCAddress.Name = "textBox_JV_CCAddress";
-            this.textBox_JV_CCAddress.Size = new System.Drawing.Size(335, 30);
+            this.textBox_JV_CCAddress.Size = new System.Drawing.Size(335, 26);
             this.textBox_JV_CCAddress.TabIndex = 1;
             // 
             // textBox_JV_CCCity
@@ -1160,7 +1159,7 @@
             this.textBox_JV_CCCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_JV_CCCity.Location = new System.Drawing.Point(274, 172);
             this.textBox_JV_CCCity.Name = "textBox_JV_CCCity";
-            this.textBox_JV_CCCity.Size = new System.Drawing.Size(335, 30);
+            this.textBox_JV_CCCity.Size = new System.Drawing.Size(335, 26);
             this.textBox_JV_CCCity.TabIndex = 2;
             // 
             // grpbox_JV_ThankYou
@@ -1181,7 +1180,7 @@
             this.lbl_JV_OrderNumberTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl_JV_OrderNumberTime.Location = new System.Drawing.Point(49, 102);
             this.lbl_JV_OrderNumberTime.Name = "lbl_JV_OrderNumberTime";
-            this.lbl_JV_OrderNumberTime.Size = new System.Drawing.Size(371, 29);
+            this.lbl_JV_OrderNumberTime.Size = new System.Drawing.Size(293, 25);
             this.lbl_JV_OrderNumberTime.TabIndex = 1;
             this.lbl_JV_OrderNumberTime.Text = "Order number and time ready";
             this.lbl_JV_OrderNumberTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1192,7 +1191,7 @@
             this.lblThankYou.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThankYou.Location = new System.Drawing.Point(31, 33);
             this.lblThankYou.Name = "lblThankYou";
-            this.lblThankYou.Size = new System.Drawing.Size(739, 69);
+            this.lblThankYou.Size = new System.Drawing.Size(601, 55);
             this.lblThankYou.TabIndex = 0;
             this.lblThankYou.Text = "Thank You for Your Order";
             // 
@@ -1216,9 +1215,9 @@
             this.tabPageBeverages.Controls.Add(this.dataGridView1);
             this.tabPageBeverages.Controls.Add(this.groupBox5);
             this.tabPageBeverages.Controls.Add(this.groupBox6);
-            this.tabPageBeverages.Location = new System.Drawing.Point(4, 25);
+            this.tabPageBeverages.Location = new System.Drawing.Point(4, 22);
             this.tabPageBeverages.Name = "tabPageBeverages";
-            this.tabPageBeverages.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageBeverages.Size = new System.Drawing.Size(1192, 474);
             this.tabPageBeverages.TabIndex = 7;
             this.tabPageBeverages.Text = "Beverage1";
             this.tabPageBeverages.UseVisualStyleBackColor = true;
@@ -1268,10 +1267,10 @@
             // tab_TG_CocaCola
             // 
             this.tab_TG_CocaCola.Controls.Add(this.pictureBox4);
-            this.tab_TG_CocaCola.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_CocaCola.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_CocaCola.Name = "tab_TG_CocaCola";
             this.tab_TG_CocaCola.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_CocaCola.Size = new System.Drawing.Size(401, 180);
+            this.tab_TG_CocaCola.Size = new System.Drawing.Size(401, 183);
             this.tab_TG_CocaCola.TabIndex = 0;
             this.tab_TG_CocaCola.Text = "CocaCola";
             this.tab_TG_CocaCola.UseVisualStyleBackColor = true;
@@ -1289,10 +1288,10 @@
             // tab_TG_DietCola
             // 
             this.tab_TG_DietCola.Controls.Add(this.pictureBox5);
-            this.tab_TG_DietCola.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_DietCola.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_DietCola.Name = "tab_TG_DietCola";
             this.tab_TG_DietCola.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_DietCola.Size = new System.Drawing.Size(401, 180);
+            this.tab_TG_DietCola.Size = new System.Drawing.Size(401, 183);
             this.tab_TG_DietCola.TabIndex = 1;
             this.tab_TG_DietCola.Text = "DietCoke";
             this.tab_TG_DietCola.UseVisualStyleBackColor = true;
@@ -1310,10 +1309,10 @@
             // tab_TG_Sprite
             // 
             this.tab_TG_Sprite.Controls.Add(this.pictureBox6);
-            this.tab_TG_Sprite.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_Sprite.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_Sprite.Name = "tab_TG_Sprite";
             this.tab_TG_Sprite.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_Sprite.Size = new System.Drawing.Size(401, 180);
+            this.tab_TG_Sprite.Size = new System.Drawing.Size(401, 183);
             this.tab_TG_Sprite.TabIndex = 2;
             this.tab_TG_Sprite.Text = "Sprite";
             this.tab_TG_Sprite.UseVisualStyleBackColor = true;
@@ -1331,10 +1330,10 @@
             // tab_TG_DrPepper
             // 
             this.tab_TG_DrPepper.Controls.Add(this.pictureBox7);
-            this.tab_TG_DrPepper.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_DrPepper.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_DrPepper.Name = "tab_TG_DrPepper";
             this.tab_TG_DrPepper.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_DrPepper.Size = new System.Drawing.Size(401, 180);
+            this.tab_TG_DrPepper.Size = new System.Drawing.Size(401, 183);
             this.tab_TG_DrPepper.TabIndex = 3;
             this.tab_TG_DrPepper.Text = "Dr.Pepper";
             this.tab_TG_DrPepper.UseVisualStyleBackColor = true;
@@ -1572,9 +1571,9 @@
             this.tabPageSpecialtyPizzas.Controls.Add(this.tabControl_RS_Zas);
             this.tabPageSpecialtyPizzas.Controls.Add(this.btn_RS_checkOut);
             this.tabPageSpecialtyPizzas.Controls.Add(this.btn_RS_anotherZa);
-            this.tabPageSpecialtyPizzas.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSpecialtyPizzas.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpecialtyPizzas.Name = "tabPageSpecialtyPizzas";
-            this.tabPageSpecialtyPizzas.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageSpecialtyPizzas.Size = new System.Drawing.Size(1192, 474);
             this.tabPageSpecialtyPizzas.TabIndex = 2;
             this.tabPageSpecialtyPizzas.Text = "Speicalty Pizzas";
             // 
@@ -1626,7 +1625,7 @@
             this.label22.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(644, 320);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(632, 54);
+            this.label22.Size = new System.Drawing.Size(507, 45);
             this.label22.TabIndex = 0;
             this.label22.Text = "What would you like to do next?";
             // 
@@ -1644,44 +1643,6 @@
             this.groupBox3.Size = new System.Drawing.Size(360, 388);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(165, 281);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(37, 20);
-            this.label26.TabIndex = 15;
-            this.label26.Text = "-Or-";
-            // 
-            // lbl_RS_quantity3
-            // 
-            this.lbl_RS_quantity3.AutoSize = true;
-            this.lbl_RS_quantity3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_quantity3.Location = new System.Drawing.Point(23, 336);
-            this.lbl_RS_quantity3.Name = "lbl_RS_quantity3";
-            this.lbl_RS_quantity3.Size = new System.Drawing.Size(74, 20);
-            this.lbl_RS_quantity3.TabIndex = 2;
-            this.lbl_RS_quantity3.Text = "&Quantity:";
-            // 
-            // nud_RS_justCheeseQuantity
-            // 
-            this.nud_RS_justCheeseQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_RS_justCheeseQuantity.Location = new System.Drawing.Point(87, 333);
-            this.nud_RS_justCheeseQuantity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_RS_justCheeseQuantity.Name = "nud_RS_justCheeseQuantity";
-            this.nud_RS_justCheeseQuantity.Size = new System.Drawing.Size(44, 27);
-            this.nud_RS_justCheeseQuantity.TabIndex = 3;
-            this.nud_RS_justCheeseQuantity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // btn_RS_justCheese
             // 
@@ -1706,7 +1667,7 @@
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(23, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(393, 140);
+            this.label4.Size = new System.Drawing.Size(314, 105);
             this.label4.TabIndex = 5;
             this.label4.Text = "Select Specialty Zas to choose from our five specialties.\r\n(additional $3.00)\r\n\r\n" +
     "-Or-\r\n\r\nSelect Build-a-Za to choose your own toppings. \r\n(additional $1.00 per t" +
@@ -1779,10 +1740,10 @@
             // tabPage_RS_start
             // 
             this.tabPage_RS_start.Controls.Add(this.pictureBox1);
-            this.tabPage_RS_start.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_RS_start.Location = new System.Drawing.Point(4, 22);
             this.tabPage_RS_start.Name = "tabPage_RS_start";
             this.tabPage_RS_start.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_RS_start.Size = new System.Drawing.Size(771, 392);
+            this.tabPage_RS_start.Size = new System.Drawing.Size(771, 395);
             this.tabPage_RS_start.TabIndex = 1;
             this.tabPage_RS_start.Text = "Start";
             this.tabPage_RS_start.UseVisualStyleBackColor = true;
@@ -1809,41 +1770,13 @@
             this.tabPage_RS_specialties.Controls.Add(this.grp_RS_SpecialtyZas);
             this.tabPage_RS_specialties.Controls.Add(this.pnl_RS_meat);
             this.tabPage_RS_specialties.Controls.Add(this.pnl_RS_cheese);
-            this.tabPage_RS_specialties.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_RS_specialties.Location = new System.Drawing.Point(4, 22);
             this.tabPage_RS_specialties.Name = "tabPage_RS_specialties";
             this.tabPage_RS_specialties.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_RS_specialties.Size = new System.Drawing.Size(771, 392);
+            this.tabPage_RS_specialties.Size = new System.Drawing.Size(771, 395);
             this.tabPage_RS_specialties.TabIndex = 0;
             this.tabPage_RS_specialties.Text = "Specialties";
             this.tabPage_RS_specialties.UseVisualStyleBackColor = true;
-            // 
-            // lbl_RS_quantity
-            // 
-            this.lbl_RS_quantity.AutoSize = true;
-            this.lbl_RS_quantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_quantity.Location = new System.Drawing.Point(16, 355);
-            this.lbl_RS_quantity.Name = "lbl_RS_quantity";
-            this.lbl_RS_quantity.Size = new System.Drawing.Size(74, 20);
-            this.lbl_RS_quantity.TabIndex = 1;
-            this.lbl_RS_quantity.Text = "&Quantity:";
-            // 
-            // nud_RS_specialtyQuantity
-            // 
-            this.nud_RS_specialtyQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_RS_specialtyQuantity.Location = new System.Drawing.Point(80, 352);
-            this.nud_RS_specialtyQuantity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_RS_specialtyQuantity.Name = "nud_RS_specialtyQuantity";
-            this.nud_RS_specialtyQuantity.Size = new System.Drawing.Size(44, 27);
-            this.nud_RS_specialtyQuantity.TabIndex = 2;
-            this.nud_RS_specialtyQuantity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // pnl_RS_Start
             // 
@@ -1871,7 +1804,7 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(39, 5);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(415, 74);
+            this.label18.Size = new System.Drawing.Size(320, 60);
             this.label18.TabIndex = 72;
             this.label18.Text = "Select one of our Specialty Zas \r\non the left for more details!";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1914,7 +1847,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(8, 4);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 28);
+            this.label6.Size = new System.Drawing.Size(126, 21);
             this.label6.TabIndex = 72;
             this.label6.Text = "Super Supreme";
             // 
@@ -1924,7 +1857,7 @@
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(8, 28);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(477, 50);
+            this.label7.Size = new System.Drawing.Size(375, 40);
             this.label7.TabIndex = 4;
             this.label7.Text = "All our toppings on one Za: Pepperoni, Italian Sausage, \r\nham, fresh mushrooms, g" +
     "reen bell peppers, and olives.\r\n";
@@ -1967,7 +1900,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(8, 4);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(211, 28);
+            this.label12.Size = new System.Drawing.Size(172, 21);
             this.label12.TabIndex = 72;
             this.label12.Text = "Piled High Pepperoni";
             // 
@@ -1977,7 +1910,7 @@
             this.label13.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(9, 25);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(480, 25);
+            this.label13.Size = new System.Drawing.Size(376, 20);
             this.label13.TabIndex = 4;
             this.label13.Text = "The classic: piled high with cheese and extra pepperoni.\r\n";
             // 
@@ -2036,7 +1969,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(8, 4);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 28);
+            this.label8.Size = new System.Drawing.Size(109, 21);
             this.label8.TabIndex = 72;
             this.label8.Text = "Veggie Patch";
             // 
@@ -2046,7 +1979,7 @@
             this.label9.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(8, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(457, 50);
+            this.label9.Size = new System.Drawing.Size(358, 40);
             this.label9.TabIndex = 4;
             this.label9.Text = "Loads of fresh mushrooms, fresh green bell peppers, \r\nand black olives.\r\n";
             // 
@@ -2189,7 +2122,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(8, 4);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(169, 28);
+            this.label10.Size = new System.Drawing.Size(135, 21);
             this.label10.TabIndex = 72;
             this.label10.Text = "Mounds of Meat";
             // 
@@ -2199,7 +2132,7 @@
             this.label11.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(8, 25);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(396, 25);
+            this.label11.Size = new System.Drawing.Size(310, 20);
             this.label11.TabIndex = 4;
             this.label11.Text = "Pepperoni, Italian sausage, slow-roasted ham.\r\n";
             // 
@@ -2241,7 +2174,7 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(8, 4);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(166, 28);
+            this.label14.Size = new System.Drawing.Size(135, 21);
             this.label14.TabIndex = 72;
             this.label14.Text = "Ultimate Cheese";
             // 
@@ -2251,7 +2184,7 @@
             this.label15.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(8, 25);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(469, 50);
+            this.label15.Size = new System.Drawing.Size(369, 40);
             this.label15.TabIndex = 4;
             this.label15.Text = "Creamy garlic Parmesan sauce topped with 50% more \r\ncheese than our standard reci" +
     "pes.\r\n";
@@ -2274,40 +2207,12 @@
             this.tabPage_RS_BuildAZa.Controls.Add(this.btn_RS_addToOrder2);
             this.tabPage_RS_BuildAZa.Controls.Add(this.groupBox4);
             this.tabPage_RS_BuildAZa.Controls.Add(this.pictureBox3);
-            this.tabPage_RS_BuildAZa.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_RS_BuildAZa.Location = new System.Drawing.Point(4, 22);
             this.tabPage_RS_BuildAZa.Name = "tabPage_RS_BuildAZa";
-            this.tabPage_RS_BuildAZa.Size = new System.Drawing.Size(771, 392);
+            this.tabPage_RS_BuildAZa.Size = new System.Drawing.Size(771, 395);
             this.tabPage_RS_BuildAZa.TabIndex = 2;
             this.tabPage_RS_BuildAZa.Text = "Build-a-Za";
             this.tabPage_RS_BuildAZa.UseVisualStyleBackColor = true;
-            // 
-            // lbl_RS_quantity2
-            // 
-            this.lbl_RS_quantity2.AutoSize = true;
-            this.lbl_RS_quantity2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RS_quantity2.Location = new System.Drawing.Point(12, 361);
-            this.lbl_RS_quantity2.Name = "lbl_RS_quantity2";
-            this.lbl_RS_quantity2.Size = new System.Drawing.Size(74, 20);
-            this.lbl_RS_quantity2.TabIndex = 0;
-            this.lbl_RS_quantity2.Text = "&Quantity:";
-            // 
-            // nud_RS_buildZaQuantity
-            // 
-            this.nud_RS_buildZaQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_RS_buildZaQuantity.Location = new System.Drawing.Point(76, 358);
-            this.nud_RS_buildZaQuantity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_RS_buildZaQuantity.Name = "nud_RS_buildZaQuantity";
-            this.nud_RS_buildZaQuantity.Size = new System.Drawing.Size(44, 27);
-            this.nud_RS_buildZaQuantity.TabIndex = 1;
-            this.nud_RS_buildZaQuantity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // btn_RS_addToOrder2
             // 
@@ -2350,7 +2255,7 @@
             this.label17.Font = new System.Drawing.Font("Nirmala UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(244, 65);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(117, 37);
+            this.label17.Size = new System.Drawing.Size(89, 30);
             this.label17.TabIndex = 10;
             this.label17.Text = "Veggies";
             // 
@@ -2360,7 +2265,7 @@
             this.label16.Font = new System.Drawing.Font("Nirmala UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(66, 65);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 37);
+            this.label16.Size = new System.Drawing.Size(72, 30);
             this.label16.TabIndex = 9;
             this.label16.Text = "Meats";
             // 
@@ -2473,7 +2378,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(27, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 20);
+            this.label5.Size = new System.Drawing.Size(165, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Additional $1.00 per topping";
             // 
@@ -2532,10 +2437,10 @@
             this.tabPageSizeCrust.Controls.Add(this.lblSizeCrust);
             this.tabPageSizeCrust.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageSizeCrust.ForeColor = System.Drawing.Color.White;
-            this.tabPageSizeCrust.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSizeCrust.Location = new System.Drawing.Point(4, 22);
             this.tabPageSizeCrust.Name = "tabPageSizeCrust";
             this.tabPageSizeCrust.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSizeCrust.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageSizeCrust.Size = new System.Drawing.Size(1192, 474);
             this.tabPageSizeCrust.TabIndex = 1;
             this.tabPageSizeCrust.Text = "Size Crust";
             // 
@@ -2709,7 +2614,7 @@
             this.lblSizeCrust.AutoSize = true;
             this.lblSizeCrust.Location = new System.Drawing.Point(1097, 16);
             this.lblSizeCrust.Name = "lblSizeCrust";
-            this.lblSizeCrust.Size = new System.Drawing.Size(139, 37);
+            this.lblSizeCrust.Size = new System.Drawing.Size(110, 30);
             this.lblSizeCrust.TabIndex = 0;
             this.lblSizeCrust.Text = "Size & Crust";
             // 
@@ -2718,10 +2623,10 @@
             this.tabPageStart.BackColor = System.Drawing.Color.White;
             this.tabPageStart.Controls.Add(this.grp_TG_Selections);
             this.tabPageStart.Controls.Add(this.tabControl2);
-            this.tabPageStart.Location = new System.Drawing.Point(4, 25);
+            this.tabPageStart.Location = new System.Drawing.Point(4, 22);
             this.tabPageStart.Name = "tabPageStart";
             this.tabPageStart.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageStart.Size = new System.Drawing.Size(1192, 471);
+            this.tabPageStart.Size = new System.Drawing.Size(1192, 474);
             this.tabPageStart.TabIndex = 0;
             this.tabPageStart.Text = "Start";
             // 
@@ -2776,7 +2681,7 @@
             this.tabControl2.Location = new System.Drawing.Point(589, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(600, 465);
+            this.tabControl2.Size = new System.Drawing.Size(600, 468);
             this.tabControl2.TabIndex = 7;
             this.tabControl2.Tag = "";
             // 
@@ -2785,10 +2690,10 @@
             this.tab_TG_DineIn.Controls.Add(this.label19);
             this.tab_TG_DineIn.Controls.Add(this.txt_TG_NameDineIn);
             this.tab_TG_DineIn.Controls.Add(this.btn_TG_NextDineIn);
-            this.tab_TG_DineIn.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_DineIn.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_DineIn.Name = "tab_TG_DineIn";
             this.tab_TG_DineIn.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_DineIn.Size = new System.Drawing.Size(592, 436);
+            this.tab_TG_DineIn.Size = new System.Drawing.Size(592, 442);
             this.tab_TG_DineIn.TabIndex = 0;
             this.tab_TG_DineIn.Text = "Dine In";
             this.tab_TG_DineIn.UseVisualStyleBackColor = true;
@@ -2799,7 +2704,7 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(125, 95);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(232, 25);
+            this.label19.Size = new System.Drawing.Size(188, 20);
             this.label19.TabIndex = 2;
             this.label19.Text = "Please Enter Your Name:";
             // 
@@ -2834,10 +2739,10 @@
             this.tab_TG_CarryOut.Controls.Add(this.label21);
             this.tab_TG_CarryOut.Controls.Add(this.txt_TG_NameCarryOut);
             this.tab_TG_CarryOut.Controls.Add(this.btn_TG_NextCarryOut);
-            this.tab_TG_CarryOut.Location = new System.Drawing.Point(4, 25);
+            this.tab_TG_CarryOut.Location = new System.Drawing.Point(4, 22);
             this.tab_TG_CarryOut.Name = "tab_TG_CarryOut";
             this.tab_TG_CarryOut.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 436);
+            this.tab_TG_CarryOut.Size = new System.Drawing.Size(592, 439);
             this.tab_TG_CarryOut.TabIndex = 1;
             this.tab_TG_CarryOut.Text = "Carry Out";
             this.tab_TG_CarryOut.UseVisualStyleBackColor = true;
@@ -2858,7 +2763,7 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(125, 177);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(265, 25);
+            this.label20.Size = new System.Drawing.Size(214, 20);
             this.label20.TabIndex = 5;
             this.label20.Text = "Please Enter Phone Number:";
             // 
@@ -2868,7 +2773,7 @@
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(125, 95);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(232, 25);
+            this.label21.Size = new System.Drawing.Size(188, 20);
             this.label21.TabIndex = 4;
             this.label21.Text = "Please Enter Your Name:";
             // 
@@ -2910,6 +2815,7 @@
             this.tabControlOrderSequence.Size = new System.Drawing.Size(1200, 500);
             this.tabControlOrderSequence.TabIndex = 12;
             this.tabControlOrderSequence.SelectedIndexChanged += new System.EventHandler(this.tabControlOrderSequence_SelectedIndexChanged);
+            this.tabControlOrderSequence.Enter += new System.EventHandler(this.tabPageCheckOut_Enter);
             this.tabControlOrderSequence.MouseEnter += new System.EventHandler(this.standardButtonEnter);
             this.tabControlOrderSequence.MouseLeave += new System.EventHandler(this.standardButtonLeave);
             // 
@@ -2934,7 +2840,7 @@
             this.lbl_RS_navChooseZa.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RS_navChooseZa.Location = new System.Drawing.Point(511, 41);
             this.lbl_RS_navChooseZa.Name = "lbl_RS_navChooseZa";
-            this.lbl_RS_navChooseZa.Size = new System.Drawing.Size(267, 46);
+            this.lbl_RS_navChooseZa.Size = new System.Drawing.Size(214, 37);
             this.lbl_RS_navChooseZa.TabIndex = 0;
             this.lbl_RS_navChooseZa.Text = "Choose Your Za";
             // 
@@ -2945,7 +2851,7 @@
             this.lbl_RS_navStart.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RS_navStart.Location = new System.Drawing.Point(90, 41);
             this.lbl_RS_navStart.Name = "lbl_RS_navStart";
-            this.lbl_RS_navStart.Size = new System.Drawing.Size(97, 46);
+            this.lbl_RS_navStart.Size = new System.Drawing.Size(80, 37);
             this.lbl_RS_navStart.TabIndex = 0;
             this.lbl_RS_navStart.Text = "Start";
             // 
@@ -2956,7 +2862,7 @@
             this.lbl_RS_navCheckOut.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RS_navCheckOut.Location = new System.Drawing.Point(1009, 41);
             this.lbl_RS_navCheckOut.Name = "lbl_RS_navCheckOut";
-            this.lbl_RS_navCheckOut.Size = new System.Drawing.Size(183, 46);
+            this.lbl_RS_navCheckOut.Size = new System.Drawing.Size(147, 37);
             this.lbl_RS_navCheckOut.TabIndex = 0;
             this.lbl_RS_navCheckOut.Text = "Check Out";
             // 
@@ -2967,7 +2873,7 @@
             this.lbl_RS_navSizeCrust.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RS_navSizeCrust.Location = new System.Drawing.Point(300, 41);
             this.lbl_RS_navSizeCrust.Name = "lbl_RS_navSizeCrust";
-            this.lbl_RS_navSizeCrust.Size = new System.Drawing.Size(214, 46);
+            this.lbl_RS_navSizeCrust.Size = new System.Drawing.Size(172, 37);
             this.lbl_RS_navSizeCrust.TabIndex = 0;
             this.lbl_RS_navSizeCrust.Text = "Size && Crust";
             // 
@@ -2978,14 +2884,107 @@
             this.lbl_RS_navBeverages.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RS_navBeverages.Location = new System.Drawing.Point(773, 41);
             this.lbl_RS_navBeverages.Name = "lbl_RS_navBeverages";
-            this.lbl_RS_navBeverages.Size = new System.Drawing.Size(182, 46);
+            this.lbl_RS_navBeverages.Size = new System.Drawing.Size(149, 37);
             this.lbl_RS_navBeverages.TabIndex = 0;
             this.lbl_RS_navBeverages.Text = "Beverages";
             // 
+            // nud_RS_specialtyQuantity
+            // 
+            this.nud_RS_specialtyQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_RS_specialtyQuantity.Location = new System.Drawing.Point(80, 352);
+            this.nud_RS_specialtyQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_RS_specialtyQuantity.Name = "nud_RS_specialtyQuantity";
+            this.nud_RS_specialtyQuantity.Size = new System.Drawing.Size(44, 23);
+            this.nud_RS_specialtyQuantity.TabIndex = 2;
+            this.nud_RS_specialtyQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lbl_RS_quantity
+            // 
+            this.lbl_RS_quantity.AutoSize = true;
+            this.lbl_RS_quantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_quantity.Location = new System.Drawing.Point(16, 355);
+            this.lbl_RS_quantity.Name = "lbl_RS_quantity";
+            this.lbl_RS_quantity.Size = new System.Drawing.Size(58, 15);
+            this.lbl_RS_quantity.TabIndex = 1;
+            this.lbl_RS_quantity.Text = "&Quantity:";
+            // 
+            // lbl_RS_quantity2
+            // 
+            this.lbl_RS_quantity2.AutoSize = true;
+            this.lbl_RS_quantity2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_quantity2.Location = new System.Drawing.Point(12, 361);
+            this.lbl_RS_quantity2.Name = "lbl_RS_quantity2";
+            this.lbl_RS_quantity2.Size = new System.Drawing.Size(58, 15);
+            this.lbl_RS_quantity2.TabIndex = 0;
+            this.lbl_RS_quantity2.Text = "&Quantity:";
+            // 
+            // nud_RS_buildZaQuantity
+            // 
+            this.nud_RS_buildZaQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_RS_buildZaQuantity.Location = new System.Drawing.Point(76, 358);
+            this.nud_RS_buildZaQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_RS_buildZaQuantity.Name = "nud_RS_buildZaQuantity";
+            this.nud_RS_buildZaQuantity.Size = new System.Drawing.Size(44, 23);
+            this.nud_RS_buildZaQuantity.TabIndex = 1;
+            this.nud_RS_buildZaQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lbl_RS_quantity3
+            // 
+            this.lbl_RS_quantity3.AutoSize = true;
+            this.lbl_RS_quantity3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RS_quantity3.Location = new System.Drawing.Point(23, 336);
+            this.lbl_RS_quantity3.Name = "lbl_RS_quantity3";
+            this.lbl_RS_quantity3.Size = new System.Drawing.Size(58, 15);
+            this.lbl_RS_quantity3.TabIndex = 2;
+            this.lbl_RS_quantity3.Text = "&Quantity:";
+            // 
+            // nud_RS_justCheeseQuantity
+            // 
+            this.nud_RS_justCheeseQuantity.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_RS_justCheeseQuantity.Location = new System.Drawing.Point(87, 333);
+            this.nud_RS_justCheeseQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_RS_justCheeseQuantity.Name = "nud_RS_justCheeseQuantity";
+            this.nud_RS_justCheeseQuantity.Size = new System.Drawing.Size(44, 23);
+            this.nud_RS_justCheeseQuantity.TabIndex = 3;
+            this.nud_RS_justCheeseQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(165, 281);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(30, 15);
+            this.label26.TabIndex = 15;
+            this.label26.Text = "-Or-";
+            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btn_hiddenClose;
             this.ClientSize = new System.Drawing.Size(1278, 770);
@@ -3033,13 +3032,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).EndInit();
             this.tabControl_RS_Zas.ResumeLayout(false);
             this.tabPage_RS_start.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage_RS_specialties.ResumeLayout(false);
             this.tabPage_RS_specialties.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).EndInit();
             this.pnl_RS_Start.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -3067,7 +3064,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_RS_cheese)).EndInit();
             this.tabPage_RS_BuildAZa.ResumeLayout(false);
             this.tabPage_RS_BuildAZa.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -3085,6 +3081,9 @@
             this.tabControlOrderSequence.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_specialtyQuantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_buildZaQuantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).EndInit();
             this.ResumeLayout(false);
 
         }
