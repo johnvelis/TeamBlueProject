@@ -116,7 +116,7 @@ namespace BazingaPizzaria.Model
                 fullPizzaDescription =
                     _quantity.ToString().PadLeft(5) + "\t" +
                     _size.ToString().PadRight(10) + "\t" +
-                    _crust.ToString().PadRight(10) + "\t" +
+                    _crust.ToString().PadRight(15) + "\t" +
                     "Specialty Pizza".PadRight(10) + "\t" +
                     _pizzaPrice.ToString("C").PadLeft(10) + "\t" +
                     _specialtyName.ToString();
@@ -129,7 +129,7 @@ namespace BazingaPizzaria.Model
                 fullPizzaDescription =
                     _quantity.ToString().PadLeft(5) + "\t" +
                     _size.ToString().PadRight(10) + "\t" +
-                    _crust.ToString().PadRight(10) + "\t" +
+                    _crust.ToString().PadRight(15) + "\t" +
                     "Toppings Pizza".PadRight(10) + "\t" +
                     _pizzaPrice.ToString("C").PadLeft(10) + "\t" +
                     pizzaToppings.ToString();
