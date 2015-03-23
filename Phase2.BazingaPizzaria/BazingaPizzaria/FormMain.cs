@@ -489,6 +489,7 @@ namespace BazingaPizzaria
 
         //creates pizza variable
         Pizza newPizza;
+        decimal newPizzaPrice = 0m;
 
         //The following eight event handlers are for the Size/Crust tab of the form
 
@@ -960,6 +961,10 @@ namespace BazingaPizzaria
 
         #endregion
 
+        //addToOrder button clicks
+        //validation and add za to order
+        #region Add za to order
+
         private void btn_RS_addToOrder_Click(object sender, EventArgs e)
         {
             if (RS_specialtyType == null)
@@ -1019,23 +1024,28 @@ namespace BazingaPizzaria
                 }
 
                 //TODO - add 3.00m to Sue's original price variable and then set newPizza price
+                newPizzaPrice += 3m;
+                newPizza.PizzaPrice = newPizzaPrice;
             }
             else
             {
                 if (RS_toppings.Contains(Pizza.Topping.JustCheese))
                 {
                     //TODO - set newPizza price to whatever Sue's original price variable
+                    newPizza.PizzaPrice = newPizzaPrice;
                 }
                 else
                 {
                     //TODO - add (decimal)RS_toppings.Length to Sue's original price
+                    newPizzaPrice += (decimal)RS_toppings.Count;
+                    newPizza.PizzaPrice = newPizzaPrice;
                 }
                 //Add toppings from local list to object list
                 newPizza.PizzaToppings.AddRange(RS_toppings);
             }
 
             //TODO - add newPizza to newOrder PizzaPurchase list
-            //newOrder.PizzaPurchase.Add(newPizza);
+            newOrder.PizzaPurchase.Add(newPizza);
 
             //Display confirmation to user and display navigation buttons
             frmErrorMess.LabelText = "You have added a Za to your order!";
@@ -1045,7 +1055,9 @@ namespace BazingaPizzaria
             btn_RS_checkOut.Visible = true;
             pnl_RS_whatNext.Visible = true;
         }
+        #endregion
 
+        //direct user to make a navigation choice
         #region Visible after pizza add
 
         private void btn_RS_anotherZa_Click(object sender, EventArgs e)
