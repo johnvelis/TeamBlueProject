@@ -459,6 +459,8 @@ namespace BazingaPizzaria
                     dataGridView1.Rows.Add(newBeverage.Quantity, newBeverage.SizeName, newBeverage.BevPrice);
 
                     dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
+
+                    newOrder.BeveragePurchase.Add(newBeverage);
                 }
             }
 
@@ -594,12 +596,14 @@ namespace BazingaPizzaria
             //
             // fill in the Pizzas Information GroupBox before order confirmation
             //
+            listBox_JV_Pizzas.DataSource = null;
             listBox_JV_Pizzas.DataSource = newOrder.PizzaPurchase;
             textBox_JV_PizzaSubtotal.Text = newOrder.PizzaSubtotal().ToString("C");
 
             //
             // fill in the Beverage Information GroupBox before order confirmation
             //
+            listBox_JV_Beverages.DataSource = null;
             listBox_JV_Beverages.DataSource = newOrder.BeveragePurchase;
             textBox_JV_BeverageSubtotal.Text = newOrder.BeverageSubtotal().ToString("C");
 
