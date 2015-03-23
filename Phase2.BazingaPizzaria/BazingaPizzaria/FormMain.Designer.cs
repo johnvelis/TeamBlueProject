@@ -130,9 +130,6 @@
             this.btn_TG_Sprite = new System.Windows.Forms.Button();
             this.tabPageSpecialtyPizzas = new System.Windows.Forms.TabPage();
             this.pnl_RS_whatNext = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -237,6 +234,9 @@
             this.lbl_RS_navCheckOut = new System.Windows.Forms.Label();
             this.lbl_RS_navSizeCrust = new System.Windows.Forms.Label();
             this.lbl_RS_navBeverages = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageControlsTemplate.SuspendLayout();
@@ -261,9 +261,6 @@
             this.groupBox6.SuspendLayout();
             this.tabPageSpecialtyPizzas.SuspendLayout();
             this.pnl_RS_whatNext.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).BeginInit();
             this.tabControl_RS_Zas.SuspendLayout();
@@ -304,6 +301,9 @@
             this.tab_TG_CarryOut.SuspendLayout();
             this.tabControlOrderSequence.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -1584,47 +1584,17 @@
             this.pnl_RS_whatNext.Controls.Add(this.pictureBox9);
             this.pnl_RS_whatNext.Controls.Add(this.pictureBox8);
             this.pnl_RS_whatNext.Controls.Add(this.label22);
-            this.pnl_RS_whatNext.Location = new System.Drawing.Point(6, 3);
+            this.pnl_RS_whatNext.Location = new System.Drawing.Point(3, 3);
             this.pnl_RS_whatNext.Name = "pnl_RS_whatNext";
             this.pnl_RS_whatNext.Size = new System.Drawing.Size(1183, 421);
             this.pnl_RS_whatNext.TabIndex = 12;
             this.pnl_RS_whatNext.Visible = false;
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox10.Location = new System.Drawing.Point(1016, 363);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 54);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox9.Location = new System.Drawing.Point(801, 363);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 54);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 2;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::BazingaPizzaria.Properties.Resources.arrow;
-            this.pictureBox8.Location = new System.Drawing.Point(611, 363);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 54);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(617, 316);
+            this.label22.Location = new System.Drawing.Point(617, 309);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(507, 45);
             this.label22.TabIndex = 0;
@@ -2982,6 +2952,36 @@
             this.lbl_RS_navBeverages.TabIndex = 0;
             this.lbl_RS_navBeverages.Text = "Beverages";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::BazingaPizzaria.Properties.Resources.arrow;
+            this.pictureBox8.Location = new System.Drawing.Point(613, 358);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::BazingaPizzaria.Properties.Resources.arrow;
+            this.pictureBox9.Location = new System.Drawing.Point(803, 358);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 2;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::BazingaPizzaria.Properties.Resources.arrow;
+            this.pictureBox10.Location = new System.Drawing.Point(1013, 358);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3027,9 +3027,6 @@
             this.tabPageSpecialtyPizzas.ResumeLayout(false);
             this.pnl_RS_whatNext.ResumeLayout(false);
             this.pnl_RS_whatNext.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_RS_justCheeseQuantity)).EndInit();
@@ -3084,6 +3081,9 @@
             this.tabControlOrderSequence.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3173,9 +3173,6 @@
         private System.Windows.Forms.Button btn_TG_Sprite;
         private System.Windows.Forms.TabPage tabPageSpecialtyPizzas;
         private System.Windows.Forms.Panel pnl_RS_whatNext;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btn_RS_justCheese;
@@ -3299,5 +3296,8 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label lbl_RS_quantity3;
         private System.Windows.Forms.NumericUpDown nud_RS_justCheeseQuantity;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }
