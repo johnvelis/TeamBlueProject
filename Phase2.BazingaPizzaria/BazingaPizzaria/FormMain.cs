@@ -513,6 +513,26 @@ namespace BazingaPizzaria
             ButtonAnimation.ButtonSelect(this, btn_SL_sizeXLG);
         }
 
+        private void btn_SL_crustHandTossed_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonSelect(this, btn_SL_crustHandTossed);
+        }
+
+        private void btn_SL_crustChrispyThin_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonSelect(this, btn_SL_crustChrispyThin);
+        }
+
+        private void btn_SL_crustThick_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonSelect(this, btn_SL_crustThick);
+        }
+
+        private void btn_SL_crustGlutenFree_Click(object sender, EventArgs e)
+        {
+            ButtonAnimation.ButtonSelect(this, btn_SL_crustGlutenFree);
+        }
+
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
             //instanciates new pizza object
@@ -1026,6 +1046,7 @@ namespace BazingaPizzaria
                 //TODO - add 3.00m to Sue's original price variable and then set newPizza price
                 newPizzaPrice += 3m;
                 newPizza.PizzaPrice = newPizzaPrice;
+                newPizza.Quantity = (byte)nud_RS_specialtyQuantity.Value;
             }
             else
             {
@@ -1033,12 +1054,14 @@ namespace BazingaPizzaria
                 {
                     //TODO - set newPizza price to whatever Sue's original price variable
                     newPizza.PizzaPrice = newPizzaPrice;
+                    newPizza.Quantity = (byte)nud_RS_justCheeseQuantity.Value;
                 }
                 else
                 {
                     //TODO - add (decimal)RS_toppings.Length to Sue's original price
                     newPizzaPrice += (decimal)RS_toppings.Count;
                     newPizza.PizzaPrice = newPizzaPrice;
+                    newPizza.Quantity = (byte)nud_RS_buildZaQuantity.Value;
                 }
                 //Add toppings from local list to object list
                 newPizza.PizzaToppings.AddRange(RS_toppings);
