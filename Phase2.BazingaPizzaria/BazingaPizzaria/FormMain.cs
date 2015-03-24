@@ -88,13 +88,12 @@ namespace BazingaPizzaria
         private void FormMain_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txt_TG_NameDineIn;
-            lbl_RS_navStart.ForeColor = Color.DarkRed;
         }
 
         //
         //Navigation button visual response and cancel order button
         //
-        #region navigation
+        #region navigationButtons
 
         private void tabControlOrderSequence_SelectedIndexChanged(object sender, EventArgs e)
         {
