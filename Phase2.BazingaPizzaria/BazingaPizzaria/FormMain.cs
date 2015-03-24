@@ -88,6 +88,7 @@ namespace BazingaPizzaria
         private void FormMain_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txt_TG_NameDineIn;
+            lbl_RS_navStart.ForeColor = Color.DarkRed;
         }
 
         //
