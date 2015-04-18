@@ -19,6 +19,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BazingaPizzaria.Model;
+using System.Data.SqlClient;
+using BazingaPizzaria.Properties;
 
 namespace BazingaPizzaria
 {
@@ -836,11 +838,7 @@ namespace BazingaPizzaria
                 "/" +
                 newOrder.CCExpYear.ToString();
         }
-
         #endregion
-
-        #endregion
-
 
         //
         // tabPageSpecialtyZas - Roxy
@@ -1137,34 +1135,84 @@ namespace BazingaPizzaria
 
         #endregion
 
+
+        //
+        //Write to Database Code (Sue)
+        //
+        #region WriteToDatabase Code (Sue)
+
+        private void writeOrderToDatabase()
+        {
+            int ordercounter = 0;
+            int newOrderCount = ordercounter++;
+
+            //instantiate the Order
+            Order newOrder = new Order();
+
+            //add the data required to write
+            newOrder.Number = newOrderCount;
+            newOrder.Date = DateTime.Now;
+
+            //create a connection object
+            SqlConnection cn = new SqlConnection(Settings.Default.CSOrders);
+
+            //create the SQL insert statement with parameters
+            string sqlInsert = "INSERT INTO Orders" +
+                "(OrderNumber,TimePlaced)" +
+                "VALUES(@OrderNumber, @TimePlaced)";
+
+            //Create the SQL command
+            SqlCommand insertOrder = new SqlCommand(sqlInsert, cn);
+
+            //add values for parameters from Order object
+            insertOrder.Parameters.AddWithValue("@OrderNumber", newOrder.Number);
+            insertOrder.Parameters.AddWithValue("@TimePlaced", newOrder.Date);
+
+            using (cn)
+            {
+                try
+                {
+                    //open connection to the database
+                    cn.Open();
+
+                    //execute SQL command
+                    insertOrder.ExecuteNonQuery();
+
+                    //create the SQL select command to access the OrderID of the current record
+                    string sqlSelect = "SELECT IDENT_CURRENT('Orders') FROM Orders";
+
+                    //create the SQL command
+                    SqlCommand selectOrderID = new SqlCommand(sqlSelect, cn);
+
+                    //execute the SQL command and store the OrderID
+                    int orderID = Convert.ToInt32(selectOrderID.ExecuteScalar());
+
+                    //display the new OrderID
+                    MessageBox.Show(orderID.ToString());
+
+                }
+                catch (SqlException ex)
+                {
+                    //use a messagebox for all SQL Exception
+                    MessageBox.Show(ex.Message, "Database error", MessageBoxButtons.OK);
+                }
+                finally
+                {
+                    //close connection
+                    cn.Close();
+                }
+            }
+        }
+        #endregion
+
         //hidden close button in top left corner of app
         private void btn_hiddenClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
 
     }
 }
+
+        #endregion

@@ -44,5 +44,10 @@ namespace BazingaPizzaria
             btn_JV_ReturnMainMenu.ForeColor = Color.White;
         }
 
+        private void lblConfirmCancelText_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

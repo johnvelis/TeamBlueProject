@@ -132,6 +132,8 @@ namespace BazingaPizzaria.Model
 
         public bool DineIn { get; set; }
 
+        public bool Completed { get; set; }     
+
         public List<Pizza> PizzaPurchase
         {
             get { return _pizza; }

@@ -65,6 +65,7 @@
     "ately \r\n20 minutes and your order number is 14.\r\n\r\nClick the button below \r\nto r" +
     "eturn to the starting menu.";
             this.lblConfirmCancelText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblConfirmCancelText.Click += new System.EventHandler(this.lblConfirmCancelText_Click);
             // 
             // pictureBoxBanner
             // 
