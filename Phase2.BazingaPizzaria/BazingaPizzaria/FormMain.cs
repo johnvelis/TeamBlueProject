@@ -31,7 +31,7 @@ namespace BazingaPizzaria
         //
         // generate an instance of a Order class and populate with data to test forms
         //
-        public Order newOrder = GenerateTestData.GenerateTestOrderData();
+        Order newOrder = new Order();
         FormErrorMessage frmErrorMess = new FormErrorMessage();
 
         string drink;
