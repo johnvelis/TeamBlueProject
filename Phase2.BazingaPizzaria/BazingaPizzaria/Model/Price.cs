@@ -15,8 +15,8 @@ namespace BazingaPizzaria.Model
         private decimal _beverageMd = 1.69M;
         private decimal _beverageLg = 2.19M;
         private decimal _beverageXL = 2.69M;
-        private decimal _specialtyExtra = 3.00M;
-        private decimal _toppingExtra = 1.00M;
+        //private decimal _specialtyExtra = 3.00M;
+        //private decimal _toppingExtra = 1.00M;
         private decimal _pizzaSm = 3.99M;
         private decimal _pizzaMed = 7.99M;
         private decimal _pizzaLg = 10.97M;

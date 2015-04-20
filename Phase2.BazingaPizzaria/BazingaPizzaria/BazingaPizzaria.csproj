@@ -59,6 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackOfHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backOfHouse.Designer.cs" />
     <Compile Include="Model\Beverage.cs" />
     <Compile Include="Model\ButtonAnimation.cs" />
     <Compile Include="FormCompletedOrder.cs">
@@ -92,6 +96,7 @@
     <Compile Include="Model\Price.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="backOfHouse.resx" />
     <EmbeddedResource Include="FormCompletedOrder.resx">
       <DependentUpon>FormCompletedOrder.cs</DependentUpon>
     </EmbeddedResource>

@@ -102,3 +102,6 @@ C:\Users\lovell15\Documents\Repo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debu
 C:\Users\lovell15\Documents\Repo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.Properties.Resources.resources
 C:\Users\lovell15\Documents\Repo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.csproj.GenerateResource.Cache
 C:\Users\lovell15\Documents\Repo\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.pdb
+C:\Users\wolve_000\Documents\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\Data\Orders.mdf
+C:\Users\wolve_000\Documents\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\bin\Debug\Data\Orders_log.ldf
+C:\Users\wolve_000\Documents\TeamBlueProject\Phase2.BazingaPizzaria\BazingaPizzaria\obj\Debug\BazingaPizzaria.backOfHouse.resources

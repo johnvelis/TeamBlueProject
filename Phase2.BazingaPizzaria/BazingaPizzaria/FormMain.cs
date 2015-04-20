@@ -848,6 +848,9 @@ namespace BazingaPizzaria
         }
         #endregion
 
+        #endregion
+
+
         //
         // tabPageSpecialtyZas - Roxy
         //
@@ -1252,9 +1255,15 @@ namespace BazingaPizzaria
         {
             Application.Exit();
         }
+
+        private void lbl_RS_navCheckOut_Click(object sender, EventArgs e)
+        {
+            BackOfHouse orderQueque = new BackOfHouse();
+            orderQueque.Show();
+        }
        
 
     }
 }
 
-        #endregion
+        
