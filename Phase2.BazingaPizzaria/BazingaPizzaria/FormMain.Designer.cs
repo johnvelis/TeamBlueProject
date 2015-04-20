@@ -426,10 +426,10 @@
             // tabPageCheckOut
             // 
             this.tabPageCheckOut.BackColor = System.Drawing.Color.White;
-            this.tabPageCheckOut.Controls.Add(this.grpbox_JV_OrderInformation);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ConfirmPaymentInfo);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_PayForOrder);
             this.tabPageCheckOut.Controls.Add(this.grpbox_JV_ThankYou);
+            this.tabPageCheckOut.Controls.Add(this.grpbox_JV_OrderInformation);
             this.tabPageCheckOut.ForeColor = System.Drawing.SystemColors.WindowText;
             this.tabPageCheckOut.Location = new System.Drawing.Point(4, 22);
             this.tabPageCheckOut.Name = "tabPageCheckOut";

@@ -570,11 +570,12 @@ namespace BazingaPizzaria
 
         private void btn_SL_ChooseZa_Click(object sender, EventArgs e)
         {
-            //instansiates new pizza object
+            //instantsiates new pizza object
             newPizza = new Pizza();
             newPizza.Size = pizzaSize;
             newPizza.Crust = pizzaCrust;
-            //TODO add pizza properties based on user button selections
+            
+            //moves to next tab
             tabControlOrderSequence.SelectedTab = tabPageSpecialtyPizzas;
         }
 
@@ -644,9 +645,16 @@ namespace BazingaPizzaria
             grpbox_JV_OrderInformation.Visible = false;
             grpbox_JV_ThankYou.Visible = true;
 
+            //test
+            newOrder.Number = 44;
+
+
             lbl_JV_OrderNumberTime.Text =
                 "You are order " + newOrder.Number.ToString() + ". " +
                 "Your order will be ready at " + DateTime.Now.AddMinutes(30).ToShortTimeString() + ".";
+
+            writeOrderToDatabase();
+           
         }
 
         //
@@ -1143,17 +1151,12 @@ namespace BazingaPizzaria
 
         private void writeOrderToDatabase()
         {
-            int ordercounter = 0;
-            int newOrderCount = ordercounter++;
-
-            //instantiate the Order
-            Order newOrder = new Order();
-
             //add the data required to write
-            newOrder.Number = newOrderCount;
+            
             newOrder.Date = DateTime.Now;
 
             //create a connection object
+            //Did I add the correct string out of config.app?
             SqlConnection cn = new SqlConnection(Settings.Default.CSOrders);
 
             //create the SQL insert statement with parameters
@@ -1187,8 +1190,47 @@ namespace BazingaPizzaria
                     //execute the SQL command and store the OrderID
                     int orderID = Convert.ToInt32(selectOrderID.ExecuteScalar());
 
+                    //test pizza
+                    //create the SQL insert statement with parameters
+                    string sqlInsertPizza = "INSERT INTO Pizzas" +
+                        "(OrderID, ZaSize, Crust, Specialty)" +
+                        "VALUES(@OrderID, @ZaSize, @Crust, @Specialty)";
+
+                   //Create the SQL command
+                     SqlCommand insertPizza = new SqlCommand(sqlInsertPizza, cn);
+
+
+                    //add values for parameters from Order object
+
+                    insertPizza.Parameters.AddWithValue("@OrderID", orderID);
+                    insertPizza.Parameters.AddWithValue("@ZaSize", newOrder.PizzaPurchase[0].Size);
+                    insertPizza.Parameters.AddWithValue("@Crust", newOrder.PizzaPurchase[0].Crust);
+                    insertPizza.Parameters.AddWithValue("@Specialty", newOrder.PizzaPurchase[0].IsSpecialty);
+                   
+                    //execute SQL command
+                    insertPizza.ExecuteNonQuery();
+
+                    //test beverage
+                    //create the SQL insert statement with parameters
+                    string sqlInsertBeverage = "INSERT INTO Beverage" +
+                        "(OrderID, BevSize, BevType)" +
+                        "VALUES(@OrderID, @BevSize, @BevType)";
+
+                    //Create the SQL command
+                    SqlCommand insertBeverage = new SqlCommand(sqlInsertBeverage, cn);
+
+
+                    //add values for parameters from Order object
+
+                    insertBeverage.Parameters.AddWithValue("@OrderID", orderID);
+                    insertBeverage.Parameters.AddWithValue("@BevSize", newOrder.BeveragePurchase[0].Name);
+                    insertBeverage.Parameters.AddWithValue("@BevType", newOrder.BeveragePurchase[0].BeverageSize);
+
+                    //execute SQL command
+                    insertBeverage.ExecuteNonQuery();
+
                     //display the new OrderID
-                    MessageBox.Show(orderID.ToString());
+                    //MessageBox.Show(orderID.ToString());
 
                 }
                 catch (SqlException ex)

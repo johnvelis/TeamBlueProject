@@ -211,11 +211,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Orders.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Orders_log.ldf">
       <DependentUpon>Orders.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\snappy_pizza.jpg" />
     <None Include="Resources\snappy_pizza.bmp" />
