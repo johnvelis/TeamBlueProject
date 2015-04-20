@@ -1226,8 +1226,8 @@ namespace BazingaPizzaria
                     //add values for parameters from Order object
 
                     insertBeverage.Parameters.AddWithValue("@OrderID", orderID);
-                    insertBeverage.Parameters.AddWithValue("@BevSize", newOrder.BeveragePurchase[0].Name);
-                    insertBeverage.Parameters.AddWithValue("@BevType", newOrder.BeveragePurchase[0].BeverageSize);
+                    insertBeverage.Parameters.AddWithValue("@BevSize", newOrder.BeveragePurchase[0].BeverageSize);
+                    insertBeverage.Parameters.AddWithValue("@BevType", newOrder.BeveragePurchase[0].Name);
 
                     //execute SQL command
                     insertBeverage.ExecuteNonQuery();
